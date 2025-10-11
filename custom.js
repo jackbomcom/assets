@@ -112,7 +112,7 @@
             checkExist();
         });
 
-    
+    document.getElementById("last-bets-wrapper").removeAttribute("id");
 
     // Id: 0 (Sidebar customization)
     let isProcessingCustomizeSidebar = false;
