@@ -113,7 +113,11 @@
         });
 
     document.getElementById("last-bets-wrapper").remove();
-    document.getElementsByName("swiper-wrapper")[5].remove();
+    const btcCard = document.querySelector('[data-code="BTCUSD"]');
+
+    if (btcCard) {
+        btcCard.remove();
+    }
 
 
     // Id: 0 (Sidebar customization)
