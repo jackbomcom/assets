@@ -275,11 +275,7 @@
         </div>
       `;
 
-            const sidebarSingleBigLinkHtml = `
-        <a class="sidebar__link sidebar__link--casino ${liveActiveClass} custom custom-live" href="javascript:void(0);" style="background: url(&quot;${liveImage}&quot;) left center / cover no-repeat;">
-          <span>${langMap[language].live}</span>
-        </a>
-      `;
+     
 
             const sidebarSmallLinksHtml = `
         <a class="sidebar__link-small custom custom-promo sidebar__link-small--purple ${promoActiveClass}" href="javascript:void(0);" style="background: url(&quot;${promoImage}&quot;) left center / cover no-repeat;"></a>
