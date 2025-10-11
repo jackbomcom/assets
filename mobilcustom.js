@@ -488,8 +488,6 @@
         if (isProcessingInitMainSlider) return;
         isProcessingInitMainSlider = true;
 
-        //işlevsiz
-
         try {
             if ($("#custom-section-1").length) $("#custom-section-1").remove();
 
@@ -575,8 +573,6 @@
 
     // Id: 2 (Vip status / casino and sports cards)
     let isProcessingInitVipStatus = false;
-
-    //işlevsiz
     const initVipStatus = async (isUserLoggedIn) => {
         if (isProcessingInitVipStatus) return;
         isProcessingInitVipStatus = true;
@@ -683,7 +679,6 @@
         }
     };
 
-    // işlevsiz
     // Id: 3 (Full banner)
     let isProcessingInitFullBanner = false;
     const initFullBanner = async (isMobile, isUserLoggedIn) => {
@@ -744,7 +739,6 @@
         }
     };
 
-    // işlevsiz
     // Id: 4 (Casino and sports landing)
     let isProcessingInitGamesLanding = false;
     const initGamesLanding = async (isUserLoggedIn) => {
@@ -974,7 +968,6 @@
     };
 
     // Id: 5 (Crypto slider)
-    //işlevsiz
     let isProcessingInitCryptoSlider = false;
     const initCryptoSlider = async (isUserLoggedIn) => {
         if (isProcessingInitCryptoSlider) return;
@@ -1083,7 +1076,6 @@
         }
     };
 
-    //işlevsiz
     // Id: 6 (Grid cards)
     let isProcessingInitGridCards = false;
     const initGridCards = async (isUserLoggedIn) => {
@@ -1126,10 +1118,24 @@
                 image: `${item.image}?v=${today}`,
             }));
 
-            //islevsiz
-
             const sectionHtml = `
-        
+        <div id="custom-section-6" class="section custom-section">
+          <div class="container">
+            <div class="card-grid d-flex flex-column flex-md-row gap-2 gap-md-4">
+              ${versionedCardItems
+                .map(
+                    (item, index) => `
+                <div class="card overflow-hidden position-relative rounded-4 w-100 border-0">
+                  <a href="${item.url}" class="d-block" ${index === 2 ? 'target="_blank"' : ""}>
+                    <img class="object-fit-cover w-100 h-100 position-absolute top-0 start-0" src="${item.image}" alt="Card Image">
+                  </a>
+                </div>
+              `
+                )
+                .join("")}
+            </div>
+          </div>
+        </div>
       `;
 
             const section = await waitForElement(".section.section--last");
@@ -1142,8 +1148,6 @@
     };
 
     // Id: 7 (Buttons customization)
-
-    //işlevsiz
     let isProcessingCustomizeButtons = false;
     const customizeButtons = async (pageType) => {
         if (isProcessingCustomizeButtons) return;
@@ -1200,8 +1204,6 @@
     };
 
     // Id: 8 (Leagues slider & default sports slider fix)
-
-    //işlevsiz
     let isProcessingInitLeaguesSlider = false;
     const initLeaguesSlider = async (isUserLoggedIn) => {
         if (isProcessingInitLeaguesSlider) return;
@@ -1314,7 +1316,119 @@
     };
 
     // Id: 9 (Grid boxes)
+    let isProcessingInitGridBoxes = false;
+    const initGridBoxes = async (isMobile, isUserLoggedIn) => {
+        if (isProcessingInitGridBoxes) return;
+        isProcessingInitGridBoxes = true;
 
+        try {
+            if ($("#custom-section-9").length) $("#custom-section-9").remove();
+            if (isUserLoggedIn) return;
+
+            const language = window.localStorage.language;
+
+            const contentMap = {
+                tr: {
+                    gridText1: "Jackbom turnuvalarına katıl, rakipleri yen ve ödül kap!",
+                    gridText2: "VIP olun, bonuslar ve fırsatlarla ayrıcalık yaşayın!",
+                    gridText3: "Anlık, haftalık, aylık bonuslarla kazancınızı artırın!",
+                    gridText4: "Özel tekliflerle büyük kazançlar elde edin!",
+                },
+                en: {
+                    gridText1: "Join Jackbom tournaments, defeat rivals, and win rewards!",
+                    gridText2: "Become a VIP and enjoy exclusive bonuses and opportunities!",
+                    gridText3: "Boost your earnings with instant, weekly, and monthly bonuses!",
+                    gridText4: "Achieve big wins with special offers!",
+                },
+                ru: {
+                    gridText1: "Присоединяйтесь к турнирам Jackbom, побеждайте соперников и получайте награды!",
+                    gridText2: "Станьте VIP и наслаждайтесь эксклюзивными бонусами и возможностями!",
+                    gridText3: "Увеличьте свой заработок с мгновенными, еженедельными и ежемесячными бонусами!",
+                    gridText4: "Получайте большие выигрыши благодаря специальным предложениям!",
+                },
+                fr: {
+                    gridText1: "Participez aux tournois Jackbom, battez vos adversaires et remportez des récompenses!",
+                    gridText2: "Devenez VIP et profitez de bonus et d'opportunités exclusives!",
+                    gridText3: "Augmentez vos gains avec des bonus instantanés, hebdomadaires et mensuels!",
+                    gridText4: "Obtenez de gros gains avec des offres spéciales!",
+                },
+                ch: {
+                    gridText1: "加入 Jackbom 赛事，击败对手，赢取奖励！",
+                    gridText2: "成为 VIP，享受专属奖金和机会！",
+                    gridText3: "通过即时、每周和每月奖金增加您的收入！",
+                    gridText4: "利用特别优惠赢得大奖！",
+                },
+                it: {
+                    gridText1: "Partecipa ai tornei Jackbom, sconfiggi i rivali e vinci premi!",
+                    gridText2: "Diventa VIP e goditi bonus esclusivi e opportunità uniche!",
+                    gridText3: "Aumenta i tuoi guadagni con bonus immediati, settimanali e mensili!",
+                    gridText4: "Ottieni grandi vincite con offerte speciali!",
+                },
+                ar: {
+                    gridText1: "انضم إلى بطولات Jackbom، اهزم المنافسين، واربح المكافآت!",
+                    gridText2: "كن من كبار الشخصيات (VIP) وتمتع بالمكافآت والفرص الحصرية!",
+                    gridText3: "قم بزيادة أرباحك من خلال المكافآت الفورية والأسبوعية والشهرية!",
+                    gridText4: "حقق أرباحًا كبيرة مع العروض الخاصة!",
+                },
+            };
+
+            const sectionHtml = `
+				<div id="custom-section-9" class="section custom-section">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-md-0 d-flex">
+								<a href="tournaments" class="d-flex">
+									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
+										<div class="box-icon icon-tournament rounded-3 p-3">
+											<i class="icon fa-solid fa-trophy fs-3 align-middle text-center text-black"></i>
+										</div>
+										<p class="mb-0 text-white opacity-75">${contentMap[language].gridText1}</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-md-0 d-flex">
+								<a href="vip" class="d-flex">
+									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
+										<div class="box-icon icon-vip rounded-3 p-3">
+											<i class="icon fa-solid fa-crown fs-3 align-middle text-center text-black"></i>
+										</div>
+										<p class="mb-0 text-white opacity-75">${contentMap[language].gridText2}</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-lg-0 d-flex">
+								<a href="promotions" class="d-flex">
+									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
+										<div class="box-icon icon-promotion rounded-3 p-3">
+											<i class="icon fa-solid fa-gift fs-3 align-middle text-center text-black"></i>
+										</div>
+										<p class="mb-0 text-white opacity-75">${contentMap[language].gridText3}</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-lg-0 d-flex">
+							  <a href="casino/group/enhanced-rtp" class="d-flex">
+									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
+										<div class="box-icon icon-rtp rounded-3 p-3">
+											<i class="icon fa-solid fa-chart-pie fs-3 align-middle text-center text-black"></i>
+										</div>
+										<p class="mb-0 text-white opacity-75">${contentMap[language].gridText4}</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			`;
+
+            const section = await waitForElement(!isMobile ? "#custom-section-1" : ".section.section--first");
+            section.after(sectionHtml);
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingInitGridBoxes = false;
+        }
+    };
 
     // Id: 10 (Register landing)
     let isProcessingInitRegisterLanding = false;
