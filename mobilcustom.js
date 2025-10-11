@@ -415,6 +415,7 @@
                     : ""
             }
       `;
+            document.getElementById("last-bets-wrapper").removeAttribute("id");
 
             $(document).on("click", '.sidebar__links.custom-promo a:not([class*="howto"]), .sidebar__link-small.custom-promo', function () {
                 $('.sidebar__big a[href*="/promotions"]:not(a[href*="?"])')[0].click();
