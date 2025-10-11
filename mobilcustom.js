@@ -1201,120 +1201,120 @@
 
     // Id: 8 (Leagues slider & default sports slider fix)
 
-    // Id: 9 (Grid boxes)
-    let isProcessingInitGridBoxes = false;
-    const initGridBoxes = async (isMobile, isUserLoggedIn) => {
-        if (isProcessingInitGridBoxes) return;
-        isProcessingInitGridBoxes = true;
+    //işlevsiz
+    let isProcessingInitLeaguesSlider = false;
+    const initLeaguesSlider = async (isUserLoggedIn) => {
+        if (isProcessingInitLeaguesSlider) return;
+        isProcessingInitLeaguesSlider = true;
 
         try {
-            if ($("#custom-section-9").length) $("#custom-section-9").remove();
-            if (isUserLoggedIn) return;
+            if ($("#custom-section-8").length) $("#custom-section-8").remove();
 
             const language = window.localStorage.language;
 
             const contentMap = {
                 tr: {
-                    gridText1: "Jackbom turnuvalarına katıl, rakipleri yen ve ödül kap!",
-                    gridText2: "VIP olun, bonuslar ve fırsatlarla ayrıcalık yaşayın!",
-                    gridText3: "Anlık, haftalık, aylık bonuslarla kazancınızı artırın!",
-                    gridText4: "Özel tekliflerle büyük kazançlar elde edin!",
+                    topLeagues: "Popüler Ligler",
                 },
                 en: {
-                    gridText1: "Join Jackbom tournaments, defeat rivals, and win rewards!",
-                    gridText2: "Become a VIP and enjoy exclusive bonuses and opportunities!",
-                    gridText3: "Boost your earnings with instant, weekly, and monthly bonuses!",
-                    gridText4: "Achieve big wins with special offers!",
+                    topLeagues: "Top Leagues",
                 },
                 ru: {
-                    gridText1: "Присоединяйтесь к турнирам Jackbom, побеждайте соперников и получайте награды!",
-                    gridText2: "Станьте VIP и наслаждайтесь эксклюзивными бонусами и возможностями!",
-                    gridText3: "Увеличьте свой заработок с мгновенными, еженедельными и ежемесячными бонусами!",
-                    gridText4: "Получайте большие выигрыши благодаря специальным предложениям!",
+                    topLeagues: "Популярные Лиги",
                 },
                 fr: {
-                    gridText1: "Participez aux tournois Jackbom, battez vos adversaires et remportez des récompenses!",
-                    gridText2: "Devenez VIP et profitez de bonus et d'opportunités exclusives!",
-                    gridText3: "Augmentez vos gains avec des bonus instantanés, hebdomadaires et mensuels!",
-                    gridText4: "Obtenez de gros gains avec des offres spéciales!",
+                    topLeagues: "Ligues Populaires",
                 },
                 ch: {
-                    gridText1: "加入 Jackbom 赛事，击败对手，赢取奖励！",
-                    gridText2: "成为 VIP，享受专属奖金和机会！",
-                    gridText3: "通过即时、每周和每月奖金增加您的收入！",
-                    gridText4: "利用特别优惠赢得大奖！",
+                    topLeagues: "热门联赛",
                 },
                 it: {
-                    gridText1: "Partecipa ai tornei Jackbom, sconfiggi i rivali e vinci premi!",
-                    gridText2: "Diventa VIP e goditi bonus esclusivi e opportunità uniche!",
-                    gridText3: "Aumenta i tuoi guadagni con bonus immediati, settimanali e mensili!",
-                    gridText4: "Ottieni grandi vincite con offerte speciali!",
+                    topLeagues: "Campionati Popolari",
                 },
                 ar: {
-                    gridText1: "انضم إلى بطولات Jackbom، اهزم المنافسين، واربح المكافآت!",
-                    gridText2: "كن من كبار الشخصيات (VIP) وتمتع بالمكافآت والفرص الحصرية!",
-                    gridText3: "قم بزيادة أرباحك من خلال المكافآت الفورية والأسبوعية والشهرية!",
-                    gridText4: "حقق أرباحًا كبيرة مع العروض الخاصة!",
+                    topLeagues: "الدوريات الشعبية",
                 },
             };
 
+            const sliderItems = ["https://jackbomcom.github.io/assets/images/6swd2ajqm37yx98v.webp", "https://jackbomcom.github.io/assets/images/64uxfac9d5m7zqtj.webp", "https://jackbomcom.github.io/assets/images/f824ng3wscv95db6.webp", "https://jackbomcom.github.io/assets/images/ga5e3cnrus6q92yy.webp", "https://jackbomcom.github.io/assets/images/n8z3fey47a9cwhms.webp", "https://jackbomcom.github.io/assets/images/s6neqp9v4fkhx5m3.webp", "https://jackbomcom.github.io/assets/images/s8qd52g97pjzkucn.webp", "https://jackbomcom.github.io/assets/images/ths5fm4793v2eqk6.webp", "https://jackbomcom.github.io/assets/images/tqumhcs28j7bk5vg.webp", "https://jackbomcom.github.io/assets/images/v8b3mzanf7c6s9xd.webp"];
+
+            const iconLink = $('.sidebar__big use[href*="homepage"]').attr("href").replace("#homepage", "#");
             const sectionHtml = `
-				<div id="custom-section-9" class="section custom-section">
+				<div id="custom-section-8" class="section custom-section">
 					<div class="container">
-						<div class="row">
-							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-md-0 d-flex">
-								<a href="tournaments" class="d-flex">
-									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
-										<div class="box-icon icon-tournament rounded-3 p-3">
-											<i class="icon fa-solid fa-trophy fs-3 align-middle text-center text-black"></i>
-										</div>
-										<p class="mb-0 text-white opacity-75">${contentMap[language].gridText1}</p>
+						<div class="col-12">
+							<h2 class="section__title">
+								<svg class="svg-icon">
+									<use href="${iconLink}sportsbook2"></use>
+								</svg>
+								${contentMap[language].topLeagues}
+							</h2>
+						</div>
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								${sliderItems
+                .map(
+                    (image) => `
+									<div class="swiper-slide">
+										<a href="sportsbook" class="d-block rounded-4 league">
+											<img class="slider-img w-100 h-100" src="${image}" alt="Slider Image">
+										</a>
 									</div>
-								</a>
-							</div>
-							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-md-0 d-flex">
-								<a href="vip" class="d-flex">
-									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
-										<div class="box-icon icon-vip rounded-3 p-3">
-											<i class="icon fa-solid fa-crown fs-3 align-middle text-center text-black"></i>
-										</div>
-										<p class="mb-0 text-white opacity-75">${contentMap[language].gridText2}</p>
-									</div>
-								</a>
-							</div>
-							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-lg-0 d-flex">
-								<a href="promotions" class="d-flex">
-									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
-										<div class="box-icon icon-promotion rounded-3 p-3">
-											<i class="icon fa-solid fa-gift fs-3 align-middle text-center text-black"></i>
-										</div>
-										<p class="mb-0 text-white opacity-75">${contentMap[language].gridText3}</p>
-									</div>
-								</a>
-							</div>
-							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-lg-0 d-flex">
-							  <a href="casino/group/enhanced-rtp" class="d-flex">
-									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
-										<div class="box-icon icon-rtp rounded-3 p-3">
-											<i class="icon fa-solid fa-chart-pie fs-3 align-middle text-center text-black"></i>
-										</div>
-										<p class="mb-0 text-white opacity-75">${contentMap[language].gridText4}</p>
-									</div>
-								</a>
+								`
+                )
+                .join("")}
 							</div>
 						</div>
 					</div>
 				</div>
 			`;
-
-            const section = await waitForElement(!isMobile ? "#custom-section-1" : ".section.section--first");
+            const section = isUserLoggedIn ? await waitForElement(".section.section--last") : await waitForElement("#custom-section-3");
             section.after(sectionHtml);
+
+            new Swiper("#custom-section-8 .swiper", {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                slidesPerView: 5,
+                spaceBetween: 24,
+                breakpoints: {
+                    0: {
+                        slidesPerView: 2,
+                        spaceBetween: 8,
+                    },
+                    576: {
+                        slidesPerView: 3,
+                        spaceBetween: 8,
+                    },
+                    992: {
+                        slidesPerView: 4,
+                        spaceBetween: 24,
+                    },
+                    1200: {
+                        slidesPerView: 5,
+                        spaceBetween: 24,
+                    },
+                },
+            });
+
+            if ($(window).width() >= 1200) {
+                await waitForSwiper("#mini-sportsbook-wrapper .mySwiper");
+                const sportsSlider = $("#mini-sportsbook-wrapper .mySwiper")[0].swiper;
+
+                sportsSlider.params.slidesPerView = 7;
+                sportsSlider.update();
+            }
         } catch (error) {
             console.error(error);
         } finally {
-            isProcessingInitGridBoxes = false;
+            isProcessingInitLeaguesSlider = false;
         }
     };
+
+    // Id: 9 (Grid boxes)
+
 
     // Id: 10 (Register landing)
     let isProcessingInitRegisterLanding = false;
