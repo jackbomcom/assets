@@ -113,6 +113,8 @@
         });
 
     document.getElementById("last-bets-wrapper").remove();
+    document.getElementsByName("swiper-wrapper")[5].remove();
+
 
     // Id: 0 (Sidebar customization)
     let isProcessingCustomizeSidebar = false;
