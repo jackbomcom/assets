@@ -63,56 +63,11 @@
         }
     })();
 
-    const loadResource = (type, src) =>
-        new Promise((resolve, reject) => {
-            const element = document.createElement(type === "script" ? "script" : "link");
-            Object.assign(
-                element,
-                type === "script"
-                    ? {
-                        src,
-                        type: "text/javascript",
-                        onload: resolve,
-                        onerror: reject,
-                    }
-                    : {
-                        href: src,
-                        rel: "stylesheet",
-                        onload: resolve,
-                        onerror: reject,
-                    }
-            );
-            document.head.appendChild(element);
-        });
-
-    const waitForElement = (selector, length = 0) =>
-        new Promise((resolve) => {
-            const checkExist = () => ($(selector).length > length ? resolve($(selector)) : setTimeout(checkExist, 100));
-            checkExist();
-        });
-
-    const waitForValue = (selector, length = 0) =>
-        new Promise((resolve) => {
-            const checkExist = () => ($(selector).length > length && $(selector).val() !== "" ? resolve($(selector)) : setTimeout(checkExist, 100));
-            checkExist();
-        });
-
-    const waitForSwiper = (selector, language) =>
-        new Promise((resolve) => {
-            const checkExist = () => {
-                const element = $(selector)[0];
-                if (element && element.swiper && element.swiper.slides && element.swiper.slides.length) {
-                    const sliderItems = element.swiper.slides;
-                    if (sliderItems.length > 2 && (!language || $(sliderItems[0]).find("a").attr("href").includes(`/${language}`))) {
-                        return resolve(sliderItems);
-                    }
-                }
-                setTimeout(checkExist, 100);
-            };
-            checkExist();
-        });
-
     document.getElementById("last-bets-wrapper").remove();
+
+    
+
+
 
     // Id: 0 (Sidebar customization)
     let isProcessingCustomizeSidebar = false;
