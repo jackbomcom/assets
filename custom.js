@@ -114,9 +114,25 @@
 
     document.getElementById("last-bets-wrapper").remove();
     const btcCard = document.querySelector('[data-code="BTCUSD"]');
+    const ethCard = document.querySelector('[data-code="ETHUSD"]');
+    const bnbCard = document.querySelector('[data-code="BNBUSD"]');
+    const solCard = document.querySelector('[data-code="SOLUSD"]');
+    const lctCard = document.querySelector('[data-code="LTCUSD"]');
 
     if (btcCard) {
         btcCard.remove();
+    }
+    if (ethCard) {
+        ethCard.remove();
+    }
+    if (bnbCard) {
+        bnbCard.remove();
+    }
+    if (solCard) {
+        solCard.remove();
+    }
+    if (lctCard) {
+        lctCard.remove();
     }
 
 
