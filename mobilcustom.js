@@ -683,235 +683,69 @@
         }
     };
 
+    // işlevsiz
     // Id: 3 (Full banner)
-
-    // Id: 4 (Casino and sports landing)
-    let isProcessingInitGamesLanding = false;
-    const initGamesLanding = async (isUserLoggedIn) => {
-        if (isProcessingInitGamesLanding) return;
-        isProcessingInitGamesLanding = true;
+    let isProcessingInitFullBanner = false;
+    const initFullBanner = async (isMobile, isUserLoggedIn) => {
+        if (isProcessingInitFullBanner) return;
+        isProcessingInitFullBanner = true;
 
         try {
-            if ($("#custom-section-4").length) $("#custom-section-4").remove();
-            if (isUserLoggedIn) return;
+            if ($("#custom-section-3").length) $("#custom-section-3").remove();
 
             const language = window.localStorage.language;
 
-            const contentMap = {
-                tr: {
-                    casinoText1: "Binlerce heyecan verici oyunla büyük kazançlara ulaşmanın sayısız yolu.",
-                    casinoIcon1: "Yeni Çıkanlar",
-                    casinoIcon2: "Yüksek RTP",
-                    casinoIcon3: "Canlı Casino",
-                    casinoIcon4: "Turnuvalar",
-                    casinoButton: "Casino Bölümünü Keşfedin",
-                    sportsText1: "Spor dünyasının en büyük anlarına bahis yaparak oyunun bir parçası olun.",
-                    sportsIcon1: "Spor",
-                    sportsIcon2: "Espor",
-                    sportsIcon3: "Canlı Yayınlar",
-                    sportsIcon4: "Artırılmış Oranlar",
-                    sportsButton: "Sporlar Bölümünü Keşfedin",
-                },
-                en: {
-                    casinoText1: "Countless ways to achieve big wins with thousands of exciting games.",
-                    casinoIcon1: "New Releases",
-                    casinoIcon2: "High RTP",
-                    casinoIcon3: "Live Casino",
-                    casinoIcon4: "Tournaments",
-                    casinoButton: "Explore the Casino Section",
-                    sportsText1: "Be part of the game by betting on the biggest moments in sports.",
-                    sportsIcon1: "Sports",
-                    sportsIcon2: "Esports",
-                    sportsIcon3: "Live Streams",
-                    sportsIcon4: "Boosted Odds",
-                    sportsButton: "Explore the Sports Section",
-                },
-                ru: {
-                    casinoText1: "Бесчисленные способы получить крупные выигрыши в тысячах захватывающих игр.",
-                    casinoIcon1: "Новые Выпуски",
-                    casinoIcon2: "Высокий RTP",
-                    casinoIcon3: "Живое Казино",
-                    casinoIcon4: "Турниры",
-                    casinoButton: "Исследуйте Раздел Казино",
-                    sportsText1: "Станьте частью игры, делая ставки на крупнейшие моменты в спорте.",
-                    sportsIcon1: "Спорт",
-                    sportsIcon2: "Киберспорт",
-                    sportsIcon3: "Прямые Трансляции",
-                    sportsIcon4: "Повышенные Коэффициенты",
-                    sportsButton: "Исследуйте Раздел Спорта",
-                },
-                fr: {
-                    casinoText1: "D'innombrables façons de remporter de gros gains avec des milliers de jeux passionnants.",
-                    casinoIcon1: "Nouveautés",
-                    casinoIcon2: "RTP Élevé",
-                    casinoIcon3: "Casino En Direct",
-                    casinoIcon4: "Tournois",
-                    casinoButton: "Explorer la Section Casino",
-                    sportsText1: "Faites partie du jeu en pariant sur les plus grands moments du sport.",
-                    sportsIcon1: "Sports",
-                    sportsIcon2: "Esports",
-                    sportsIcon3: "Diffusions En Direct",
-                    sportsIcon4: "Cotes Améliorées",
-                    sportsButton: "Explorer la Section Sports",
+            const imageMap = {
+                ar: {
+                    mobile: "https://jackbomcom.github.io/assets/images/ar_mobile.gif",
+                    web: "https://jackbomcom.github.io/assets/images/ar_web.gif",
                 },
                 ch: {
-                    casinoText1: "通过数千种刺激的游戏赢得丰厚奖金的无数方式。",
-                    casinoIcon1: "新发布",
-                    casinoIcon2: "高RTP",
-                    casinoIcon3: "真人赌场",
-                    casinoIcon4: "锦标赛",
-                    casinoButton: "探索赌场部分",
-                    sportsText1: "通过投注体育界的重大时刻成为比赛的一部分。",
-                    sportsIcon1: "体育",
-                    sportsIcon2: "电子竞技",
-                    sportsIcon3: "现场直播",
-                    sportsIcon4: "增强赔率",
-                    sportsButton: "探索体育部分",
+                    mobile: "https://jackbomcom.github.io/assets/images/ch_mobile.gif",
+                    web: "https://jackbomcom.github.io/assets/images/ch_web.gif",
+                },
+                fr: {
+                    mobile: "https://jackbomcom.github.io/assets/images/fr_mobile.gif",
+                    web: "https://jackbomcom.github.io/assets/images/fr_web.gif",
                 },
                 it: {
-                    casinoText1: "Innumerevoli modi per ottenere grandi vincite con migliaia di giochi emozionanti.",
-                    casinoIcon1: "Nuove Uscite",
-                    casinoIcon2: "RTP Elevato",
-                    casinoIcon3: "Casinò Dal Vivo",
-                    casinoIcon4: "Tornei",
-                    casinoButton: "Esplora la Sezione Casinò",
-                    sportsText1: "Fai parte del gioco scommettendo sui momenti più importanti dello sport.",
-                    sportsIcon1: "Sport",
-                    sportsIcon2: "Esports",
-                    sportsIcon3: "Streaming Dal Vivo",
-                    sportsIcon4: "Quote Maggiorate",
-                    sportsButton: "Esplora la Sezione Sport",
+                    mobile: "https://jackbomcom.github.io/assets/images/it_mobile.gif",
+                    web: "https://jackbomcom.github.io/assets/images/it_web.gif",
                 },
-                ar: {
-                    casinoText1: "طرق لا حصر لها لتحقيق مكاسب كبيرة مع آلاف الألعاب المثيرة.",
-                    casinoIcon1: "الإصدارات الجديدة",
-                    casinoIcon2: "RTP مرتفع",
-                    casinoIcon3: "كازينو مباشر",
-                    casinoIcon4: "البطولات",
-                    casinoButton: "استكشف قسم الكازينو",
-                    sportsText1: "كن جزءًا من اللعبة عن طريق المراهنة على أكبر لحظات الرياضة.",
-                    sportsIcon1: "الرياضة",
-                    sportsIcon2: "الرياضات الإلكترونية",
-                    sportsIcon3: "البث المباشر",
-                    sportsIcon4: "احتمالات محسنة",
-                    sportsButton: "استكشف قسم الرياضة",
+                ru: {
+                    mobile: "https://jackbomcom.github.io/assets/images/ru_mobile.gif",
+                    web: "https://jackbomcom.github.io/assets/images/ru_web.gif",
+                },
+                en: {
+                    mobile: "https://jackbomcom.github.io/assets/images/6gvfrjzsc5u4n8ha.gif",
+                    web: "https://jackbomcom.github.io/assets/images/rqawmp69bsv5thux.gif",
+                },
+                tr: {
+                    mobile: "https://jackbomcom.github.io/assets/images/24cjrkhd7xqwps9z.gif",
+                    web: "https://jackbomcom.github.io/assets/images/rpxd3f27nzqew695.gif",
                 },
             };
 
-            const casinoImage = "https://jackbomcom.github.io/assets/images/4w85hndbspgjxrqc.webp";
-            const sportsImage = "https://jackbomcom.github.io/assets/images/7xmhb6qu3prt4sza.webp";
-
+            const selected = isMobile ? imageMap[language].mobile : imageMap[language].web;
             const sectionHtml = `
-        <div id="custom-section-4" class="section custom-section">
+        <div id="custom-section-3" class="section custom-section">
           <div class="container">
-            <div class="position-relative m-auto mt-lg-4">
-              <div class="landing casino overflow-hidden position-relative rounded-4 p-3 px-md-5 py-md-4">
-                <div class="landing-inner position-relative text-white p-2 p-sm-4">
-                  <div class="d-block mb-2 mb-sm-3 mb-lg-5">
-                    <h1 class="fw-bold lh-sm mb-0">${contentMap[language].casinoText1}</h1>
-                  </div>
-                  <div class="d-block">
-                    <div class="landing-image-mobile mx-auto d-block d-lg-none">
-                      <img class="w-100 h-100" src="${casinoImage}" alt="Casino Character">
-                    </div>
-                    <div class="details px-4 py-3 rounded-3 d-flex justify-content-start justify-content-md-evenly gap-3 gap-md-4 overflow-x-scroll mb-4 mb-sm-5 flex-wrap flex-sm-nowrap">
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-fire fs-2"></i>
-                        <a href="casino/group/new-releases" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].casinoIcon1}</span>
-                        </a>
-                      </div>
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-rocket fs-2"></i>
-                        <a href="casino/group/enhanced-rtp" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].casinoIcon2}</span>
-                        </a>
-                      </div>
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-dice fs-2"></i>
-                        <a href="live-casino" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].casinoIcon3}</span>
-                        </a>
-                      </div>
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-trophy fs-2"></i>
-                        <a href="tournaments" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].casinoIcon4}</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-block text-end text-lg-start pt-2 pt-sm-0">
-                    <a href="javascript:void(0);" class="landing-button d-inline-block align-middle rounded-3 text-center" data-href="casino">${contentMap[language].casinoButton}</a>
-                  </div>
-                </div>
-              </div>
-              <div class="landing-image position-absolute bottom-0 ps-4 pt-4 d-none d-lg-block">
-                <img class="w-100 h-100 pe-none" src="${casinoImage}" alt="Casino Character">
-              </div>
-            </div>
-            <div class="position-relative m-auto mt-lg-5">
-              <div class="landing sports overflow-hidden position-relative rounded-4 p-3 px-md-5 py-md-4 mt-4">
-                <div class="landing-inner position-relative text-white p-2 p-sm-4">
-                  <div class="d-block mb-2 mb-sm-3 mb-lg-5">
-                    <h1 class="fw-bold lh-sm mb-0">${contentMap[language].sportsText1}</h1>
-                  </div>
-                  <div class="d-block">
-                    <div class="landing-image-mobile mx-auto d-block d-lg-none">
-                      <img class="w-100 h-100" src="${sportsImage}" alt="Sports Character">
-                    </div>
-                    <div class="details px-4 py-3 rounded-3 d-flex justify-content-start justify-content-md-evenly gap-3 gap-md-4 overflow-x-scroll mb-4 mb-sm-5 flex-wrap flex-sm-nowrap">
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-futbol fs-2"></i>
-                        <a href="sportsbook/sports" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].sportsIcon1}</span>
-                        </a>
-                      </div>
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-gamepad fs-2"></i>
-                        <a href="sportsbook" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].sportsIcon2}</span>
-                        </a>
-                      </div>
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-play-circle fs-2"></i>
-                        <a href="sportsbook/live-betting" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].sportsIcon3}</span>
-                        </a>
-                      </div>
-                      <div class="item d-flex align-items-center gap-3">
-                        <i class="fa-solid fa-bolt fs-2"></i>
-                        <a href="sportsbook" class="d-block">
-                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].sportsIcon4}</span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="d-block text-end text-lg-start pt-2 pt-sm-0">
-                    <a href="javascript:void(0);" class="landing-button d-inline-block align-middle rounded-3 text-center" data-href="sportsbook">${contentMap[language].sportsButton}</a>
-                  </div>
-                </div>
-              </div>
-              <div class="landing-image position-absolute bottom-0 ps-4 pt-4 d-none d-lg-block">
-                <img class="w-100 h-100 pe-none" src="${sportsImage}" alt="Sports Character">
-              </div>
-            </div>
+            <img class="pe-none w-100 h-100 rounded-3" src="${selected}" alt="Banner">
           </div>
         </div>
       `;
 
-            $(document).on("click", "#custom-section-4 .landing-button", function () {
-                $(`.sidebar__link[href*="/${$(this).data("href")}"]`)[0].click();
-            });
-
-            const section = await waitForElement(".section.pt-24:not(.mini-slider)");
+            const section = await waitForElement(isUserLoggedIn ? ".section.pt-24:not(.mini-slider)" : ".section.section--first");
             section.before(sectionHtml);
         } catch (error) {
             console.error(error);
         } finally {
-            isProcessingInitGamesLanding = false;
+            isProcessingInitFullBanner = false;
         }
     };
+
+    // Id: 4 (Casino and sports landing)
+    
 
     // Id: 5 (Crypto slider)
     let isProcessingInitCryptoSlider = false;
