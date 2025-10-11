@@ -275,7 +275,11 @@
         </div>
       `;
 
-     
+            const sidebarSingleBigLinkHtml = `
+        <a class="sidebar__link sidebar__link--casino ${liveActiveClass} custom custom-live" href="javascript:void(0);" style="background: url(&quot;${liveImage}&quot;) left center / cover no-repeat;">
+          <span>${langMap[language].live}</span>
+        </a>
+      `;
 
             const sidebarSmallLinksHtml = `
         <a class="sidebar__link-small custom custom-promo sidebar__link-small--purple ${promoActiveClass}" href="javascript:void(0);" style="background: url(&quot;${promoImage}&quot;) left center / cover no-repeat;"></a>
@@ -1790,7 +1794,7 @@
             const isBonusRequestPage = currentPath.includes("/bonus-request");
             const isSettingsPage = currentPath.includes("/settings");
             const isTvPage = currentPath.includes("/tv");
-            const isBigWinsPage = currentPath.includes("/big-wins");
+
 
             $("#body").removeClass("page--home page--promo page--single-promo page--single-blog page--sports page--vip lang--tr lang--en page--casino page--bonus-request page--settings page--tv page--bigwins");
             await customizeSidebar(isMobile, isHomePage, isUserLoggedIn);
@@ -1809,10 +1813,10 @@
                 await initCryptoSlider(isUserLoggedIn);
                 //await initGridCards(isUserLoggedIn);
                 await initLeaguesSlider(isUserLoggedIn);
-                await initGameChooser(isUserLoggedIn, isMobile);
+                //await initGameChooser(isUserLoggedIn, isMobile);
                 await hideOldSections(isUserLoggedIn);
 
-                $('.section__title use[href*="big-win"]').parents(".section").addClass("big-wins");
+                //$('.section__title use[href*="big-win"]').parents(".section").addClass("big-wins");
 
                 if (currentHref.includes("modal=register&ref=")) {
                     let refCode = currentHref.split("ref=").pop();
