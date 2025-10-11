@@ -113,7 +113,7 @@
         });
 
     document.getElementById("last-bets-wrapper").remove();
-    const btcCard = document.querySelector('[data-code="BTCUSD"]');
+    /*const btcCard = document.querySelector('[data-code="BTCUSD"]');
     const ethCard = document.querySelector('[data-code="ETHUSD"]');
     const bnbCard = document.querySelector('[data-code="BNBUSD"]');
     const solCard = document.querySelector('[data-code="SOLUSD"]');
@@ -133,7 +133,7 @@
     }
     if (lctCard) {
         lctCard.remove();
-    }
+    }*/
 
 
     // Id: 0 (Sidebar customization)
