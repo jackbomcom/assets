@@ -1806,17 +1806,17 @@
                 await initMainSlider(isMobile);
                 //if (typeof window.userVipState === "object")
                 //await initVipStatus(isUserLoggedIn);
-                await initGamesLanding(isUserLoggedIn);
-                await initGridBoxes(isMobile, isUserLoggedIn);
-                await initRegisterLanding(isMobile, isUserLoggedIn);
-                await initFullBanner(isMobile, isUserLoggedIn);
-                await initCryptoSlider(isUserLoggedIn);
+                //await initGamesLanding(isUserLoggedIn);
+                //await initGridBoxes(isMobile, isUserLoggedIn);
+                //await initRegisterLanding(isMobile, isUserLoggedIn);
+               // await initFullBanner(isMobile, isUserLoggedIn);
+                //await initCryptoSlider(isUserLoggedIn);
                 //await initGridCards(isUserLoggedIn);
-                await initLeaguesSlider(isUserLoggedIn);
+                //await initLeaguesSlider(isUserLoggedIn);
                 //await initGameChooser(isUserLoggedIn, isMobile);
-                await hideOldSections(isUserLoggedIn);
+                //await hideOldSections(isUserLoggedIn);
 
-                //$('.section__title use[href*="big-win"]').parents(".section").addClass("big-wins");
+                $('.section__title use[href*="big-win"]').parents(".section").addClass("big-wins");
 
                 if (currentHref.includes("modal=register&ref=")) {
                     let refCode = currentHref.split("ref=").pop();
