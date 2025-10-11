@@ -112,6 +112,8 @@
             checkExist();
         });
 
+    
+
     // Id: 0 (Sidebar customization)
     let isProcessingCustomizeSidebar = false;
     const customizeSidebar = async (isMobile, isHomePage, isUserLoggedIn) => {
