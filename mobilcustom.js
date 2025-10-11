@@ -1497,7 +1497,7 @@
     let isProcessingHideOldSections = false;
     const hideOldSections = async (isUserLoggedIn) => {
         if (isProcessingHideOldSections) return;
-        isProcessingHideOldSections = true;
+        isProcessingHideOldSections = false;
 
         try {
             const oldSections = $(".main__content .section:not(.custom-section)");
