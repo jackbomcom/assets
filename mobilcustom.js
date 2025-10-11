@@ -488,87 +488,9 @@
         if (isProcessingInitMainSlider) return;
         isProcessingInitMainSlider = true;
 
-        try {
-            if ($("#custom-section-1").length) $("#custom-section-1").remove();
+        //slider
 
-            const language = window.localStorage.language;
-            const mainContent = await waitForElement("#main__content");
-
-            window.sliderItems = window.sliderItems || {};
-
-            if (!window.sliderItems[language] || !window.sliderItems[language].length) {
-                await waitForSwiper("#main-slider .mySwiper", language);
-                const sliderItems = $("#main-slider .mySwiper")[0].swiper.slides;
-
-                sliderItems.forEach((e) => {
-                    e.innerHTML = e.innerHTML.replace(/href="\/[a-z]{2}https/g, 'href="https');
-                    if (e.innerHTML.includes('<a href="http')) {
-                        e.innerHTML = e.innerHTML.replace("<a href=", '<a target="_blank" href=');
-                    }
-                    if (e.innerHTML.includes('<a href="/tr"') || e.innerHTML.includes('<a href="/en"')) {
-                        e.innerHTML = e.innerHTML.replace('<a href="', '<a href="javascript:void(0);"');
-                    }
-                });
-
-                const sortedSliderItems = [...sliderItems].sort((a, b) => {
-                    const indexA = parseInt(a.dataset.swiperSlideIndex) || 0;
-                    const indexB = parseInt(b.dataset.swiperSlideIndex) || 0;
-                    return indexB - indexA;
-                });
-
-                window.sliderItems[language] = sortedSliderItems;
-            }
-            const selectedSliderItems = window.sliderItems[language];
-
-            const sectionHtml = `
-				<div id="custom-section-1" class="section custom-section">
-					<div class="container">
-						<div class="swiper">
-							<div class="swiper-wrapper">
-								${selectedSliderItems
-                .map(
-                    (item) => `
-									<div class="swiper-slide">
-										${item.innerHTML}
-									</div>
-								`
-                )
-                .join("")}
-							</div>
-							<div class="swiper-button-next swiper-button rounded-3 opacity-25"></div>
-							<div class="swiper-button-prev swiper-button rounded-3 opacity-25"></div>
-						</div>
-						<div class="swiper-pagination"></div>
-					</div>
-				</div>
-			`;
-            mainContent.prepend(sectionHtml);
-
-            new Swiper("#custom-section-1 .swiper", {
-                loop: true,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-                slidesPerView: !isMobile ? 2 : 1.2,
-                spaceBetween: !isMobile ? 20 : 15,
-                centeredSlides: !isMobile ? false : true,
-                pagination: {
-                    el: "#custom-section-1 .swiper-pagination",
-                    type: !isMobile ? "bullets" : "progressbar",
-                },
-                navigation: {
-                    prevEl: "#custom-section-1 .swiper-button-prev",
-                    nextEl: "#custom-section-1 .swiper-button-next",
-                },
-            });
-
-            document.querySelector("#main-slider").style.display = "none";
-        } catch (error) {
-            console.error(error);
-        } finally {
-            isProcessingInitMainSlider = false;
-        }
+      
     };
 
     // Id: 2 (Vip status / casino and sports cards)
@@ -1117,6 +1039,8 @@
                 ...item,
                 image: `${item.image}?v=${today}`,
             }));
+
+            //islevsiz
 
             const sectionHtml = `
         
