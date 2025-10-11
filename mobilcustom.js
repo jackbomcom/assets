@@ -974,7 +974,115 @@
     };
 
     // Id: 5 (Crypto slider)
-   
+    //işlevsiz
+    let isProcessingInitCryptoSlider = false;
+    const initCryptoSlider = async (isUserLoggedIn) => {
+        if (isProcessingInitCryptoSlider) return;
+        isProcessingInitCryptoSlider = true;
+
+        try {
+            if ($("#custom-section-5").length) $("#custom-section-5").remove();
+            if (isUserLoggedIn) return;
+
+            const language = window.localStorage.language;
+
+            const contentMap = {
+                tr: {
+                    cryptoTitle1: "Kripto ve Türk Lirası İşlemlerinizi Kolaylaştırın",
+                    cryptoText1: "13 lider kripto para ve Türk Lirası ile dijital ödemelerin geleceğini keşfedin.",
+                    cryptoText2: "Eşsiz güvenlik, hızlı işlemler ve alternatif ödeme yöntemlerinin esnekliği ile güvenli bir çevrim içi cüzdan desteğinden faydalanın.",
+                },
+                en: {
+                    cryptoTitle1: "Simplify Your Crypto and Turkish Lira Transactions",
+                    cryptoText1: "Discover the future of digital payments with 13 leading cryptocurrencies and the Turkish Lira.",
+                    cryptoText2: "Benefit from secure online wallet support with unparalleled security, fast transactions, and the flexibility of alternative payment methods.",
+                },
+                ru: {
+                    cryptoTitle1: "Упростите операции с криптовалютой и турецкой лирой",
+                    cryptoText1: "Откройте для себя будущее цифровых платежей с 13 ведущими криптовалютами и турецкой лирой.",
+                    cryptoText2: "Воспользуйтесь поддержкой безопасного онлайн-кошелька с непревзойденной безопасностью, быстрыми транзакциями и гибкостью альтернативных методов оплаты.",
+                },
+                fr: {
+                    cryptoTitle1: "Simplifiez Vos Transactions En Crypto et En Livre Turque",
+                    cryptoText1: "Découvrez l'avenir des paiements numériques avec 13 principales cryptomonnaies et la Livre Turque.",
+                    cryptoText2: "Profitez d'un support de portefeuille en ligne sécurisé avec une sécurité inégalée, des transactions rapides et la flexibilité des méthodes de paiement alternatives.",
+                },
+                ch: {
+                    cryptoTitle1: "简化您的加密货币和土耳其里拉交易",
+                    cryptoText1: "通过 13 种领先的加密货币和土耳其里拉探索数字支付的未来。",
+                    cryptoText2: "利用无与伦比的安全性、快速交易以及灵活的替代支付方式，享受安全的在线钱包支持。",
+                },
+                it: {
+                    cryptoTitle1: "Semplifica Le Tue Transazioni In Cripto E Lira Turca",
+                    cryptoText1: "Scopri il futuro dei pagamenti digitali con 13 principali criptovalute e la Lira Turca.",
+                    cryptoText2: "Approfitta del supporto sicuro del portafoglio online con sicurezza senza pari, transazioni rapide e flessibilità nei metodi di pagamento alternativi.",
+                },
+                ar: {
+                    cryptoTitle1: "تبسيط معاملاتك بالعملات المشفرة والليرة التركية",
+                    cryptoText1: "اكتشف مستقبل المدفوعات الرقمية مع 13 من العملات المشفرة الرائدة والليرة التركية.",
+                    cryptoText2: "استفد من دعم المحفظة عبر الإنترنت الآمن مع أمان لا مثيل له، معاملات سريعة ومرونة في طرق الدفع البديلة.",
+                },
+            };
+
+            const sliderItems = ["https://jackbomcom.github.io/assets/images/3vcz7twm29jy8qgb.webp", "https://jackbomcom.github.io/assets/images/8q7x29pmauwhc65e.webp", "https://jackbomcom.github.io/assets/images/c59qb7g36yxmtsrf.webp", "https://jackbomcom.github.io/assets/images/hzemdpc65usfy4q9.webp", "https://jackbomcom.github.io/assets/images/jwpxta3e9z58m42c.webp", "https://jackbomcom.github.io/assets/images/mfphk8n5y3erc7tb.webp", "https://jackbomcom.github.io/assets/images/nuxbpea24j837ymh.webp", "https://jackbomcom.github.io/assets/images/s9e5cnm6rj842qyd.webp", "https://jackbomcom.github.io/assets/images/uwp3bjn8a5x6qftv.webp", "https://jackbomcom.github.io/assets/images/w63gf598hxv2kjar.webp", "https://jackbomcom.github.io/assets/images/wbynvfmzq82ds93p.webp", "https://jackbomcom.github.io/assets/images/weh2ng7u6sk5pybt.webp", "https://jackbomcom.github.io/assets/images/yx62vs7k9fmjqpbe.webp"];
+
+            const sectionHtml = `
+        <div id="custom-section-5" class="section custom-section">
+          <div class="container">
+            <div class="landing position-relative rounded-4 overflow-hidden p-3 px-md-5 py-md-4">
+              <div class="landing-inner mx-auto position-relative p-4 p-xl-5">
+                <div class="row">
+                  <div class="col-12 col-lg-5 align-content-center">
+                    <div class="crypto-slider mx-auto">
+                      <div class="swiper">
+                        <div class="swiper-wrapper">
+                          ${sliderItems
+                .map(
+                    (image) => `
+                            <div class="swiper-slide">
+                              <a href="policy?tab=supported-crypto-and-currencies" class="d-block">
+                                <img class="w-100 h-100" src="${image}" alt="Slider Image">
+                              </a>
+                            </div>
+                          `
+                )
+                .join("")}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-7 ps-auto ps-lg-5 mt-5 mt-lg-0 align-content-center">
+                    <div class="details">
+                      <h1 class="mb-4 mb-lg-5 fw-bold text-center text-sm-start lh-sm">${contentMap[language].cryptoTitle1}</h1>
+                      <p class="second-text mb-0 mb-sm-3 mb-lg-4 fs-5 text-center text-sm-start text-white text-opacity-75">${contentMap[language].cryptoText1}</p>
+                      <p class="mb-0 d-none d-sm-block text-white text-opacity-75">${contentMap[language].cryptoText2}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+            const section = await waitForElement(".section.section--first");
+            section.after(sectionHtml);
+
+            new Swiper("#custom-section-5 .swiper", {
+                effect: "cards",
+                grabCursor: true,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+            });
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingInitCryptoSlider = false;
+        }
+    };
+
     // Id: 6 (Grid cards)
     let isProcessingInitGridCards = false;
     const initGridCards = async (isUserLoggedIn) => {
