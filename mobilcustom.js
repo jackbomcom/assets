@@ -1794,7 +1794,7 @@
             const isBonusRequestPage = currentPath.includes("/bonus-request");
             const isSettingsPage = currentPath.includes("/settings");
             const isTvPage = currentPath.includes("/tv");
-
+            const isBigWinsPage = currentPath.includes("/big-wins");
 
             $("#body").removeClass("page--home page--promo page--single-promo page--single-blog page--sports page--vip lang--tr lang--en page--casino page--bonus-request page--settings page--tv page--bigwins");
             await customizeSidebar(isMobile, isHomePage, isUserLoggedIn);
@@ -1803,18 +1803,18 @@
                 $("#body").addClass("page--home");
 
                 $(".custom-section").remove();
-                //await initMainSlider(isMobile);
+                await initMainSlider(isMobile);
                 //if (typeof window.userVipState === "object")
                 //await initVipStatus(isUserLoggedIn);
-                //await initGamesLanding(isUserLoggedIn);
-                //await initGridBoxes(isMobile, isUserLoggedIn);
-                //await initRegisterLanding(isMobile, isUserLoggedIn);
-               // await initFullBanner(isMobile, isUserLoggedIn);
-                //await initCryptoSlider(isUserLoggedIn);
+                await initGamesLanding(isUserLoggedIn);
+                await initGridBoxes(isMobile, isUserLoggedIn);
+                await initRegisterLanding(isMobile, isUserLoggedIn);
+                await initFullBanner(isMobile, isUserLoggedIn);
+                await initCryptoSlider(isUserLoggedIn);
                 //await initGridCards(isUserLoggedIn);
-                //await initLeaguesSlider(isUserLoggedIn);
-                //await initGameChooser(isUserLoggedIn, isMobile);
-                //await hideOldSections(isUserLoggedIn);
+                await initLeaguesSlider(isUserLoggedIn);
+                await initGameChooser(isUserLoggedIn, isMobile);
+                await hideOldSections(isUserLoggedIn);
 
                 $('.section__title use[href*="big-win"]').parents(".section").addClass("big-wins");
 
