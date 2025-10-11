@@ -577,114 +577,67 @@
     let isProcessingInitVipStatus = false;
 
     //işlevsiz
-    const initVipStatus = async (isUserLoggedIn) => {
-        if (isProcessingInitVipStatus) return;
-        isProcessingInitVipStatus = true;
+
+    // Id: 3 (Full banner)
+    let isProcessingInitFullBanner = false;
+    const initFullBanner = async (isMobile, isUserLoggedIn) => {
+        if (isProcessingInitFullBanner) return;
+        isProcessingInitFullBanner = true;
 
         try {
-            if ($("#custom-section-2").length) $("#custom-section-2").remove();
-            if (!isUserLoggedIn) return;
+            if ($("#custom-section-3").length) $("#custom-section-3").remove();
 
-            await waitForElement('.section:not(.custom-section) #next-rank img[src]:not([src=""])');
-
-            // const vipStatusClone = $('.section:not(.custom-section) .hero--user-id').first().clone(true, true);
-            const enCasinoImage = "https://jackbomcom.github.io/assets/images/s6mqxbg9ph5ev4yd.webp";
-            const enSportsImage = "https://jackbomcom.github.io/assets/images/y7psk8ztf6wud4r9.webp";
-            const trSportsImage = "https://jackbomcom.github.io/assets/images/bts3ymzq58g6w7cr.webp";
             const language = window.localStorage.language;
-            const state = window.userVipState;
 
-            const formatTimestamp = (timestamp) => {
-                const date = new Date(timestamp * 1000);
-                date.setHours(date.getHours() + 3);
-                const months = ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"];
-                return `${months[date.getMonth()]} ${date.getDate()} ${date.getFullYear().toString().slice(-2)}`;
+            const imageMap = {
+                ar: {
+                    mobile: "https://jackbomcom.github.io/assets/images/ar_mobile.gif",
+                    web: "https://jackbomcom.github.io/assets/images/ar_web.gif",
+                },
+                ch: {
+                    mobile: "https://jackbomcom.github.io/assets/images/ch_mobile.gif",
+                    web: "https://jackbomcom.github.io/assets/images/ch_web.gif",
+                },
+                fr: {
+                    mobile: "https://jackbomcom.github.io/assets/images/fr_mobile.gif",
+                    web: "https://jackbomcom.github.io/assets/images/fr_web.gif",
+                },
+                it: {
+                    mobile: "https://jackbomcom.github.io/assets/images/it_mobile.gif",
+                    web: "https://jackbomcom.github.io/assets/images/it_web.gif",
+                },
+                ru: {
+                    mobile: "https://jackbomcom.github.io/assets/images/ru_mobile.gif",
+                    web: "https://jackbomcom.github.io/assets/images/ru_web.gif",
+                },
+                en: {
+                    mobile: "https://jackbomcom.github.io/assets/images/6gvfrjzsc5u4n8ha.gif",
+                    web: "https://jackbomcom.github.io/assets/images/rqawmp69bsv5thux.gif",
+                },
+                tr: {
+                    mobile: "https://jackbomcom.github.io/assets/images/24cjrkhd7xqwps9z.gif",
+                    web: "https://jackbomcom.github.io/assets/images/rpxd3f27nzqew695.gif",
+                },
             };
-            const registration = formatTimestamp(state.registration);
 
+            const selected = isMobile ? imageMap[language].mobile : imageMap[language].web;
             const sectionHtml = `
-				<div id="custom-section-2" class="section custom-section">
-					<div class="container">
-						<div class="landing position-relative rounded-4 overflow-hidden py-3 py-md-5">
-							<div class="landing-inner position-relative">
-								<div class="row">
-									<div class="col-12 col-sm-6 align-content-center">
-										<div class="progress-wrapper home-progress container" id="vip-user-progress">
-											<div class="modal__profile">
-												<div class="d-flex align-items-center gap-2">
-													<div class="modal__icon">
-														<span id="current-rank">
-															<img loading="lazy" src="${state.current.icon}" alt="${state.current.name}" class="rank-icon">
-														</span>
-													</div>
-													<div class="modal__user">
-														<p>${state.username}</p>
-														<span>${registration}</span>
-													</div>
-												</div>
-											</div>
-											<div class="modal__progress">
-												<div class="modal__progress-text">
-													<span>VIP ${language === "tr" ? "İlerlemesi" : "Progress"}</span>
-													<span>${state.percentage}%</span>
-												</div>
-												<div class="modal__progress-bar">
-													<span style="width: ${state.percentage}%;"></span>
-												</div>
-												<div class="modal__progress-text modal__progress-text--white">
-													<span class="d-flex align-items-center gap-2">
-														<span id="now2-rank" class="d-flex gap-2">
-															<img loading="lazy" src="${state.current.icon}" alt="${state.current.name}" class="rank-icon">
-															<span>${state.current.name}</span>
-														</span>
-													</span>
-													<span class="d-flex align-items-center gap-2">
-														<span id="next-rank" class="d-flex gap-2">
-															<span>${state.next.name}</span>
-															<img loading="lazy" src="${state.next.icon}" alt="${state.next.name}" class="rank-icon">
-														</span>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-12 col-sm-6 align-content-center mt-4 mt-sm-0 px-4 px-sm-auto">
-										<div class="row">
-											<div class="col-6 align-content-center">
-												<a href="javascript:void(0);" class="d-block card rounded-4 border-0 ms-auto" data-href="casino">
-													<img class="card-img w-100 h-100 pe-none" src="${enCasinoImage}" alt="Casino">
-												</a>
-											</div>
-											<div class="col-6 align-content-center">
-												<a href="javascript:void(0);" class="d-block card rounded-4 border-0 me-auto" data-href="sportsbook">
-													<img class="card-img w-100 h-100 pe-none" src="${language === "tr" ? trSportsImage : enSportsImage}" alt="Sportsbook">
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			`;
+        <div id="custom-section-3" class="section custom-section">
+          <div class="container">
+            <img class="pe-none w-100 h-100 rounded-3" src="${selected}" alt="Banner">
+          </div>
+        </div>
+      `;
 
-            $(document).on("click", "#custom-section-2 .card", function () {
-                $(`.sidebar__link[href*="/${$(this).data("href")}"]`)[0].click();
-            });
-
-            const section = await waitForElement("#custom-section-1");
-            section.after(sectionHtml);
-            // $('#custom-section-2 .vip-status').append(vipStatusClone);
+            const section = await waitForElement(isUserLoggedIn ? ".section.pt-24:not(.mini-slider)" : ".section.section--first");
+            section.before(sectionHtml);
         } catch (error) {
             console.error(error);
         } finally {
-            isProcessingInitVipStatus = false;
+            isProcessingInitFullBanner = false;
         }
     };
 
-    // Id: 3 (Full banner)
-  
     // Id: 4 (Casino and sports landing)
     let isProcessingInitGamesLanding = false;
     const initGamesLanding = async (isUserLoggedIn) => {
