@@ -744,118 +744,237 @@
         }
     };
 
+    // işlevsiz
     // Id: 4 (Casino and sports landing)
-    
-
-    // Id: 5 (Crypto slider)
-    let isProcessingInitCryptoSlider = false;
-    const initCryptoSlider = async (isUserLoggedIn) => {
-        if (isProcessingInitCryptoSlider) return;
-        isProcessingInitCryptoSlider = true;
+    let isProcessingInitGamesLanding = false;
+    const initGamesLanding = async (isUserLoggedIn) => {
+        if (isProcessingInitGamesLanding) return;
+        isProcessingInitGamesLanding = true;
 
         try {
-            if ($("#custom-section-5").length) $("#custom-section-5").remove();
+            if ($("#custom-section-4").length) $("#custom-section-4").remove();
             if (isUserLoggedIn) return;
 
             const language = window.localStorage.language;
 
             const contentMap = {
                 tr: {
-                    cryptoTitle1: "Kripto ve Türk Lirası İşlemlerinizi Kolaylaştırın",
-                    cryptoText1: "13 lider kripto para ve Türk Lirası ile dijital ödemelerin geleceğini keşfedin.",
-                    cryptoText2: "Eşsiz güvenlik, hızlı işlemler ve alternatif ödeme yöntemlerinin esnekliği ile güvenli bir çevrim içi cüzdan desteğinden faydalanın.",
+                    casinoText1: "Binlerce heyecan verici oyunla büyük kazançlara ulaşmanın sayısız yolu.",
+                    casinoIcon1: "Yeni Çıkanlar",
+                    casinoIcon2: "Yüksek RTP",
+                    casinoIcon3: "Canlı Casino",
+                    casinoIcon4: "Turnuvalar",
+                    casinoButton: "Casino Bölümünü Keşfedin",
+                    sportsText1: "Spor dünyasının en büyük anlarına bahis yaparak oyunun bir parçası olun.",
+                    sportsIcon1: "Spor",
+                    sportsIcon2: "Espor",
+                    sportsIcon3: "Canlı Yayınlar",
+                    sportsIcon4: "Artırılmış Oranlar",
+                    sportsButton: "Sporlar Bölümünü Keşfedin",
                 },
                 en: {
-                    cryptoTitle1: "Simplify Your Crypto and Turkish Lira Transactions",
-                    cryptoText1: "Discover the future of digital payments with 13 leading cryptocurrencies and the Turkish Lira.",
-                    cryptoText2: "Benefit from secure online wallet support with unparalleled security, fast transactions, and the flexibility of alternative payment methods.",
+                    casinoText1: "Countless ways to achieve big wins with thousands of exciting games.",
+                    casinoIcon1: "New Releases",
+                    casinoIcon2: "High RTP",
+                    casinoIcon3: "Live Casino",
+                    casinoIcon4: "Tournaments",
+                    casinoButton: "Explore the Casino Section",
+                    sportsText1: "Be part of the game by betting on the biggest moments in sports.",
+                    sportsIcon1: "Sports",
+                    sportsIcon2: "Esports",
+                    sportsIcon3: "Live Streams",
+                    sportsIcon4: "Boosted Odds",
+                    sportsButton: "Explore the Sports Section",
                 },
                 ru: {
-                    cryptoTitle1: "Упростите операции с криптовалютой и турецкой лирой",
-                    cryptoText1: "Откройте для себя будущее цифровых платежей с 13 ведущими криптовалютами и турецкой лирой.",
-                    cryptoText2: "Воспользуйтесь поддержкой безопасного онлайн-кошелька с непревзойденной безопасностью, быстрыми транзакциями и гибкостью альтернативных методов оплаты.",
+                    casinoText1: "Бесчисленные способы получить крупные выигрыши в тысячах захватывающих игр.",
+                    casinoIcon1: "Новые Выпуски",
+                    casinoIcon2: "Высокий RTP",
+                    casinoIcon3: "Живое Казино",
+                    casinoIcon4: "Турниры",
+                    casinoButton: "Исследуйте Раздел Казино",
+                    sportsText1: "Станьте частью игры, делая ставки на крупнейшие моменты в спорте.",
+                    sportsIcon1: "Спорт",
+                    sportsIcon2: "Киберспорт",
+                    sportsIcon3: "Прямые Трансляции",
+                    sportsIcon4: "Повышенные Коэффициенты",
+                    sportsButton: "Исследуйте Раздел Спорта",
                 },
                 fr: {
-                    cryptoTitle1: "Simplifiez Vos Transactions En Crypto et En Livre Turque",
-                    cryptoText1: "Découvrez l'avenir des paiements numériques avec 13 principales cryptomonnaies et la Livre Turque.",
-                    cryptoText2: "Profitez d'un support de portefeuille en ligne sécurisé avec une sécurité inégalée, des transactions rapides et la flexibilité des méthodes de paiement alternatives.",
+                    casinoText1: "D'innombrables façons de remporter de gros gains avec des milliers de jeux passionnants.",
+                    casinoIcon1: "Nouveautés",
+                    casinoIcon2: "RTP Élevé",
+                    casinoIcon3: "Casino En Direct",
+                    casinoIcon4: "Tournois",
+                    casinoButton: "Explorer la Section Casino",
+                    sportsText1: "Faites partie du jeu en pariant sur les plus grands moments du sport.",
+                    sportsIcon1: "Sports",
+                    sportsIcon2: "Esports",
+                    sportsIcon3: "Diffusions En Direct",
+                    sportsIcon4: "Cotes Améliorées",
+                    sportsButton: "Explorer la Section Sports",
                 },
                 ch: {
-                    cryptoTitle1: "简化您的加密货币和土耳其里拉交易",
-                    cryptoText1: "通过 13 种领先的加密货币和土耳其里拉探索数字支付的未来。",
-                    cryptoText2: "利用无与伦比的安全性、快速交易以及灵活的替代支付方式，享受安全的在线钱包支持。",
+                    casinoText1: "通过数千种刺激的游戏赢得丰厚奖金的无数方式。",
+                    casinoIcon1: "新发布",
+                    casinoIcon2: "高RTP",
+                    casinoIcon3: "真人赌场",
+                    casinoIcon4: "锦标赛",
+                    casinoButton: "探索赌场部分",
+                    sportsText1: "通过投注体育界的重大时刻成为比赛的一部分。",
+                    sportsIcon1: "体育",
+                    sportsIcon2: "电子竞技",
+                    sportsIcon3: "现场直播",
+                    sportsIcon4: "增强赔率",
+                    sportsButton: "探索体育部分",
                 },
                 it: {
-                    cryptoTitle1: "Semplifica Le Tue Transazioni In Cripto E Lira Turca",
-                    cryptoText1: "Scopri il futuro dei pagamenti digitali con 13 principali criptovalute e la Lira Turca.",
-                    cryptoText2: "Approfitta del supporto sicuro del portafoglio online con sicurezza senza pari, transazioni rapide e flessibilità nei metodi di pagamento alternativi.",
+                    casinoText1: "Innumerevoli modi per ottenere grandi vincite con migliaia di giochi emozionanti.",
+                    casinoIcon1: "Nuove Uscite",
+                    casinoIcon2: "RTP Elevato",
+                    casinoIcon3: "Casinò Dal Vivo",
+                    casinoIcon4: "Tornei",
+                    casinoButton: "Esplora la Sezione Casinò",
+                    sportsText1: "Fai parte del gioco scommettendo sui momenti più importanti dello sport.",
+                    sportsIcon1: "Sport",
+                    sportsIcon2: "Esports",
+                    sportsIcon3: "Streaming Dal Vivo",
+                    sportsIcon4: "Quote Maggiorate",
+                    sportsButton: "Esplora la Sezione Sport",
                 },
                 ar: {
-                    cryptoTitle1: "تبسيط معاملاتك بالعملات المشفرة والليرة التركية",
-                    cryptoText1: "اكتشف مستقبل المدفوعات الرقمية مع 13 من العملات المشفرة الرائدة والليرة التركية.",
-                    cryptoText2: "استفد من دعم المحفظة عبر الإنترنت الآمن مع أمان لا مثيل له، معاملات سريعة ومرونة في طرق الدفع البديلة.",
+                    casinoText1: "طرق لا حصر لها لتحقيق مكاسب كبيرة مع آلاف الألعاب المثيرة.",
+                    casinoIcon1: "الإصدارات الجديدة",
+                    casinoIcon2: "RTP مرتفع",
+                    casinoIcon3: "كازينو مباشر",
+                    casinoIcon4: "البطولات",
+                    casinoButton: "استكشف قسم الكازينو",
+                    sportsText1: "كن جزءًا من اللعبة عن طريق المراهنة على أكبر لحظات الرياضة.",
+                    sportsIcon1: "الرياضة",
+                    sportsIcon2: "الرياضات الإلكترونية",
+                    sportsIcon3: "البث المباشر",
+                    sportsIcon4: "احتمالات محسنة",
+                    sportsButton: "استكشف قسم الرياضة",
                 },
             };
 
-            const sliderItems = ["https://jackbomcom.github.io/assets/images/3vcz7twm29jy8qgb.webp", "https://jackbomcom.github.io/assets/images/8q7x29pmauwhc65e.webp", "https://jackbomcom.github.io/assets/images/c59qb7g36yxmtsrf.webp", "https://jackbomcom.github.io/assets/images/hzemdpc65usfy4q9.webp", "https://jackbomcom.github.io/assets/images/jwpxta3e9z58m42c.webp", "https://jackbomcom.github.io/assets/images/mfphk8n5y3erc7tb.webp", "https://jackbomcom.github.io/assets/images/nuxbpea24j837ymh.webp", "https://jackbomcom.github.io/assets/images/s9e5cnm6rj842qyd.webp", "https://jackbomcom.github.io/assets/images/uwp3bjn8a5x6qftv.webp", "https://jackbomcom.github.io/assets/images/w63gf598hxv2kjar.webp", "https://jackbomcom.github.io/assets/images/wbynvfmzq82ds93p.webp", "https://jackbomcom.github.io/assets/images/weh2ng7u6sk5pybt.webp", "https://jackbomcom.github.io/assets/images/yx62vs7k9fmjqpbe.webp"];
+            const casinoImage = "https://jackbomcom.github.io/assets/images/4w85hndbspgjxrqc.webp";
+            const sportsImage = "https://jackbomcom.github.io/assets/images/7xmhb6qu3prt4sza.webp";
 
             const sectionHtml = `
-        <div id="custom-section-5" class="section custom-section">
+        <div id="custom-section-4" class="section custom-section">
           <div class="container">
-            <div class="landing position-relative rounded-4 overflow-hidden p-3 px-md-5 py-md-4">
-              <div class="landing-inner mx-auto position-relative p-4 p-xl-5">
-                <div class="row">
-                  <div class="col-12 col-lg-5 align-content-center">
-                    <div class="crypto-slider mx-auto">
-                      <div class="swiper">
-                        <div class="swiper-wrapper">
-                          ${sliderItems
-                .map(
-                    (image) => `
-                            <div class="swiper-slide">
-                              <a href="policy?tab=supported-crypto-and-currencies" class="d-block">
-                                <img class="w-100 h-100" src="${image}" alt="Slider Image">
-                              </a>
-                            </div>
-                          `
-                )
-                .join("")}
-                        </div>
+            <div class="position-relative m-auto mt-lg-4">
+              <div class="landing casino overflow-hidden position-relative rounded-4 p-3 px-md-5 py-md-4">
+                <div class="landing-inner position-relative text-white p-2 p-sm-4">
+                  <div class="d-block mb-2 mb-sm-3 mb-lg-5">
+                    <h1 class="fw-bold lh-sm mb-0">${contentMap[language].casinoText1}</h1>
+                  </div>
+                  <div class="d-block">
+                    <div class="landing-image-mobile mx-auto d-block d-lg-none">
+                      <img class="w-100 h-100" src="${casinoImage}" alt="Casino Character">
+                    </div>
+                    <div class="details px-4 py-3 rounded-3 d-flex justify-content-start justify-content-md-evenly gap-3 gap-md-4 overflow-x-scroll mb-4 mb-sm-5 flex-wrap flex-sm-nowrap">
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-fire fs-2"></i>
+                        <a href="casino/group/new-releases" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].casinoIcon1}</span>
+                        </a>
+                      </div>
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-rocket fs-2"></i>
+                        <a href="casino/group/enhanced-rtp" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].casinoIcon2}</span>
+                        </a>
+                      </div>
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-dice fs-2"></i>
+                        <a href="live-casino" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].casinoIcon3}</span>
+                        </a>
+                      </div>
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-trophy fs-2"></i>
+                        <a href="tournaments" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].casinoIcon4}</span>
+                        </a>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 col-lg-7 ps-auto ps-lg-5 mt-5 mt-lg-0 align-content-center">
-                    <div class="details">
-                      <h1 class="mb-4 mb-lg-5 fw-bold text-center text-sm-start lh-sm">${contentMap[language].cryptoTitle1}</h1>
-                      <p class="second-text mb-0 mb-sm-3 mb-lg-4 fs-5 text-center text-sm-start text-white text-opacity-75">${contentMap[language].cryptoText1}</p>
-                      <p class="mb-0 d-none d-sm-block text-white text-opacity-75">${contentMap[language].cryptoText2}</p>
-                    </div>
+                  <div class="d-block text-end text-lg-start pt-2 pt-sm-0">
+                    <a href="javascript:void(0);" class="landing-button d-inline-block align-middle rounded-3 text-center" data-href="casino">${contentMap[language].casinoButton}</a>
                   </div>
                 </div>
+              </div>
+              <div class="landing-image position-absolute bottom-0 ps-4 pt-4 d-none d-lg-block">
+                <img class="w-100 h-100 pe-none" src="${casinoImage}" alt="Casino Character">
+              </div>
+            </div>
+            <div class="position-relative m-auto mt-lg-5">
+              <div class="landing sports overflow-hidden position-relative rounded-4 p-3 px-md-5 py-md-4 mt-4">
+                <div class="landing-inner position-relative text-white p-2 p-sm-4">
+                  <div class="d-block mb-2 mb-sm-3 mb-lg-5">
+                    <h1 class="fw-bold lh-sm mb-0">${contentMap[language].sportsText1}</h1>
+                  </div>
+                  <div class="d-block">
+                    <div class="landing-image-mobile mx-auto d-block d-lg-none">
+                      <img class="w-100 h-100" src="${sportsImage}" alt="Sports Character">
+                    </div>
+                    <div class="details px-4 py-3 rounded-3 d-flex justify-content-start justify-content-md-evenly gap-3 gap-md-4 overflow-x-scroll mb-4 mb-sm-5 flex-wrap flex-sm-nowrap">
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-futbol fs-2"></i>
+                        <a href="sportsbook/sports" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].sportsIcon1}</span>
+                        </a>
+                      </div>
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-gamepad fs-2"></i>
+                        <a href="sportsbook" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].sportsIcon2}</span>
+                        </a>
+                      </div>
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-play-circle fs-2"></i>
+                        <a href="sportsbook/live-betting" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].sportsIcon3}</span>
+                        </a>
+                      </div>
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-bolt fs-2"></i>
+                        <a href="sportsbook" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].sportsIcon4}</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-block text-end text-lg-start pt-2 pt-sm-0">
+                    <a href="javascript:void(0);" class="landing-button d-inline-block align-middle rounded-3 text-center" data-href="sportsbook">${contentMap[language].sportsButton}</a>
+                  </div>
+                </div>
+              </div>
+              <div class="landing-image position-absolute bottom-0 ps-4 pt-4 d-none d-lg-block">
+                <img class="w-100 h-100 pe-none" src="${sportsImage}" alt="Sports Character">
               </div>
             </div>
           </div>
         </div>
       `;
-            const section = await waitForElement(".section.section--first");
-            section.after(sectionHtml);
 
-            new Swiper("#custom-section-5 .swiper", {
-                effect: "cards",
-                grabCursor: true,
-                loop: true,
-                autoplay: {
-                    delay: 2000,
-                    disableOnInteraction: false,
-                },
+            $(document).on("click", "#custom-section-4 .landing-button", function () {
+                $(`.sidebar__link[href*="/${$(this).data("href")}"]`)[0].click();
             });
+
+            const section = await waitForElement(".section.pt-24:not(.mini-slider)");
+            section.before(sectionHtml);
         } catch (error) {
             console.error(error);
         } finally {
-            isProcessingInitCryptoSlider = false;
+            isProcessingInitGamesLanding = false;
         }
     };
 
+    // Id: 5 (Crypto slider)
+   
     // Id: 6 (Grid cards)
     let isProcessingInitGridCards = false;
     const initGridCards = async (isUserLoggedIn) => {
