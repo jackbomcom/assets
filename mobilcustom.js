@@ -1143,117 +1143,63 @@
 
     // Id: 7 (Buttons customization)
 
-    // Id: 8 (Leagues slider & default sports slider fix)
-    let isProcessingInitLeaguesSlider = false;
-    const initLeaguesSlider = async (isUserLoggedIn) => {
-        if (isProcessingInitLeaguesSlider) return;
-        isProcessingInitLeaguesSlider = true;
+    //işlevsiz
+    let isProcessingCustomizeButtons = false;
+    const customizeButtons = async (pageType) => {
+        if (isProcessingCustomizeButtons) return;
+        isProcessingCustomizeButtons = true;
 
         try {
-            if ($("#custom-section-8").length) $("#custom-section-8").remove();
+            if ($("#custom-section-7").length) $("#custom-section-7").remove();
 
             const language = window.localStorage.language;
 
             const contentMap = {
                 tr: {
-                    topLeagues: "Popüler Ligler",
+                    backButton: "Geri",
                 },
                 en: {
-                    topLeagues: "Top Leagues",
+                    backButton: "Back",
                 },
                 ru: {
-                    topLeagues: "Популярные Лиги",
+                    backButton: "Назад",
                 },
                 fr: {
-                    topLeagues: "Ligues Populaires",
+                    backButton: "Retour",
                 },
                 ch: {
-                    topLeagues: "热门联赛",
+                    backButton: "返回",
                 },
                 it: {
-                    topLeagues: "Campionati Popolari",
+                    backButton: "Indietro",
                 },
                 ar: {
-                    topLeagues: "الدوريات الشعبية",
+                    backButton: "رجوع",
                 },
             };
 
-            const sliderItems = ["https://jackbomcom.github.io/assets/images/6swd2ajqm37yx98v.webp", "https://jackbomcom.github.io/assets/images/64uxfac9d5m7zqtj.webp", "https://jackbomcom.github.io/assets/images/f824ng3wscv95db6.webp", "https://jackbomcom.github.io/assets/images/ga5e3cnrus6q92yy.webp", "https://jackbomcom.github.io/assets/images/n8z3fey47a9cwhms.webp", "https://jackbomcom.github.io/assets/images/s6neqp9v4fkhx5m3.webp", "https://jackbomcom.github.io/assets/images/s8qd52g97pjzkucn.webp", "https://jackbomcom.github.io/assets/images/ths5fm4793v2eqk6.webp", "https://jackbomcom.github.io/assets/images/tqumhcs28j7bk5vg.webp", "https://jackbomcom.github.io/assets/images/v8b3mzanf7c6s9xd.webp"];
-
-            const iconLink = $('.sidebar__big use[href*="homepage"]').attr("href").replace("#homepage", "#");
             const sectionHtml = `
-				<div id="custom-section-8" class="section custom-section">
-					<div class="container">
-						<div class="col-12">
-							<h2 class="section__title">
-								<svg class="svg-icon">
-									<use href="${iconLink}sportsbook2"></use>
-								</svg>
-								${contentMap[language].topLeagues}
-							</h2>
-						</div>
-						<div class="swiper">
-							<div class="swiper-wrapper">
-								${sliderItems
-                .map(
-                    (image) => `
-									<div class="swiper-slide">
-										<a href="sportsbook" class="d-block rounded-4 league">
-											<img class="slider-img w-100 h-100" src="${image}" alt="Slider Image">
-										</a>
-									</div>
-								`
-                )
-                .join("")}
-							</div>
-						</div>
-					</div>
-				</div>
-			`;
-            const section = isUserLoggedIn ? await waitForElement(".section.section--last") : await waitForElement("#custom-section-3");
-            section.after(sectionHtml);
+        <div id="custom-section-7" class="custom-section">
+          <div class="mb-4">
+            <a href="javascript:void(0);" class="back-button d-inline-block rounded-3 border align-content-center">${contentMap[language].backButton}</a>
+          </div>
+        </div>
+      `;
 
-            new Swiper("#custom-section-8 .swiper", {
-                loop: true,
-                autoplay: {
-                    delay: 3000,
-                    disableOnInteraction: false,
-                },
-                slidesPerView: 5,
-                spaceBetween: 24,
-                breakpoints: {
-                    0: {
-                        slidesPerView: 2,
-                        spaceBetween: 8,
-                    },
-                    576: {
-                        slidesPerView: 3,
-                        spaceBetween: 8,
-                    },
-                    992: {
-                        slidesPerView: 4,
-                        spaceBetween: 24,
-                    },
-                    1200: {
-                        slidesPerView: 5,
-                        spaceBetween: 24,
-                    },
-                },
+            $(document).on("click", ".back-button", function () {
+                $(`.sidebar__big a[href*="/${pageType}"]`)[0].click();
             });
 
-            if ($(window).width() >= 1200) {
-                await waitForSwiper("#mini-sportsbook-wrapper .mySwiper");
-                const sportsSlider = $("#mini-sportsbook-wrapper .mySwiper")[0].swiper;
-
-                sportsSlider.params.slidesPerView = 7;
-                sportsSlider.update();
-            }
+            await waitForElement(".content__main");
+            $(".section--first .align-self-center").prepend(sectionHtml);
         } catch (error) {
             console.error(error);
         } finally {
-            isProcessingInitLeaguesSlider = false;
+            isProcessingCustomizeButtons = false;
         }
     };
+
+    // Id: 8 (Leagues slider & default sports slider fix)
 
     // Id: 9 (Grid boxes)
     let isProcessingInitGridBoxes = false;
