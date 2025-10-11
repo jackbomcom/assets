@@ -1119,23 +1119,7 @@
             }));
 
             const sectionHtml = `
-        <div id="custom-section-6" class="section custom-section">
-          <div class="container">
-            <div class="card-grid d-flex flex-column flex-md-row gap-2 gap-md-4">
-              ${versionedCardItems
-                .map(
-                    (item, index) => `
-                <div class="card overflow-hidden position-relative rounded-4 w-100 border-0">
-                  <a href="${item.url}" class="d-block" ${index === 2 ? 'target="_blank"' : ""}>
-                    <img class="object-fit-cover w-100 h-100 position-absolute top-0 start-0" src="${item.image}" alt="Card Image">
-                  </a>
-                </div>
-              `
-                )
-                .join("")}
-            </div>
-          </div>
-        </div>
+        
       `;
 
             const section = await waitForElement(".section.section--last");
