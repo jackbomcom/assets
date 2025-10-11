@@ -488,118 +488,94 @@
         if (isProcessingInitMainSlider) return;
         isProcessingInitMainSlider = true;
 
-        //slider
+        //işlevsiz
 
-      
+        try {
+            if ($("#custom-section-1").length) $("#custom-section-1").remove();
+
+            const language = window.localStorage.language;
+            const mainContent = await waitForElement("#main__content");
+
+            window.sliderItems = window.sliderItems || {};
+
+            if (!window.sliderItems[language] || !window.sliderItems[language].length) {
+                await waitForSwiper("#main-slider .mySwiper", language);
+                const sliderItems = $("#main-slider .mySwiper")[0].swiper.slides;
+
+                sliderItems.forEach((e) => {
+                    e.innerHTML = e.innerHTML.replace(/href="\/[a-z]{2}https/g, 'href="https');
+                    if (e.innerHTML.includes('<a href="http')) {
+                        e.innerHTML = e.innerHTML.replace("<a href=", '<a target="_blank" href=');
+                    }
+                    if (e.innerHTML.includes('<a href="/tr"') || e.innerHTML.includes('<a href="/en"')) {
+                        e.innerHTML = e.innerHTML.replace('<a href="', '<a href="javascript:void(0);"');
+                    }
+                });
+
+                const sortedSliderItems = [...sliderItems].sort((a, b) => {
+                    const indexA = parseInt(a.dataset.swiperSlideIndex) || 0;
+                    const indexB = parseInt(b.dataset.swiperSlideIndex) || 0;
+                    return indexB - indexA;
+                });
+
+                window.sliderItems[language] = sortedSliderItems;
+            }
+            const selectedSliderItems = window.sliderItems[language];
+
+            const sectionHtml = `
+				<div id="custom-section-1" class="section custom-section">
+					<div class="container">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								${selectedSliderItems
+                .map(
+                    (item) => `
+									<div class="swiper-slide">
+										${item.innerHTML}
+									</div>
+								`
+                )
+                .join("")}
+							</div>
+							<div class="swiper-button-next swiper-button rounded-3 opacity-25"></div>
+							<div class="swiper-button-prev swiper-button rounded-3 opacity-25"></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			`;
+            mainContent.prepend(sectionHtml);
+
+            new Swiper("#custom-section-1 .swiper", {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                slidesPerView: !isMobile ? 2 : 1.2,
+                spaceBetween: !isMobile ? 20 : 15,
+                centeredSlides: !isMobile ? false : true,
+                pagination: {
+                    el: "#custom-section-1 .swiper-pagination",
+                    type: !isMobile ? "bullets" : "progressbar",
+                },
+                navigation: {
+                    prevEl: "#custom-section-1 .swiper-button-prev",
+                    nextEl: "#custom-section-1 .swiper-button-next",
+                },
+            });
+
+            document.querySelector("#main-slider").style.display = "none";
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingInitMainSlider = false;
+        }
     };
 
     // Id: 2 (Vip status / casino and sports cards)
     let isProcessingInitVipStatus = false;
-    const initVipStatus = async (isUserLoggedIn) => {
-        if (isProcessingInitVipStatus) return;
-        isProcessingInitVipStatus = true;
-
-        try {
-            if ($("#custom-section-2").length) $("#custom-section-2").remove();
-            if (!isUserLoggedIn) return;
-
-            await waitForElement('.section:not(.custom-section) #next-rank img[src]:not([src=""])');
-
-            // const vipStatusClone = $('.section:not(.custom-section) .hero--user-id').first().clone(true, true);
-            const enCasinoImage = "https://jackbomcom.github.io/assets/images/s6mqxbg9ph5ev4yd.webp";
-            const enSportsImage = "https://jackbomcom.github.io/assets/images/y7psk8ztf6wud4r9.webp";
-            const trSportsImage = "https://jackbomcom.github.io/assets/images/bts3ymzq58g6w7cr.webp";
-            const language = window.localStorage.language;
-            const state = window.userVipState;
-
-            const formatTimestamp = (timestamp) => {
-                const date = new Date(timestamp * 1000);
-                date.setHours(date.getHours() + 3);
-                const months = ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"];
-                return `${months[date.getMonth()]} ${date.getDate()} ${date.getFullYear().toString().slice(-2)}`;
-            };
-            const registration = formatTimestamp(state.registration);
-
-            const sectionHtml = `
-				<div id="custom-section-2" class="section custom-section">
-					<div class="container">
-						<div class="landing position-relative rounded-4 overflow-hidden py-3 py-md-5">
-							<div class="landing-inner position-relative">
-								<div class="row">
-									<div class="col-12 col-sm-6 align-content-center">
-										<div class="progress-wrapper home-progress container" id="vip-user-progress">
-											<div class="modal__profile">
-												<div class="d-flex align-items-center gap-2">
-													<div class="modal__icon">
-														<span id="current-rank">
-															<img loading="lazy" src="${state.current.icon}" alt="${state.current.name}" class="rank-icon">
-														</span>
-													</div>
-													<div class="modal__user">
-														<p>${state.username}</p>
-														<span>${registration}</span>
-													</div>
-												</div>
-											</div>
-											<div class="modal__progress">
-												<div class="modal__progress-text">
-													<span>VIP ${language === "tr" ? "İlerlemesi" : "Progress"}</span>
-													<span>${state.percentage}%</span>
-												</div>
-												<div class="modal__progress-bar">
-													<span style="width: ${state.percentage}%;"></span>
-												</div>
-												<div class="modal__progress-text modal__progress-text--white">
-													<span class="d-flex align-items-center gap-2">
-														<span id="now2-rank" class="d-flex gap-2">
-															<img loading="lazy" src="${state.current.icon}" alt="${state.current.name}" class="rank-icon">
-															<span>${state.current.name}</span>
-														</span>
-													</span>
-													<span class="d-flex align-items-center gap-2">
-														<span id="next-rank" class="d-flex gap-2">
-															<span>${state.next.name}</span>
-															<img loading="lazy" src="${state.next.icon}" alt="${state.next.name}" class="rank-icon">
-														</span>
-													</span>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="col-12 col-sm-6 align-content-center mt-4 mt-sm-0 px-4 px-sm-auto">
-										<div class="row">
-											<div class="col-6 align-content-center">
-												<a href="javascript:void(0);" class="d-block card rounded-4 border-0 ms-auto" data-href="casino">
-													<img class="card-img w-100 h-100 pe-none" src="${enCasinoImage}" alt="Casino">
-												</a>
-											</div>
-											<div class="col-6 align-content-center">
-												<a href="javascript:void(0);" class="d-block card rounded-4 border-0 me-auto" data-href="sportsbook">
-													<img class="card-img w-100 h-100 pe-none" src="${language === "tr" ? trSportsImage : enSportsImage}" alt="Sportsbook">
-												</a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			`;
-
-            $(document).on("click", "#custom-section-2 .card", function () {
-                $(`.sidebar__link[href*="/${$(this).data("href")}"]`)[0].click();
-            });
-
-            const section = await waitForElement("#custom-section-1");
-            section.after(sectionHtml);
-            // $('#custom-section-2 .vip-status').append(vipStatusClone);
-        } catch (error) {
-            console.error(error);
-        } finally {
-            isProcessingInitVipStatus = false;
-        }
-    };
+    
 
     // Id: 3 (Full banner)
     let isProcessingInitFullBanner = false;
