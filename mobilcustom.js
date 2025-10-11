@@ -1803,7 +1803,7 @@
                 $("#body").addClass("page--home");
 
                 $(".custom-section").remove();
-                await initMainSlider(isMobile);
+                //await initMainSlider(isMobile);
                 //if (typeof window.userVipState === "object")
                 //await initVipStatus(isUserLoggedIn);
                 //await initGamesLanding(isUserLoggedIn);
