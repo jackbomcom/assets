@@ -64,7 +64,7 @@
     })();
 
     document.getElementById("last-bets-wrapper").remove();
-    if ($("#swiper-wrapper").length) $("#custom-section-1").remove();
+    if ($("#swiper-wrapper").length) $("#swiper-wrapper").remove();
 
     const loadResource = (type, src) =>
         new Promise((resolve, reject) => {
