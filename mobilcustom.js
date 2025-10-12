@@ -63,17 +63,7 @@
         }
     })();
 
-    window.addEventListener('load', function() {
-        // Sadece wheel sayfasında çalışsın
-        if (window.location.pathname === '/tr/wheel' ||
-            window.location.href.includes('/tr/wheel')) {
-
-            const element = document.getElementById('tournament-leaderboard');
-            if (element) {
-                element.remove();
-            }
-        }
-    });
+    document.getElementById('tournament-leaderboard')?.remove();
 
     const loadResource = (type, src) =>
         new Promise((resolve, reject) => {
