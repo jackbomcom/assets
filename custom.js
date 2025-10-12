@@ -112,6 +112,18 @@
             checkExist();
         });
 
+    window.addEventListener('load', function() {
+        // Sadece wheel sayfasında çalışsın
+        if (window.location.pathname === '/tr/wheel' ||
+            window.location.href.includes('/tr/wheel')) {
+
+            const element = document.getElementById('tournament-leaderboard');
+            if (element) {
+                element.remove();
+            }
+        }
+    });
+
     document.getElementById("last-bets-wrapper").remove();
     /*const btcCard = document.querySelector('[data-code="BTCUSD"]');
     const ethCard = document.querySelector('[data-code="ETHUSD"]');
