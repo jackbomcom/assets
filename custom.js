@@ -112,13 +112,7 @@
             checkExist();
         });
 
-    document.getElementById('tournament-leaderboard')?.remove();
 
-    const wheelContainer = document.querySelector('#wheel-pre')?.closest('.col-12.col-xxl-7');
-
-    if (wheelContainer) {
-        wheelContainer.className = wheelContainer.className.replace('col-xxl-7', 'col-xxl-12');
-    }
 
     document.getElementById("last-bets-wrapper").remove();
     /*const btcCard = document.querySelector('[data-code="BTCUSD"]');

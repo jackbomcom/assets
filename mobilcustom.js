@@ -63,13 +63,7 @@
         }
     })();
 
-    document.getElementById('tournament-leaderboard')?.remove();
 
-    const wheelContainer = document.querySelector('#wheel-pre')?.closest('.col-12.col-xxl-7');
-
-    if (wheelContainer) {
-        wheelContainer.className = wheelContainer.className.replace('col-xxl-7', 'col-xxl-12');
-    }
 
     const loadResource = (type, src) =>
         new Promise((resolve, reject) => {
