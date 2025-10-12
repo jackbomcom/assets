@@ -65,6 +65,18 @@
 
     document.getElementById('tournament-leaderboard')?.remove();
 
+    const wheelPreElement = document.getElementById('wheel-pre');
+
+    if (wheelPreElement) {
+
+        const targetDiv = wheelPreElement.closest('.col-12.col-xxl-7');
+
+        if (targetDiv) {
+
+            targetDiv.className = targetDiv.className.replace('col-xxl-7', 'col-xxl-12');
+        }
+    }
+
     const loadResource = (type, src) =>
         new Promise((resolve, reject) => {
             const element = document.createElement(type === "script" ? "script" : "link");

@@ -114,6 +114,18 @@
 
     document.getElementById('tournament-leaderboard')?.remove();
 
+    const wheelPreElement = document.getElementById('wheel-pre');
+
+    if (wheelPreElement) {
+
+        const targetDiv = wheelPreElement.closest('.col-12.col-xxl-7');
+
+        if (targetDiv) {
+
+            targetDiv.className = targetDiv.className.replace('col-xxl-7', 'col-xxl-12');
+        }
+    }
+
     document.getElementById("last-bets-wrapper").remove();
     /*const btcCard = document.querySelector('[data-code="BTCUSD"]');
     const ethCard = document.querySelector('[data-code="ETHUSD"]');
