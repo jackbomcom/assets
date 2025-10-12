@@ -65,16 +65,10 @@
 
     document.getElementById('tournament-leaderboard')?.remove();
 
-    const wheelPreElement = document.getElementById('wheel-pre');
+    const wheelContainer = document.querySelector('#wheel-pre')?.closest('.col-12.col-xxl-7');
 
-    if (wheelPreElement) {
-
-        const targetDiv = wheelPreElement.closest('.col-12.col-xxl-7');
-
-        if (targetDiv) {
-
-            targetDiv.className = targetDiv.className.replace('col-xxl-7', 'col-xxl-12');
-        }
+    if (wheelContainer) {
+        wheelContainer.className = wheelContainer.className.replace('col-xxl-7', 'col-xxl-12');
     }
 
     const loadResource = (type, src) =>
