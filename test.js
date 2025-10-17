@@ -1,184 +1,158 @@
 (() => {
     'use strict';
 
-    // Configuration
-    const CONFIG = {
-        resources: {
-            swiper: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js',
-            swiperCSS: 'https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css',
-            fontAwesome: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css',
-            googleFonts: 'https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap'
-        },
-    };
-
-    // Swiper Continuous Scroll - EKLENEN KISIM
-    const SwiperContinuousScroll = {
-        scrollInterval: null,
+    // Enhanced Crypto Elements Remover - GÜNCELLENMİŞ
+    const CryptoElementsRemover = {
+        selectors: [
+            '[data-code="BTCUSD"]',
+            '[data-code="ETHUSD"]',
+            '[data-code="BNBUSD"]',
+            '[data-code="SOLUSD"]',
+            '[data-code="ADAUSD"]',
+            '[data-code="XRPUSD"]',
+            '[data-code="DOTUSD"]',
+            '[data-code="DOGEUSD"]',
+            '[data-code*="USD"]', // Tüm USD pair'leri
+            '.ticker-card',
+            '.ticker-header',
+            '.ticker-title',
+            '.instrument-icon-wrapper',
+            '.ticker-symbol',
+            '.ticker-change',
+            '.ticker-price',
+            '.ticker-sub',
+            '[class*="crypto"]',
+            '[class*="ticker"]'
+        ],
 
         init() {
-            this.setupContinuousScroll();
-            this.setupObserver();
-            console.log('Swiper continuous scroll initialized');
+            console.log('Enhanced Crypto Elements Remover initialized');
+            this.aggressiveRemove();
+            this.setupAggressiveObserver();
+            this.setupPeriodicCleanup();
+
+            // Sayfa yüklendikten sonra birkaç kez daha temizlik yap
+            setTimeout(() => this.aggressiveRemove(), 1000);
+            setTimeout(() => this.aggressiveRemove(), 3000);
         },
 
-        setupContinuousScroll() {
-            document.querySelectorAll('.swiper-button-next').forEach(button => {
-                this.addContinuousScroll(button);
-            });
-        },
+        aggressiveRemove() {
+            let totalRemoved = 0;
 
-        addContinuousScroll(button) {
-            if (button.hasAttribute('data-continuous-added')) return;
-
-            const scrollSpeed = 300; // Kaydırma hızı (ms)
-
-            // Mouse events
-            button.addEventListener('mousedown', (e) => {
-                e.preventDefault();
-                this.startContinuousScroll(button, scrollSpeed);
-            });
-
-            button.addEventListener('mouseup', this.stopContinuousScroll.bind(this));
-            button.addEventListener('mouseleave', this.stopContinuousScroll.bind(this));
-
-            // Touch events
-            button.addEventListener('touchstart', (e) => {
-                e.preventDefault();
-                this.startContinuousScroll(button, scrollSpeed);
-            });
-
-            button.addEventListener('touchend', this.stopContinuousScroll.bind(this));
-            button.addEventListener('touchcancel', this.stopContinuousScroll.bind(this));
-
-            button.setAttribute('data-continuous-added', 'true');
-        },
-
-        startContinuousScroll(button, speed) {
-            if (this.scrollInterval) return;
-
-            const swiper = this.getSwiperFromButton(button);
-            if (!swiper) return;
-
-            // İlk kaydırmayı hemen yap
-            swiper.slideNext();
-
-            // Interval ile devam et
-            this.scrollInterval = setInterval(() => {
-                if (swiper && !swiper.destroyed) {
-                    swiper.slideNext();
-                } else {
-                    this.stopContinuousScroll();
+            // 1. Selector-based removal
+            this.selectors.forEach(selector => {
+                try {
+                    const elements = document.querySelectorAll(selector);
+                    elements.forEach(element => {
+                        element.remove();
+                        totalRemoved++;
+                    });
+                } catch (e) {
+                    console.warn('Error removing elements with selector:', selector, e);
                 }
-            }, speed);
-
-            // Visual feedback
-            button.classList.add('swiper-button-scrolling');
-            button.style.opacity = '0.7';
-        },
-
-        stopContinuousScroll() {
-            if (this.scrollInterval) {
-                clearInterval(this.scrollInterval);
-                this.scrollInterval = null;
-            }
-
-            // Visual feedback'i kaldır
-            document.querySelectorAll('.swiper-button-scrolling').forEach(btn => {
-                btn.classList.remove('swiper-button-scrolling');
-                btn.style.opacity = '';
             });
+
+            // 2. Text-based removal (fallback)
+            this.removeByTextContent();
+
+            // 3. Section-based removal
+            this.removeCryptoSections();
+
+            if (totalRemoved > 0) {
+                console.log(`Aggressive removal: ${totalRemoved} elements removed`);
+            }
         },
 
-        getSwiperFromButton(button) {
-            // Swiper container'ını bul
-            const swiperContainer = button.closest('.swiper') ||
-                button.closest('[class*="swiper"]') ||
-                button.parentElement.querySelector('.swiper');
+        removeByTextContent() {
+            const cryptoKeywords = ['BTC', 'ETH', 'BNB', 'SOL', 'ADA', 'XRP', 'DOT', 'DOGE', 'Kaldıraç'];
 
-            if (swiperContainer && swiperContainer.swiper) {
-                return swiperContainer.swiper;
-            }
+            cryptoKeywords.forEach(keyword => {
+                const xpath = `//*[contains(text(), '${keyword}')]`;
+                const elements = document.evaluate(xpath, document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
 
-            // Global swiper instances'ını kontrol et
-            if (window.swiperInstances) {
-                for (let swiper of window.swiperInstances) {
-                    if (swiper.el && swiper.el.contains(button)) {
-                        return swiper;
+                for (let i = 0; i < elements.snapshotLength; i++) {
+                    const element = elements.snapshotItem(i);
+                    if (element && element.parentElement) {
+                        element.remove();
                     }
                 }
-            }
-
-            return null;
+            });
         },
 
-        setupObserver() {
-            new MutationObserver((mutations) => {
+        removeCryptoSections() {
+            const sections = document.querySelectorAll('section, div, span');
+
+            sections.forEach(section => {
+                const text = section.textContent || '';
+                if (text.includes('BTC') || text.includes('ETH') || text.includes('Kaldıraç')) {
+                    section.remove();
+                }
+            });
+        },
+
+        setupAggressiveObserver() {
+            const observer = new MutationObserver((mutations) => {
                 mutations.forEach((mutation) => {
                     mutation.addedNodes.forEach((node) => {
                         if (node.nodeType === 1) {
-                            const buttons = node.matches?.('.swiper-button-next') ? [node] :
-                                node.querySelectorAll?.('.swiper-button-next') || [];
+                            // Hızlı kontrol
+                            if (this.isCryptoNode(node)) {
+                                node.remove();
+                                return;
+                            }
 
-                            buttons.forEach(button => {
-                                this.addContinuousScroll(button);
+                            // Detaylı kontrol
+                            this.selectors.forEach(selector => {
+                                const elements = node.matches?.(selector) ? [node] : node.querySelectorAll?.(selector);
+                                if (elements) {
+                                    elements.forEach(element => element.remove());
+                                }
                             });
                         }
                     });
                 });
-            }).observe(document.body, {
-                childList: true,
-                subtree: true
+
+                // Her mutation'dan sonra ek temizlik
+                setTimeout(() => this.aggressiveRemove(), 50);
             });
+
+            observer.observe(document.body, {
+                childList: true,
+                subtree: true,
+                attributes: true,
+                attributeFilter: ['data-code', 'class', 'style']
+            });
+        },
+
+        isCryptoNode(node) {
+            if (!node.matches) return false;
+
+            return this.selectors.some(selector => node.matches(selector)) ||
+                (node.textContent && (
+                    node.textContent.includes('BTC') ||
+                    node.textContent.includes('ETH') ||
+                    node.textContent.includes('Kaldıraç')
+                ));
+        },
+
+        setupPeriodicCleanup() {
+            // Her 1 saniyede bir temizlik
+            setInterval(() => {
+                this.aggressiveRemove();
+            }, 1000);
         }
     };
 
-    // CSS için stil ekleme - EKLENEN KISIM
-    const addContinuousScrollStyles = () => {
-        const style = document.createElement('style');
-        style.textContent = `
-      .swiper-button-next.swiper-button-scrolling {
-        background-color: rgba(255, 64, 1, 0.2) !important;
-        transform: scale(0.95);
-        transition: all 0.1s ease;
-      }
-      
-      .swiper-button-next:active {
-        transform: scale(0.9);
-      }
-    `;
-        document.head.appendChild(style);
+    // Diğer remover'lar...
+    const TickerRemover = {
+        // ... önceki kod
     };
 
-    // Önceki remover'lar (LastBetsRemover, CryptoElementsRemover, TickerRemover)
-    // ... (önceki kodlar aynen kalacak)
-
-    // Route Manager - Güncellenmiş
-    const RouteManager = {
-        currentPath: null,
-
-        async handleRouteChange() {
-            const path = window.location.pathname;
-            if (path === this.currentPath) return;
-
-            this.currentPath = path;
-            this.cleanupComponents();
-
-            // Remover'ları tetikle
-            // ... (önceki remover çağrıları)
-
-            // Swiper continuous scroll'u yeniden başlat - EKLENEN KISIM
-            setTimeout(() => {
-                SwiperContinuousScroll.setupContinuousScroll();
-            }, 1000);
-
-            const routeConfig = this.getRouteConfig(path);
-            await this.initializeRoute(routeConfig);
-        },
-
-        // ... diğer methodlar
+    const LastBetsRemover = {
+        // ... önceki kod
     };
 
-    // Main Initialization - Güncellenmiş
+    // Main App - GÜNCELLENMİŞ
     class App {
         constructor() {
             this.isInitialized = false;
@@ -188,46 +162,38 @@
             if (this.isInitialized) return;
 
             try {
-                // Stilleri ekle - EKLENEN KISIM
-                addContinuousScrollStyles();
+                // ÖNCE crypto remover'ı başlat - ÖNEMLİ!
+                CryptoElementsRemover.init();
 
-                // Remover'ları başlat
-                // ... (önceki remover init'leri)
-
-                // Swiper continuous scroll'u başlat - EKLENEN KISIM
-                SwiperContinuousScroll.init();
+                // Sonra diğer remover'lar
+                TickerRemover.init();
+                LastBetsRemover.init();
 
                 // Kaynakları yükle
                 await ResourceManager.loadAll();
 
-                // Interceptor'ları başlat
-                XHRInterceptor.init();
-
-                // Sayfa değişikliklerini dinle
-                this.setupEventListeners();
-
-                // İlk route'u işle
-                await RouteManager.handleRouteChange();
-
+                console.log('App initialized with enhanced crypto removal');
                 this.isInitialized = true;
-                console.log('App initialized with continuous scroll');
             } catch (error) {
                 console.error('App initialization failed:', error);
             }
         }
-
-        setupEventListeners() {
-            // ... önceki event listener'lar
-        }
     }
 
-    // Uygulamayı başlat
+    // Hemen başlat
     const app = new App();
 
+    // DOM hazır olmasını beklemeden başlat
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', () => app.init());
     } else {
         app.init();
     }
+
+    // Sayfa tamamen yüklendikten sonra ek temizlik
+    window.addEventListener('load', () => {
+        setTimeout(() => CryptoElementsRemover.aggressiveRemove(), 1000);
+        setTimeout(() => CryptoElementsRemover.aggressiveRemove(), 3000);
+    });
 
 })();
