@@ -1,155 +1,154 @@
 (() => {
     'use strict';
 
-    // Enhanced Crypto Elements Remover - GÜNCELLENMİŞ
-    const CryptoElementsRemover = {
-        selectors: [
-            '[data-code="BTCUSD"]',
-            '[data-code="ETHUSD"]',
-            '[data-code="BNBUSD"]',
-            '[data-code="SOLUSD"]',
-            '[data-code="ADAUSD"]',
-            '[data-code="XRPUSD"]',
-            '[data-code="DOTUSD"]',
-            '[data-code="DOGEUSD"]',
-            '[data-code*="USD"]', // Tüm USD pair'leri
-            '.ticker-card',
-            '.ticker-header',
-            '.ticker-title',
-            '.instrument-icon-wrapper',
-            '.ticker-symbol',
-            '.ticker-change',
-            '.ticker-price',
-            '.ticker-sub',
-            '[class*="crypto"]',
-            '[class*="ticker"]'
-        ],
+    // Enhanced Swiper Continuous Scroll - GÜNCELLENMİŞ
+    const SwiperContinuousScroll = {
+        scrollIntervals: new Map(),
 
         init() {
-            console.log('Enhanced Crypto Elements Remover initialized');
-            this.aggressiveRemove();
+            console.log('Swiper Continuous Scroll initialized');
+            this.setupContinuousScroll();
             this.setupAggressiveObserver();
-            this.setupPeriodicCleanup();
+            this.injectStyles();
 
-            // Sayfa yüklendikten sonra birkaç kez daha temizlik yap
-            setTimeout(() => this.aggressiveRemove(), 1000);
-            setTimeout(() => this.aggressiveRemove(), 3000);
+            // Sayfa yüklendikten sonra tekrar kontrol et
+            setTimeout(() => this.setupContinuousScroll(), 1000);
+            setTimeout(() => this.setupContinuousScroll(), 3000);
         },
 
-        aggressiveRemove() {
-            let totalRemoved = 0;
+        setupContinuousScroll() {
+            // Tüm swiper next butonlarını bul
+            const buttons = document.querySelectorAll('.swiper-button-next');
+            console.log(`Found ${buttons.length} swiper buttons`);
 
-            // 1. Selector-based removal
-            this.selectors.forEach(selector => {
-                try {
-                    const elements = document.querySelectorAll(selector);
-                    elements.forEach(element => {
-                        element.remove();
-                        totalRemoved++;
-                    });
-                } catch (e) {
-                    console.warn('Error removing elements with selector:', selector, e);
-                }
+            buttons.forEach(button => {
+                this.addContinuousScrollToButton(button);
             });
+        },
 
-            // 2. Text-based removal (fallback)
-            this.removeByTextContent();
+        addContinuousScrollToButton(button) {
+            if (button.hasAttribute('data-continuous-added')) return;
 
-            // 3. Section-based removal
-            this.removeCryptoSections();
+            const speed = 150; // Çok hızlı kaydırma
 
-            if (totalRemoved > 0) {
-                console.log(`Aggressive removal: ${totalRemoved} elements removed`);
+            // Mouse events
+            const handleMouseDown = (e) => {
+                e.preventDefault();
+                const swiper = this.getSwiperFromButton(button);
+                if (swiper) {
+                    this.startContinuousScroll(button, swiper, speed);
+                }
+            };
+
+            const handleMouseUp = () => {
+                const swiper = this.getSwiperFromButton(button);
+                if (swiper) {
+                    this.stopContinuousScroll(swiper);
+                }
+            };
+
+            button.addEventListener('mousedown', handleMouseDown);
+            button.addEventListener('mouseup', handleMouseUp);
+            button.addEventListener('mouseleave', handleMouseUp);
+
+            // Touch events
+            button.addEventListener('touchstart', handleMouseDown);
+            button.addEventListener('touchend', handleMouseUp);
+            button.addEventListener('touchcancel', handleMouseUp);
+
+            button.setAttribute('data-continuous-added', 'true');
+        },
+
+        startContinuousScroll(button, swiper, speed) {
+            if (this.scrollIntervals.has(swiper)) return;
+
+            console.log('Starting continuous scroll');
+
+            // Otomatik kaydırmayı durdur
+            if (swiper.autoplay && swiper.autoplay.running) {
+                swiper.autoplay.stop();
             }
+
+            // Hemen kaydır
+            if (!swiper.destroyed) {
+                swiper.slideNext(300);
+            }
+
+            // Sürekli kaydırma interval'i
+            const interval = setInterval(() => {
+                if (swiper && !swiper.destroyed) {
+                    swiper.slideNext(300);
+                } else {
+                    this.stopContinuousScroll(swiper);
+                }
+            }, speed);
+
+            this.scrollIntervals.set(swiper, interval);
+
+            // Görsel feedback
+            button.classList.add('swiper-button-scrolling');
         },
 
-        removeByTextContent() {
-            const cryptoKeywords = ['BTC', 'ETH', 'BNB', 'SOL', 'ADA', 'XRP', 'DOT', 'DOGE', 'Kaldıraç'];
+        stopContinuousScroll(swiper) {
+            const interval = this.scrollIntervals.get(swiper);
+            if (interval) {
+                clearInterval(interval);
+                this.scrollIntervals.delete(swiper);
+            }
 
-            cryptoKeywords.forEach(keyword => {
-                const xpath = `//*[contains(text(), '${keyword}')]`;
-                const elements = document.evaluate(xpath, document, null, XPathResult.UNORDERED_NODE_SNAPSHOT_TYPE, null);
-
-                for (let i = 0; i < elements.snapshotLength; i++) {
-                    const element = elements.snapshotItem(i);
-                    if (element && element.parentElement) {
-                        element.remove();
-                    }
-                }
+            // Görsel feedback'i kaldır
+            document.querySelectorAll('.swiper-button-scrolling').forEach(btn => {
+                btn.classList.remove('swiper-button-scrolling');
             });
         },
 
-        removeCryptoSections() {
-            const sections = document.querySelectorAll('section, div, span');
+        getSwiperFromButton(button) {
+            // Swiper container'ını bul
+            const container = button.closest('.swiper') ||
+                button.closest('[class*="swiper-container"]') ||
+                button.parentElement?.querySelector('.swiper');
 
-            sections.forEach(section => {
-                const text = section.textContent || '';
-                if (text.includes('BTC') || text.includes('ETH') || text.includes('Kaldıraç')) {
-                    section.remove();
-                }
-            });
+            return container?.swiper || null;
         },
 
         setupAggressiveObserver() {
-            const observer = new MutationObserver((mutations) => {
+            new MutationObserver((mutations) => {
                 mutations.forEach((mutation) => {
                     mutation.addedNodes.forEach((node) => {
                         if (node.nodeType === 1) {
-                            // Hızlı kontrol
-                            if (this.isCryptoNode(node)) {
-                                node.remove();
-                                return;
-                            }
+                            const buttons = node.matches?.('.swiper-button-next') ? [node] :
+                                node.querySelectorAll?.('.swiper-button-next') || [];
 
-                            // Detaylı kontrol
-                            this.selectors.forEach(selector => {
-                                const elements = node.matches?.(selector) ? [node] : node.querySelectorAll?.(selector);
-                                if (elements) {
-                                    elements.forEach(element => element.remove());
-                                }
+                            buttons.forEach(button => {
+                                this.addContinuousScrollToButton(button);
                             });
                         }
                     });
                 });
 
-                // Her mutation'dan sonra ek temizlik
-                setTimeout(() => this.aggressiveRemove(), 50);
-            });
-
-            observer.observe(document.body, {
+                // Her değişiklikten sonra tekrar kontrol et
+                setTimeout(() => this.setupContinuousScroll(), 100);
+            }).observe(document.body, {
                 childList: true,
-                subtree: true,
-                attributes: true,
-                attributeFilter: ['data-code', 'class', 'style']
+                subtree: true
             });
         },
 
-        isCryptoNode(node) {
-            if (!node.matches) return false;
-
-            return this.selectors.some(selector => node.matches(selector)) ||
-                (node.textContent && (
-                    node.textContent.includes('BTC') ||
-                    node.textContent.includes('ETH') ||
-                    node.textContent.includes('Kaldıraç')
-                ));
-        },
-
-        setupPeriodicCleanup() {
-            // Her 1 saniyede bir temizlik
-            setInterval(() => {
-                this.aggressiveRemove();
-            }, 1000);
+        injectStyles() {
+            const style = document.createElement('style');
+            style.textContent = `
+        .swiper-button-next.swiper-button-scrolling {
+          background: rgba(255, 64, 1, 0.4) !important;
+          transform: scale(0.9) !important;
+        }
+      `;
+            document.head.appendChild(style);
         }
     };
 
-    // Diğer remover'lar...
-    const TickerRemover = {
-        // ... önceki kod
-    };
-
-    const LastBetsRemover = {
-        // ... önceki kod
+    // Crypto Elements Remover - Önceki kod
+    const CryptoElementsRemover = {
+        // ... önceki agresif kod
     };
 
     // Main App - GÜNCELLENMİŞ
@@ -162,18 +161,18 @@
             if (this.isInitialized) return;
 
             try {
-                // ÖNCE crypto remover'ı başlat - ÖNEMLİ!
+                // ÖNCE crypto temizleyici
                 CryptoElementsRemover.init();
 
-                // Sonra diğer remover'lar
-                TickerRemover.init();
-                LastBetsRemover.init();
+                // SONRA swiper continuous scroll - ÖNEMLİ SIRALAMA!
+                SwiperContinuousScroll.init();
 
-                // Kaynakları yükle
-                await ResourceManager.loadAll();
-
-                console.log('App initialized with enhanced crypto removal');
+                console.log('App initialized with continuous swiper scroll');
                 this.isInitialized = true;
+
+                // Ek güvence için
+                setTimeout(() => SwiperContinuousScroll.setupContinuousScroll(), 2000);
+
             } catch (error) {
                 console.error('App initialization failed:', error);
             }
@@ -183,17 +182,10 @@
     // Hemen başlat
     const app = new App();
 
-    // DOM hazır olmasını beklemeden başlat
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', () => app.init());
     } else {
         app.init();
     }
-
-    // Sayfa tamamen yüklendikten sonra ek temizlik
-    window.addEventListener('load', () => {
-        setTimeout(() => CryptoElementsRemover.aggressiveRemove(), 1000);
-        setTimeout(() => CryptoElementsRemover.aggressiveRemove(), 3000);
-    });
 
 })();
