@@ -212,6 +212,32 @@
         }
     };
 
+    // Last Bets Remover - EKLENEN KISIM
+    const LastBetsRemover = {
+        init() {
+            this.removeExisting();
+            this.setupObserver();
+        },
+
+        removeExisting() {
+            const element = document.getElementById('last-bets-wrapper');
+            if (element) {
+                element.remove();
+                console.log('Last bets wrapper removed');
+            }
+        },
+
+        setupObserver() {
+            // Dinamik olarak eklenen last-bets-wrapper'ları da kaldır
+            new MutationObserver(() => {
+                this.removeExisting();
+            }).observe(document.body, {
+                childList: true,
+                subtree: true
+            });
+        }
+    };
+
     // State Manager
     const StateManager = {
         processing: new Set(),
@@ -485,6 +511,9 @@
             this.currentPath = path;
             this.cleanupComponents();
 
+            // Last bets wrapper'ı her route değişikliğinde temizle - EKLENEN KISIM
+            LastBetsRemover.removeExisting();
+
             const routeConfig = this.getRouteConfig(path);
             await this.initializeRoute(routeConfig);
         },
@@ -581,6 +610,9 @@
             if (this.isInitialized) return;
 
             try {
+                // Last Bets Remover'ı başlat - EKLENEN KISIM
+                LastBetsRemover.init();
+
                 // Component'leri kaydet
                 ComponentRegistry.register('sidebar', SidebarComponent);
                 ComponentRegistry.register('mainSlider', MainSliderComponent);
