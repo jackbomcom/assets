@@ -513,7 +513,20 @@
     // - hideOldSections (id:11)
     // - initGameChooser (id:12)
 
-    // ---------- Global delegated events (namespaced) ----------
+
+    // ---------- Feature: Remove Last Bets section (id:kill-last-bets) ----------
+    const killLastBets = async () => onceGuard('killLastBets', async () => {
+        const remove = () => {
+            const el = document.getElementById('last-bets-wrapper');
+            if (el) el.remove();
+        };
+        // Remove immediately if present
+        remove();
+        // Keep removing if SPA re-injects later
+        const mo = new MutationObserver(() => remove());
+        mo.observe(document.documentElement, { childList: true, subtree: true });
+    });
+// ---------- Global delegated events (namespaced) ----------
     const bindEvents = () => {
         if (State.eventsBound) return;
         State.eventsBound = true;
@@ -562,6 +575,7 @@
         await customizeSidebar();
         await initMainSlider();
         await initVipStatus();
+        await killLastBets();
         // Call other initializers here using the same pattern
     }
 
