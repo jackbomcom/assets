@@ -19,6 +19,7 @@
             '[data-code="ETHUSD"]',
             '[data-code="BNBUSD"]',
             '[data-code="SOLUSD"]',
+            '[data-code="LTCUSD"]',
             // İhtiyaca göre diğer crypto pair'leri ekleyin
         ],
 
