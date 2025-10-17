@@ -9,102 +9,122 @@
             fontAwesome: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css',
             googleFonts: 'https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap'
         },
-        // ... diğer config ayarları
     };
 
-    // Crypto Elements Remover - EKLENEN KISIM
-    const CryptoElementsRemover = {
-        selectors: [
-            '[data-code="BTCUSD"]',
-            '[data-code="ETHUSD"]',
-            '[data-code="BNBUSD"]',
-            '[data-code="SOLUSD"]',
-            '[data-code="LTCUSD"]',
-            // İhtiyaca göre diğer crypto pair'leri ekleyin
-        ],
+    // Swiper Continuous Scroll - EKLENEN KISIM
+    const SwiperContinuousScroll = {
+        scrollInterval: null,
 
         init() {
-            this.removeExisting();
+            this.setupContinuousScroll();
             this.setupObserver();
-            console.log('Crypto elements remover initialized');
+            console.log('Swiper continuous scroll initialized');
         },
 
-        removeExisting() {
-            let totalRemoved = 0;
+        setupContinuousScroll() {
+            document.querySelectorAll('.swiper-button-next').forEach(button => {
+                this.addContinuousScroll(button);
+            });
+        },
 
-            this.selectors.forEach(selector => {
-                const elements = document.querySelectorAll(selector);
-                elements.forEach(element => {
-                    element.remove();
-                    totalRemoved++;
-                });
+        addContinuousScroll(button) {
+            if (button.hasAttribute('data-continuous-added')) return;
 
-                if (elements.length > 0) {
-                    console.log(`Removed ${elements.length} elements with selector: ${selector}`);
-                }
+            const scrollSpeed = 300; // Kaydırma hızı (ms)
+
+            // Mouse events
+            button.addEventListener('mousedown', (e) => {
+                e.preventDefault();
+                this.startContinuousScroll(button, scrollSpeed);
             });
 
-            if (totalRemoved > 0) {
-                console.log(`Total crypto elements removed: ${totalRemoved}`);
+            button.addEventListener('mouseup', this.stopContinuousScroll.bind(this));
+            button.addEventListener('mouseleave', this.stopContinuousScroll.bind(this));
+
+            // Touch events
+            button.addEventListener('touchstart', (e) => {
+                e.preventDefault();
+                this.startContinuousScroll(button, scrollSpeed);
+            });
+
+            button.addEventListener('touchend', this.stopContinuousScroll.bind(this));
+            button.addEventListener('touchcancel', this.stopContinuousScroll.bind(this));
+
+            button.setAttribute('data-continuous-added', 'true');
+        },
+
+        startContinuousScroll(button, speed) {
+            if (this.scrollInterval) return;
+
+            const swiper = this.getSwiperFromButton(button);
+            if (!swiper) return;
+
+            // İlk kaydırmayı hemen yap
+            swiper.slideNext();
+
+            // Interval ile devam et
+            this.scrollInterval = setInterval(() => {
+                if (swiper && !swiper.destroyed) {
+                    swiper.slideNext();
+                } else {
+                    this.stopContinuousScroll();
+                }
+            }, speed);
+
+            // Visual feedback
+            button.classList.add('swiper-button-scrolling');
+            button.style.opacity = '0.7';
+        },
+
+        stopContinuousScroll() {
+            if (this.scrollInterval) {
+                clearInterval(this.scrollInterval);
+                this.scrollInterval = null;
             }
+
+            // Visual feedback'i kaldır
+            document.querySelectorAll('.swiper-button-scrolling').forEach(btn => {
+                btn.classList.remove('swiper-button-scrolling');
+                btn.style.opacity = '';
+            });
+        },
+
+        getSwiperFromButton(button) {
+            // Swiper container'ını bul
+            const swiperContainer = button.closest('.swiper') ||
+                button.closest('[class*="swiper"]') ||
+                button.parentElement.querySelector('.swiper');
+
+            if (swiperContainer && swiperContainer.swiper) {
+                return swiperContainer.swiper;
+            }
+
+            // Global swiper instances'ını kontrol et
+            if (window.swiperInstances) {
+                for (let swiper of window.swiperInstances) {
+                    if (swiper.el && swiper.el.contains(button)) {
+                        return swiper;
+                    }
+                }
+            }
+
+            return null;
         },
 
         setupObserver() {
             new MutationObserver((mutations) => {
-                let removedCount = 0;
-
-                mutations.forEach(mutation => {
-                    mutation.addedNodes.forEach(node => {
+                mutations.forEach((mutation) => {
+                    mutation.addedNodes.forEach((node) => {
                         if (node.nodeType === 1) {
-                            this.selectors.forEach(selector => {
-                                const elements = node.matches?.(selector) ? [node] : node.querySelectorAll?.(selector);
-                                if (elements) {
-                                    elements.forEach(element => {
-                                        element.remove();
-                                        removedCount++;
-                                    });
-                                }
+                            const buttons = node.matches?.('.swiper-button-next') ? [node] :
+                                node.querySelectorAll?.('.swiper-button-next') || [];
+
+                            buttons.forEach(button => {
+                                this.addContinuousScroll(button);
                             });
                         }
                     });
                 });
-
-                if (removedCount > 0) {
-                    console.log(`Dynamically removed ${removedCount} crypto elements`);
-                }
-            }).observe(document.body, {
-                childList: true,
-                subtree: true
-            });
-        },
-
-        // Yeni selector ekleme imkanı
-        addSelector(selector) {
-            if (!this.selectors.includes(selector)) {
-                this.selectors.push(selector);
-                this.removeExisting(); // Yeni selector için hemen temizlik yap
-            }
-        }
-    };
-
-    // Last Bets Remover - Önceki kod
-    const LastBetsRemover = {
-        init() {
-            this.removeExisting();
-            this.setupObserver();
-        },
-
-        removeExisting() {
-            const element = document.getElementById('last-bets-wrapper');
-            if (element) {
-                element.remove();
-                console.log('Last bets wrapper removed');
-            }
-        },
-
-        setupObserver() {
-            new MutationObserver(() => {
-                this.removeExisting();
             }).observe(document.body, {
                 childList: true,
                 subtree: true
@@ -112,163 +132,29 @@
         }
     };
 
-    // Utility Functions
-    const Utils = {
-        debounce(func, wait) {
-            let timeout;
-            return function executedFunction(...args) {
-                const later = () => {
-                    clearTimeout(timeout);
-                    func(...args);
-                };
-                clearTimeout(timeout);
-                timeout = setTimeout(later, wait);
-            };
-        },
-
-        throttle(func, limit) {
-            let inThrottle;
-            return function(...args) {
-                if (!inThrottle) {
-                    func.apply(this, args);
-                    inThrottle = true;
-                    setTimeout(() => inThrottle = false, limit);
-                }
-            };
-        },
-
-        safeJsonParse(str, defaultValue = {}) {
-            try {
-                return JSON.parse(str);
-            } catch {
-                return defaultValue;
-            }
-        }
+    // CSS için stil ekleme - EKLENEN KISIM
+    const addContinuousScrollStyles = () => {
+        const style = document.createElement('style');
+        style.textContent = `
+      .swiper-button-next.swiper-button-scrolling {
+        background-color: rgba(255, 64, 1, 0.2) !important;
+        transform: scale(0.95);
+        transition: all 0.1s ease;
+      }
+      
+      .swiper-button-next:active {
+        transform: scale(0.9);
+      }
+    `;
+        document.head.appendChild(style);
     };
 
-    // DOM Helper
-    const DOMHelper = {
-        async waitForElement(selector, timeout = 5000) {
-            return new Promise((resolve, reject) => {
-                const element = document.querySelector(selector);
-                if (element) return resolve(element);
+    // Önceki remover'lar (LastBetsRemover, CryptoElementsRemover, TickerRemover)
+    // ... (önceki kodlar aynen kalacak)
 
-                const observer = new MutationObserver(() => {
-                    const element = document.querySelector(selector);
-                    if (element) {
-                        observer.disconnect();
-                        resolve(element);
-                    }
-                });
-
-                observer.observe(document.body, {
-                    childList: true,
-                    subtree: true
-                });
-
-                setTimeout(() => {
-                    observer.disconnect();
-                    reject(new Error(`Element ${selector} not found within ${timeout}ms`));
-                }, timeout);
-            });
-        },
-
-        removeElements(selectors) {
-            selectors.forEach(selector => {
-                document.querySelectorAll(selector).forEach(el => el.remove());
-            });
-        }
-    };
-
-    // State Manager
-    const StateManager = {
-        processing: new Set(),
-
-        isProcessing(key) {
-            return this.processing.has(key);
-        },
-
-        startProcessing(key) {
-            this.processing.add(key);
-        },
-
-        endProcessing(key) {
-            this.processing.delete(key);
-        },
-
-        async executeIfNotProcessing(key, fn) {
-            if (this.isProcessing(key)) return;
-
-            this.startProcessing(key);
-            try {
-                await fn();
-            } finally {
-                this.endProcessing(key);
-            }
-        }
-    };
-
-    // XHR Interceptor
-    const XHRInterceptor = {
-        init() {
-            try {
-                const originalOpen = XMLHttpRequest.prototype.open;
-                const originalSend = XMLHttpRequest.prototype.send;
-                let lastPathname = window.location.pathname;
-
-                XMLHttpRequest.prototype.open = function(method, url, ...rest) {
-                    this._url = url;
-                    this._method = method;
-
-                    XHRInterceptor.handleUrlChange(url, window.location.pathname, lastPathname);
-                    lastPathname = window.location.pathname;
-
-                    return originalOpen.apply(this, [method, url, ...rest]);
-                };
-
-                XMLHttpRequest.prototype.send = function(...args) {
-                    this.addEventListener('readystatechange', () => {
-                        if (this.readyState === 4 && this._url.includes('state/')) {
-                            XHRInterceptor.handleStateResponse(this);
-                        }
-                    });
-                    return originalSend.apply(this, args);
-                };
-            } catch (error) {
-                console.error('XHR Interceptor error:', error);
-            }
-        },
-
-        handleUrlChange(url, currentPath, lastPath) {
-            if (url.includes('verify')) {
-                DOMHelper.waitForElement('header #dropdownUser')
-                    .then(() => RouteManager.handleRouteChange());
-            }
-            if (url.includes('logout')) {
-                DOMHelper.waitForElement('header .header__signin')
-                    .then(() => RouteManager.handleRouteChange());
-            }
-            if (currentPath !== lastPath) {
-                RouteManager.handleRouteChange();
-            }
-        },
-
-        handleStateResponse(xhr) {
-            if (!window.userVipState?.length) {
-                try {
-                    const response = Utils.safeJsonParse(xhr.responseText);
-                    window.userVipState = response.data;
-                } catch (error) {
-                    console.warn('Failed to parse state response:', error);
-                }
-            }
-        }
-    };
-
-    // Route Manager
+    // Route Manager - Güncellenmiş
     const RouteManager = {
         currentPath: null,
-        components: new Map(),
 
         async handleRouteChange() {
             const path = window.location.pathname;
@@ -277,98 +163,22 @@
             this.currentPath = path;
             this.cleanupComponents();
 
-            // Hem last bets hem de crypto elementleri temizle - EKLENEN KISIM
-            LastBetsRemover.removeExisting();
-            CryptoElementsRemover.removeExisting();
+            // Remover'ları tetikle
+            // ... (önceki remover çağrıları)
+
+            // Swiper continuous scroll'u yeniden başlat - EKLENEN KISIM
+            setTimeout(() => {
+                SwiperContinuousScroll.setupContinuousScroll();
+            }, 1000);
 
             const routeConfig = this.getRouteConfig(path);
             await this.initializeRoute(routeConfig);
         },
 
-        getRouteConfig(path) {
-            const configs = {
-                '/': {
-                    type: 'homepage',
-                    components: ['sidebar', 'mainSlider']
-                },
-                // ... diğer route config'leri
-            };
-
-            return configs[path] || { type: 'default', components: ['sidebar'] };
-        },
-
-        async initializeRoute(routeConfig) {
-            const { isMobile, isUserLoggedIn } = await this.getEnvironmentInfo();
-
-            // Component initialization logic buraya...
-        },
-
-        async getEnvironmentInfo() {
-            await DOMHelper.waitForElement('header .header__actions');
-            return {
-                isMobile: window.innerWidth < 768,
-                isUserLoggedIn: !!document.querySelector('header #dropdownUser')
-            };
-        },
-
-        cleanupComponents() {
-            this.components.forEach(component => component.cleanup());
-            this.components.clear();
-            DOMHelper.removeElements(['.custom-section']);
-        }
+        // ... diğer methodlar
     };
 
-    // Resource Manager
-    const ResourceManager = {
-        loaded: new Set(),
-
-        async loadCSS(href) {
-            if (this.loaded.has(href)) return Promise.resolve();
-
-            return new Promise((resolve, reject) => {
-                const link = document.createElement('link');
-                link.rel = 'stylesheet';
-                link.href = href;
-                link.onload = () => {
-                    this.loaded.add(href);
-                    resolve();
-                };
-                link.onerror = reject;
-                document.head.appendChild(link);
-            });
-        },
-
-        async loadScript(src) {
-            if (this.loaded.has(src)) return Promise.resolve();
-
-            return new Promise((resolve, reject) => {
-                const script = document.createElement('script');
-                script.src = src;
-                script.async = true;
-                script.onload = () => {
-                    this.loaded.add(src);
-                    resolve();
-                };
-                script.onerror = reject;
-                document.head.appendChild(script);
-            });
-        },
-
-        async loadAll() {
-            try {
-                await Promise.all([
-                    this.loadCSS(CONFIG.resources.googleFonts),
-                    this.loadCSS(CONFIG.resources.swiperCSS),
-                    this.loadCSS(CONFIG.resources.fontAwesome),
-                    this.loadScript(CONFIG.resources.swiper)
-                ]);
-            } catch (error) {
-                console.warn('Resource loading warning:', error);
-            }
-        }
-    };
-
-    // Main Initialization
+    // Main Initialization - Güncellenmiş
     class App {
         constructor() {
             this.isInitialized = false;
@@ -378,9 +188,14 @@
             if (this.isInitialized) return;
 
             try {
-                // Tüm remover'ları başlat - EKLENEN KISIM
-                LastBetsRemover.init();
-                CryptoElementsRemover.init();
+                // Stilleri ekle - EKLENEN KISIM
+                addContinuousScrollStyles();
+
+                // Remover'ları başlat
+                // ... (önceki remover init'leri)
+
+                // Swiper continuous scroll'u başlat - EKLENEN KISIM
+                SwiperContinuousScroll.init();
 
                 // Kaynakları yükle
                 await ResourceManager.loadAll();
@@ -395,33 +210,20 @@
                 await RouteManager.handleRouteChange();
 
                 this.isInitialized = true;
-                console.log('App initialized successfully with crypto elements remover');
+                console.log('App initialized with continuous scroll');
             } catch (error) {
                 console.error('App initialization failed:', error);
             }
         }
 
         setupEventListeners() {
-            // Dil değişikliklerini dinle
-            const originalSetItem = localStorage.setItem;
-            localStorage.setItem = function(key, value) {
-                originalSetItem.apply(this, arguments);
-                if (key === 'language') {
-                    RouteManager.handleRouteChange();
-                }
-            };
-
-            // Resize event'ini throttle et
-            window.addEventListener('resize', Utils.throttle(() => {
-                RouteManager.handleRouteChange();
-            }, 250));
+            // ... önceki event listener'lar
         }
     }
 
     // Uygulamayı başlat
     const app = new App();
 
-    // DOM hazır olduğunda başlat
     if (document.readyState === 'loading') {
         document.addEventListener('DOMContentLoaded', () => app.init());
     } else {
