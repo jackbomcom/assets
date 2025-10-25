@@ -1,6 +1,65 @@
 (() => {
     'use strict';
 
+    (function () {
+        const TARGET_SEL = '#tournament-leaderboard';
+
+        // URL kontrolü
+        function onWheelPage() {
+            try {
+                // pathname'de /tr/wheel geçmesine öncelik ver, yoksa href üzerinde kontrol et
+                return /\/tr\/wheel\b/i.test(location.pathname) || location.href.includes('tr/wheel');
+            } catch (e) {
+                return false;
+            }
+        }
+
+        // Hedef elementi kaldır
+        function removeTarget() {
+            if (!onWheelPage()) return;
+            const el = document.querySelector(TARGET_SEL);
+            if (el) {
+                el.remove();
+                // console.log('✅ tournament-leaderboard kaldırıldı (tr/wheel).');
+            }
+        }
+
+        // DOM yüklendiğinde dene
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', removeTarget);
+        } else {
+            removeTarget();
+        }
+
+        // Dinamik eklemelere karşı gözlemci (sadece tr/wheel ise aktif anlamlıdır)
+        const observer = new MutationObserver(() => removeTarget());
+        observer.observe(document.documentElement || document.body, { childList: true, subtree: true });
+
+        // SPA / history geçişlerini yakala: pushState, replaceState, popstate
+        function hookHistory(fnName) {
+            const orig = history[fnName];
+            if (typeof orig === 'function') {
+                history[fnName] = function () {
+                    const ret = orig.apply(this, arguments);
+                    // URL değişmiş olabilir → kontrol et
+                    setTimeout(removeTarget, 0);
+                    return ret;
+                };
+            }
+        }
+        hookHistory('pushState');
+        hookHistory('replaceState');
+        window.addEventListener('popstate', () => setTimeout(removeTarget, 0));
+
+        // İlk birkaç saniye içinde geç yüklenenler için tekrar dene
+        let retries = 10;
+        const tick = setInterval(() => {
+            removeTarget();
+            if (--retries <= 0) clearInterval(tick);
+        }, 500);
+    })();
+
+
     // Enhanced Swiper Continuous Scroll - GÜNCELLENMİŞ
     const SwiperContinuousScroll = {
         scrollIntervals: new Map(),
