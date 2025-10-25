@@ -1,102 +1,75 @@
 (() => {
     'use strict';
 
-    // /tr/wheel sayfalarında "Son Kazananlar" / #tournament-leaderboard bölümünü kaldır
-    // jackbom278.com/tr/wheel sayfasında .col-12.col-xxl-5 kapsayıcısını kaldır
     (function () {
-        const HOST_OK = /(^|\.)jackbom278\.com$/i.test(location.hostname);
-        const URL_OK  = /\/tr\/wheel\b/i.test(location.pathname) || location.href.includes('/tr/wheel');
-        if (!HOST_OK || !URL_OK) return;
+        const URL_OK = /\/tr\/wheel\b/i.test(location.pathname) || location.href.includes('/tr/wheel');
+        if (!URL_OK) return;
 
-        // --- Kalıcı CSS fallback (göz kırpmayı azaltır) ---
-        (function injectCSS() {
-            const style = document.createElement('style');
-            style.setAttribute('data-wheel-hide', '1');
-            style.textContent = `
-      /* Yalnızca /tr/wheel'de etkili olacak şekilde sayfa bazlı kullanın */
-      .col-12.col-xxl-5:has(#tournament-leaderboard),
-      .col-12.col-xxl-5:has(.xtable.xtable--wheel),
-      .col-12.col-xxl-5:has(h2.post__title) {
-        display: none !important; visibility: hidden !important; pointer-events:none !important; height:0 !important; overflow:hidden !important;
-      }
-    `;
-            document.documentElement.appendChild(style);
-        })();
+        // Hedef kapsayıcı sınıflar
+        const TARGET_CLASSES = [
+            '.col-12.col-xxl-7',
+            '.col-12.col-xxl-12'
+        ];
 
-        // Metin yardımcıları
-        const norm = s => (s || '').replace(/\s+/g, ' ').trim().toLowerCase();
-
-        // Hedefi tespit et
-        function findTarget(root = document) {
-            // 1) "Son Kazananlar" bileşenini içeren .col-12.col-xxl-5
-            const candidates = root.querySelectorAll('.col-12.col-xxl-5');
-            for (const c of candidates) {
-                if (
-                    c.querySelector('#tournament-leaderboard') ||
-                    c.querySelector('.xtable.xtable--wheel') ||
-                    [...c.querySelectorAll('h2.post__title')].some(h => norm(h.textContent).includes('son kazananlar'))
-                ) {
-                    return c;
+        // Tespit edilecek içerik belirtileri
+        function containsWheelContent(el) {
+            if (!el) return false;
+            if (el.querySelector('.xtable.xtable--wheel')) return true;
+            if (el.querySelector('.wheel-prizes')) return true;
+            const titles = el.querySelectorAll('h2, h3, .post__title');
+            for (const t of titles) {
+                if ((t.textContent || '').toLowerCase().includes('son kazananlar')) {
+                    return true;
                 }
             }
-            // 2) Yine de bulunamadıysa, sayfadaki ilk .col-12.col-xxl-5 (sen özellikle bu div’i kaldır demiştin)
-            return candidates[0] || null;
+            return false;
         }
 
         function removeTarget() {
-            if (!URL_OK) return false;
-            const el = findTarget();
-            if (!el) return false;
-
-            try {
-                el.remove();
-            } catch (e) {
-                el.style.setProperty('display', 'none', 'important');
-                el.style.setProperty('visibility', 'hidden', 'important');
-                el.style.setProperty('pointer-events', 'none', 'important');
-                el.style.setProperty('height', '0', 'important');
-                el.style.setProperty('overflow', 'hidden', 'important');
-            }
-            return true;
+            let removed = false;
+            TARGET_CLASSES.forEach(selector => {
+                document.querySelectorAll(selector).forEach(el => {
+                    if (containsWheelContent(el)) {
+                        el.remove();
+                        removed = true;
+                    }
+                });
+            });
+            return removed;
         }
 
-        // İlk tarama + bir süre retry (geç yüklemeler için)
+        // İlk çalıştırma + kısa süre izleme
         function bootSweep() {
-            let tries = 24; // ~12 sn
+            let tries = 20;
             const iv = setInterval(() => {
-                const ok = removeTarget();
-                if (ok || --tries <= 0) clearInterval(iv);
+                removeTarget();
+                if (--tries <= 0) clearInterval(iv);
             }, 500);
         }
 
-        // MutationObserver (dinamik ekleme)
-        const mo = new MutationObserver(() => removeTarget());
-        mo.observe(document.documentElement, { childList: true, subtree: true });
+        // Dinamik eklemeleri izle
+        const observer = new MutationObserver(removeTarget);
+        observer.observe(document.documentElement, { childList: true, subtree: true });
 
-        // SPA/History geçişleri
-        function hookHistory(name) {
-            const orig = history[name];
-            if (typeof orig === 'function') {
-                history[name] = function () {
-                    const ret = orig.apply(this, arguments);
-                    setTimeout(removeTarget, 0);
-                    return ret;
-                };
-            }
-        }
-        hookHistory('pushState');
-        hookHistory('replaceState');
-        addEventListener('popstate', () => setTimeout(removeTarget, 0));
+        // SPA navigasyonları için destek
+        ['pushState', 'replaceState'].forEach(fn => {
+            const orig = history[fn];
+            history[fn] = function () {
+                const r = orig.apply(this, arguments);
+                setTimeout(removeTarget, 0);
+                return r;
+            };
+        });
+        window.addEventListener('popstate', () => setTimeout(removeTarget, 0));
 
-        // DOM hazır değilse bekle
+        // Başlat
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', bootSweep, { once: true });
         } else {
             bootSweep();
         }
-        addEventListener('load', () => setTimeout(removeTarget, 500));
+        window.addEventListener('load', () => setTimeout(removeTarget, 500));
     })();
-
 
     // Bir root (document/shadowRoot/iframeDocument) içinde tarama
         function scanAndRemove(root) {
