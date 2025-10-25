@@ -1,62 +1,197 @@
 (() => {
     'use strict';
 
+    // /tr/wheel sayfalarında "Son Kazananlar" / #tournament-leaderboard bölümünü kaldır
     (function () {
-        const TARGET_SEL = '#tournament-leaderboard';
+        const WHEEL_URL_MATCH = /\/tr\/wheel\b/i;
 
-        // URL kontrolü
-        function onWheelPage() {
+        if (!WHEEL_URL_MATCH.test(location.pathname) && !location.href.includes('/tr/wheel')) {
+            return; // başka sayfalarda çalışmasın
+        }
+
+        // --- Gizleme için kalıcı CSS (fallback) ---
+        (function injectCSS() {
+            const css = `
+      #tournament-leaderboard,
+      .content #tournament-leaderboard,
+      .xtable.xtable--wheel .wheel-prizes,
+      .content:has(> .content__main .xtable.xtable--wheel),
+      [id*="tournament-leaderboard" i],
+      .post__title:has(.-wheel-text), 
+      h2.post__title:has(+ table.xtable--wheel) {
+        display: none !important; visibility: hidden !important; pointer-events: none !important; height: 0 !important; overflow: hidden !important;
+      }
+      /* Chrome destekli :has() ile başlık bazlı gizleme */
+      section:has(h2.post__title:contains("Son Kazananlar")),
+      div:has(h2.post__title:contains("Son Kazananlar")) { 
+        display: none !important;
+      }
+    `;
+            // :contains() standart değil; bazı tarayıcılarda yok sayılır ama sorun değil.
+            const style = document.createElement('style');
+            style.setAttribute('data-wheel-hide', '1');
+            style.textContent = css;
+            document.documentElement.appendChild(style);
+        })();
+
+        // --- Yardımcılar ---
+        const SELS = [
+            '#tournament-leaderboard',
+            '.content #tournament-leaderboard',
+            '.xtable.xtable--wheel',       // teker tablosu
+            '.wheel-prizes',               // tbody
+            'h2.post__title'               // başlık (Son Kazananlar)
+        ];
+
+        function isWinnersBlock(node) {
+            if (!node || !(node instanceof Element)) return false;
+            // ID / class kontrolü
+            if (node.id === 'tournament-leaderboard') return true;
+            if (node.matches?.('.xtable.xtable--wheel, .wheel-prizes')) return true;
+
+            // Başlık metni kontrolü (TR) – boşluk/harf duyarsız
+            const text = (node.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
+            if (text.includes('son kazananlar')) return true;
+
+            return false;
+        }
+
+        // Hedefe ulaşırsak "mantıklı" üst kapsayıcıyı kaldır (görsel bütünlük için)
+        function removeSmart(el) {
+            if (!el) return false;
+            let target = el;
+
+            // Eğer tablo gövdesini bulduysak yukarı doğru sarmalayıcıyı al
+            const up = el.closest?.('#tournament-leaderboard, .content, .content__main, section, .table-responsive, .content__main--big');
+            if (up) target = up;
+
             try {
-                // pathname'de /tr/wheel geçmesine öncelik ver, yoksa href üzerinde kontrol et
-                return /\/tr\/wheel\b/i.test(location.pathname) || location.href.includes('/tr/wheel');
+                target.remove();
+                return true;
             } catch (e) {
-                return false;
+                // olmazsa en azından görünmez yap
+                target.style.setProperty('display', 'none', 'important');
+                target.style.setProperty('visibility', 'hidden', 'important');
+                return true;
             }
         }
 
-        // Hedef elementi kaldır
-        function removeTarget() {
-            if (!onWheelPage()) return;
-            const el = document.querySelector(TARGET_SEL);
-            if (el) {
-                el.remove();
-                // console.log('✅ tournament-leaderboard kaldırıldı (tr/wheel).');
+        // Bir root (document/shadowRoot/iframeDocument) içinde tarama
+        function scanAndRemove(root) {
+            if (!root) return false;
+            // hızlı ID kontrolü
+            const byId = root.getElementById?.('tournament-leaderboard');
+            if (byId && removeSmart(byId)) return true;
+
+            // diğer seçiciler
+            for (const s of SELS) {
+                const els = root.querySelectorAll?.(s) || [];
+                for (const el of els) {
+                    if (!el) continue;
+                    if (isWinnersBlock(el)) {
+                        if (removeSmart(el)) return true;
+                    }
+                    // Başlık metnine bak
+                    if (el.matches?.('h2.post__title')) {
+                        const t = (el.textContent || '').toLowerCase();
+                        if (t.includes('son kazananlar')) {
+                            // başlığın uygun üst wrapper'ını kaldır
+                            const wrap = el.closest?.('#tournament-leaderboard, .content, .content__main, section, .table-responsive') || el.parentElement;
+                            if (removeSmart(wrap || el)) return true;
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+
+        // Tüm shadow rootları dolaş
+        function* allRoots(startRoot) {
+            const stack = [startRoot];
+            while (stack.length) {
+                const root = stack.pop();
+                yield root;
+                const nodes = root.querySelectorAll?.('*') || [];
+                for (const n of nodes) {
+                    if (n.shadowRoot) stack.push(n.shadowRoot);
+                }
             }
         }
 
-        // DOM yüklendiğinde dene
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', removeTarget);
-        } else {
-            removeTarget();
+        // Aynı origin iframeleri işle
+        function scanIframes() {
+            const iframes = document.querySelectorAll('iframe');
+            for (const f of iframes) {
+                try {
+                    const doc = f.contentDocument || f.contentWindow?.document;
+                    if (doc) {
+                        if (scanAndRemove(doc)) return true;
+                        for (const r of allRoots(doc)) {
+                            if (scanAndRemove(r)) return true;
+                        }
+                    }
+                } catch (e) {
+                    // cross-origin ise erişemeyiz; geç
+                }
+            }
+            return false;
         }
 
-        // Dinamik eklemelere karşı gözlemci (sadece tr/wheel ise aktif anlamlıdır)
-        const observer = new MutationObserver(() => removeTarget());
-        observer.observe(document.documentElement || document.body, { childList: true, subtree: true });
+        // Ana tarama (document + shadow roots + iframes)
+        function removeBlock() {
+            let removed = false;
+            for (const r of allRoots(document)) {
+                removed = scanAndRemove(r) || removed;
+                if (removed) break;
+            }
+            if (!removed) {
+                removed = scanIframes() || removed;
+            }
+            return removed;
+        }
 
-        // SPA / history geçişlerini yakala: pushState, replaceState, popstate
-        function hookHistory(fnName) {
-            const orig = history[fnName];
+        // Başlangıçta ve kısa aralıklarla dene
+        function bootSweep() {
+            let tries = 20; // ~10 sn
+            const iv = setInterval(() => {
+                if (removeBlock() || --tries <= 0) clearInterval(iv);
+            }, 500);
+        }
+
+        // Mutations (dinamik yüklemeler)
+        const obs = new MutationObserver(() => removeBlock());
+        obs.observe(document.documentElement, { childList: true, subtree: true });
+
+        // SPA gezinmesi
+        function hookHistory(name) {
+            const orig = history[name];
             if (typeof orig === 'function') {
-                history[fnName] = function () {
+                history[name] = function () {
                     const ret = orig.apply(this, arguments);
-                    // URL değişmiş olabilir → kontrol et
-                    setTimeout(removeTarget, 0);
+                    setTimeout(() => {
+                        if (WHEEL_URL_MATCH.test(location.pathname) || location.href.includes('/tr/wheel')) {
+                            removeBlock();
+                        }
+                    }, 0);
                     return ret;
                 };
             }
         }
         hookHistory('pushState');
         hookHistory('replaceState');
-        window.addEventListener('popstate', () => setTimeout(removeTarget, 0));
+        window.addEventListener('popstate', () => setTimeout(removeBlock, 0));
 
-        // İlk birkaç saniye içinde geç yüklenenler için tekrar dene
-        let retries = 10;
-        const tick = setInterval(() => {
-            removeTarget();
-            if (--retries <= 0) clearInterval(tick);
-        }, 500);
+        // İlk çalıştırmalar
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', bootSweep, { once: true });
+        } else {
+            bootSweep();
+        }
+        // Tam yükleme sonrası geç gelenler için
+        window.addEventListener('load', () => {
+            bootSweep();
+            setTimeout(removeBlock, 1500);
+        });
     })();
 
 
