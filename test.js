@@ -120,34 +120,7 @@
                 }
             }
         });
-        const onTR = /^\/tr(\/|$)/.test(location.pathname);
-        if (!onTR) {
-            // Sessizce çık
-            return;
-        }
 
-        // Hedefi kaldıran fonksiyon
-        function removeLastBets(root = document) {
-            const el = root.querySelector('#last-bets-wrapper.col-12.section--first, #last-bets-wrapper');
-            if (el) {
-                try { el.remove(); } catch (_) {}
-            }
-        }
-
-        // İlk deneme
-        removeLastBets();
-
-        // Dinamik eklemeleri izle ve tekrar kaldır
-        const mo = new MutationObserver(muts => {
-            for (const m of muts) {
-                for (const n of m.addedNodes) {
-                    if (n && n.nodeType === 1) removeLastBets(n);
-                }
-            }
-        });
-
-
-        mo.observe(document.documentElement, { childList: true, subtree: true });
         observer.observe(document.documentElement, { childList: true, subtree: true });
     })();
 
