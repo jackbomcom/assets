@@ -2,73 +2,61 @@
     'use strict';
 
     (function () {
-        const URL_OK = /\/tr\/wheel\b/i.test(location.pathname) || location.href.includes('/tr/wheel');
-        if (!URL_OK) return;
+        const TARGET_SEL = '#tournament-leaderboard';
 
-        // Hedef kapsayıcı sınıflar
-        const TARGET_CLASSES = [
-            '.col-12.col-xxl-7',
-            '.col-12.col-xxl-12'
-        ];
-
-        // Tespit edilecek içerik belirtileri
-        function containsWheelContent(el) {
-            if (!el) return false;
-            if (el.querySelector('.xtable.xtable--wheel')) return true;
-            if (el.querySelector('.wheel-prizes')) return true;
-            const titles = el.querySelectorAll('h2, h3, .post__title');
-            for (const t of titles) {
-                if ((t.textContent || '').toLowerCase().includes('son kazananlar')) {
-                    return true;
-                }
+        // URL kontrolü
+        function onWheelPage() {
+            try {
+                // pathname'de /tr/wheel geçmesine öncelik ver, yoksa href üzerinde kontrol et
+                return /\/tr\/wheel\b/i.test(location.pathname) || location.href.includes('/tr/wheel');
+            } catch (e) {
+                return false;
             }
-            return false;
         }
 
+        // Hedef elementi kaldır
         function removeTarget() {
-            let removed = false;
-            TARGET_CLASSES.forEach(selector => {
-                document.querySelectorAll(selector).forEach(el => {
-                    if (containsWheelContent(el)) {
-                        el.remove();
-                        removed = true;
-                    }
-                });
-            });
-            return removed;
+            if (!onWheelPage()) return;
+            const el = document.querySelector(TARGET_SEL);
+            if (el) {
+                el.remove();
+                // console.log('✅ tournament-leaderboard kaldırıldı (tr/wheel).');
+            }
         }
 
-        // İlk çalıştırma + kısa süre izleme
-        function bootSweep() {
-            let tries = 20;
-            const iv = setInterval(() => {
-                removeTarget();
-                if (--tries <= 0) clearInterval(iv);
-            }, 500);
+        // DOM yüklendiğinde dene
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', removeTarget);
+        } else {
+            removeTarget();
         }
 
-        // Dinamik eklemeleri izle
-        const observer = new MutationObserver(removeTarget);
-        observer.observe(document.documentElement, { childList: true, subtree: true });
+        // Dinamik eklemelere karşı gözlemci (sadece tr/wheel ise aktif anlamlıdır)
+        const observer = new MutationObserver(() => removeTarget());
+        observer.observe(document.documentElement || document.body, { childList: true, subtree: true });
 
-        // SPA navigasyonları için destek
-        ['pushState', 'replaceState'].forEach(fn => {
-            const orig = history[fn];
-            history[fn] = function () {
-                const r = orig.apply(this, arguments);
-                setTimeout(removeTarget, 0);
-                return r;
-            };
-        });
+        // SPA / history geçişlerini yakala: pushState, replaceState, popstate
+        function hookHistory(fnName) {
+            const orig = history[fnName];
+            if (typeof orig === 'function') {
+                history[fnName] = function () {
+                    const ret = orig.apply(this, arguments);
+                    // URL değişmiş olabilir → kontrol et
+                    setTimeout(removeTarget, 0);
+                    return ret;
+                };
+            }
+        }
+        hookHistory('pushState');
+        hookHistory('replaceState');
         window.addEventListener('popstate', () => setTimeout(removeTarget, 0));
 
-        // Başlat
-        if (document.readyState === 'loading') {
-            document.addEventListener('DOMContentLoaded', bootSweep, { once: true });
-        } else {
-            bootSweep();
-        }
-        window.addEventListener('load', () => setTimeout(removeTarget, 500));
+        // İlk birkaç saniye içinde geç yüklenenler için tekrar dene
+        let retries = 10;
+        const tick = setInterval(() => {
+            removeTarget();
+            if (--retries <= 0) clearInterval(tick);
+        }, 500);
     })();
 
     // Bir root (document/shadowRoot/iframeDocument) içinde tarama
