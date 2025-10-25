@@ -63,6 +63,111 @@
         }
     })();
 
+
+    (function () {
+        // Yalnızca /tr/wheel'de koş
+        if (!location.pathname.includes("/tr/wheel")) {
+            console.log("⏹ /tr/wheel değil. Çalıştırılmadı.");
+            return;
+        }
+
+        console.log("▶ /tr/wheel tespit edildi. Temizleme başlıyor...");
+
+        // ---- Yardımcılar ----
+        const log = (...a) => console.log("[WHEEL-KILL]", ...a);
+
+        function collectTargets(root = document) {
+            const set = new Set();
+
+            // 1) ID
+            const byId = root.querySelector("#tournament-leaderboard");
+            if (byId) set.add(byId.closest(".col-12.col-xxl-5") || byId.closest(".col-12") || byId.closest(".content") || byId);
+
+            // 2) Başlık metni ("Son Kazananlar")
+            root.querySelectorAll("h2, h2.post__title").forEach(h => {
+                const t = (h.textContent || "").replace(/\s+/g, " ").trim();
+                if (/son\s*kazananlar/i.test(t)) {
+                    set.add(h.closest(".col-12.col-xxl-5") || h.closest(".col-12") || h.closest(".content") || h);
+                }
+            });
+
+            // 3) Özel tablo sınıfları
+            root.querySelectorAll("table.xtable.xtable--wheel, .wheel-prizes, .wheel-prize-image")
+                .forEach(el => set.add(el.closest(".col-12.col-xxl-5") || el.closest(".col-12") || el.closest(".table-responsive") || el));
+
+            // 4) Varsa belirgin kapsayıcılar
+            root.querySelectorAll('#tournament-leaderboard, .content#tournament-leaderboard, .table-responsive .xtable--wheel')
+                .forEach(el => set.add(el.closest(".col-12.col-xxl-5") || el.closest(".col-12") || el.closest(".content") || el));
+
+            return Array.from(set).filter(Boolean);
+        }
+
+        function killOnce(root = document) {
+            const targets = collectTargets(root);
+            if (targets.length) {
+                log("Bulunan blok sayısı:", targets.length);
+                targets.forEach(el => { try { el.remove(); } catch (e) { /* ignore */ } });
+            }
+            return targets.length;
+        }
+
+        // ---- İlk deneme + CSS bariyeri ----
+        const css = document.createElement("style");
+        css.textContent = `
+    /* Doğrudan hedefler */
+    #tournament-leaderboard,
+    .xtable.xtable--wheel,
+    .wheel-prizes,
+    .wheel-prize-image { display: none !important; visibility: hidden !important; }
+
+    /* Kapsayıcıyı komple gizle (Chromium :has destekli) */
+    .col-12.col-xxl-5:has(.xtable--wheel),
+    .col-12:has(.xtable--wheel),
+    .content:has(.xtable--wheel),
+    .content:has(#tournament-leaderboard) { display: none !important; visibility: hidden !important; }
+  `;
+        document.head.appendChild(css);
+
+        // İlk temizlik
+        killOnce();
+
+        // ---- Dinamik eklemeleri izleyelim ----
+        const mo = new MutationObserver(muts => {
+            for (const m of muts) {
+                for (const n of m.addedNodes) {
+                    if (n && n.nodeType === 1) {
+                        if (killOnce(n) > 0) log("Dinamik eklenen içerik temizlendi.");
+                    }
+                }
+            }
+        });
+        mo.observe(document.documentElement, { childList: true, subtree: true });
+
+        // ---- Israrcı interval (bazı SPA/React tekrar render ederse) ----
+        let tries = 0;
+        const maxTries = 30; // ~15 saniye (500ms aralıkla)
+        const tick = setInterval(() => {
+            const cnt = killOnce();
+            tries++;
+            if (cnt > 0) log(`Interval temizliği: ${cnt} öğe.`);
+            if (tries >= maxTries) {
+                clearInterval(tick);
+                log("Interval tamamlandı.");
+            }
+        }, 500);
+
+        // ---- DOMContentLoaded sonrası tekrar dene ----
+        if (document.readyState === "loading") {
+            addEventListener("DOMContentLoaded", () => {
+                log("DOMContentLoaded -> tekrar temizleme");
+                killOnce();
+            });
+        }
+
+        log("Kurulum tamam.");
+    })();
+
+
     const loadResource = (type, src) =>
         new Promise((resolve, reject) => {
             const element = document.createElement(type === "script" ? "script" : "link");
