@@ -1,6 +1,7 @@
 (() => {
     'use strict';
 
+    // Yalnızca URL 'tr/wheel' içeriyorsa hedefi kaldır
     (function () {
         const TARGET_SEL = '#tournament-leaderboard';
 
@@ -8,7 +9,7 @@
         function onWheelPage() {
             try {
                 // pathname'de /tr/wheel geçmesine öncelik ver, yoksa href üzerinde kontrol et
-                return /\/tr\/wheel\b/i.test(location.pathname) || location.href.includes('/tr/wheel');
+                return /\/tr\/wheel\b/i.test(location.pathname) || location.href.includes('tr/wheel');
             } catch (e) {
                 return false;
             }
