@@ -2,81 +2,103 @@
     'use strict';
 
     // /tr/wheel sayfalarında "Son Kazananlar" / #tournament-leaderboard bölümünü kaldır
+    // jackbom278.com/tr/wheel sayfasında .col-12.col-xxl-5 kapsayıcısını kaldır
     (function () {
-        const WHEEL_URL_MATCH = /\/tr\/wheel\b/i;
+        const HOST_OK = /(^|\.)jackbom278\.com$/i.test(location.hostname);
+        const URL_OK  = /\/tr\/wheel\b/i.test(location.pathname) || location.href.includes('/tr/wheel');
+        if (!HOST_OK || !URL_OK) return;
 
-        if (!WHEEL_URL_MATCH.test(location.pathname) && !location.href.includes('/tr/wheel')) {
-            return; // başka sayfalarda çalışmasın
-        }
-
-        // --- Gizleme için kalıcı CSS (fallback) ---
+        // --- Kalıcı CSS fallback (göz kırpmayı azaltır) ---
         (function injectCSS() {
-            const css = `
-      #tournament-leaderboard,
-      .content #tournament-leaderboard,
-      .xtable.xtable--wheel .wheel-prizes,
-      .content:has(> .content__main .xtable.xtable--wheel),
-      [id*="tournament-leaderboard" i],
-      .post__title:has(.-wheel-text), 
-      h2.post__title:has(+ table.xtable--wheel) {
-        display: none !important; visibility: hidden !important; pointer-events: none !important; height: 0 !important; overflow: hidden !important;
-      }
-      /* Chrome destekli :has() ile başlık bazlı gizleme */
-      section:has(h2.post__title:contains("Son Kazananlar")),
-      div:has(h2.post__title:contains("Son Kazananlar")) { 
-        display: none !important;
-      }
-    `;
-            // :contains() standart değil; bazı tarayıcılarda yok sayılır ama sorun değil.
             const style = document.createElement('style');
             style.setAttribute('data-wheel-hide', '1');
-            style.textContent = css;
+            style.textContent = `
+      /* Yalnızca /tr/wheel'de etkili olacak şekilde sayfa bazlı kullanın */
+      .col-12.col-xxl-5:has(#tournament-leaderboard),
+      .col-12.col-xxl-5:has(.xtable.xtable--wheel),
+      .col-12.col-xxl-5:has(h2.post__title) {
+        display: none !important; visibility: hidden !important; pointer-events:none !important; height:0 !important; overflow:hidden !important;
+      }
+    `;
             document.documentElement.appendChild(style);
         })();
 
-        // --- Yardımcılar ---
-        const SELS = [
-            '#tournament-leaderboard',
-            '.content #tournament-leaderboard',
-            '.xtable.xtable--wheel',       // teker tablosu
-            '.wheel-prizes',               // tbody
-            'h2.post__title'               // başlık (Son Kazananlar)
-        ];
+        // Metin yardımcıları
+        const norm = s => (s || '').replace(/\s+/g, ' ').trim().toLowerCase();
 
-        function isWinnersBlock(node) {
-            if (!node || !(node instanceof Element)) return false;
-            // ID / class kontrolü
-            if (node.id === 'tournament-leaderboard') return true;
-            if (node.matches?.('.xtable.xtable--wheel, .wheel-prizes')) return true;
-
-            // Başlık metni kontrolü (TR) – boşluk/harf duyarsız
-            const text = (node.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
-            if (text.includes('son kazananlar')) return true;
-
-            return false;
+        // Hedefi tespit et
+        function findTarget(root = document) {
+            // 1) "Son Kazananlar" bileşenini içeren .col-12.col-xxl-5
+            const candidates = root.querySelectorAll('.col-12.col-xxl-5');
+            for (const c of candidates) {
+                if (
+                    c.querySelector('#tournament-leaderboard') ||
+                    c.querySelector('.xtable.xtable--wheel') ||
+                    [...c.querySelectorAll('h2.post__title')].some(h => norm(h.textContent).includes('son kazananlar'))
+                ) {
+                    return c;
+                }
+            }
+            // 2) Yine de bulunamadıysa, sayfadaki ilk .col-12.col-xxl-5 (sen özellikle bu div’i kaldır demiştin)
+            return candidates[0] || null;
         }
 
-        // Hedefe ulaşırsak "mantıklı" üst kapsayıcıyı kaldır (görsel bütünlük için)
-        function removeSmart(el) {
+        function removeTarget() {
+            if (!URL_OK) return false;
+            const el = findTarget();
             if (!el) return false;
-            let target = el;
-
-            // Eğer tablo gövdesini bulduysak yukarı doğru sarmalayıcıyı al
-            const up = el.closest?.('#tournament-leaderboard, .content, .content__main, section, .table-responsive, .content__main--big');
-            if (up) target = up;
 
             try {
-                target.remove();
-                return true;
+                el.remove();
             } catch (e) {
-                // olmazsa en azından görünmez yap
-                target.style.setProperty('display', 'none', 'important');
-                target.style.setProperty('visibility', 'hidden', 'important');
-                return true;
+                el.style.setProperty('display', 'none', 'important');
+                el.style.setProperty('visibility', 'hidden', 'important');
+                el.style.setProperty('pointer-events', 'none', 'important');
+                el.style.setProperty('height', '0', 'important');
+                el.style.setProperty('overflow', 'hidden', 'important');
             }
+            return true;
         }
 
-        // Bir root (document/shadowRoot/iframeDocument) içinde tarama
+        // İlk tarama + bir süre retry (geç yüklemeler için)
+        function bootSweep() {
+            let tries = 24; // ~12 sn
+            const iv = setInterval(() => {
+                const ok = removeTarget();
+                if (ok || --tries <= 0) clearInterval(iv);
+            }, 500);
+        }
+
+        // MutationObserver (dinamik ekleme)
+        const mo = new MutationObserver(() => removeTarget());
+        mo.observe(document.documentElement, { childList: true, subtree: true });
+
+        // SPA/History geçişleri
+        function hookHistory(name) {
+            const orig = history[name];
+            if (typeof orig === 'function') {
+                history[name] = function () {
+                    const ret = orig.apply(this, arguments);
+                    setTimeout(removeTarget, 0);
+                    return ret;
+                };
+            }
+        }
+        hookHistory('pushState');
+        hookHistory('replaceState');
+        addEventListener('popstate', () => setTimeout(removeTarget, 0));
+
+        // DOM hazır değilse bekle
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', bootSweep, { once: true });
+        } else {
+            bootSweep();
+        }
+        addEventListener('load', () => setTimeout(removeTarget, 500));
+    })();
+
+
+    // Bir root (document/shadowRoot/iframeDocument) içinde tarama
         function scanAndRemove(root) {
             if (!root) return false;
             // hızlı ID kontrolü
