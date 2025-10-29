@@ -1,1 +1,3815 @@
-'use strict';(function(a,b){var aX=a0b,c=a();while(!![]){try{var d=parseInt(aX(0x2be))/0x1*(parseInt(aX(0x38c))/0x2)+-parseInt(aX(0x43c))/0x3*(-parseInt(aX(0x2da))/0x4)+-parseInt(aX(0x42b))/0x5*(-parseInt(aX(0x3a8))/0x6)+parseInt(aX(0x226))/0x7+-parseInt(aX(0x2c7))/0x8*(-parseInt(aX(0x2e1))/0x9)+-parseInt(aX(0x2b7))/0xa*(-parseInt(aX(0x28d))/0xb)+-parseInt(aX(0x31c))/0xc*(parseInt(aX(0x42d))/0xd);if(d===b)break;else c['push'](c['shift']());}catch(e){c['push'](c['shift']());}}}(a0a,0x3cf63));function a0aH(a){'@babel/helpers - typeof';var aY=a0b;return a0aH='function'==typeof Symbol&&aY(0x232)==typeof Symbol[aY(0x29f)]?function(b){return typeof b;}:function(b){var aZ=aY;return b&&'function'==typeof Symbol&&b['constructor']===Symbol&&b!==Symbol[aZ(0x2cb)]?aZ(0x232):typeof b;},a0aH(a);}function a0aI(a,b){var b0=a0b,c=Object[b0(0x23d)](a);if(Object[b0(0x444)]){var d=Object['getOwnPropertySymbols'](a);b&&(d=d[b0(0x311)](function(f){var b1=b0;return Object[b1(0x204)](a,f)[b1(0x25c)];})),c[b0(0x22c)][b0(0x215)](c,d);}return c;}function a0aJ(a){var b2=a0b;for(var b=0x1;b<arguments['length'];b++){var c=null!=arguments[b]?arguments[b]:{};b%0x2?a0aI(Object(c),!0x0)[b2(0x328)](function(d){var b3=b2;b3(0x262)!==b3(0x28c)?a0aK(a,d,c[d]):h(i,j,k,l,m,'next',n);}):Object['getOwnPropertyDescriptors']?Object['defineProperties'](a,Object[b2(0x250)](c)):a0aI(Object(c))['forEach'](function(d){var b4=b2;Object[b4(0x2e5)](a,d,Object['getOwnPropertyDescriptor'](c,d));});}return a;}function a0aK(a,b,c){var b5=a0b;return(b=a0aL(b))in a?Object[b5(0x2e5)](a,b,{'value':c,'enumerable':!0x0,'configurable':!0x0,'writable':!0x0}):a[b]=c,a;}function a0aL(a){var b=a0aM(a,'string');return'symbol'==a0aH(b)?b:b+'';}function a0aM(a,b){var b6=a0b;if('object'!=a0aH(a)||!a)return a;var c=a[Symbol['toPrimitive']];if(void 0x0!==c){var d=c[b6(0x3c9)](a,b||'default');if('object'!=a0aH(d))return d;throw new TypeError(b6(0x2bf));}return(b6(0x2f1)===b?String:Number)(a);}function a0aN(a){return a0aR(a)||a0aQ(a)||a0aP(a)||a0aO();}function a0aO(){throw new TypeError('Invalid\x20attempt\x20to\x20spread\x20non-iterable\x20instance.\x0aIn\x20order\x20to\x20be\x20iterable,\x20non-array\x20objects\x20must\x20have\x20a\x20[Symbol.iterator]()\x20method.');}function a0aP(b,c){var b7=a0b;if(b){if(b7(0x2f1)==typeof b)return a0aS(b,c);var d={}[b7(0x3f5)][b7(0x3c9)](b)['slice'](0x8,-0x1);return b7(0x2dd)===d&&b['constructor']&&(d=b['constructor'][b7(0x3ac)]),b7(0x33c)===d||'Set'===d?Array['from'](b):b7(0x244)===d||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/[b7(0x31f)](d)?a0aS(b,c):void 0x0;}}function a0aQ(a){var b8=a0b;if('undefined'!=typeof Symbol&&null!=a[Symbol[b8(0x29f)]]||null!=a['@@iterator'])return Array[b8(0x308)](a);}function a0aR(a){var b9=a0b;if(Array[b9(0x3e8)](a))return a0aS(a);}function a0aS(b,c){(null==c||c>b['length'])&&(c=b['length']);for(var d=0x0,f=Array(c);d<c;d++)f[d]=b[d];return f;}function a0aT(){var be=a0b,b,d,g='function'==typeof Symbol?Symbol:{},h=g['iterator']||'@@iterator',j=g['toStringTag']||'@@toStringTag';function k(x,y,z,A){var ba=a0b,B=y&&y[ba(0x2cb)]instanceof m?y:m,C=Object[ba(0x249)](B[ba(0x2cb)]);return a0aU(C,ba(0x2e6),function(D,E,F){var H,I,J,K=0x0,L=F||[],M=!0x1,N={'p':0x0,'n':0x0,'v':b,'a':O,'f':O['bind'](b,0x4),'d':function P(Q,R){var bb=a0b;return bb(0x3d2)!=='GmSNi'?b['apply'](this,arguments):(H=Q,I=0x0,J=b,N['n']=R,l);}};function O(Q,R){for(I=Q,J=R,d=0x0;!M&&K&&!S&&d<L['length'];d++){var S,T=L[d],U=N['p'],V=T[0x2];Q>0x3?(S=V===R)&&(J=T[(I=T[0x4])?0x5:(I=0x3,0x3)],T[0x4]=T[0x5]=b):T[0x0]<=U&&((S=Q<0x2&&U<T[0x1])?(I=0x0,N['v']=R,N['n']=T[0x1]):U<V&&(S=Q<0x3||T[0x0]>R||R>V)&&(T[0x4]=Q,T[0x5]=R,N['n']=V,I=0x0));}if(S||Q>0x1)return l;throw M=!0x0,R;}return function(Q,R,S){var bc=a0b;if(K>0x1)throw TypeError('Generator\x20is\x20already\x20running');for(M&&0x1===R&&O(R,S),I=R,J=S;(d=I<0x2?b:J)||!M;){H||(I?I<0x3?(I>0x1&&(N['n']=-0x1),O(I,J)):N['n']=J:N['v']=J);try{if(K=0x2,H){if(bc(0x3a5)!==bc(0x3a5))g['_gs']=h[bc(0x2c3)]||function(){var bd=bc;(m[bd(0x2c3)]['q']=E[bd(0x2c3)]['q']||[])[bd(0x22c)](arguments);},k(bc(0x2ac)),S(bc(0x3a4),bc(0x283),!![]);else{if(I||(Q='next'),d=H[Q]){if(!(d=d['call'](H,J)))throw TypeError(bc(0x3bd));if(!d['done'])return d;J=d['value'],I<0x2&&(I=0x0);}else 0x1===I&&(d=H[bc(0x2f2)])&&d['call'](H),I<0x2&&(J=TypeError(bc(0x24d)+Q+'\x27\x20method'),I=0x1);H=b;}}else{if((d=(M=N['n']<0x0)?J:D[bc(0x3c9)](E,N))!==l)break;}}catch(U){bc(0x205)==='OdYHU'?h(H,j,k,S,m,bc(0x21a),E):(H=b,I=0x1,J=U);}finally{K=0x1;}}return{'value':d,'done':M};};}(x,z,A),!0x0),C;}var l={};function m(){}function p(){}function q(){}d=Object[be(0x2d8)];var s=[][h]?d(d([][h]())):(a0aU(d={},h,function(){return this;}),d),v=q[be(0x2cb)]=m[be(0x2cb)]=Object[be(0x249)](s);function w(x){var bf=be;if(bf(0x2a3)!=='TYspq')return Object[bf(0x38a)]?Object[bf(0x38a)](x,q):(x['__proto__']=q,a0aU(x,j,bf(0x2d2))),x[bf(0x2cb)]=Object['create'](v),x;else var z=d[x](w),A=z['value'];}return p[be(0x2cb)]=q,a0aU(v,'constructor',q),a0aU(q,'constructor',p),p['displayName']=be(0x2d2),a0aU(q,j,be(0x2d2)),a0aU(v),a0aU(v,j,'Generator'),a0aU(v,h,function(){return this;}),a0aU(v,'toString',function(){var bg=be;if('pAUbt'!==bg(0x2c1))return bg(0x433);else b=0x1;}),(a0aT=function x(){return{'w':k,'m':w};})();}function a0b(a,b){var c=a0a();return a0b=function(d,e){d=d-0x1f2;var f=c[d];return f;},a0b(a,b);}function a0aU(a,b,c,d){var bh=a0b,f=Object[bh(0x2e5)];try{f({},'',{});}catch(g){bh(0x36e)===bh(0x36e)?f=0x0:c['error'](d);}a0aU=function j(k,l,m,p){var bj=bh;function q(s,u){a0aU(k,s,function(v){var bi=a0b;if(bi(0x3e9)===bi(0x3c3))d=v,f();else return this['_invoke'](s,u,v);});}l?f?f(k,l,{'value':m,'enumerable':!p,'configurable':!p,'writable':!p}):k[l]=m:(q('next',0x0),q(bj(0x21a),0x1),q('return',0x2));},a0aU(a,b,c,d);}function a0aV(b,d,f,g,h,j,k){var bk=a0b;try{var l=b[j](k),m=l[bk(0x297)];}catch(p){return void f(p);}l[bk(0x365)]?d(m):Promise['resolve'](m)['then'](g,h);}function a0a(){var cY=['modal=register&ref=','Devenez\x20VIP\x20et\x20profitez\x20de\x20bonus\x20et\x20d\x27opportunités\x20exclusives!','https://jackbomcom.github.io/assets/images/sponsor_web.png','JSpOt','Mobile\x20Application','data','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20','#global-modal\x20.modal__close','floor','promotion','https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/HjOlcJBrxE6il94aECMr0Attvp8HnvQnUwEMk2i4.jpg','Fai\x20parte\x20del\x20gioco\x20scommettendo\x20sui\x20momenti\x20più\x20importanti\x20dello\x20sport.','https://jackbomcom.github.io/assets/images/n8z3fey47a9cwhms.webp','.spin-button','\x27\x20method','innerHTML','Explorer\x20la\x20Section\x20Sports','val','https://jackbomcom.github.io/assets/images/mfphk8n5y3erc7tb.webp','سجّل\x20الآن!','.section.section--last','https://front.jackbom.dev/images/42zex8ugm5bnqhwy.webp','.sidebar__links\x20+\x20.sidebar__menu\x20>\x20.sidebar__title\x20+\x20ul','Sign\x20Up\x20Now!','removeClass','iUANG','https://api.whatsapp.com/send/?phone=33753456653&text&type=phone_number&app_absent=0','\x22>\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09<svg\x20class=\x22svg-icon\x22>\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09\x09<use\x20href=\x22','bmQKi','#custom-section-1\x20.swiper-pagination','Kripto\x20ve\x20Türk\x20Lirası\x20İşlemlerinizi\x20Kolaylaştırın','setPrototypeOf','Tournaments','239898hGczyi','location','\x22\x20alt=\x22Slider\x20Image\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</a>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<a\x20class=\x22header-custom-button\x20custom\x20','random','gridText3','Упростите\x20операции\x20с\x20криптовалютой\x20и\x20турецкой\x20лирой','Quote\x20Maggiorate','Be\x20part\x20of\x20the\x20game\x20by\x20betting\x20on\x20the\x20biggest\x20moments\x20in\x20sports.','Inscrivez-vous\x20&\x20Tournez','slidesPerView','>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20class=\x22object-fit-cover\x20w-100\x20h-100\x20position-absolute\x20top-0\x20start-0\x22\x20src=\x22','Nuove\x20Uscite','css','\x0a\x20\x20\x20\x20\x20\x20','.chooser-list.first,\x20.chooser-list.second','https://jackbomcom.github.io/assets/images/howtobg1.png','click','</p>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09</a>\x0a\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22col-12\x20col-lg-6\x20col-xl-3\x20mt-2\x20mt-md-0\x20d-flex\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09<a\x20href=\x22vip\x22\x20class=\x22d-flex\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22box\x20d-flex\x20justify-content-evenly\x20align-items-center\x20gap-3\x20rounded-4\x20px-4\x20py-3\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22box-icon\x20icon-vip\x20rounded-3\x20p-3\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<i\x20class=\x22icon\x20fa-solid\x20fa-crown\x20fs-3\x20align-middle\x20text-center\x20text-black\x22></i>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<p\x20class=\x22mb-0\x20text-white\x20opacity-75\x22>','CIaqH','XLJDu','constructor','object','display','set','FrDAW','pDGDx','pop','168rAPIhI','Campionati\x20Popolari','Live\x20Casino','querySelector','name','https://jackbomcom.github.io/assets/images/24cjrkhd7xqwps9z.gif','BRkcE','sportsIcon1','Anlık,\x20haftalık,\x20aylık\x20bonuslarla\x20kazancınızı\x20artırın!','\x22\x20src=\x22https://www.youtube.com/embed/OuHh4Pcgd3o\x22\x20title=\x22YouTube\x20video\x20player\x22\x20frameborder=\x220\x22\x20allow=\x22accelerometer;\x20autoplay;\x20clipboard-write;\x20encrypted-media;\x20gyroscope;\x20picture-in-picture;\x20web-share\x22\x20allowfullscreen></iframe>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09\x09<iframe\x20width=\x22','https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap','.section__title\x20use[href*=\x22replay\x22]','bLPBK','header\x20.header__signin','language','?v=','origin','sportsButton','</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22landing-image\x20position-absolute\x20bottom-0\x20ps-4\x20pt-4\x20d-none\x20d-lg-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20class=\x22w-100\x20h-100\x20pe-none\x22\x20src=\x22','Oca','page--settings','iterator\x20result\x20is\x20not\x20an\x20object','Popüler\x20Ligler','دعم\x20تيليجرام','header\x20.header__actions','.section__title\x20use[href*=\x22big-win\x22]','https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/zEbhVgwGbPPzPMJAdVCVhJG7YVIHDIIsuR9DaqXz.jpg','gNYUh','evolution-lightning-baccarat','join','</p>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09</a>\x0a\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22col-12\x20col-lg-6\x20col-xl-3\x20mt-2\x20mt-lg-0\x20d-flex\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09<a\x20href=\x22promotions\x22\x20class=\x22d-flex\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22box\x20d-flex\x20justify-content-evenly\x20align-items-center\x20gap-3\x20rounded-4\x20px-4\x20py-3\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22box-icon\x20icon-promotion\x20rounded-3\x20p-3\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<i\x20class=\x22icon\x20fa-solid\x20fa-gift\x20fs-3\x20align-middle\x20text-center\x20text-black\x22></i>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<p\x20class=\x22mb-0\x20text-white\x20opacity-75\x22>','.howto-button.selected','remove','call','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22sidebar__links\x20custom\x20custom-promo\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20class=\x22sidebar__link\x20sidebar__link--casino\x20w-100\x20','\x22\x20class=\x22rank-icon\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</span>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22modal__user\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<p>','\x22\x20alt=\x22Casino\x20Character\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22position-relative\x20m-auto\x20mt-lg-5\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22landing\x20sports\x20overflow-hidden\x20position-relative\x20rounded-4\x20p-3\x20px-md-5\x20py-md-4\x20mt-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22landing-inner\x20position-relative\x20text-white\x20p-2\x20p-sm-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-block\x20mb-2\x20mb-sm-3\x20mb-lg-5\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h1\x20class=\x22fw-bold\x20lh-sm\x20mb-0\x22>','طرق\x20لا\x20حصر\x20لها\x20لتحقيق\x20مكاسب\x20كبيرة\x20مع\x20آلاف\x20الألعاب\x20المثيرة.','تطبيق\x20الهاتف\x20المحمول','text','getMonth','Simplify\x20Your\x20Crypto\x20and\x20Turkish\x20Lira\x20Transactions','GmSNi','注册\x20&\x20旋转','XAfmb','Esports','Scopri\x20il\x20futuro\x20dei\x20pagamenti\x20digitali\x20con\x2013\x20principali\x20criptovalute\x20e\x20la\x20Lira\x20Turca.','Turnuvalar','.sidebar__lang-menu\x20a','Djqfl','&quot;)\x20left\x20center\x20/\x20cover\x20no-repeat;\x22></a>\x0a\x20\x20\x20\x20\x20\x20','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','Sports','\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22swiper-slide\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09','OiSuS5Nlxq8','topLeagues','</h1>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22second-text\x20mb-0\x20mb-sm-3\x20mb-lg-4\x20fs-5\x20text-center\x20text-sm-start\x20text-white\x20text-opacity-75\x22>','readyState','/big-wins','replace','حقق\x20أرباحًا\x20كبيرة\x20مع\x20العروض\x20الخاصة!','NDWYCi50C6Q','storageChange','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</ul>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20','isArray','QFtSZ','currentTarget','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22custom-section-10\x22\x20class=\x22section\x20custom-section\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h1\x20class=\x22text-white\x20fw-bold\x20lh-sm\x20mb-4\x20text-center\x22>','responseText','PKZET','GTMIM','#footer','</span>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</span>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</span>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<span\x20class=\x22d-flex\x20align-items-center\x20gap-2\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<span\x20id=\x22next-rank\x22\x20class=\x22d-flex\x20gap-2\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<span>','WRgxS','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card\x20overflow-hidden\x20position-relative\x20rounded-4\x20w-100\x20border-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22','#custom-section-4','before','toString','\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22swiper-slide\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<a\x20href=\x22sportsbook\x22\x20class=\x22d-block\x20rounded-4\x20league\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<img\x20class=\x22slider-img\x20w-100\x20h-100\x22\x20src=\x22','pragmaticplay-starlight-princess','.section.pt-24:not(.mini-slider)','spin','Станьте\x20частью\x20игры,\x20делая\x20ставки\x20на\x20крупнейшие\x20моменты\x20в\x20спорте.','锦标赛','.nav-tabs\x20.nav-item:nth-child(2)\x20button','Çevrim\x20içi\x20casino\x20ve\x20spor\x20bahislerinde\x20rakipsiz\x20eğlence\x20ve\x20kazanç.','Dal\x20Vivo','zwVYI','function','bpNrS','.sidebar__big\x20.sidebar__links\x20a:nth-child(2)','HvXFV','Support\x20WhatsApp','Большие\x20Выигрыши','state/','cjsaT','length','passive','Yeni','concat','Countless\x20ways\x20to\x20achieve\x20big\x20wins\x20with\x20thousands\x20of\x20exciting\x20games.','cQAnd','DsZoz','Simplifiez\x20Vos\x20Transactions\x20En\x20Crypto\x20et\x20En\x20Livre\x20Turque','image','https://jackbomcom.github.io/assets/images/it_web.gif','JvIUU','.howto-button','addClass','percentage','\x22\x20alt=\x22Banner\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22landing\x20position-relative\x20rounded-4\x20overflow-hidden\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22landing-inner\x20position-relative\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22chooser\x20py-auto\x20py-sm-5\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-block\x20mb-4\x20mb-sm-5\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h1\x20class=\x22text-white\x20fw-bold\x20lh-sm\x20mb-0\x20text-center\x22>','EfOEf','\x0a\x20\x20\x20\x20\x20\x20\x09<a\x20class=\x22header-custom-button\x20custom\x20','Linkler','map','registerButton','lang','.header__wallet','Üye\x20Ol\x20&\x20Çevir','Canlı\x20Yayınlar','sort','#main-slider\x20.mySwiper','/blog/','Canlı\x20Casino','\x22\x20alt=\x22Card\x20Image\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22custom-section-6\x22\x20class=\x22section\x20custom-section\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22card-grid\x20d-flex\x20flex-column\x20flex-md-row\x20gap-2\x20gap-md-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','Канал\x20В\x20Telegram','XVSoF','#custom-section-1','https://jackbom.app','xyGid','88175PoFLzy','casinoText1','65HctFbQ','Progress','https://jackbomcom.github.io/assets/images/yx62vs7k9fmjqpbe.webp','text/javascript','fa-brands\x20fa-whatsapp','toPrimitive','[object\x20Generator]','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item\x20d-flex\x20align-items-center\x20gap-3\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-play-circle\x20fs-2\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22sportsbook/live-betting\x22\x20class=\x22d-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22icon-text\x20fw-bold\x20text-nowrap\x22>','Jackbom\x20TV\x20In\x20Diretta','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22custom-section-12\x22\x20class=\x22section\x20custom-section\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09<div\x20class=\x22container\x20mb-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20class=\x22pe-none\x20w-100\x20h-100\x20rounded-3\x22\x20src=\x22','mobileApp','Sporlar\x20Bölümünü\x20Keşfedin','config','jpLKi','chat-active','49881QZTJNf','.sidebar\x20.custom,\x20.header\x20.custom','.sidebar__menu.custom','Semplifica\x20Le\x20Tue\x20Transazioni\x20In\x20Cripto\x20E\x20Lira\x20Turca','Telegram\x20Channel','Tornei','.sidebar__big\x20>\x20.sidebar__menu','mobile','getOwnPropertySymbols','Jackbom\x20turnuvalarına\x20katıl,\x20rakipleri\x20yen\x20ve\x20ödül\x20kap!','Spor\x20dünyasının\x20en\x20büyük\x20anlarına\x20bahis\x20yaparak\x20oyunun\x20bir\x20parçası\x20olun.','\x22\x20title=\x22YouTube\x20video\x20player\x22\x20frameborder=\x220\x22\x20allow=\x22accelerometer;\x20autoplay;\x20clipboard-write;\x20encrypted-media;\x20gyroscope;\x20picture-in-picture;\x20web-share\x22\x20allowfullscreen></iframe>\x0a\x09\x09\x09\x09\x09','\x22\x20href=\x22javascript:void(0);\x22\x20style=\x22background:\x20url(&quot;','//d1l6p2sc9645hc.cloudfront.net/gosquared.js','vjzZa','LKlVH','NjZTX','sportsIcon2','style','https://jackbomcom.github.io/assets/images/fr_mobile.gif','#custom-section-2\x20.card','cards','</p>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<span>','stylesheet','<a\x20href=\x22/en\x22','https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/UCzzpl54nGb5mzcujF5ua52b47S5RNU1oGd39qQ6.jpg','سجّل\x20&\x20قم\x20بالدوران','pQFyw','成为\x20VIP，享受专属奖金和机会！','\x22\x20src=\x22https://www.youtube.com/embed/','getOwnPropertyDescriptor','rwiya','Oyun\x20seçerken\x20yardıma\x20mı\x20ihtiyacınız\x20var?','Diventa\x20VIP\x20e\x20goditi\x20bonus\x20esclusivi\x20e\x20opportunità\x20uniche!','https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js','RfxmO','42g9e3qdjjk','\x22\x20src=\x22https://www.youtube.com/embed/uRs_2kNLIQM\x22\x20title=\x22YouTube\x20video\x20player\x22\x20frameborder=\x220\x22\x20allow=\x22accelerometer;\x20autoplay;\x20clipboard-write;\x20encrypted-media;\x20gyroscope;\x20picture-in-picture;\x20web-share\x22\x20allowfullscreen></iframe>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09\x09<iframe\x20width=\x22','DvQOI','WhatsApp\x20Support','https://www.googletagmanager.com/gtag/js?id=G-EWGHJ0DHF1','<a\x20href=\x22/tr\x22','探索体育部分','Jackbom\x20ТВ\x20В\x20Прямом\x20Эфире','Yüksek\x20RTP','https://jackbomcom.github.io/assets/images/6swd2ajqm37yx98v.webp','真人赌场','apply','PUfmv','script','عروض\x20ترويجية','https://jackbomcom.github.io/assets/images/weh2ng7u6sk5pybt.webp','throw','كن\x20من\x20كبار\x20الشخصيات\x20(VIP)\x20وتمتع\x20بالمكافآت\x20والفرص\x20الحصرية!','Jackbom\x20直播电视','disabled','desktop','gridText2','active','Nasıl\x20Yatırım\x20Yaparım?','Jackbom\x20TV\x20En\x20Direct','show','CabAV','lang--','1629005uvFxjM','Grandi\x20Vincite','bLmhZ','Jackbom\x20Canlı\x20TV','live-casino','Participez\x20aux\x20tournois\x20Jackbom,\x20battez\x20vos\x20adversaires\x20et\x20remportez\x20des\x20récompenses!','push','Живое\x20Казино','Турниры','match','</p>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09</a>\x0a\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09</div>\x0a\x09\x09\x09','update','symbol','Need\x20help\x20choosing\x20a\x20game?','FWCMi','Мобильное\x20Приложение','async','then','ayeuN','https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/69jTgdjuHzc6z6j5C24TwZnllDyIgWJxyj2MDw7z.jpg','#custom-section-12','vgDUb','prepend','keys','Twitter','header\x20#dropdownUser','default','https://jackbomcom.github.io/assets/images/rqawmp69bsv5thux.gif','sportsText1','includes','Arguments','rVJzw','https://jackbomcom.github.io/assets/images/w63gf598hxv2kjar.webp','/tv','/vip','create','after','aEUWC','Hemen\x20Kayıt\x20Ol!','The\x20iterator\x20does\x20not\x20provide\x20a\x20\x27','Telegram\x20Support','\x0a\x09\x09\x09\x09\x09\x09<iframe\x20width=\x22','getOwnPropertyDescriptors','KFYTp','#custom-section-6','.howto-video','البث\x20المباشر','all','.sidebar__links.custom-promo\x20a:not([class*=\x22howto\x22]),\x20.sidebar__link-small.custom-promo','.chooser-list.first\x20.chooser-item','Присоединяйтесь\x20к\x20турнирам\x20Jackbom,\x20побеждайте\x20соперников\x20и\x20получайте\x20награды!','Крутить','Aumenta\x20i\x20tuoi\x20guadagni\x20con\x20bonus\x20immediati,\x20settimanali\x20e\x20mensili!','src','enumerable','addEventListener','Kas','</h1>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-block\x20text-center\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22?modal=register\x22\x20class=\x22d-inline-block\x20mx-auto\x20rounded-3\x20signup-button\x20border\x22>','https://jackbomcom.github.io/assets/images/ga5e3cnrus6q92yy.webp','Eşsiz\x20güvenlik,\x20hızlı\x20işlemler\x20ve\x20alternatif\x20ödeme\x20yöntemlerinin\x20esnekliği\x20ile\x20güvenli\x20bir\x20çevrim\x20içi\x20cüzdan\x20desteğinden\x20faydalanın.','XXCKv','Hai\x20bisogno\x20di\x20aiuto\x20per\x20scegliere\x20un\x20gioco?','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<ul\x20class=\x22sidebar__nav\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','https://jackbomcom.github.io/assets/images/gztmvqp41k935xns.webp','_url','</h1>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22landing-image-mobile\x20mx-auto\x20d-block\x20d-lg-none\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20class=\x22w-100\x20h-100\x22\x20src=\x22','دعم\x20واتساب','page--home\x20page--promo\x20page--single-promo\x20page--single-blog\x20page--sports\x20page--vip\x20lang--tr\x20lang--en\x20page--casino\x20page--bonus-request\x20page--settings\x20page--tv\x20page--bigwins','#homepage','PAKjd','#global-modal:visible','telegramChannel','Become\x20a\x20VIP\x20and\x20enjoy\x20exclusive\x20bonuses\x20and\x20opportunities!','Spor','Sign\x20Up\x20&\x20Spin','YouTube','Partecipa\x20ai\x20tornei\x20Jackbom,\x20sconfiggi\x20i\x20rivali\x20e\x20vinci\x20premi!','Casino\x20Bölümünü\x20Keşfedin','Chaîne\x20Telegram','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<a\x20class=\x22sidebar__link\x20sidebar__link--casino\x20','icon','setHours','\x0a\x20\x20\x20\x20\x20\x20\x20\x20<li\x20class=\x22custom\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<svg\x20class=\x22svg-icon\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<use\x20href=\x22','\x22\x20height=\x22','.sidebar__link[href*=\x22/','dataLayer','cryptoText1','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22slot__title\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20<h3>Sweet\x20Bonanza\x201000</h3>\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20<span\x20class=\x22game-provider\x22>Pragmatic\x20Play</span>\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','assign','#header','https://jackbomcom.github.io/assets/images/8q7x29pmauwhc65e.webp','#custom-section-5','height','anonymizeIP','315','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22z-0\x20slot__cover\x20slot__cover--\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22slot__img\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22','Explore\x20the\x20Casino\x20Section','getHours','Çevir','appendChild','swiper','slides','qyjHF','2405161ucWnAI','eeoDt','\x22\x20class=\x22spin-button\x20d-block\x20w-','XySxi','الإصدارات\x20الجديدة','RTP\x20Elevato','WhatsApp\x20Destek','通过\x2013\x20种领先的加密货币和土耳其里拉探索数字支付的未来。','Faites\x20partie\x20du\x20jeu\x20en\x20pariant\x20sur\x20les\x20plus\x20grands\x20moments\x20du\x20sport.','slice','value','13\x20lider\x20kripto\x20para\x20ve\x20Türk\x20Lirası\x20ile\x20dijital\x20ödemelerin\x20geleceğini\x20keşfedin.','nwIsb','加入\x20Jackbom\x20赛事，击败对手，赢取奖励！','\x22\x20src=\x22https://www.youtube.com/embed/yv2F1w3g7bE\x22\x20title=\x22YouTube\x20video\x20player\x22\x20frameborder=\x220\x22\x20allow=\x22accelerometer;\x20autoplay;\x20clipboard-write;\x20encrypted-media;\x20gyroscope;\x20picture-in-picture;\x20web-share\x22\x20allowfullscreen></iframe>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09\x09<iframe\x20width=\x22','https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/Bp5TH9Fvrd4wHmnyaHRy4csNn9NOJzOW8zkeVygB.jpg','bVqkd','https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/IVpUgKIviF8u3yKiM3FHj9JZqxi8F8oThxPz5CvG.jpg','iterator','Ezesy','<a\x20href=\x22javascript:void(0);\x22','sidebar__nav--border','YDGuA','CEeIe','560','EFzIx','https://jackbomcom.github.io/assets/images/jwpxta3e9z58m42c.webp','#custom-section-2','Live\x20Streams','url','252','GSN-473767-R','Back','</span>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<img\x20loading=\x22lazy\x22\x20src=\x22','2-digit','Set','Links','sportsIcon3','\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20General\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20:root\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20--tf-bg:\x20#0c0f16\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20--tf-bg2:\x20#10141d\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20--menu-group1:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20--menu-group2:\x20#1e90ff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20body\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20body,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section__title,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__title\x20h3,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.mini-game__title\x20h3,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.vip__title,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking__amount,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.post__title,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.article\x20h1,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.article\x20h2,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.article\x20h3,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.article\x20h4,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.article\x20h5,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.article\x20h6,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.game__title,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__pos,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.settings__title,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.footer__title,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush__prize\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20\x27Karla\x27,\x20sans-serif;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20::marker\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20loaderScaleAnimation\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2025%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1.2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2050%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2075%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1.2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.loader-logo\x20img,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.loader-logo.small\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20loaderScaleAnimation\x201.4s\x20linear\x20infinite;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2040px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2040px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.loader-logo::before,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.loader-logo:after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Header\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.header--logged\x20.header__logo\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20unset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20400px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header--logged\x20.header__logo\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2080px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet-dropdown-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet-dropdown-btn\x20div\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20480px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet-dropdown-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20125px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x201200px)\x20and\x20(max-width:\x201800px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.sidebar.active+main\x20.header__search\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-left:\x20135px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20600px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Sidebar\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto-mobile\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__link--casino::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__big\x20.sidebar__links\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__big\x20.sidebar__links:not(.custom)\x20a\x20span\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__big\x20.sidebar__links\x20.howto-mobile\x20span\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201.4;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__links\x20+\x20.sidebar__menu\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__big\x20a[href*=\x22?modal=bonus-request\x22]\x20span\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09font-size:\x2016px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09font-weight:\x20700;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09text-transform:\x20uppercase;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09margin-left:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__nav\x20a\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x20999px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__nav-small\x20a,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__nav-small\x20button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__nav--collapse\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20menuShakeAnimation\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(0);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2025%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(-2px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2050%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(2px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2075%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(-2px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(0);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20a:hover\x20svg,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__nav-small\x20button:hover\x20svg\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20menuShakeAnimation\x200.4s\x20ease;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20stroke:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22homepage\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22big-win\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22vip-club\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22blog\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22casino2\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22gamer\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22chart\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22slots2\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22live-casino\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22sportsbook2\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__links.custom\x20+\x20div\x20>\x20span\x20+\x20ul\x20.svg-icon\x20use[href*=\x22sportsbook\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22exclusive\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22virtual-sports\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22gift\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22tournaments\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22vip\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22challenge\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22stream\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22pokr-side\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22phone\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22sportsbook-basketball\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22affiliate\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22head-set\x22],\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22headset\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22privacy\x22],\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22shield\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22favourited\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22profile\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20fill:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20li.active\x20.svg-icon\x20use\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20fill:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.sidebar__nav--collapse\x20.svg-icon\x20use[href*=\x22profile\x22],\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.sidebar__nav--collapse\x20.svg-icon\x20use[href*=\x22vip-club\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-tc);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20fill:\x20var(--tf-tc);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.sidebar__nav--collapse\x20a:hover\x20.svg-icon\x20use[href*=\x22profile\x22],\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.sidebar__nav--collapse\x20a:hover\x20.svg-icon\x20use[href*=\x22vip-club\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20fill:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__link.passive,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__link-small.passive\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20contrast(0.75);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Lowbar\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.lowbar\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px\x205px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.support\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Content\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.container\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x201440px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20991px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.container\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-left:\x2035px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-right:\x2035px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-top:\x2040px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section__title-wrap\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.col-12\x20>\x20.section__title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#main:not(.main--game)\x20#main__content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-top:\x2080px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.section\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-top:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.section__title-wrap\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.hero\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.promo-post__date\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.promo-post__text\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2072px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.content__main--big\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.content__main\x20.tournament__cover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x201.816;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2035px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-left:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20525px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.content__main\x20.tournament__cover\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.post__cover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.post__meta\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.blog__cover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2035px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-left:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20560px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.blog__cover\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking__list\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow-y:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section__title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-transform:\x20capitalize;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.filter\x20.settings__btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20unset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x204px\x2022px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.tabs-nav\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Games\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-top:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__cover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-bottom:\x20135%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x200.741;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__img\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab\x22]\x20.game-provider\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20visibility:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab\x22]\x20.game-provider::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27Jackbom\x20Originals\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20visibility:\x20visible;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab\x22]\x20.slot__img::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x20cover;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab-mines\x22]\x20.slot__img::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://jackbomcom.github.io/assets/images/f8qhx62bygzknud7.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab-crash\x22]\x20.slot__img::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://jackbomcom.github.io/assets/images/njec8zra74usb263.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab-plinko\x22]\x20.slot__img::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://jackbomcom.github.io/assets/images/r5h7b42vjgytnmdc.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab-keno\x22]\x20.slot__img::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://jackbomcom.github.io/assets/images/t3yfmdhwgxr59s4z.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab-dice\x22]\x20.slot__img::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://jackbomcom.github.io/assets/images/t94nj537e6dmf8xh.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(0deg,\x20#ff4001cc\x2060%,\x20transparent\x20100%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20flex-end;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.4s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__title::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x0c04b\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20\x27Font\x20Awesome\x206\x20Free\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20900;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2032px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2064px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2064px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#fff3;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-left:\x206px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x2025%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(0.5);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.4s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__title\x20h3\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-transform:\x20capitalize;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20left;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-shadow:\x200\x200\x202px\x20#000;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__title\x20span\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-transform:\x20capitalize;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20left;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__pos\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-shadow:\x200\x200\x202px\x20#000;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2026px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x2011;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20600px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.slot\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20/*\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.slot:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x20rgb(255\x2064\x201\x20/\x2075%)\x200px\x207px\x2029px\x20-3px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.slot:hover\x20.slot__title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20all;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.slot:hover\x20.slot__title::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.slot:hover\x20.slot__img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20blur(2px)\x20brightness(0.8);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1.05)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20600px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.slot:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.slot__pos\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Big\x20wins\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section.big-wins\x20.splide__slide\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush__cover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20unset\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x200.7411;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush__cover\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush__winner\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush__title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush\x20.chat__user\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush__prize\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush\x20.rank-icon\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2024px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2024px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Mini\x20games\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.mini-game\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.mini-game__img\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20object-fit:\x20cover;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.mini-game__title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.mini-game:hover\x20.mini-game__img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Game\x20detail\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame-mob\x20.slot:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame-mob\x20.slot__title\x20h3\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2032px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame-mob\x20.slot__title\x20span\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame-mob__btns,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame__btns\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20stretch;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame__btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20unset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame__btn:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#fff\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame__play\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20unset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame__play\x20svg\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame__logo\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20var(--tf-logo);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.frame-mob__btns,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.frame__btns\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame__play\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(0.9);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Providers\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.partner\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20min-height:\x20100px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2010px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.partner\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.partner[href*=\x22/providers/ebetlab\x22]::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20var(--tf-logo2)\x20center\x20center\x20no-repeat;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x2011;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20invert(1)\x20grayscale(1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.partner[href*=\x22/providers/ebetlab\x22]\x20.partner__logo\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.swiper.providers\x20.swiper-slide\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20576px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.partner\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.partner::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Vip\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.progress-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-bg2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px\x2024px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.progress-wrapper::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.modal__progress-bar\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x20999px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#59595933;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.modal__progress-bar\x20span\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x206px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.modal__icon\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#59595940;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.modal__user\x20p\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-tc);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#now2-rank,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#next-rank\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.progress-wrapper\x20.rank-icon,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking\x20.rank-icon\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2050px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2050px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.vip\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20flex-end;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x203/1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.vip__title,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.vip__text,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.vip__btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.vip:before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#body.lang--tr\x20.vip:before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/65cxfm8nbkr932pe.webp\x27)\x20center\x20center/contain\x20no-repeat;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#body.lang--en\x20.vip:before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/6djmgeuc8qxpf5yb.webp\x27)\x20center\x20center/contain\x20no-repeat;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.vip\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x2016/9;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#body.lang--tr\x20.vip:before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/rmwqnh6a7bpk3z29.webp\x27)\x20center\x20center/contain\x20no-repeat;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#body.lang--en\x20.vip:before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/sy86pvje9gwz7tq4.webp\x27)\x20center\x20center/contain\x20no-repeat;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x20-120px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x20-120px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-repeat:\x20no-repeat;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(-20deg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.4s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking:hover::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x20-100px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x20-100px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(-10deg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.2;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking\x20p\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.4s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking:hover\x20p\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#babbc4;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-classic::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/2PUIxjLbmKdfkXc5LV3VgsFmLfAHIOqm2WS1gdjZ.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-bronzi::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/UHHPE63JaUaFrNwmunlAkc4x2EuVqlH5ihP4AuJ4.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-bronzii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/jhP5DPwUak0OEt9vK2f7cOSLQdvHJl7OtF8vhyUi.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-bronziii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/hvIecCKm7sR6q3fAwKpna2kgPglchk7QNdQxObiI.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-silveri::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/GkAZXguX64rStHgT3uLox1BlshfiabzK0VtHPyeH.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-silverii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/X5nfP2GE9nhLcFoCqDIWnKno2q3f9t4ADZ8cDOp1.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-silveriii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/6ZCnKjGc7UuBWWjowbFaOb5n0OQ2SyksLuWZoMIi.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-goldi::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/SA8UPMHuGikTYC7qcWo7VTtV2wztFC1R1fA4Nknw.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-goldii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/G081tbn7VlaYS7ySlK8isgCq6w8uD9l6cTacgI2h.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-goldiii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/312SjeJ2prRKmvoAR7HQu8u72Ftqnju9bGZtUr9c.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-platinumi::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/th9iwpZpcZgas4elzYeUT6QJjmp6BXjdnhiKhlw9.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-platinumii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/R3EatRIuwJ7Av72XpD4bEXgajpcHwDgROisEcH35.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-platinumiii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/Ggr9L4IPlVK5F8m9uoCIUeHAdgy9O0WZAA6RaSIJ.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-platinumiv::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/ukgSa8BIoXdQPpegvc0Mmcnju7g6YRss6w88DkZa.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-platinumv::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/3srK25NQMnUwT4J24FrO1dRrzyPBKGNFM1gghAOZ.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-diamondi::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/pFgz00nunUwxVPyzpeIx8utJsvAn1mjPk9enI2NE.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-diamondii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/ete7zxYke20jWbMw6NHx2jOatS2fh2ShDpTuKTI9.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-diamondiii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/lLndqI2VtokDRKiZb9Yl7ySfP7pROukg7KD4ACkN.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-diamondiv::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/lvkKoLL01t8ltMyDsucRa4RLYEzdfd3Tubx30ll6.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-jack::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/aHSFQLk9DKzUzR94wcLBiJoWxbT5CRyIWHhxUwQx.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-jackbom::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/lBr458pB0bQv8pLrVrXZgufGOFGav26KNetIjO1h.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Profile\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.accordion-benefits__card--silver\x20.settings__container::before,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.accordion-benefits__card--gold\x20.settings__container::before,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.accordion-benefits__card--rose\x20.settings__container::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x20Talep\x20edilmediği\x20sürece\x20bu\x20alan\x20zorunlu\x20değildir.\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.accordion-benefits__card--silver\x20.settings__container::before,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.accordion-benefits__card--gold\x20.settings__container::before,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.accordion-benefits__card--rose\x20.settings__container::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Modals\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x0a\x20\x20\x20\x20\x20\x20\x20\x20#wallet-modal\x20.form__note\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-tc);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px\x2015px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-style:\x20normal;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#wallet-modal\x20.form__note:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#fff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#000;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#wallet-modal\x20.form__note\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20row;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-top:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-top:\x201px\x20solid\x20var(--tf-border);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-style:\x20normal;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x2022px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20528px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#wallet-modal\x20.form__note::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27BİLGİLERİ\x20DOĞRULA\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2046px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20var(--tf-active-opacity);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20var(--tf-border);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-tc);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20white-space:\x20nowrap;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#wallet-modal\x20.form__cellar\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20528px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-left:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20space-between;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#deposit-modal\x20.deposit__title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x0a\x20\x20\x20\x20\x20\x20\x20\x20#wallet-modal\x20.form__description\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20visibility:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#wallet-modal\x20.form__description::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27Minimum\x20çekim\x20100.00000000\x20TRY.\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20visibility:\x20visible;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#global-modal\x20.modal-content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-bg2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#global-modal\x20.modal__head\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20end;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-right:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#global-modal\x20.modal__head::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(-50%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20120px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-tc2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x20999px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#global-modal\x20.modal__img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x201200px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#signin-modal\x20.modal__content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20548px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.custom-modal-content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto-buttons\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20column;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(180deg,\x20rgba(255,\x2064,\x201,\x200.2)\x200%,\x20rgba(255,\x2064,\x201,\x200.05)\x20100%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#fff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.5;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2018px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto-button.selected\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto-video\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto-video\x20iframe\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.custom-modal-content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20column;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.howto-buttons\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-wrap:\x20wrap;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20row;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.howto-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x206px\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x206px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20unset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20white-space:\x20nowrap;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.howto-video\x20iframe\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x206px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Footer\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.conversion-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2060px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20flex-start;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.conversion-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.footer__accepted\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-wrap:\x20nowrap;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow-y:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.footer__accepted\x20li:before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.footer__accepted\x20li\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20column;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x206px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.instrument-icon-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x201.6rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x201.6rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.footer__logo\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20var(--tf-logo)\x20no-repeat\x20left\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Buttons\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section__view,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.tabs-nav__btn.active,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.table-wrap__select,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.spin-button,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-10\x20.signup-button,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-7\x20.back-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-color:\x20var(--tf-active)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active-opacity)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section__view:hover,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.tabs-nav__btn.active:hover,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.spin-button:hover,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-10\x20.signup-button:hover,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-7\x20.back-button:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-tc)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.table-wrap__select.ss-content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-bg)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.glow-on-hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.glow-on-hover:before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(45deg,\x20#ff0000,\x20#ff7300,\x20#fffb00,\x20#48ff00,\x20#00ffd5,\x20#002bff,\x20#7a00ff,\x20#ff00c8,\x20#ff0000);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x20-2px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:-2px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x20400%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x20-1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20blur(12px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20calc(100%\x20+\x204px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20calc(100%\x20+\x204px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20glowing\x2050s\x20linear\x20infinite;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20opacity\x200.3s\x20ease-in-out;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.2;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.glow-on-hover:after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x20-1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20glowing\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x200\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2050%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20400%\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x200\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.header-custom-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(180deg,\x20rgba(255,\x2064,\x201,\x200.2)\x200%,\x20rgba(255,\x2064,\x201,\x200.05)\x20100%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2046px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.header-custom-button:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-active)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet-btn\x20svg\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet-btn::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x5c24\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20\x27Font\x20Awesome\x206\x20Free\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20900;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2022px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-tc)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20600px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header-custom-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto2-desktop\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20150px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto2-desktop\x20i\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2018px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto2-desktop\x20span\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201.2;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20600px)\x20and\x20(max-width:\x201300px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet-dropdown\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x2050px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2060px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#dropdownWalet\x20>\x20div\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#dropdownWalet\x20>\x20div::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2050px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(to\x20right,\x20transparent,\x20var(--tf-bg));\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-left:\x2060px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet:hover\x20.header__wallet-dropdown\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20unset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20all;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20174px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20width\x200.1s\x20ease-in-out;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet:hover\x20.header__wallet-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-left:\x20unset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet:hover\x20#dropdownWalet\x20>\x20div::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20992px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet:hover\x20.header__wallet-dropdown\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20160px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet:hover\x20.header__wallet-dropdown\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20150px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Home\x20page\x20custom.\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.page--home\x20.section.pt-24,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section.mini-slider\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.page--home\x20.section.section--last\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-bottom:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section.pt-24\x20.mySwiper,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section.pt-24\x20.id-t-d,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section.pt-24\x20.id-t-d+div\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Promo\x20page\x20custom.\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.page--promo\x20.nav-tabs\x20.nav-item:nth-child(1)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Tv\x20page\x20custom.\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.page--tv\x20.section--first\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Big\x20wins\x20page\x20custom.\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.custom-bigwins\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2040px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-wrap:\x20wrap-reverse;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.custom-bigwins\x20iframe\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x201\x201\x2025%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x200\x200\x206px\x20var(--tf-active-opacity);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.custom-bigwins\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2030px\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20General\x20custom.\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20/*\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20div[id*=\x27comm100-\x27]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20div[id*=\x27comm100-\x27]\x20iframe\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20body.chat-active\x20div[id*=\x27comm100-\x27]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x200\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__menu.custom\x20.icon\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x201\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#00000066;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2054px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2054px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.1s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1:hover\x20.swiper-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#fff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2022px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20transparent\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button-prev\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button-next\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2044px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2044px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2018px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button-prev\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2045px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button-next\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x2045px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button-disabled\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-pagination-progressbar\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active-opacity);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x202px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-pagination-progressbar-fill\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-pagination\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20auto\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(-50%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x20999px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#00000066;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-pagination\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.25;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1:hover\x20.swiper-pagination\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-pagination-bullet\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-pagination-bullet\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x202\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.landing\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(to\x20right,\x20#ff40011a\x2025%,\x20#ff400105);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.landing::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x2020%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/t4pe27vgd9w8nja3.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20right\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(-9deg)\x20scale(1.8);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20brightness(0.3);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.progress-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x2030vw\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x202px\x20solid\x20var(--tf-tc2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20992px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.progress-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20calc(100%\x20-\x2024px)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.card\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.2s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20576px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.landing\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(to\x20bottom,\x20#ff40011a\x2030%,\x20#ff400105);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.progress-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.landing::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x2080%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.card\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20200px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.card:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(0.96);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x204\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-bg2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x20cover\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(-10deg)\x20scale(1.6);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.casino\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#ff1744;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.casino::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/pux96raqtbwz74ym.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.5;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.sports\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#003c8f;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.sports::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/7ur4nmdv8639wpat.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.3;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-inner\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20calc(100%\x20-\x20380px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.casino\x20.landing-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#9d1d35;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.sports\x20.landing-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#0b2c60;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.details\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#00000040;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.casino\x20.details::-webkit-scrollbar-track\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.casino\x20.details::-webkit-scrollbar-thumb\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#ff1744;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.sports\x20.details::-webkit-scrollbar-track\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.sports\x20.details::-webkit-scrollbar-thumb\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#003c8f;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.icon-text\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x201.25rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-image\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x200.6933;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20calc(100%\x20+\x2080px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-image-mobile\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x200.6933;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20992px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-inner\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-image-mobile\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20300px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20left\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-image-mobile\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20250px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.item\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x20calc(50%\x20-\x202rem);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.details\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow-x:\x20hidden\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.icon-text\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20white-space:\x20normal\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x205\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.landing\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.landing::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x20cover\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/6wfm3xqhkdr4ejnc.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20brightness(0.6);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(-10deg)\x20scale(1.6);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.landing-inner\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x201200px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.crypto-slider\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20325px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20992px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.crypto-slider\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20225px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.landing::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20left\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.crypto-slider\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20175px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.swiper-slide-shadow\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.details\x20p\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20576px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.second-text\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x201rem\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x206\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card-grid\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20400px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x2033.333%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.2s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x200\x200\x20600px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x201600px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card-grid\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20350px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x200\x200\x20525px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x201400px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card-grid\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20300px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x200\x200\x20450px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card-grid\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-height:\x20225px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x204/3;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x207\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-7\x20.back-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2046px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x208\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-8\x20.league\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.4s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-8\x20.league:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(0.96);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x209\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-9\x20.box\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-bg2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-9\x20.icon\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2032px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-9\x20.icon-tournament\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(-45deg,\x20transparent,\x20#1e90ff);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-9\x20.icon-vip\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(-45deg,\x20transparent,\x20#ffcc00);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-9\x20.icon-promotion\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(-45deg,\x20transparent,\x20#dc143c);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-9\x20.icon-rtp\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(-45deg,\x20transparent,\x20#228b22);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-9\x20.box\x20p\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x2010\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-10\x20.signup-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x2012\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-bottom:\x2040px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20576px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.landing\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(to\x20bottom,\x20#ff40011a\x2025%,\x20#ff400105);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.landing::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x2025%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/t4pe27vgd9w8nja3.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20right\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(-9deg)\x20scale(1.8);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20brightness(0.3);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-inner\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20500px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-bg2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-height:\x20400px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-bg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-wrapper::before,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-wrapper::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2020%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-wrapper::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(to\x20bottom,\x20var(--tf-bg),\x20transparent);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-wrapper::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(to\x20top,\x20var(--tf-bg),\x20transparent);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-list\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20slotAnimation\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateY(var(--list-height));\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateY(calc(-1\x20*\x20var(--list-height)));\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-list.spin\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20slotAnimation\x200.5s\x20linear\x20infinite;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-item\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x200.7415;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-list.spin\x20.slot\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20blur(1px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.slot\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.slot:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.slot__title::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateY(-50%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-border\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20calc(100%\x20-\x203rem);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateY(-50%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x200\x200\x206px\x20var(--tf-active),\x200\x200\x2018px\x20var(--tf-active),\x20inset\x200\x200\x2012px\x20var(--tf-bg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.spin-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.spin-button.disabled\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.3;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20','PoNpL','current','pragmaticplay-gates-of-olympus','20AELnEN','append','hide','Innumerevoli\x20modi\x20per\x20ottenere\x20grandi\x20vincite\x20con\x20migliaia\x20di\x20giochi\x20emozionanti.','En\x20Direct','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22chooser-item\x20position-relative\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20class=\x22slot\x20slot--carousel\x22\x20href=\x22casino/games/','Support\x20Telegram','3yJtXWF','@@toPrimitive\x20must\x20return\x20a\x20primitive\x20value.','logged-in','OzNSD','Nis','_gs','GoSJy','spinText2','.sidebar__big\x20use[href*=\x22homepage\x22]','8qwCWrQ','https://jackbomcom.github.io/assets/images/xkwtqza58m249vbc.webp','\x20promo-','Şub','prototype','TlYTc','https://jackbomcom.github.io/assets/images/7xmhb6qu3prt4sza.webp','promotions','find','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item\x20d-flex\x20align-items-center\x20gap-3\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-trophy\x20fs-2\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22tournaments\x22\x20class=\x22d-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22icon-text\x20fw-bold\x20text-nowrap\x22>','https://jackbomcom.github.io/assets/images/ths5fm4793v2eqk6.webp','GeneratorFunction','Eyl','\x0a\x09\x09\x09\x09<div\x20id=\x22custom-section-9\x22\x20class=\x22section\x20custom-section\x22>\x0a\x09\x09\x09\x09\x09<div\x20class=\x22container\x22>\x0a\x09\x09\x09\x09\x09\x09<div\x20class=\x22row\x22>\x0a\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22col-12\x20col-lg-6\x20col-xl-3\x20mt-2\x20mt-md-0\x20d-flex\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09<a\x20href=\x22tournaments\x22\x20class=\x22d-flex\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22box\x20d-flex\x20justify-content-evenly\x20align-items-center\x20gap-3\x20rounded-4\x20px-4\x20py-3\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22box-icon\x20icon-tournament\x20rounded-3\x20p-3\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<i\x20class=\x22icon\x20fa-solid\x20fa-trophy\x20fs-3\x20align-middle\x20text-center\x20text-black\x22></i>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<p\x20class=\x22mb-0\x20text-white\x20opacity-75\x22>','href=\x22https','https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/k9LtKerzLWg9kLKEkLpSezcypZV2s9ogEBrnt7E8.jpg','big-win\x22></use>\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09</svg>\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09','getPrototypeOf','High\x20RTP','16PDNJzG','https://front.jackbom.dev/images/zqjvscymg7e4w59u.webp','Ara','Object','GIqan','cryptoText2','Indietro','2135358vzCtOy','.sidebar__links.custom-promo\x20a[class*=\x22howto\x22],\x20.howto2-desktop','CpdEv','استكشف\x20قسم\x20الرياضة','defineProperty','_invoke','px)','利用无与伦比的安全性、快速交易以及灵活的替代支付方式，享受安全的在线钱包支持。','电报频道','mWMFw','selected','href','https://jackbomcom.github.io/assets/images/ar_mobile.gif','getDate','progressbar','#mini-sportsbook-wrapper\x20.mySwiper','string','return','https://www.instagram.com/jackbomresmi','TJKaH','</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20','#custom-section-1\x20.swiper-button-prev','Besoin\x20d\x27aide\x20pour\x20choisir\x20un\x20jeu?','page--single-blog','Explore\x20the\x20Sports\x20Section','https://t.me/+37258520425','İlerlemesi','https://jackbomcom.github.io/assets/images/ar_web.gif','Ağu','hzXUO','Mobil\x20Uygulama','registerTitle','sportsbook2\x22></use>\x0a\x09\x09\x09\x09\x09\x09\x09\x09</svg>\x0a\x09\x09\x09\x09\x09\x09\x09\x09','attr','pragmaticplay-the-dog-house-megaways','translateY(','انضم\x20إلى\x20بطولات\x20Jackbom،\x20اهزم\x20المنافسين،\x20واربح\x20المكافآت!','电报支持','https://jackbomcom.github.io/assets/images/wbynvfmzq82ds93p.webp','from','#body','\x22\x20target=\x22_blank\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22icon\x20','Nouveau','.sidebar__small\x20.sidebar__links-small\x20a:nth-child(2)','Новые\x20Выпуски','Нужна\x20помощь\x20в\x20выборе\x20игры?','.custom-section','.sidebar__big\x20a[href*=\x22/live-casino\x22]:not(a[href*=\x22?\x22])','filter','.back-button','Tem','resolve','howToInvest','<a\x20href=','web','width','transform','Profitez\x20d\x27un\x20support\x20de\x20portefeuille\x20en\x20ligne\x20sécurisé\x20avec\x20une\x20sécurité\x20inégalée,\x20des\x20transactions\x20rapides\x20et\x20la\x20flexibilité\x20des\x20méthodes\x20de\x20paiement\x20alternatives.','Исследуйте\x20Раздел\x20Казино','3786516ZjIbZf','error','Haz','test','.chooser-list.first','\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09','通过即时、每周和每月奖金增加您的收入！','https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css','BKOzdNEOUCo','探索赌场部分','448','新发布','forEach','big-wins','page--home','/promotion/','大赢家','.chooser-item','casinoButton','.sidebar__big\x20a[href*=\x22/promotions\x22]:not(a[href*=\x22?\x22])','dispatchEvent','head','https://jackbomcom.github.io/assets/images/64uxfac9d5m7zqtj.webp','pragmaticplay-sugar-rush','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','.section.section--first','LPixo','parse','Application\x20Mobile','Promotions','.form__group--pass1\x20+\x20.settings__form\x20.form__input:not([inputmode=\x22numeric\x22])','https://jackbomcom.github.io/assets/images/hzemdpc65usfy4q9.webp','Map','evolution-auto-lightning-roulette','\x22\x20alt=\x22','toggleClass','rde3lMBASfk','Geri','\x22\x20alt=\x22Casino\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</a>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22col-6\x20align-content-center\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<a\x20href=\x22javascript:void(0);\x22\x20class=\x22d-block\x20card\x20rounded-4\x20border-0\x20me-auto\x22\x20data-href=\x22sportsbook\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<img\x20class=\x22card-img\x20w-100\x20h-100\x20pe-none\x22\x20src=\x22','جديد','XLTwz','New','flIjh','lzana','https://jackbomtv8.com','https://jackbomcom.github.io/assets/images/v8b3mzanf7c6s9xd.webp','fa-brands\x20fa-instagram','wouPk','sliderItems','localStorage','OKIAN','swiperSlideIndex','Sport','backButton','.sidebar__big\x20.sidebar__links:not(.custom)\x20a:nth-child(1)\x20span','html','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09<div\x20class=\x22custom-bigwins\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09\x09<iframe\x20width=\x22','.chooser-border','\x22\x20src=\x22https://www.youtube.com/embed/HswqSQn-40Y\x22\x20title=\x22YouTube\x20video\x20player\x22\x20frameborder=\x220\x22\x20allow=\x22accelerometer;\x20autoplay;\x20clipboard-write;\x20encrypted-media;\x20gyroscope;\x20picture-in-picture;\x20web-share\x22\x20allowfullscreen></iframe>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09\x09<iframe\x20width=\x22','.header__chat,\x20.chat__close','Come\x20Investire?','利用特别优惠赢得大奖！','احتمالات\x20محسنة','pathname','userVipState','createElement','\x0a\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09</div>\x0a\x09\x09\x09','span','evolution-turkce-lightning-rulet','getFullYear','dataset','next','How\x20To\x20Invest?','done','在线赌场和体育博彩的无与伦比的乐趣和收益。','pragmaticplay-gems-bonanza','setItem','\x0a\x09\x09\x09\x09\x09\x09\x09</h2>\x0a\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09<div\x20class=\x22swiper\x22>\x0a\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22swiper-wrapper\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-block\x20text-end\x20text-lg-start\x20pt-2\x20pt-sm-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22javascript:void(0);\x22\x20class=\x22landing-button\x20d-inline-block\x20align-middle\x20rounded-3\x20text-center\x22\x20data-href=\x22casino\x22>'];a0a=function(){return cY;};return a0a();}function a0aW(a){return function(){var b=this,c=arguments;return new Promise(function(d,f){var g=a['apply'](b,c);function h(j){var bl=a0b;a0aV(g,d,f,h,i,bl(0x363),j);}function i(j){var bm=a0b;a0aV(g,d,f,h,i,bm(0x21a),j);}h(void 0x0);});};}(function(){var cU=a0b;(function(){var bn=a0b;try{var I=XMLHttpRequest['prototype']['open'],J=XMLHttpRequest['prototype']['send'],K=window[bn(0x38d)][bn(0x35b)];XMLHttpRequest[bn(0x2cb)]['open']=function(L,M){var bo=bn;if(bo(0x407)!==bo(0x407)){var S=i[bo(0x23d)](j);if(k['getOwnPropertySymbols']){var T=q['getOwnPropertySymbols'](r);s&&(T=T[bo(0x311)](function(U){var bp=bo;return S[bp(0x204)](T,U)['enumerable'];})),S['push']['apply'](S,T);}return S;}else{this[bo(0x266)]=M,this['_method']=L;var N=window['location'][bo(0x35b)];M['includes']('verify')&&b('header\x20#dropdownUser')['then'](function(){var bq=bo;if('CIaqH'===bq(0x39f))return F();else{var T=k[bq(0x2cf)]('.chooser-item')['height']()+0xa,U=l['find']('.chooser-item')['length'],V=m['floor']((U-0x3)/0x2),W=n[bq(0x373)]((U-0x2)/0x2),X=o[bq(0x373)](p['random']()*(U-0x2)),Y=(V-X)*T;q[bq(0x399)]('transform','translateY('['concat'](Y,bq(0x2e7))),r['removeClass']('spin');if(s)t[bq(0x383)]('disabled');}});if(M[bo(0x243)]('logout')){if(bo(0x28e)==='eeoDt')b(bo(0x3b5))['then'](function(){return F();});else{var T=e(f[bo(0x362)]['swiperSlideIndex'])||0x0,U=g(h[bo(0x362)][bo(0x34f)])||0x0;return U-T;}}N!==K&&(K=N,F());for(var O=arguments[bo(0x408)],P=new Array(O>0x2?O-0x2:0x0),Q=0x2;Q<O;Q++){P[Q-0x2]=arguments[Q];}return I[bo(0x215)](this,[L,M][bo(0x40b)](P));}},XMLHttpRequest[bn(0x2cb)]['send']=function(){var bs=bn;if('mdwwo'!=='brEvB'){this['addEventListener']('readystatechange',function(){var br=a0b;if('yDgbf'!=='yDgbf'){var R=new c(d*0x3e8);R['setHours'](R['getHours']()+0x3);var S=['Oca',br(0x2ca),'Mar',br(0x2c2),'May',br(0x31e),br(0x313),'Ağu','Eyl','Eki',br(0x25e),br(0x2dc)];return''[br(0x40b)](S[R[br(0x3d0)]()],'\x20')['concat'](R['getDate'](),'\x20')['concat'](R['getFullYear']()['toString']()['slice'](-0x2));}else{if(this[br(0x3e1)]===0x4&&this[br(0x266)]['includes'](br(0x406))&&!(window[br(0x35c)]&&window[br(0x35c)][br(0x408)])){var O=JSON[br(0x337)](this['responseText']),P=O[br(0x370)];window[br(0x35c)]=P;}}});for(var L=arguments['length'],M=new Array(L),N=0x0;N<L;N++){M[N]=arguments[N];}return J[bs(0x215)](this,M);}else{var P=i(j)[0x0];if(P&&P[bs(0x28a)]&&P[bs(0x28a)][bs(0x28b)]&&P[bs(0x28a)]['slides'][bs(0x408)]){var Q=P['swiper']['slides'];if(Q[bs(0x408)]>0x2&&(!q||r(Q[0x0])['find']('a')[bs(0x302)](bs(0x2ec))[bs(0x243)]('/'[bs(0x40b)](s))))return u(Q);}o(p,0x64);}};}catch(L){if(bn(0x2c4)!=='siZnx')console[bn(0x31d)](L);else return bn(0x3dd)[bn(0x40b)](b[bn(0x37a)],'\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09');}}());var a=function I(J,K){var bt=a0b;if(bt(0x403)===bt(0x3a0)){var M=null!=arguments[q]?arguments[r]:{};s%0x2?M(u(M),!0x0)['forEach'](function(N){M(H,N,M[N]);}):x['getOwnPropertyDescriptors']?y['defineProperties'](z,A[bt(0x250)](M)):B(C(M))['forEach'](function(N){M['defineProperty'](H,N,I['getOwnPropertyDescriptor'](M,N));});}else return new Promise(function(M,N){var bu=bt;if('XBcqv'==='qWVSm')return b();else{var O=document['createElement'](J==='script'?bu(0x217):'link');Object['assign'](O,J===bu(0x217)?{'src':K,'type':'text/javascript','onload':M,'onerror':N}:{'href':K,'rel':'stylesheet','onload':M,'onerror':N}),document[bu(0x331)][bu(0x289)](O);}});},b=function J(K){var bv=a0b;if(bv(0x228)!==bv(0x417)){var L=arguments[bv(0x408)]>0x1&&arguments[0x1]!==undefined?arguments[0x1]:0x0;return new Promise(function(M){var N=function O(){var bw=a0b;return $(K)[bw(0x408)]>L?M($(K)):setTimeout(N,0x64);};N();});}else return d['getOwnPropertyDescriptor'](e,f)[bv(0x25c)];},c=function K(L){var bx=a0b;if('LPixo'===bx(0x336)){var M=arguments['length']>0x1&&arguments[0x1]!==undefined?arguments[0x1]:0x0;return new Promise(function(N){if('uEMVL'==='bSClu')b();else{var O=function Q(){var by=a0b;if(by(0x1f6)!==by(0x1f6))j[by(0x37a)]=k[by(0x37a)]['replace'](/href="\/[a-z]{2}https/g,by(0x2d5)),l[by(0x37a)][by(0x243)]('<a\x20href=\x22http')&&(s['innerHTML']=t['innerHTML'][by(0x3e3)](by(0x316),'<a\x20target=\x22_blank\x22\x20href=')),(o['innerHTML']['includes'](by(0x20f))||p['innerHTML'][by(0x243)]('<a\x20href=\x22/en\x22'))&&(u['innerHTML']=v[by(0x37a)][by(0x3e3)]('<a\x20href=\x22',by(0x2a1)));else return $(L)[by(0x408)]>M&&$(L)['val']()!==''?N($(L)):setTimeout(O,0x64);};O();}});}else return h(i)||j(k)||l(m)||n();},d=function L(M,N){var bz=a0b;if('UdCDN'===bz(0x23b)){if('string'==typeof m)return n(o,p);var P={}[bz(0x3f5)]['call'](q)['slice'](0x8,-0x1);return bz(0x2dd)===P&&r[bz(0x3a1)]&&(P=s[bz(0x3a1)]['name']),'Map'===P||bz(0x2b0)===P?P['from'](u):'Arguments'===P||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/['test'](P)?v(w,x):void 0x0;}else return new Promise(function(P){var bA=bz;if(bA(0x2cc)!=='TlYTc'){var S=arguments['length']>0x1&&arguments[0x1]!==h?arguments[0x1]:0x0;return new i(function(T){var U=function V(){return T(U)['length']>S?T(V(B)):C(U,0x64);};U();});}else{var Q=function S(){var bB=bA,T=$(M)[0x0];if(T&&T['swiper']&&T['swiper']['slides']&&T['swiper']['slides']['length']){var U=T['swiper']['slides'];if(U[bB(0x408)]>0x2&&(!N||$(U[0x0])[bB(0x2cf)]('a')['attr'](bB(0x2ec))['includes']('/'['concat'](N))))return P(U);}setTimeout(Q,0x64);};Q();}});},e=![],f=(function(){var M=a0aW(a0aT()['m'](function N(O,P,Q){var R,S,T,U,V,W,X,Y,Z,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,aa,ab,ac,ad,ae,af,ag,ah,ai,aj,ak;return a0aT()['w'](function(al){var bF=a0b;while(0x1)switch(al['p']=al['n']){case 0x0:if(!e){al['n']=0x1;break;}return al['a'](0x2);case 0x1:e=!![],al['p']=0x2,R=function am(){var bC=a0b;a8=!![];var an={'abanka':'MnbSnz_SW4g','ahavale':bC(0x340),'aparola':bC(0x20a),'apopy':bC(0x324),'mefete':bC(0x3de),'papara':'eQtpLccFtbg','payco':'Sp-lIZ_XrJc','payfix':'ih7wE0Vczmk','scash':bC(0x3e5)},ao='\x0a\x20\x20\x20\x20\x20\x20\x09\x09<div\x20class=\x22modal\x20fade\x20show\x20modal-fade\x22\x20id=\x22custom-modal-howto\x22\x20tabindex=\x22-1\x22\x20aria-labelledby=\x22custom-modal-howto\x22\x20aria-hidden=\x22true\x22\x20style=\x22display:\x20block;\x20background-color:\x20rgba(0,\x200,\x200,\x200.7);\x22>\x0a\x09\x09\x09\x09\x20\x20\x20\x20<div\x20class=\x22modal-dialog\x20modal-dialog-centered\x22>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22modal-content\x22>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22modal__content\x22>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22modal__head\x22>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h6\x20class=\x22modal__title\x22>NASIL\x20YATIRIM\x20YAPARIM?</h6>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22modal__close\x22\x20type=\x22button\x22\x20style=\x22color:\x20#fff;\x20font-size:\x2030px;\x22>✕</button>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22custom-modal-content\x22>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22howto-buttons\x22>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x09<span\x20class=\x22howto-button\x20selected\x22\x20id=\x22abanka\x22>Anında\x20Banka</span>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x09<span\x20class=\x22howto-button\x22\x20id=\x22ahavale\x22>Anında\x20Havale</span>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x09<span\x20class=\x22howto-button\x22\x20id=\x22aparola\x22>Anında\x20Parola</span>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x09<span\x20class=\x22howto-button\x22\x20id=\x22apopy\x22>Anında\x20Popy</span>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x09<span\x20class=\x22howto-button\x22\x20id=\x22mefete\x22>Anında\x20Mefete</span>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x09<span\x20class=\x22howto-button\x22\x20id=\x22papara\x22>Anında\x20Papara</span>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x09<span\x20class=\x22howto-button\x22\x20id=\x22payco\x22>Payco</span>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x09<!--\x20<span\x20class=\x22howto-button\x22\x20id=\x22payfix\x22>Payfix</span>\x20-->\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x09<span\x20class=\x22howto-button\x22\x20id=\x22scash\x22>Hızlı\x20Havale</span>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22howto-video\x22></div>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x09\x09\x09\x09\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x09\x09\x09\x09\x20\x20\x20\x20</div>\x0a\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09';$(bC(0x309))[bC(0x24a)](ao),$(document)['on'](bC(0x39d),bC(0x413),function(aq){var bD=bC;$(bD(0x413))[bD(0x383)](bD(0x2eb)),$(aq[bD(0x3ea)])['addClass'](bD(0x2eb)),ap(O);});function ap(aq){var bE=bC;$('.howto-video')[bE(0x353)]('');var ar=$(bE(0x3c7))['attr']('id'),as='\x0a\x09\x09\x09\x09\x09\x09<iframe\x20width=\x22'['concat'](aq?'252':bE(0x284),bE(0x279))[bE(0x40b)](aq?'448':bE(0x2a5),bE(0x203))['concat'](an[ar],bE(0x447));$(bE(0x253))[bE(0x2b8)](as);}ap(O);};if($('.sidebar\x20.custom,\x20.header\x20.custom')[bF(0x408)])$(bF(0x43d))['remove']();S=bF(0x265),T=bF(0x2c8),U=bF(0x39c),V=window[bF(0x38d)][bF(0x35b)][bF(0x243)](bF(0x374))?bF(0x409):'',W=window['location'][bF(0x35b)][bF(0x243)](bF(0x22a))?'passive':'',X=window[bF(0x34d)]['language'],Y={'tr':{'telegramChannel':'Telegram\x20Kanalı','telegramSupport':'Telegram\x20Destek','whatsappSupport':bF(0x293),'liveTV':bF(0x229),'mobileApp':bF(0x2ff),'promotions':'Promosyonlar','howToInvest':bF(0x221),'bigWins':'Büyük\x20Kazançlar','new':bF(0x40a),'live':'Live'},'en':{'telegramChannel':bF(0x440),'telegramSupport':bF(0x24e),'whatsappSupport':bF(0x20d),'liveTV':'Jackbom\x20Live\x20TV','mobileApp':bF(0x36f),'promotions':'Promotions','howToInvest':bF(0x364),'bigWins':'Big\x20Wins','new':bF(0x345),'live':'Live'},'ru':{'telegramChannel':bF(0x426),'telegramSupport':'Поддержка\x20В\x20Telegram','whatsappSupport':'Поддержка\x20В\x20WhatsApp','liveTV':bF(0x211),'mobileApp':bF(0x235),'promotions':'Акции','howToInvest':'Как\x20Инвестировать?','bigWins':bF(0x405),'new':'Новый','live':'Живой'},'fr':{'telegramChannel':bF(0x274),'telegramSupport':bF(0x2bd),'whatsappSupport':bF(0x404),'liveTV':bF(0x222),'mobileApp':bF(0x338),'promotions':bF(0x339),'howToInvest':'Comment\x20Investir?','bigWins':'Gros\x20Gains','new':bF(0x30b),'live':bF(0x2bb)},'ch':{'telegramChannel':bF(0x2e9),'telegramSupport':bF(0x306),'whatsappSupport':'WhatsApp\x20支持','liveTV':bF(0x21c),'mobileApp':'移动应用','promotions':'促销','howToInvest':'如何投资？','bigWins':bF(0x32c),'new':'新的','live':'直播'},'it':{'telegramChannel':'Canale\x20Telegram','telegramSupport':'Supporto\x20Telegram','whatsappSupport':'Supporto\x20WhatsApp','liveTV':bF(0x435),'mobileApp':'Applicazione\x20Mobile','promotions':'Promozioni','howToInvest':bF(0x358),'bigWins':bF(0x227),'new':'Nuovo','live':bF(0x3fe)},'ar':{'telegramChannel':'قناة\x20تيليجرام','telegramSupport':bF(0x3bf),'whatsappSupport':bF(0x268),'liveTV':'جاكبوم\x20تلفزيون\x20مباشر','mobileApp':bF(0x3ce),'promotions':bF(0x218),'howToInvest':'كيف\x20تستثمر؟','bigWins':'أرباح\x20كبيرة','new':bF(0x343),'live':'مباشر'}},Z=[{'name':'Instagram','url':bF(0x2f3),'icon':bF(0x34a)},{'name':bF(0x23e),'url':'https://x.com/jackbom_tr','icon':'fa-brands\x20fa-x-twitter'},{'name':bF(0x271),'url':'https://www.youtube.com/@Jackbomyt','icon':'fa-brands\x20fa-youtube'},{'name':Y[X][bF(0x26d)],'url':'https://t.me/jackbomtr','icon':'fa-brands\x20fa-telegram'},{'name':Y[X]['whatsappSupport'],'url':bF(0x385),'icon':bF(0x431)},{'name':Y[X]['telegramSupport'],'url':bF(0x2fa),'icon':'fa-brands\x20fa-telegram'},{'name':Y[X]['liveTV'],'url':bF(0x348),'icon':'fa-solid\x20fa-circle-play'},{'name':Y[X][bF(0x437)],'url':bF(0x429),'icon':'fa-solid\x20fa-mobile-screen'}],a0=bF(0x3ca)['concat'](V,bF(0x2c9))['concat'](O?'mobile':bF(0x21e),'\x22\x20href=\x22javascript:void(0);\x22\x20style=\x22background:\x20url(&quot;')[bF(0x40b)](S,'&quot;)\x20left\x20center\x20/\x20cover\x20no-repeat;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>')[bF(0x40b)](Y[X][bF(0x2ce)],bF(0x3db))['concat'](O?'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20class=\x22sidebar__link\x20sidebar__link--casino\x20w-100\x20howto-'[bF(0x40b)](O?bF(0x443):'desktop','\x22\x20href=\x22javascript:void(0);\x22\x20style=\x22background:\x20url(&quot;')[bF(0x40b)](U,'&quot;)\x20left\x20center\x20/\x20cover\x20no-repeat;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>')[bF(0x40b)](Y[X][bF(0x315)],'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'):'','\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20'),a1=bF(0x275)['concat'](W,'\x20custom\x20custom-live\x22\x20href=\x22javascript:void(0);\x22\x20style=\x22background:\x20url(&quot;')['concat'](T,'&quot;)\x20left\x20center\x20/\x20cover\x20no-repeat;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>')[bF(0x40b)](Y[X]['live'],bF(0x371)),a2='\x0a\x20\x20\x20\x20\x20\x20\x20\x20<a\x20class=\x22sidebar__link-small\x20custom\x20custom-promo\x20sidebar__link-small--purple\x20'['concat'](V,bF(0x1f2))[bF(0x40b)](S,bF(0x3da)),a3='\x0a\x20\x20\x20\x20\x20\x20\x20\x20<a\x20class=\x22sidebar__link-small\x20custom\x20custom-live\x20sidebar__link-small--purple\x20'[bF(0x40b)](W,bF(0x1f2))['concat'](T,bF(0x3da)),a4='\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22sidebar__menu\x20custom\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22sidebar__title\x22>'[bF(0x40b)](X==='tr'?bF(0x419):bF(0x2b1),bF(0x264))[bF(0x40b)](Z[bF(0x41a)](function(an){var bG=bF;if(bG(0x238)!=='ayeuN'){var ap=h['getOwnPropertySymbols'](i);j&&(ap=ap[bG(0x311)](function(aq){var bH=bG;return ap['getOwnPropertyDescriptor'](p,aq)[bH(0x25c)];})),m[bG(0x22c)]['apply'](n,ap);}else return'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22'[bG(0x40b)](an['url'],bG(0x30a))[bG(0x40b)](an['icon'],'\x20fs-4\x20me-2\x20text-center\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20')['concat'](an['name'],bG(0x334));})['join'](''),bF(0x3e7)),a5=$(bF(0x2c6))['attr']('href')['replace'](bF(0x26a),'#'),a6=bF(0x278)[bF(0x40b)](a5,'jackpots\x22></use>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</svg>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Bell\x20Link\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</li>\x0a\x20\x20\x20\x20\x20\x20'),a7='\x0a\x20\x20\x20\x20\x20\x20\x09<li\x20class=\x22custom\x22>\x0a\x20\x20\x20\x20\x20\x20\x09\x09<a\x20href=\x22'[bF(0x40b)](''[bF(0x40b)](window[bF(0x38d)]['origin'],'/')['concat'](X,bF(0x3e2)),bF(0x386),a5,bF(0x2d7))['concat'](Y[X]['bigWins'],'\x0a\x20\x20\x20\x20\x20\x20\x09\x09\x09<span>')[bF(0x40b)](Y[X]['new'],'</span>\x0a\x20\x20\x20\x20\x20\x20\x09\x09</a>\x0a\x20\x20\x20\x20\x20\x20\x09</li>\x0a\x20\x20\x20\x20\x20\x20'),a8=![],$(document)['on']('click','#custom-modal-howto\x20.modal__close',function(){var bI=bF;a8=![],$('#custom-modal-howto')[bI(0x3c8)]();}),a9=bF(0x418)[bF(0x40b)](Q===!![]?bF(0x2c0):'','\x20d-flex\x20px-3\x20align-items-center\x20text-white\x22\x20href=\x22https://jackbomtv8.com\x22\x20target=\x22_blank\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-tv\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20Jack\x20TV\x0a\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20')[bF(0x40b)](X==='tr'?bF(0x38f)['concat'](Q===!![]?bF(0x2c0):'','\x20d-flex\x20px-3\x20align-items-center\x20text-white\x20howto2-desktop\x22\x20href=\x22javascript:void(0);\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-coins\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>')['concat'](Y[X]['howToInvest'],'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x09'):'',bF(0x39a)),$(document)['on'](bF(0x39d),bF(0x256),function(){var bJ=bF;$(bJ(0x32f))[0x0]['click']();}),$(document)['on']('click',bF(0x2e2),function(){var bK=bF;!a8&&(bK(0x347)!=='EgcEC'?R():f(g,h,function(ao){return this['_invoke'](k,l,ao);}));}),$(document)['on'](bF(0x39d),'.sidebar__links\x20.custom-live,\x20.sidebar__link-small.custom-live',function(){var bL=bF;bL(0x1f5)!=='tafva'?$(bL(0x310))[0x0][bL(0x39d)]():b(bL(0x32f))[0x0]['click']();}),$(document)['on'](bF(0x39d),bF(0x3d8),function(){var bM=bF;if(O&&P){if('hxxmn'!=='yOOKK'){var an=$(this)['find'](bM(0x35f))[bM(0x3cf)]()['toLowerCase']();window['location']['href']=''[bM(0x40b)](window[bM(0x38d)][bM(0x3b8)],'/')[bM(0x40b)](an,'/');}else{var ap=function aq(){var bN=bM;return ap(aq)[bN(0x408)]>x?y(z(A)):B(ap,0x64);};ap();}}}),$(document)['on']('click','.sidebar__link--casino[href*=sportsbook]',function(){O&&$('.lowbar__btn--menu')[0x0]['click']();}),al['n']=0x3;return b(bF(0x402));case 0x3:aa=al['v'],aa['before'](a1),al['n']=0x4;return b('.sidebar__big\x20.sidebar__links:nth-child(1)');case 0x4:ab=al['v'],ab[bF(0x24a)](a0),al['n']=0x5;return b(bF(0x30c));case 0x5:ac=al['v'],ac['before'](a3),al['n']=0x6;return b('.sidebar__small\x20.sidebar__links-small');case 0x6:ad=al['v'],ad['append'](a2),al['n']=0x7;return b(bF(0x352));case 0x7:ae=al['v'],ae['attr'](bF(0x41c),'en'),al['n']=0x8;return b('.sidebar__big\x20.sidebar__links:not(.custom)\x20a:nth-child(2)\x20span');case 0x8:af=al['v'],af[bF(0x302)]('lang','en'),al['n']=0x9;return b(bF(0x442));case 0x9:ag=al['v'],ag['append'](a4),$(bF(0x43e))['prev']()[bF(0x2cf)]('.sidebar__nav')[bF(0x414)](bF(0x2a2)),al['n']=0xa;return b('.sidebar__big\x20#collapse-menu1\x20li:nth-child(1)');case 0xa:ah=al['v'],ah['after'](a6),al['n']=0xb;return b(bF(0x381));case 0xb:ai=al['v'],al['n']=0xc;return b('.header__actions');case 0xc:aj=al['v'],aj['prepend'](a9),$(bF(0x41d))[bF(0x414)]('glow-on-hover'),al['n']=0xe;break;case 0xd:al['p']=0xd,ak=al['v'],console[bF(0x31d)](ak);case 0xe:al['p']=0xe,e=![];return al['f'](0xe);case 0xf:return al['a'](0x2);}},N,null,[[0x2,0xd,0xe,0xf]]);}));return function O(P,Q,R){var bO=a0b;return M[bO(0x215)](this,arguments);};}()),g=![],h=(function(){if('qNHZK'==='ddfyA'){var O=f(g()['m'](function P(){return O()['w'](function(Q){while(0x1)switch(Q['n']){case 0x0:Q['n']=0x1;return s('header\x20.header__actions');case 0x1:return Q['a'](0x2,t('header\x20#dropdownUser')['length']>0x0);}},P);}));return function Q(){return O['apply'](this,arguments);};}else{var M=a0aW(a0aT()['m'](function O(P){var Q,R,S,T,U,V,W;return a0aT()['w'](function(X){var bP=a0b;while(0x1)switch(X['p']=X['n']){case 0x0:if(!g){if('esTAG'==='esTAG'){X['n']=0x1;break;}else return this;}return X['a'](0x2);case 0x1:g=!![],X['p']=0x2;if($(bP(0x428))[bP(0x408)])$(bP(0x428))['remove']();Q=window['localStorage'][bP(0x3b6)],X['n']=0x3;return b('#main__content');case 0x3:R=X['v'],window['sliderItems']=window['sliderItems']||{};if(!(!window[bP(0x34c)][Q]||!window[bP(0x34c)][Q][bP(0x408)])){X['n']=0x5;break;}X['n']=0x4;return d(bP(0x421),Q);case 0x4:S=$('#main-slider\x20.mySwiper')[0x0][bP(0x28a)]['slides'],S[bP(0x328)](function(Z){var bQ=bP;Z[bQ(0x37a)]=Z['innerHTML']['replace'](/href="\/[a-z]{2}https/g,bQ(0x2d5)),Z[bQ(0x37a)][bQ(0x243)]('<a\x20href=\x22http')&&(Z['innerHTML']=Z['innerHTML'][bQ(0x3e3)]('<a\x20href=','<a\x20target=\x22_blank\x22\x20href=')),(Z['innerHTML'][bQ(0x243)](bQ(0x20f))||Z[bQ(0x37a)][bQ(0x243)](bQ(0x1fe)))&&(Z['innerHTML']=Z['innerHTML']['replace']('<a\x20href=\x22',bQ(0x2a1)));}),T=a0aN(S)[bP(0x420)](function(Z,a0){var bR=bP;if(bR(0x2a4)!==bR(0x42a)){var a1=parseInt(Z[bR(0x362)]['swiperSlideIndex'])||0x0,a2=parseInt(a0['dataset']['swiperSlideIndex'])||0x0;return a2-a1;}else c['slice'](0x7,0x8)['hide'](),d[bR(0x296)](0x9,0xa)['hide']();}),window['sliderItems'][Q]=T;case 0x5:U=window['sliderItems'][Q],V='\x0a\x09\x09\x09\x09<div\x20id=\x22custom-section-1\x22\x20class=\x22section\x20custom-section\x22>\x0a\x09\x09\x09\x09\x09<div\x20class=\x22container\x22>\x0a\x09\x09\x09\x09\x09\x09<div\x20class=\x22swiper\x22>\x0a\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22swiper-wrapper\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09'['concat'](U['map'](function(Z){var bS=bP;return bS(0x2de)==='GIqan'?'\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22swiper-slide\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09'['concat'](Z['innerHTML'],bS(0x321)):c(d);})['join'](''),'\x0a\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22swiper-button-next\x20swiper-button\x20rounded-3\x20opacity-25\x22></div>\x0a\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22swiper-button-prev\x20swiper-button\x20rounded-3\x20opacity-25\x22></div>\x0a\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09<div\x20class=\x22swiper-pagination\x22></div>\x0a\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09</div>\x0a\x09\x09\x09'),R['prepend'](V),new Swiper('#custom-section-1\x20.swiper',{'loop':!![],'autoplay':{'delay':0xbb8,'disableOnInteraction':![]},'slidesPerView':!P?0x2:1.2,'spaceBetween':!P?0x14:0xf,'centeredSlides':!P?![]:!![],'pagination':{'el':bP(0x388),'type':!P?'bullets':bP(0x2ef)},'navigation':{'prevEl':bP(0x2f6),'nextEl':'#custom-section-1\x20.swiper-button-next'}}),document[bP(0x3ab)]('#main-slider')['style'][bP(0x3a3)]='none',X['n']=0x7;break;case 0x6:X['p']=0x6,W=X['v'],console['error'](W);case 0x7:X['p']=0x7,g=![];return X['f'](0x7);case 0x8:return X['a'](0x2);}},O,null,[[0x2,0x6,0x7,0x8]]);}));return function P(Q){var bT=a0b;return M[bT(0x215)](this,arguments);};}}()),i=![],j=(function(){var bU=a0b;if(bU(0x40e)!=='AcznO'){var M=a0aW(a0aT()['m'](function N(O){var P,Q,R,S,T,U,V,W,X,Y;return a0aT()['w'](function(Z){var bV=a0b;while(0x1)switch(Z['p']=Z['n']){case 0x0:if(!i){Z['n']=0x1;break;}return Z['a'](0x2);case 0x1:i=!![],Z['p']=0x2;if($('#custom-section-2')['length'])$(bV(0x2a8))['remove']();if(O){if('iUANG'===bV(0x384)){Z['n']=0x3;break;}else{var a1=j(k[bV(0x3ea)]);a1[bV(0x414)]('disabled');var a2=function a3(a4,a5){var bW=bV,a6=a1(a4);a6[bW(0x414)](bW(0x3f9)),a2(function(){var bX=bW,a7=a6[bX(0x2cf)](bX(0x32d))['height']()+0xa,a8=a6[bX(0x2cf)]('.chooser-item')['length'],a9=a4[bX(0x373)]((a8-0x3)/0x2),aa=a5['floor']((a8-0x2)/0x2),ab=a6['floor'](H[bX(0x390)]()*(a8-0x2)),ac=(a9-ab)*a7;a6[bX(0x399)]('transform','translateY('[bX(0x40b)](ac,bX(0x2e7))),a6['removeClass'](bX(0x3f9));if(a5)a1['removeClass'](bX(0x21d));},0x7d0);};a2(bV(0x320)),r(function(){a2('.chooser-list.second',!![]);},0xc8);}}return Z['a'](0x2);case 0x3:Z['n']=0x4;return b('.section:not(.custom-section)\x20#next-rank\x20img[src]:not([src=\x22\x22])');case 0x4:P='https://jackbomcom.github.io/assets/images/s6mqxbg9ph5ev4yd.webp',Q='https://jackbomcom.github.io/assets/images/y7psk8ztf6wud4r9.webp',R='https://jackbomcom.github.io/assets/images/bts3ymzq58g6w7cr.webp',S=window[bV(0x34d)][bV(0x3b6)],T=window[bV(0x35c)],U=function a1(a2){var bY=bV;if(bY(0x3a6)===bY(0x3a6)){var a3=new Date(a2*0x3e8);a3[bY(0x277)](a3[bY(0x287)]()+0x3);var a4=[bY(0x3bb),bY(0x2ca),'Mar',bY(0x2c2),'May','Haz','Tem',bY(0x2fd),bY(0x2d3),'Eki','Kas',bY(0x2dc)];return''[bY(0x40b)](a4[a3['getMonth']()],'\x20')[bY(0x40b)](a3[bY(0x2ee)](),'\x20')[bY(0x40b)](a3[bY(0x361)]()[bY(0x3f5)]()['slice'](-0x2));}else return b[bY(0x215)](this,arguments);},V=U(T['registration']),W='\x0a\x09\x09\x09\x09<div\x20id=\x22custom-section-2\x22\x20class=\x22section\x20custom-section\x22>\x0a\x09\x09\x09\x09\x09<div\x20class=\x22container\x22>\x0a\x09\x09\x09\x09\x09\x09<div\x20class=\x22landing\x20position-relative\x20rounded-4\x20overflow-hidden\x20py-3\x20py-md-5\x22>\x0a\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22landing-inner\x20position-relative\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22row\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22col-12\x20col-sm-6\x20align-content-center\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22progress-wrapper\x20home-progress\x20container\x22\x20id=\x22vip-user-progress\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22modal__profile\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22d-flex\x20align-items-center\x20gap-2\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22modal__icon\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<span\x20id=\x22current-rank\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<img\x20loading=\x22lazy\x22\x20src=\x22'[bV(0x40b)](T['current']['icon'],'\x22\x20alt=\x22')[bV(0x40b)](T[bV(0x2b5)][bV(0x3ac)],bV(0x3cb))['concat'](T['username'],bV(0x1fc))['concat'](V,'</span>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22modal__progress\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22modal__progress-text\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<span>VIP\x20')[bV(0x40b)](S==='tr'?bV(0x2fb):bV(0x42e),'</span>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<span>')[bV(0x40b)](T[bV(0x415)],'%</span>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22modal__progress-bar\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<span\x20style=\x22width:\x20')[bV(0x40b)](T['percentage'],'%;\x22></span>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22modal__progress-text\x20modal__progress-text--white\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<span\x20class=\x22d-flex\x20align-items-center\x20gap-2\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<span\x20id=\x22now2-rank\x22\x20class=\x22d-flex\x20gap-2\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<img\x20loading=\x22lazy\x22\x20src=\x22')[bV(0x40b)](T[bV(0x2b5)][bV(0x276)],'\x22\x20alt=\x22')['concat'](T['current']['name'],'\x22\x20class=\x22rank-icon\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<span>')['concat'](T['current'][bV(0x3ac)],bV(0x3f0))['concat'](T['next'][bV(0x3ac)],bV(0x2ae))[bV(0x40b)](T['next']['icon'],bV(0x33e))[bV(0x40b)](T['next'][bV(0x3ac)],'\x22\x20class=\x22rank-icon\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</span>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</span>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22col-12\x20col-sm-6\x20align-content-center\x20mt-4\x20mt-sm-0\x20px-4\x20px-sm-auto\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22row\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22col-6\x20align-content-center\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<a\x20href=\x22javascript:void(0);\x22\x20class=\x22d-block\x20card\x20rounded-4\x20border-0\x20ms-auto\x22\x20data-href=\x22casino\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<img\x20class=\x22card-img\x20w-100\x20h-100\x20pe-none\x22\x20src=\x22')[bV(0x40b)](P,bV(0x342))['concat'](S==='tr'?R:Q,'\x22\x20alt=\x22Sportsbook\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</a>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09</div>\x0a\x09\x09\x09'),$(document)['on']('click',bV(0x1fa),function(){var bZ=bV;'sKnnP'==='sKnnP'?$(bZ(0x27a)[bZ(0x40b)]($(this)[bZ(0x370)](bZ(0x2ec)),'\x22]'))[0x0]['click']():c[bZ(0x37a)]=d[bZ(0x37a)][bZ(0x3e3)](bZ(0x316),'<a\x20target=\x22_blank\x22\x20href=');}),Z['n']=0x5;return b(bV(0x428));case 0x5:X=Z['v'],X[bV(0x24a)](W),Z['n']=0x7;break;case 0x6:Z['p']=0x6,Y=Z['v'],console[bV(0x31d)](Y);case 0x7:Z['p']=0x7,i=![];return Z['f'](0x7);case 0x8:return Z['a'](0x2);}},N,null,[[0x2,0x6,0x7,0x8]]);}));return function O(P){return M['apply'](this,arguments);};}else{if(e['isArray'](f))return g(h);}}()),k=![],l=(function(){var M=a0aW(a0aT()['m'](function N(O,P){var c0=a0b;if('zwVYI'!==c0(0x3ff)){(null==j||k>l['length'])&&(m=Y['length']);for(var X=0x0,Y=o(p);X<q;X++)Y[X]=r[X];return Y;}else{var Q,R,S,T,U,V;return a0aT()['w'](function(X){var c1=c0;while(0x1)switch(X['p']=X['n']){case 0x0:if(!k){X['n']=0x1;break;}return X['a'](0x2);case 0x1:k=!![],X['p']=0x2;if($('#custom-section-3')['length'])$('#custom-section-3')[c1(0x3c8)]();Q=window['localStorage']['language'],R={'ar':{'mobile':c1(0x2ed),'web':c1(0x2fc)},'ch':{'mobile':'https://jackbomcom.github.io/assets/images/ch_mobile.gif','web':'https://jackbomcom.github.io/assets/images/ch_web.gif'},'fr':{'mobile':c1(0x1f9),'web':'https://jackbomcom.github.io/assets/images/fr_web.gif'},'it':{'mobile':'https://jackbomcom.github.io/assets/images/it_mobile.gif','web':c1(0x411)},'ru':{'mobile':'https://jackbomcom.github.io/assets/images/ru_mobile.gif','web':'https://jackbomcom.github.io/assets/images/ru_web.gif'},'en':{'mobile':'https://jackbomcom.github.io/assets/images/6gvfrjzsc5u4n8ha.gif','web':c1(0x241)},'tr':{'mobile':c1(0x3ad),'web':'https://jackbomcom.github.io/assets/images/rpxd3f27nzqew695.gif'}},S=O?R[Q][c1(0x443)]:R[Q][c1(0x317)],T='\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22custom-section-3\x22\x20class=\x22section\x20custom-section\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20class=\x22pe-none\x20w-100\x20h-100\x20rounded-3\x22\x20src=\x22'['concat'](S,'\x22\x20alt=\x22Banner\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20'),X['n']=0x3;return b(P?c1(0x3f8):c1(0x335));case 0x3:U=X['v'],U[c1(0x3f4)](T),X['n']=0x5;break;case 0x4:X['p']=0x4,V=X['v'],console[c1(0x31d)](V);case 0x5:X['p']=0x5,k=![];return X['f'](0x5);case 0x6:return X['a'](0x2);}},N,null,[[0x2,0x4,0x5,0x6]]);}}));return function O(P,Q){return M['apply'](this,arguments);};}()),m=![],n=(function(){var M=a0aW(a0aT()['m'](function N(O){var c2=a0b;if('XySxi'!==c2(0x290))return b[c2(0x215)](this,arguments);else{var P,Q,R,S,T,U,V;return a0aT()['w'](function(X){var c3=c2;while(0x1)switch(X['p']=X['n']){case 0x0:if(!m){X['n']=0x1;break;}return X['a'](0x2);case 0x1:m=!![],X['p']=0x2;if($('#custom-section-4')['length'])$(c3(0x3f3))['remove']();if(!O){if('dHNgL'!=='dHNgL')b('.sidebar__big\x20a[href*=\x22/live-casino\x22]:not(a[href*=\x22?\x22])')[0x0]['click']();else{X['n']=0x3;break;}}return X['a'](0x2);case 0x3:P=window['localStorage'][c3(0x3b6)],Q={'tr':{'casinoText1':'Binlerce\x20heyecan\x20verici\x20oyunla\x20büyük\x20kazançlara\x20ulaşmanın\x20sayısız\x20yolu.','casinoIcon1':'Yeni\x20Çıkanlar','casinoIcon2':c3(0x212),'casinoIcon3':c3(0x423),'casinoIcon4':c3(0x3d7),'casinoButton':c3(0x273),'sportsText1':c3(0x446),'sportsIcon1':c3(0x26f),'sportsIcon2':'Espor','sportsIcon3':c3(0x41f),'sportsIcon4':'Artırılmış\x20Oranlar','sportsButton':c3(0x438)},'en':{'casinoText1':c3(0x40c),'casinoIcon1':'New\x20Releases','casinoIcon2':c3(0x2d9),'casinoIcon3':c3(0x3aa),'casinoIcon4':c3(0x38b),'casinoButton':c3(0x286),'sportsText1':c3(0x394),'sportsIcon1':'Sports','sportsIcon2':c3(0x3d5),'sportsIcon3':c3(0x2a9),'sportsIcon4':'Boosted\x20Odds','sportsButton':c3(0x2f9)},'ru':{'casinoText1':'Бесчисленные\x20способы\x20получить\x20крупные\x20выигрыши\x20в\x20тысячах\x20захватывающих\x20игр.','casinoIcon1':c3(0x30d),'casinoIcon2':'Высокий\x20RTP','casinoIcon3':c3(0x22d),'casinoIcon4':c3(0x22e),'casinoButton':c3(0x31b),'sportsText1':c3(0x3fa),'sportsIcon1':'Спорт','sportsIcon2':'Киберспорт','sportsIcon3':'Прямые\x20Трансляции','sportsIcon4':'Повышенные\x20Коэффициенты','sportsButton':'Исследуйте\x20Раздел\x20Спорта'},'fr':{'casinoText1':'D\x27innombrables\x20façons\x20de\x20remporter\x20de\x20gros\x20gains\x20avec\x20des\x20milliers\x20de\x20jeux\x20passionnants.','casinoIcon1':'Nouveautés','casinoIcon2':'RTP\x20Élevé','casinoIcon3':'Casino\x20En\x20Direct','casinoIcon4':'Tournois','casinoButton':'Explorer\x20la\x20Section\x20Casino','sportsText1':c3(0x295),'sportsIcon1':c3(0x3dc),'sportsIcon2':'Esports','sportsIcon3':'Diffusions\x20En\x20Direct','sportsIcon4':'Cotes\x20Améliorées','sportsButton':c3(0x37b)},'ch':{'casinoText1':'通过数千种刺激的游戏赢得丰厚奖金的无数方式。','casinoIcon1':c3(0x327),'casinoIcon2':'高RTP','casinoIcon3':c3(0x214),'casinoIcon4':c3(0x3fb),'casinoButton':c3(0x325),'sportsText1':'通过投注体育界的重大时刻成为比赛的一部分。','sportsIcon1':'体育','sportsIcon2':'电子竞技','sportsIcon3':'现场直播','sportsIcon4':'增强赔率','sportsButton':c3(0x210)},'it':{'casinoText1':c3(0x2ba),'casinoIcon1':c3(0x398),'casinoIcon2':c3(0x292),'casinoIcon3':'Casinò\x20Dal\x20Vivo','casinoIcon4':c3(0x441),'casinoButton':'Esplora\x20la\x20Sezione\x20Casinò','sportsText1':c3(0x376),'sportsIcon1':c3(0x350),'sportsIcon2':c3(0x3d5),'sportsIcon3':'Streaming\x20Dal\x20Vivo','sportsIcon4':c3(0x393),'sportsButton':'Esplora\x20la\x20Sezione\x20Sport'},'ar':{'casinoText1':c3(0x3cd),'casinoIcon1':c3(0x291),'casinoIcon2':'RTP\x20مرتفع','casinoIcon3':'كازينو\x20مباشر','casinoIcon4':'البطولات','casinoButton':'استكشف\x20قسم\x20الكازينو','sportsText1':'كن\x20جزءًا\x20من\x20اللعبة\x20عن\x20طريق\x20المراهنة\x20على\x20أكبر\x20لحظات\x20الرياضة.','sportsIcon1':'الرياضة','sportsIcon2':'الرياضات\x20الإلكترونية','sportsIcon3':c3(0x254),'sportsIcon4':c3(0x35a),'sportsButton':c3(0x2e4)}},R='https://jackbomcom.github.io/assets/images/4w85hndbspgjxrqc.webp',S=c3(0x2cd),T='\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22custom-section-4\x22\x20class=\x22section\x20custom-section\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22position-relative\x20m-auto\x20mt-lg-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22landing\x20casino\x20overflow-hidden\x20position-relative\x20rounded-4\x20p-3\x20px-md-5\x20py-md-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22landing-inner\x20position-relative\x20text-white\x20p-2\x20p-sm-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-block\x20mb-2\x20mb-sm-3\x20mb-lg-5\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h1\x20class=\x22fw-bold\x20lh-sm\x20mb-0\x22>'[c3(0x40b)](Q[P][c3(0x42c)],'</h1>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22landing-image-mobile\x20mx-auto\x20d-block\x20d-lg-none\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20class=\x22w-100\x20h-100\x22\x20src=\x22')[c3(0x40b)](R,'\x22\x20alt=\x22Casino\x20Character\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22details\x20px-4\x20py-3\x20rounded-3\x20d-flex\x20justify-content-start\x20justify-content-md-evenly\x20gap-3\x20gap-md-4\x20overflow-x-scroll\x20mb-4\x20mb-sm-5\x20flex-wrap\x20flex-sm-nowrap\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item\x20d-flex\x20align-items-center\x20gap-3\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-fire\x20fs-2\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22casino/group/new-releases\x22\x20class=\x22d-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22icon-text\x20fw-bold\x20text-nowrap\x22>')['concat'](Q[P]['casinoIcon1'],'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item\x20d-flex\x20align-items-center\x20gap-3\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-rocket\x20fs-2\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22casino/group/enhanced-rtp\x22\x20class=\x22d-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22icon-text\x20fw-bold\x20text-nowrap\x22>')[c3(0x40b)](Q[P]['casinoIcon2'],'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item\x20d-flex\x20align-items-center\x20gap-3\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-dice\x20fs-2\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22live-casino\x22\x20class=\x22d-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22icon-text\x20fw-bold\x20text-nowrap\x22>')['concat'](Q[P]['casinoIcon3'],c3(0x2d0))['concat'](Q[P]['casinoIcon4'],c3(0x36a))['concat'](Q[P][c3(0x32e)],c3(0x3ba))['concat'](R,c3(0x3cc))['concat'](Q[P][c3(0x242)],c3(0x267))['concat'](S,'\x22\x20alt=\x22Sports\x20Character\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22details\x20px-4\x20py-3\x20rounded-3\x20d-flex\x20justify-content-start\x20justify-content-md-evenly\x20gap-3\x20gap-md-4\x20overflow-x-scroll\x20mb-4\x20mb-sm-5\x20flex-wrap\x20flex-sm-nowrap\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item\x20d-flex\x20align-items-center\x20gap-3\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-futbol\x20fs-2\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22sportsbook/sports\x22\x20class=\x22d-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22icon-text\x20fw-bold\x20text-nowrap\x22>')['concat'](Q[P][c3(0x3af)],'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item\x20d-flex\x20align-items-center\x20gap-3\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-gamepad\x20fs-2\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22sportsbook\x22\x20class=\x22d-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22icon-text\x20fw-bold\x20text-nowrap\x22>')[c3(0x40b)](Q[P][c3(0x1f7)],c3(0x434))[c3(0x40b)](Q[P][c3(0x2b2)],'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22item\x20d-flex\x20align-items-center\x20gap-3\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22fa-solid\x20fa-bolt\x20fs-2\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22sportsbook\x22\x20class=\x22d-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22icon-text\x20fw-bold\x20text-nowrap\x22>')[c3(0x40b)](Q[P]['sportsIcon4'],'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-block\x20text-end\x20text-lg-start\x20pt-2\x20pt-sm-0\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22javascript:void(0);\x22\x20class=\x22landing-button\x20d-inline-block\x20align-middle\x20rounded-3\x20text-center\x22\x20data-href=\x22sportsbook\x22>')['concat'](Q[P][c3(0x3b9)],c3(0x3ba))['concat'](S,'\x22\x20alt=\x22Sports\x20Character\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20'),$(document)['on'](c3(0x39d),'#custom-section-4\x20.landing-button',function(){var c4=c3;if('jpLKi'!==c4(0x43a))return'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<li>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22'[c4(0x40b)](d[c4(0x2aa)],'\x22\x20target=\x22_blank\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<i\x20class=\x22icon\x20')[c4(0x40b)](e['icon'],'\x20fs-4\x20me-2\x20text-center\x22></i>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20')['concat'](f['name'],c4(0x334));else $(c4(0x27a)['concat']($(this)[c4(0x370)]('href'),'\x22]'))[0x0]['click']();}),X['n']=0x4;return b('.section.pt-24:not(.mini-slider)');case 0x4:U=X['v'],U[c3(0x3f4)](T),X['n']=0x6;break;case 0x5:X['p']=0x5,V=X['v'],console['error'](V);case 0x6:X['p']=0x6,m=![];return X['f'](0x6);case 0x7:return X['a'](0x2);}},N,null,[[0x2,0x5,0x6,0x7]]);}}));return function O(P){return M['apply'](this,arguments);};}()),o=![],p=(function(){var M=a0aW(a0aT()['m'](function N(O){var P,Q,R,S,T,U;return a0aT()['w'](function(V){var c5=a0b;if(c5(0x3ae)!=='aWjdv'){while(0x1)switch(V['p']=V['n']){case 0x0:if(!o){V['n']=0x1;break;}return V['a'](0x2);case 0x1:o=!![],V['p']=0x2;if($('#custom-section-5')[c5(0x408)])$(c5(0x281))['remove']();if(!O){if(c5(0x344)===c5(0x344)){V['n']=0x3;break;}else d(c5(0x372))[0x0][c5(0x39d)](),e(function(){var c6=c5;g(c6(0x372))[0x0][c6(0x39d)]();});}return V['a'](0x2);case 0x3:P=window['localStorage'][c5(0x3b6)],Q={'tr':{'cryptoTitle1':c5(0x389),'cryptoText1':c5(0x298),'cryptoText2':c5(0x261)},'en':{'cryptoTitle1':c5(0x3d1),'cryptoText1':'Discover\x20the\x20future\x20of\x20digital\x20payments\x20with\x2013\x20leading\x20cryptocurrencies\x20and\x20the\x20Turkish\x20Lira.','cryptoText2':'Benefit\x20from\x20secure\x20online\x20wallet\x20support\x20with\x20unparalleled\x20security,\x20fast\x20transactions,\x20and\x20the\x20flexibility\x20of\x20alternative\x20payment\x20methods.'},'ru':{'cryptoTitle1':c5(0x392),'cryptoText1':'Откройте\x20для\x20себя\x20будущее\x20цифровых\x20платежей\x20с\x2013\x20ведущими\x20криптовалютами\x20и\x20турецкой\x20лирой.','cryptoText2':'Воспользуйтесь\x20поддержкой\x20безопасного\x20онлайн-кошелька\x20с\x20непревзойденной\x20безопасностью,\x20быстрыми\x20транзакциями\x20и\x20гибкостью\x20альтернативных\x20методов\x20оплаты.'},'fr':{'cryptoTitle1':c5(0x40f),'cryptoText1':'Découvrez\x20l\x27avenir\x20des\x20paiements\x20numériques\x20avec\x2013\x20principales\x20cryptomonnaies\x20et\x20la\x20Livre\x20Turque.','cryptoText2':c5(0x31a)},'ch':{'cryptoTitle1':'简化您的加密货币和土耳其里拉交易','cryptoText1':c5(0x294),'cryptoText2':c5(0x2e8)},'it':{'cryptoTitle1':c5(0x43f),'cryptoText1':c5(0x3d6),'cryptoText2':'Approfitta\x20del\x20supporto\x20sicuro\x20del\x20portafoglio\x20online\x20con\x20sicurezza\x20senza\x20pari,\x20transazioni\x20rapide\x20e\x20flessibilità\x20nei\x20metodi\x20di\x20pagamento\x20alternativi.'},'ar':{'cryptoTitle1':'تبسيط\x20معاملاتك\x20بالعملات\x20المشفرة\x20والليرة\x20التركية','cryptoText1':'اكتشف\x20مستقبل\x20المدفوعات\x20الرقمية\x20مع\x2013\x20من\x20العملات\x20المشفرة\x20الرائدة\x20والليرة\x20التركية.','cryptoText2':'استفد\x20من\x20دعم\x20المحفظة\x20عبر\x20الإنترنت\x20الآمن\x20مع\x20أمان\x20لا\x20مثيل\x20له،\x20معاملات\x20سريعة\x20ومرونة\x20في\x20طرق\x20الدفع\x20البديلة.'}},R=['https://jackbomcom.github.io/assets/images/3vcz7twm29jy8qgb.webp',c5(0x280),'https://jackbomcom.github.io/assets/images/c59qb7g36yxmtsrf.webp',c5(0x33b),c5(0x2a7),c5(0x37d),'https://jackbomcom.github.io/assets/images/nuxbpea24j837ymh.webp','https://jackbomcom.github.io/assets/images/s9e5cnm6rj842qyd.webp','https://jackbomcom.github.io/assets/images/uwp3bjn8a5x6qftv.webp',c5(0x246),c5(0x307),c5(0x219),c5(0x42f)],S='\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22custom-section-5\x22\x20class=\x22section\x20custom-section\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22container\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22landing\x20position-relative\x20rounded-4\x20overflow-hidden\x20p-3\x20px-md-5\x20py-md-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22landing-inner\x20mx-auto\x20position-relative\x20p-4\x20p-xl-5\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22row\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22col-12\x20col-lg-5\x20align-content-center\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22crypto-slider\x20mx-auto\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22swiper\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22swiper-wrapper\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20'['concat'](R['map'](function(X){return'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22swiper-slide\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22policy?tab=supported-crypto-and-currencies\x22\x20class=\x22d-block\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20class=\x22w-100\x20h-100\x22\x20src=\x22'['concat'](X,'\x22\x20alt=\x22Slider\x20Image\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20');})['join'](''),'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22col-12\x20col-lg-7\x20ps-auto\x20ps-lg-5\x20mt-5\x20mt-lg-0\x20align-content-center\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22details\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h1\x20class=\x22mb-4\x20mb-lg-5\x20fw-bold\x20text-center\x20text-sm-start\x20lh-sm\x22>')['concat'](Q[P]['cryptoTitle1'],c5(0x3e0))['concat'](Q[P][c5(0x27c)],'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22mb-0\x20d-none\x20d-sm-block\x20text-white\x20text-opacity-75\x22>')[c5(0x40b)](Q[P][c5(0x2df)],'</p>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20'),V['n']=0x4;return b(c5(0x335));case 0x4:T=V['v'],T[c5(0x24a)](S),new Swiper('#custom-section-5\x20.swiper',{'effect':c5(0x1fb),'grabCursor':!![],'loop':!![],'autoplay':{'delay':0x7d0,'disableOnInteraction':![]}}),V['n']=0x6;break;case 0x5:V['p']=0x5,U=V['v'],console[c5(0x31d)](U);case 0x6:V['p']=0x6,o=![];return V['f'](0x6);case 0x7:return V['a'](0x2);}}else{if(this[c5(0x3e1)]===0x4&&this['_url']['includes'](c5(0x406))&&!(e[c5(0x35c)]&&f[c5(0x35c)][c5(0x408)])){var Y=i['parse'](this['responseText']),Z=Y['data'];j[c5(0x35c)]=Z;}}},N,null,[[0x2,0x5,0x6,0x7]]);}));return function O(P){var c7=a0b;if('bVqkd'===c7(0x29d))return M[c7(0x215)](this,arguments);else{var R=function S(){var c8=c7,T=R(S)[0x0];if(T&&T[c8(0x28a)]&&T[c8(0x28a)][c8(0x28b)]&&T[c8(0x28a)][c8(0x28b)][c8(0x408)]){var U=T['swiper']['slides'];if(U['length']>0x2&&(!C||D(U[0x0])['find']('a')['attr'](c8(0x2ec))['includes']('/'[c8(0x40b)](E))))return G(U);}B(R,0x64);};R();}};}()),q=![],r=(function(){var M=a0aW(a0aT()['m'](function N(O){var c9=a0b;if('PoNpL'===c9(0x2b4)){var P,Q,R,S,T,U,V;return a0aT()['w'](function(W){var ca=c9;if(ca(0x427)===ca(0x3d4)){var Y,Z=v[w],a0=x['p'],a1=Z[0x2];y>0x3?(Y=a1===z)&&(A=Z[(B=Z[0x4])?0x5:(C=0x3,0x3)],Z[0x4]=Z[0x5]=D):Z[0x0]<=a0&&((Y=E<0x2&&a0<Z[0x1])?(F=0x0,G['v']=H,I['n']=Z[0x1]):a0<a1&&(Y=J<0x3||Z[0x0]>K||L>a1)&&(Z[0x4]=M,Z[0x5]=N,O['n']=a1,P=0x0));}else{while(0x1)switch(W['p']=W['n']){case 0x0:if(!q){W['n']=0x1;break;}return W['a'](0x2);case 0x1:q=!![],W['p']=0x2;if($('#custom-section-6')[ca(0x408)])$(ca(0x252))[ca(0x3c8)]();P=window[ca(0x34d)][ca(0x3b6)];if(!(P!=='tr')){if('nPXiT'!=='CLuGc'){W['n']=0x3;break;}else return ca(0x2bc)['concat'](c[ca(0x2aa)],ca(0x285))['concat'](d['image'],ca(0x27d));}return W['a'](0x2);case 0x3:Q=[{'url':'casino','image':ca(0x2db)},{'url':'sportsbook','image':'https://front.jackbom.dev/images/dpb83jzr5nfhskem.webp'},{'url':'https://heylink.me/jackbom','image':ca(0x380)}],R=new Date()['toLocaleDateString']('tr-TR',{'year':'numeric','month':'2-digit','day':'2-digit','hour':ca(0x2af),'minute':'2-digit','hour12':![]})[ca(0x3e3)](/[\.\s:]/g,''),S=Q[ca(0x41a)](function(Z){var cb=ca;return a0aJ(a0aJ({},Z),{},{'image':''['concat'](Z[cb(0x410)],cb(0x3b7))['concat'](R)});}),T=ca(0x425)['concat'](S[ca(0x41a)](function(Z,a0){var cc=ca;return cc(0x3f2)[cc(0x40b)](Z['url'],'\x22\x20class=\x22d-block\x22\x20')['concat'](a0===0x2?'target=\x22_blank\x22':'',cc(0x397))['concat'](Z['image'],cc(0x424));})[ca(0x3c5)](''),'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20'),W['n']=0x4;return b(ca(0x37f));case 0x4:U=W['v'],O?U[ca(0x24a)](T):U[ca(0x3f4)](T),W['n']=0x6;break;case 0x5:W['p']=0x5,V=W['v'],console[ca(0x31d)](V);case 0x6:W['p']=0x6,q=![];return W['f'](0x6);case 0x7:return W['a'](0x2);}}},N,null,[[0x2,0x5,0x6,0x7]]);}else return this['_invoke'](d,e,f);}));return function O(P){var cd=a0b;return M[cd(0x215)](this,arguments);};}()),s=![],t=(function(){var M=a0aW(a0aT()['m'](function N(O){var P,Q,R,S;return a0aT()['w'](function(T){var ce=a0b;while(0x1)switch(T['p']=T['n']){case 0x0:if(!s){T['n']=0x1;break;}return T['a'](0x2);case 0x1:s=!![],T['p']=0x2;if($('#custom-section-7')[ce(0x408)])$('#custom-section-7')['remove']();P=window['localStorage'][ce(0x3b6)],Q={'tr':{'backButton':ce(0x341)},'en':{'backButton':ce(0x2ad)},'ru':{'backButton':'Назад'},'fr':{'backButton':'Retour'},'ch':{'backButton':'返回'},'it':{'backButton':ce(0x2e0)},'ar':{'backButton':'رجوع'}},R='\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20id=\x22custom-section-7\x22\x20class=\x22custom-section\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22mb-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22javascript:void(0);\x22\x20class=\x22back-button\x20d-inline-block\x20rounded-3\x20border\x20align-content-center\x22>'['concat'](Q[P][ce(0x351)],ce(0x2f5)),$(document)['on'](ce(0x39d),ce(0x312),function(){var cf=ce;$('.sidebar__big\x20a[href*=\x22/'[cf(0x40b)](O,'\x22]'))[0x0]['click']();}),T['n']=0x3;return b('.content__main');case 0x3:$('.section--first\x20.align-self-center')[ce(0x23c)](R),T['n']=0x5;break;case 0x4:T['p']=0x4,S=T['v'],console[ce(0x31d)](S);case 0x5:T['p']=0x5,s=![];return T['f'](0x5);case 0x6:return T['a'](0x2);}},N,null,[[0x2,0x4,0x5,0x6]]);}));return function O(P){var cg=a0b;return cg(0x401)!=='rhpIL'?M['apply'](this,arguments):b[cg(0x215)](this,arguments);};}()),u=![],v=(function(){var M=a0aW(a0aT()['m'](function N(O){var P,Q,R,S,T,U,V,W,X;return a0aT()['w'](function(Y){var ch=a0b;while(0x1)switch(Y['p']=Y['n']){case 0x0:if(!u){Y['n']=0x1;break;}return Y['a'](0x2);case 0x1:u=!![],Y['p']=0x2;if($('#custom-section-8')['length'])$('#custom-section-8')[ch(0x3c8)]();P=window['localStorage']['language'],Q={'tr':{'topLeagues':ch(0x3be)},'en':{'topLeagues':'Top\x20Leagues'},'ru':{'topLeagues':'Популярные\x20Лиги'},'fr':{'topLeagues':'Ligues\x20Populaires'},'ch':{'topLeagues':'热门联赛'},'it':{'topLeagues':ch(0x3a9)},'ar':{'topLeagues':'الدوريات\x20الشعبية'}},R=[ch(0x213),ch(0x332),'https://jackbomcom.github.io/assets/images/f824ng3wscv95db6.webp',ch(0x260),ch(0x377),'https://jackbomcom.github.io/assets/images/s6neqp9v4fkhx5m3.webp','https://jackbomcom.github.io/assets/images/s8qd52g97pjzkucn.webp',ch(0x2d1),'https://jackbomcom.github.io/assets/images/tqumhcs28j7bk5vg.webp',ch(0x349)],S=$('.sidebar__big\x20use[href*=\x22homepage\x22]')[ch(0x302)](ch(0x2ec))[ch(0x3e3)]('#homepage','#'),T='\x0a\x09\x09\x09\x09<div\x20id=\x22custom-section-8\x22\x20class=\x22section\x20custom-section\x22>\x0a\x09\x09\x09\x09\x09<div\x20class=\x22container\x22>\x0a\x09\x09\x09\x09\x09\x09<div\x20class=\x22col-12\x22>\x0a\x09\x09\x09\x09\x09\x09\x09<h2\x20class=\x22section__title\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09<svg\x20class=\x22svg-icon\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09<use\x20href=\x22'['concat'](S,ch(0x301))['concat'](Q[P][ch(0x3df)],ch(0x369))[ch(0x40b)](R['map'](function(Z){var ci=ch;return ci(0x3f6)['concat'](Z,ci(0x38e));})['join'](''),ch(0x35e));if(!O){Y['n']=0x4;break;}Y['n']=0x3;return b('.section.section--last');case 0x3:W=Y['v'],Y['n']=0x6;break;case 0x4:Y['n']=0x5;return b('#custom-section-3');case 0x5:W=Y['v'];case 0x6:U=W,U['after'](T),new Swiper('#custom-section-8\x20.swiper',{'loop':!![],'autoplay':{'delay':0xbb8,'disableOnInteraction':![]},'slidesPerView':0x5,'spaceBetween':0x18,'breakpoints':{0x0:{'slidesPerView':0x2,'spaceBetween':0x8},0x240:{'slidesPerView':0x3,'spaceBetween':0x8},0x3e0:{'slidesPerView':0x4,'spaceBetween':0x18},0x4b0:{'slidesPerView':0x5,'spaceBetween':0x18}}});if(!($(window)['width']()>=0x4b0)){Y['n']=0x8;break;}Y['n']=0x7;return d(ch(0x2f0));case 0x7:V=$('#mini-sportsbook-wrapper\x20.mySwiper')[0x0][ch(0x28a)],V['params'][ch(0x396)]=0x7,V[ch(0x231)]();case 0x8:Y['n']=0xa;break;case 0x9:Y['p']=0x9,X=Y['v'],console[ch(0x31d)](X);case 0xa:Y['p']=0xa,u=![];return Y['f'](0xa);case 0xb:return Y['a'](0x2);}},N,null,[[0x2,0x9,0xa,0xb]]);}));return function O(P){return M['apply'](this,arguments);};}()),w=![],x=(function(){var cj=a0b;if('kVdox'!==cj(0x24b)){var M=a0aW(a0aT()['m'](function N(O,P){var Q,R,S,T,U;return a0aT()['w'](function(V){var ck=a0b;if('vPmQf'===ck(0x3f1)){this[ck(0x25d)]('readystatechange',function(){var cl=ck;if(this['readyState']===0x4&&this['_url']['includes']('state/')&&!(X[cl(0x35c)]&&Y['userVipState'][cl(0x408)])){var a0=q['parse'](this['responseText']),a1=a0['data'];r[cl(0x35c)]=a1;}});for(var X=arguments['length'],Y=new k(X),Z=0x0;Z<X;Z++){Y[Z]=arguments[Z];}return l[ck(0x215)](this,Y);}else{while(0x1)switch(V['p']=V['n']){case 0x0:if(!w){if('hrUJV'!==ck(0x3d9)){V['n']=0x1;break;}else{var Y=c[ck(0x35d)]('style');Y[ck(0x37a)]=ck(0x2b3),d['head'][ck(0x289)](Y);}}return V['a'](0x2);case 0x1:w=!![],V['p']=0x2;if($('#custom-section-9')['length'])$('#custom-section-9')[ck(0x3c8)]();if(!P){if('VHecK'===ck(0x20c))c(ck(0x23f))['then'](function(){return e();});else{V['n']=0x3;break;}}return V['a'](0x2);case 0x3:Q=window['localStorage'][ck(0x3b6)],R={'tr':{'gridText1':ck(0x445),'gridText2':'VIP\x20olun,\x20bonuslar\x20ve\x20fırsatlarla\x20ayrıcalık\x20yaşayın!','gridText3':ck(0x3b0),'gridText4':'Özel\x20tekliflerle\x20büyük\x20kazançlar\x20elde\x20edin!'},'en':{'gridText1':'Join\x20Jackbom\x20tournaments,\x20defeat\x20rivals,\x20and\x20win\x20rewards!','gridText2':ck(0x26e),'gridText3':'Boost\x20your\x20earnings\x20with\x20instant,\x20weekly,\x20and\x20monthly\x20bonuses!','gridText4':'Achieve\x20big\x20wins\x20with\x20special\x20offers!'},'ru':{'gridText1':ck(0x258),'gridText2':'Станьте\x20VIP\x20и\x20наслаждайтесь\x20эксклюзивными\x20бонусами\x20и\x20возможностями!','gridText3':'Увеличьте\x20свой\x20заработок\x20с\x20мгновенными,\x20еженедельными\x20и\x20ежемесячными\x20бонусами!','gridText4':'Получайте\x20большие\x20выигрыши\x20благодаря\x20специальным\x20предложениям!'},'fr':{'gridText1':ck(0x22b),'gridText2':ck(0x36c),'gridText3':'Augmentez\x20vos\x20gains\x20avec\x20des\x20bonus\x20instantanés,\x20hebdomadaires\x20et\x20mensuels!','gridText4':'Obtenez\x20de\x20gros\x20gains\x20avec\x20des\x20offres\x20spéciales!'},'ch':{'gridText1':ck(0x29a),'gridText2':ck(0x202),'gridText3':ck(0x322),'gridText4':ck(0x359)},'it':{'gridText1':ck(0x272),'gridText2':ck(0x207),'gridText3':ck(0x25a),'gridText4':'Ottieni\x20grandi\x20vincite\x20con\x20offerte\x20speciali!'},'ar':{'gridText1':ck(0x305),'gridText2':ck(0x21b),'gridText3':'قم\x20بزيادة\x20أرباحك\x20من\x20خلال\x20المكافآت\x20الفورية\x20والأسبوعية\x20والشهرية!','gridText4':ck(0x3e4)}},S=ck(0x2d4)[ck(0x40b)](R[Q]['gridText1'],ck(0x39e))[ck(0x40b)](R[Q][ck(0x21f)],ck(0x3c6))['concat'](R[Q][ck(0x391)],'</p>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09</a>\x0a\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22col-12\x20col-lg-6\x20col-xl-3\x20mt-2\x20mt-lg-0\x20d-flex\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x20\x20<a\x20href=\x22casino/group/enhanced-rtp\x22\x20class=\x22d-flex\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22box\x20d-flex\x20justify-content-evenly\x20align-items-center\x20gap-3\x20rounded-4\x20px-4\x20py-3\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<div\x20class=\x22box-icon\x20icon-rtp\x20rounded-3\x20p-3\x22>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<i\x20class=\x22icon\x20fa-solid\x20fa-chart-pie\x20fs-3\x20align-middle\x20text-center\x20text-black\x22></i>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09</div>\x0a\x09\x09\x09\x09\x09\x09\x09\x09\x09\x09<p\x20class=\x22mb-0\x20text-white\x20opacity-75\x22>')[ck(0x40b)](R[Q]['gridText4'],ck(0x230)),V['n']=0x4;return b(!O?ck(0x428):ck(0x335));case 0x4:T=V['v'],T['after'](S),V['n']=0x6;break;case 0x5:V['p']=0x5,U=V['v'],console[ck(0x31d)](U);case 0x6:V['p']=0x6,w=![];return V['f'](0x6);case 0x7:return V['a'](0x2);}}},N,null,[[0x2,0x5,0x6,0x7]]);}));return function O(P,Q){var cm=cj;return M[cm(0x215)](this,arguments);};}else{'@babel/helpers - typeof';return i=cj(0x400)==typeof j&&cj(0x232)==typeof k['iterator']?function(Q){return typeof Q;}:function(Q){var cn=cj;return Q&&'function'==typeof q&&Q['constructor']===r&&Q!==s['prototype']?cn(0x232):typeof Q;},o(p);}}()),y=![],z=(function(){var M=a0aW(a0aT()['m'](function N(O,P){var co=a0b;if('KFYTp'!==co(0x251))return b[co(0x215)](this,arguments);else{var Q,R,S,T,U;return a0aT()['w'](function(W){var cp=co;while(0x1)switch(W['p']=W['n']){case 0x0:if(!y){if('BZQIo'===cp(0x346)){var Y=c['parse'](this[cp(0x3ec)]),Z=Y[cp(0x370)];d[cp(0x35c)]=Z;}else{W['n']=0x1;break;}}return W['a'](0x2);case 0x1:y=!![],W['p']=0x2;if($('#custom-section-10')[cp(0x408)])$('#custom-section-10')['remove']();if(!(!O||P)){W['n']=0x3;break;}return W['a'](0x2);case 0x3:Q=window[cp(0x34d)][cp(0x3b6)],R={'tr':{'registerTitle':cp(0x3fd),'registerButton':cp(0x24c)},'en':{'registerTitle':'Unmatched\x20fun\x20and\x20winnings\x20in\x20online\x20casino\x20and\x20sports\x20betting.','registerButton':cp(0x382)},'ru':{'registerTitle':'Непревзойденное\x20развлечение\x20и\x20выигрыши\x20в\x20онлайн-казино\x20и\x20спортивных\x20ставках.','registerButton':'Зарегистрируйтесь\x20Сейчас!'},'fr':{'registerTitle':'Divertissement\x20et\x20gains\x20inégalés\x20dans\x20les\x20casinos\x20en\x20ligne\x20et\x20les\x20paris\x20sportifs.','registerButton':'Inscrivez-vous\x20Maintenant!'},'ch':{'registerTitle':cp(0x366),'registerButton':'立即注册！'},'it':{'registerTitle':'Divertimento\x20e\x20vincite\x20senza\x20rivali\x20nei\x20casinò\x20online\x20e\x20nelle\x20scommesse\x20sportive.','registerButton':'Iscriviti\x20Ora!'},'ar':{'registerTitle':'متعة\x20وأرباح\x20لا\x20مثيل\x20لها\x20في\x20الكازينو\x20عبر\x20الإنترنت\x20والمراهنات\x20الرياضية.','registerButton':cp(0x37e)}},S=cp(0x3eb)['concat'](R[Q][cp(0x300)],cp(0x25f))['concat'](R[Q][cp(0x41b)],'</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20'),W['n']=0x4;return b(cp(0x428));case 0x4:T=W['v'],T[cp(0x24a)](S),W['n']=0x6;break;case 0x5:W['p']=0x5,U=W['v'],console[cp(0x31d)](U);case 0x6:W['p']=0x6,y=![];return W['f'](0x6);case 0x7:return W['a'](0x2);}},N,null,[[0x2,0x5,0x6,0x7]]);}}));return function O(P,Q){var cq=a0b;if(cq(0x209)!=='RfxmO'){for(var S=0x1;S<arguments['length'];S++){var T=null!=arguments[S]?arguments[S]:{};S%0x2?C(D(T),!0x0)[cq(0x328)](function(U){S(T,U,T[U]);}):G[cq(0x250)]?H['defineProperties'](I,J[cq(0x250)](T)):K(L(T))[cq(0x328)](function(U){S['defineProperty'](T,U,R['getOwnPropertyDescriptor'](T,U));});}return B;}else return M['apply'](this,arguments);};}()),A=![],B=(function(){var cr=a0b;if('bLPBK'===cr(0x3b4)){var M=a0aW(a0aT()['m'](function N(O){var P;return a0aT()['w'](function(Q){var cs=a0b;while(0x1)switch(Q['n']){case 0x0:if(!A){Q['n']=0x1;break;}return Q['a'](0x2);case 0x1:A=!![];try{if('mNqTp'==='mNqTp'){P=$('.main__content\x20.section:not(.custom-section)');if(O){if('pQFyw'!==cs(0x201))return b[cs(0x215)](this,arguments);else P['slice'](0x2,0xb)[cs(0x223)](),$('.section__title\x20use[href*=\x22replay\x22]')['length']?(P[cs(0x296)](0x8,0x9)['hide'](),P['slice'](0xa,0xb)['hide']()):(P['slice'](0x7,0x8)['hide'](),P[cs(0x296)](0x9,0xa)[cs(0x2b9)]());}else P[cs(0x296)](0x5,0x8)[cs(0x2b9)](),P['slice'](0x9,0xa)['hide']();P['slice'](0x2,0x3)['hide']();}else b[cs(0x22c)](arguments);}catch(T){console[cs(0x31d)](T);}finally{if('BGXFg'!==cs(0x2fe))A=![];else return b[cs(0x215)](this,arguments);}case 0x2:return Q['a'](0x2);}},N);}));return function O(P){var ct=cr;return M[ct(0x215)](this,arguments);};}else return this;}()),C=![],D=(function(){var M=a0aW(a0aT()['m'](function N(O,P){var Q,R,S,T,U,V,W,X,Y,Z,a0,a1,a2;return a0aT()['w'](function(a3){var cu=a0b;if('DjFlO'!==cu(0x2e3)){while(0x1)switch(a3['p']=a3['n']){case 0x0:if(!C){a3['n']=0x1;break;}return a3['a'](0x2);case 0x1:C=!![],a3['p']=0x2;if($(cu(0x23a))[cu(0x408)])$(cu(0x23a))[cu(0x3c8)]();Q=window[cu(0x34d)]['language'],R=[{'url':cu(0x2b6),'image':'https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/XsEpljNd1AGU7nggivAviVK0RO1Sr6mmMVN7HqwS.jpg'},{'url':'pragmaticplay-sweet-bonanza','image':cu(0x29c)},{'url':cu(0x333),'image':'https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/p00GPAq7KDfE9m3GaKntDU5kPUSjOVcq4fRUQCFa.jpg'},{'url':cu(0x303),'image':cu(0x1ff)},{'url':'pragmaticplay-big-bass-splash','image':'https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/wEpHUGXLnqVuRnvFqJoo1nisbNJ8BVQ9r5ClKem7.jpg'},{'url':cu(0x3f7),'image':cu(0x3c2)},{'url':'pragmaticplay-madame-destiny','image':cu(0x239)},{'url':cu(0x367),'image':'https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/DpJMzigUfXYmHgehkJmvGo0Q9kG4d6AmpeeejTKU.jpg'},{'url':'pragmaticplay-zeus-vs-hades-gods-of-war','image':'https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/Yz21zkxEWvXy67u8ub39Dd0D2KY79ppSnIbYFCvu.jpg'}],S=[{'url':'ezugi-turkish-roulette','image':'https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/PdjHXTeiXtA3FAAD4c5QKOQ678hlCGk88wgwHLjO.jpg'},{'url':cu(0x3c4),'image':'https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/3TPOdVJpunNapyrWHXIKh9MV20EDAkKm7NlQmyfm.jpg'},{'url':cu(0x33d),'image':cu(0x29e)},{'url':'evolution-crazy-time','image':'https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/OrEpXUKLc3uYUruaUmlMF33tcYDP2ZFOljUB1Y49.jpg'},{'url':'evolution-xxxtreme-lightning-roulette','image':'https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/ytvd9XDVeQSHYyQ8Zaxl6R4bxzvU0GUD03HLvaCg.jpg'},{'url':'evolution-funky-time','image':'https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/VdJ5u6VxKid3Ek9ZVVcOrzVfEFeQ8ZoRHMfYo5ON.jpg'},{'url':'pragmaticlive-auto-roulette','image':cu(0x375)},{'url':'ezugi-turkish-blackjack-1','image':'https://agstatic.com/games/ezugi/turkish_blackjack_1.jpg'},{'url':'ezugi-turkish-blackjack-2','image':'https://agstatic.com/games/ezugi/turkish_blackjack_2.jpg'},{'url':cu(0x360),'image':cu(0x2d6)},{'url':'evolution-speed-blackjack-d','image':'https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/hFDel8XHsz9xjRlIrT29bd8Ik0c11kUTdmMXRx5m.jpg'}],T=[R[R[cu(0x408)]-0x1]]['concat'](R,[R[0x0]]),U=[S[S[cu(0x408)]-0x1]][cu(0x40b)](S,[S[0x0]]),V={'tr':{'spinText1':cu(0x288),'spinText2':cu(0x41e),'spinTitle':cu(0x206)},'en':{'spinText1':'Spin','spinText2':cu(0x270),'spinTitle':cu(0x233)},'ru':{'spinText1':cu(0x259),'spinText2':'Зарегистрируйтесь\x20&\x20Крутите','spinTitle':cu(0x30e)},'fr':{'spinText1':'Tourner','spinText2':cu(0x395),'spinTitle':cu(0x2f7)},'ch':{'spinText1':'旋转','spinText2':cu(0x3d3),'spinTitle':'需要帮助选择游戏吗？'},'it':{'spinText1':'Gira','spinText2':'Iscriviti\x20&\x20Gira','spinTitle':cu(0x263)},'ar':{'spinText1':'دوران','spinText2':cu(0x200),'spinTitle':'هل\x20تحتاج\x20إلى\x20مساعدة\x20في\x20اختيار\x20اللعبة؟'}},W=O?V[Q]['spinText1']:V[Q][cu(0x2c5)],X=cu(0x436)[cu(0x40b)](P?'https://jackbomcom.github.io/assets/images/sponsor_mobile.png':cu(0x36d),cu(0x416))[cu(0x40b)](V[Q]['spinTitle'],'</h1>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22chooser-inner\x20mx-auto\x20px-4\x20px-sm-5\x20py-4\x20rounded-5\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22chooser-wrapper\x20d-flex\x20gap-3\x20overflow-hidden\x20position-relative\x20px-4\x20rounded-4\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22chooser-list\x20d-flex\x20flex-column\x20justify-content-center\x20w-100\x20first\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20')[cu(0x40b)](T['map'](function(a4){var cv=cu;return cv(0x2bc)['concat'](a4['url'],'\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22z-0\x20slot__cover\x20slot__cover--\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22slot__img\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22')['concat'](a4[cv(0x410)],cv(0x27d));})[cu(0x3c5)](''),'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22chooser-list\x20d-flex\x20flex-column\x20justify-content-center\x20w-100\x20second\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20')[cu(0x40b)](U[cu(0x41a)](function(a4){var cw=cu;if('PAKjd'===cw(0x26b))return'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22chooser-item\x20position-relative\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20class=\x22slot\x20slot--carousel\x22\x20href=\x22casino/games/'[cw(0x40b)](a4[cw(0x2aa)],'\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22z-0\x20slot__cover\x20slot__cover--\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22slot__img\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22')['concat'](a4['image'],'\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22slot__title\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20<h3>Sweet\x20Bonanza\x201000</h3>\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<!--\x20<span\x20class=\x22game-provider\x22>Pragmatic\x20Play</span>\x20-->\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20');else g[cw(0x296)](0x2,0xb)[cw(0x223)](),h(cw(0x3b3))[cw(0x408)]?(m[cw(0x296)](0x8,0x9)[cw(0x2b9)](),n[cw(0x296)](0xa,0xb)['hide']()):(o['slice'](0x7,0x8)[cw(0x2b9)](),p[cw(0x296)](0x9,0xa)['hide']());})[cu(0x3c5)](''),'\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22chooser-border\x20position-absolute\x20top-50\x20rounded-4\x20pe-none\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22d-block\x20text-center\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<a\x20href=\x22')['concat'](!O?'?modal=register':'javascript:void(0);',cu(0x28f))[cu(0x40b)](!O?'75':'50','\x20mx-auto\x20text-white\x20rounded-3\x20border\x20mt-4\x22>')[cu(0x40b)](W,'</a>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20'),a3['n']=0x3;return b(cu(0x3ef));case 0x3:Y=a3['v'],Y['before'](X),$(document)['on'](cu(0x39d),cu(0x378),function(a4){var cx=cu;if('wXkFb'==='yOTLq'){if(n){if('string'==typeof A)return B(C,D);var a8={}['toString'][cx(0x3c9)](E)[cx(0x296)](0x8,-0x1);return cx(0x2dd)===a8&&F[cx(0x3a1)]&&(a8=G[cx(0x3a1)]['name']),cx(0x33c)===a8||cx(0x2b0)===a8?H[cx(0x308)](I):'Arguments'===a8||/^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/['test'](a8)?J(K,L):void 0x0;}}else{if(O){var a5=$(a4['currentTarget']);a5[cx(0x414)]('disabled');var a6=function a8(a9,aa){var cy=cx,ab=$(a9);ab[cy(0x414)](cy(0x3f9)),setTimeout(function(){var cz=cy,ac=ab[cz(0x2cf)]('.chooser-item')[cz(0x282)]()+0xa,ad=ab['find']('.chooser-item')['length'],ae=Math[cz(0x373)]((ad-0x3)/0x2),af=Math['floor']((ad-0x2)/0x2),ag=Math[cz(0x373)](Math['random']()*(ad-0x2)),ah=(ae-ag)*ac;ab['css'](cz(0x319),cz(0x304)[cz(0x40b)](ah,'px)')),ab[cz(0x383)](cz(0x3f9));if(aa)a5[cz(0x383)](cz(0x21d));},0x7d0);};a6('.chooser-list.first'),setTimeout(function(){var cA=cx;cA(0x2f4)==='ncjXQ'?f(g,h,i[j]):a6('.chooser-list.second',!![]);},0xc8);}}}),Z=$(cu(0x257))[cu(0x282)]()+0xa,a0=$(cu(0x257))['length']-0x1,a1=Z*a0/0x2,$(cu(0x39b))[cu(0x399)]('--list-height',''['concat'](a1,'px')),$(cu(0x355))[cu(0x399)]('height',$('.chooser-item')[cu(0x282)]()),a3['n']=0x5;break;case 0x4:a3['p']=0x4,a2=a3['v'],console[cu(0x31d)](a2);case 0x5:a3['p']=0x5,C=![];return a3['f'](0x5);case 0x6:return a3['a'](0x2);}}else f(cu(0x413))['removeClass'](cu(0x2eb)),g(h['currentTarget'])[cu(0x414)](cu(0x2eb)),i(j);},N,null,[[0x2,0x4,0x5,0x6]]);}));return function O(P,Q){var cB=a0b;return M[cB(0x215)](this,arguments);};}()),E=(function(){var M=a0aW(a0aT()['m'](function N(){if('Ctnvq'!=='OkkGC')return a0aT()['w'](function(O){var cC=a0b;if(cC(0x1f4)===cC(0x1f4)){while(0x1)switch(O['n']){case 0x0:O['n']=0x1;return b(cC(0x3c0));case 0x1:return O['a'](0x2,$(cC(0x23f))['length']>0x0);}}else return b[cC(0x215)](this,arguments);},N);else{var P=function Q(){var cD=a0b;return P(Q)['length']>D&&E(F)[cD(0x37c)]()!==''?G(H(I)):J(P,0x64);};P();}}));return function O(){var cE=a0b;return M[cE(0x215)](this,arguments);};}()),F=(function(){var cF=a0b;if(cF(0x387)==='nYxRT'){if(cF(0x3a2)!=o(p)||!q)return r;var O=s[t[cF(0x432)]];if(void 0x0!==O){var P=O['call'](C,D||cF(0x240));if(cF(0x3a2)!=E(P))return P;throw new F('@@toPrimitive\x20must\x20return\x20a\x20primitive\x20value.');}return('string'===y?z:A)(B);}else{var M=a0aW(a0aT()['m'](function O(){var P,Q,R,S,T,U,V,W,X,Y,Z,a0,a1,a2,a3,a4,a5,a6,a7;return a0aT()['w'](function(a8){var cG=a0b;if(cG(0x34b)!=='wouPk'){var aa=new e('storageChange');f['apply'](this,arguments),g===cG(0x3b6)&&i[cG(0x330)](aa);}else{while(0x1)switch(a8['p']=a8['n']){case 0x0:a8['p']=0x0,P=window[cG(0x38d)]['pathname'],Q=window['location'][cG(0x2ec)],a8['n']=0x1;return E();case 0x1:R=a8['v'],S=$(window)[cG(0x318)]()<0x300,T=P[cG(0x22f)](/^\/[a-z]{2}\/?$/)!==null,U=P['includes']('/promotions'),V=P[cG(0x243)](cG(0x32b)),W=P['includes'](cG(0x422)),X=P['includes']('/sportsbook'),Y=P['includes'](cG(0x248)),Z=P['includes']('/casino'),a0=P[cG(0x243)]('/bonus-request'),a1=P[cG(0x243)]('/settings'),a2=P['includes'](cG(0x247)),a3=P[cG(0x243)]('/big-wins'),$(cG(0x309))['removeClass'](cG(0x269)),a8['n']=0x2;return f(S,T,R);case 0x2:if(!T){a8['n']=0xc;break;}$('#body')[cG(0x414)](cG(0x32a)),$('.custom-section')['remove'](),a8['n']=0x3;return h(S);case 0x3:a8['n']=0x4;return n(R);case 0x4:a8['n']=0x5;return x(S,R);case 0x5:a8['n']=0x6;return z(S,R);case 0x6:a8['n']=0x7;return l(S,R);case 0x7:a8['n']=0x8;return p(R);case 0x8:a8['n']=0x9;return v(R);case 0x9:a8['n']=0xa;return D(R,S);case 0xa:a8['n']=0xb;return B(R);case 0xb:$(cG(0x3c1))['parents']('.section')['addClass'](cG(0x329));Q[cG(0x243)](cG(0x36b))&&(a4=Q['split']('ref=')[cG(0x3a7)](),$(document)['on']('click','.header__signup,\x20.signup-button',a0aW(a0aT()['m'](function aa(){var ab;return a0aT()['w'](function(ac){var cH=a0b;while(0x1)switch(ac['n']){case 0x0:ab=$(cH(0x33a));if(!a4){ac['n']=0x2;break;}ac['n']=0x1;return b('#signup-modal\x20#countries');case 0x1:ab['val'](a4),ab['attr']('disabled',!![]);case 0x2:return ac['a'](0x2);}},aa);}))));a8['n']=0x1b;break;case 0xc:if(!U){if('Ezesy'===cG(0x2a0)){a8['n']=0xe;break;}else return n['setPrototypeOf']?o['setPrototypeOf'](p,q):(r['__proto__']=s,t(u,v,cG(0x2d2))),w['prototype']=x['create'](y),z;}$('#body')[cG(0x414)]('page--promo'),$(cG(0x30f))[cG(0x3c8)](),a8['n']=0xd;return b('.nav-tabs\x20.nav-item');case 0xd:$(cG(0x3fc))['trigger'](cG(0x39d)),a8['n']=0x1b;break;case 0xe:if(!V){if(cG(0x224)!=='CabAV')return b['apply'](this,arguments);else{a8['n']=0x10;break;}}$(cG(0x309))['addClass']('page--single-promo'),$(cG(0x30f))[cG(0x3c8)](),a8['n']=0xf;return t('promotions');case 0xf:a8['n']=0x1b;break;case 0x10:if(!W){if(cG(0x234)!=='IhvQw'){a8['n']=0x12;break;}else{if(f&&g){var ae=k(this)['find']('span')[cG(0x3cf)]()['toLowerCase']();l['location'][cG(0x2ec)]=''[cG(0x40b)](m[cG(0x38d)][cG(0x3b8)],'/')[cG(0x40b)](ae,'/');}}}$('#body')['addClass'](cG(0x2f8)),$('.custom-section')[cG(0x3c8)](),a8['n']=0x11;return t('blog');case 0x11:a8['n']=0x1b;break;case 0x12:if(!X){a8['n']=0x13;break;}$(cG(0x309))[cG(0x414)]('page--sports'),$(cG(0x30f))[cG(0x3c8)](),$(cG(0x27f))['removeClass']('header--sport'),$('#sidebar')[cG(0x383)]('sidebar--sport')[cG(0x414)](cG(0x220)),a8['n']=0x1b;break;case 0x13:if(!Y){if('DFTqL'==='DFTqL'){a8['n']=0x14;break;}else d[e]=arguments[f];}$(cG(0x309))['addClass']('page--vip'),$(cG(0x30f))[cG(0x3c8)](),$(cG(0x309))[cG(0x414)](cG(0x225)[cG(0x40b)](window[cG(0x34d)]['language'])),a8['n']=0x1b;break;case 0x14:if(!Z){a8['n']=0x15;break;}$(cG(0x309))[cG(0x414)]('page--casino'),$(cG(0x30f))[cG(0x3c8)](),a8['n']=0x1b;break;case 0x15:if(!a0){if('mfNPw'==='zJSPy')c[cG(0x31d)](d);else{a8['n']=0x16;break;}}$('#body')['addClass']('page--bonus-request'),$(cG(0x30f))[cG(0x3c8)](),a8['n']=0x1b;break;case 0x16:if(!a1){a8['n']=0x17;break;}$('#body')[cG(0x414)](cG(0x3bc)),$('.custom-section')['remove'](),a8['n']=0x1b;break;case 0x17:if(!a2){a8['n']=0x18;break;}$(cG(0x309))[cG(0x414)]('page--tv'),$('.custom-section')['remove'](),a8['n']=0x1b;break;case 0x18:if(!a3){a8['n']=0x1a;break;}$('#body')[cG(0x414)]('page--bigwins'),$(cG(0x30f))[cG(0x3c8)](),a8['n']=0x19;return b('#main__content\x20>\x20.container');case 0x19:a5=a8['v'],a5['empty'](),a6=cG(0x354)['concat'](S?cG(0x2ab):'315','\x22\x20height=\x22')['concat'](S?'448':cG(0x2a5),'\x22\x20src=\x22https://www.youtube.com/embed/DNrR3pzc3e8\x22\x20title=\x22YouTube\x20video\x20player\x22\x20frameborder=\x220\x22\x20allow=\x22accelerometer;\x20autoplay;\x20clipboard-write;\x20encrypted-media;\x20gyroscope;\x20picture-in-picture;\x20web-share\x22\x20allowfullscreen></iframe>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09\x09<iframe\x20width=\x22')['concat'](S?cG(0x2ab):cG(0x284),cG(0x279))[cG(0x40b)](S?cG(0x326):'560',cG(0x29b))[cG(0x40b)](S?'252':cG(0x284),cG(0x279))['concat'](S?'448':cG(0x2a5),'\x22\x20src=\x22https://www.youtube.com/embed/u62bdxW9YGU\x22\x20title=\x22YouTube\x20video\x20player\x22\x20frameborder=\x220\x22\x20allow=\x22accelerometer;\x20autoplay;\x20clipboard-write;\x20encrypted-media;\x20gyroscope;\x20picture-in-picture;\x20web-share\x22\x20allowfullscreen></iframe>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09\x09<iframe\x20width=\x22')['concat'](S?'252':'315','\x22\x20height=\x22')[cG(0x40b)](S?cG(0x326):'560','\x22\x20src=\x22https://www.youtube.com/embed/bYQJLgyhYa0\x22\x20title=\x22YouTube\x20video\x20player\x22\x20frameborder=\x220\x22\x20allow=\x22accelerometer;\x20autoplay;\x20clipboard-write;\x20encrypted-media;\x20gyroscope;\x20picture-in-picture;\x20web-share\x22\x20allowfullscreen></iframe>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09\x09<iframe\x20width=\x22')['concat'](S?'252':'315',cG(0x279))[cG(0x40b)](S?cG(0x326):cG(0x2a5),cG(0x3b1))[cG(0x40b)](S?cG(0x2ab):cG(0x284),'\x22\x20height=\x22')['concat'](S?cG(0x326):'560',cG(0x356))[cG(0x40b)](S?'252':'315','\x22\x20height=\x22')['concat'](S?'448':'560','\x22\x20src=\x22https://www.youtube.com/embed/qQ6-ODlXwl0\x22\x20title=\x22YouTube\x20video\x20player\x22\x20frameborder=\x220\x22\x20allow=\x22accelerometer;\x20autoplay;\x20clipboard-write;\x20encrypted-media;\x20gyroscope;\x20picture-in-picture;\x20web-share\x22\x20allowfullscreen></iframe>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09\x09<iframe\x20width=\x22')[cG(0x40b)](S?cG(0x2ab):cG(0x284),cG(0x279))['concat'](S?cG(0x326):'560',cG(0x20b))[cG(0x40b)](S?'252':'315','\x22\x20height=\x22')[cG(0x40b)](S?cG(0x326):cG(0x2a5),'\x22\x20src=\x22https://www.youtube.com/embed/iXrHv63U2eM\x22\x20title=\x22YouTube\x20video\x20player\x22\x20frameborder=\x220\x22\x20allow=\x22accelerometer;\x20autoplay;\x20clipboard-write;\x20encrypted-media;\x20gyroscope;\x20picture-in-picture;\x20web-share\x22\x20allowfullscreen></iframe>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09\x09<iframe\x20width=\x22')[cG(0x40b)](S?cG(0x2ab):cG(0x284),cG(0x279))[cG(0x40b)](S?'448':cG(0x2a5),'\x22\x20src=\x22https://www.youtube.com/embed/p73vc6YZTtQ\x22\x20title=\x22YouTube\x20video\x20player\x22\x20frameborder=\x220\x22\x20allow=\x22accelerometer;\x20autoplay;\x20clipboard-write;\x20encrypted-media;\x20gyroscope;\x20picture-in-picture;\x20web-share\x22\x20allowfullscreen></iframe>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20'),a5['append'](a6),a8['n']=0x1b;break;case 0x1a:$(cG(0x30f))[cG(0x3c8)]();case 0x1b:$(cG(0x26c))[cG(0x408)]&&window['localStorage']['language']!=='tr'&&($(cG(0x372))[0x0][cG(0x39d)](),setTimeout(function(){var cI=cG;if(cI(0x34e)!==cI(0x2a6))$(cI(0x372))[0x0]['click']();else return new i(function(ah,ai){var cJ=cI,aj=q['createElement'](r===cJ(0x217)?cJ(0x217):'link');s[cJ(0x27e)](aj,t===cJ(0x217)?{'src':u,'type':cJ(0x430),'onload':ah,'onerror':ai}:{'href':v,'rel':cJ(0x1fd),'onload':ah,'onerror':ai}),w[cJ(0x331)][cJ(0x289)](aj);});}));$(document)['on'](cG(0x39d),cG(0x357),function(){var cK=cG;if('UHvEK'==='UHvEK')$('body')[cK(0x33f)](cK(0x43b));else{var ah=d(this)['find']('span')[cK(0x3cf)]()['toLowerCase']();e[cK(0x38d)]['href']=''['concat'](f[cK(0x38d)][cK(0x3b8)],'/')['concat'](ah,'/');}}),$(document)['on'](cG(0x39d),'.section__view--carousel[href*=providers],\x20.footer__licenses-list\x20a[href*=license]',function(){F();}),a8['n']=0x1d;break;case 0x1c:a8['p']=0x1c,a7=a8['v'],console['error'](a7);case 0x1d:return a8['a'](0x2);}}},O,null,[[0x0,0x1c]]);}));return function P(){var cL=cF;return M[cL(0x215)](this,arguments);};}}());(function(){var cM=a0b;if('pHzpx'===cM(0x412))c['dispatchEvent'](d);else{var M=document[cM(0x35d)](cM(0x217));M['async']=!![],M[cM(0x25b)]=cM(0x20e),document[cM(0x331)][cM(0x289)](M),M['onload']=function(){var cN=cM;window[cN(0x27b)]=window['dataLayer']||[];function O(){var cO=cN;if('LeKjh'!==cO(0x40d))dataLayer[cO(0x22c)](arguments);else{var Q=arguments['length']>0x1&&arguments[0x1]!==j?arguments[0x1]:0x0;return new k(function(R){var S=function T(){var cP=a0b;return R(S)[cP(0x408)]>Q&&T(J)[cP(0x37c)]()!==''?R(K(L)):M(S,0x64);};S();});}}O('js',new Date()),O(cN(0x439),'G-EWGHJ0DHF1');};}}()),(function(){var cQ=a0b;if('RiIGF'===cQ(0x216))b=0x0;else{var M=document['createElement'](cQ(0x1f8));M[cQ(0x37a)]='\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20General\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20:root\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20--tf-bg:\x20#0c0f16\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20--tf-bg2:\x20#10141d\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20--menu-group1:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20--menu-group2:\x20#1e90ff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20body\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20body,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section__title,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__title\x20h3,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.mini-game__title\x20h3,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.vip__title,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking__amount,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.post__title,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.article\x20h1,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.article\x20h2,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.article\x20h3,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.article\x20h4,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.article\x20h5,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.article\x20h6,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.game__title,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__pos,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.settings__title,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.footer__title,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush__prize\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20\x27Karla\x27,\x20sans-serif;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20::marker\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20loaderScaleAnimation\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2025%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1.2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2050%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2075%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1.2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.loader-logo\x20img,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.loader-logo.small\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20loaderScaleAnimation\x201.4s\x20linear\x20infinite;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2040px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2040px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.loader-logo::before,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.loader-logo:after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Header\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.header--logged\x20.header__logo\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20unset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20400px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header--logged\x20.header__logo\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2080px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet-dropdown-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet-dropdown-btn\x20div\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20480px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet-dropdown-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20125px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x201200px)\x20and\x20(max-width:\x201800px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.sidebar.active+main\x20.header__search\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-left:\x20135px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20600px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Sidebar\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto-mobile\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__link--casino::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__big\x20.sidebar__links\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__big\x20.sidebar__links:not(.custom)\x20a\x20span\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__big\x20.sidebar__links\x20.howto-mobile\x20span\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201.4;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__links\x20+\x20.sidebar__menu\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__big\x20a[href*=\x22?modal=bonus-request\x22]\x20span\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09font-size:\x2016px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09font-weight:\x20700;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09text-transform:\x20uppercase;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x09margin-left:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__nav\x20a\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x20999px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__nav-small\x20a,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__nav-small\x20button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__nav--collapse\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20menuShakeAnimation\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(0);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2025%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(-2px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2050%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(2px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2075%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(-2px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(0);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20a:hover\x20svg,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__nav-small\x20button:hover\x20svg\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20menuShakeAnimation\x200.4s\x20ease;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20stroke:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22homepage\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22big-win\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22vip-club\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22blog\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22casino2\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22gamer\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22chart\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22slots2\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22live-casino\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22sportsbook2\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__links.custom\x20+\x20div\x20>\x20span\x20+\x20ul\x20.svg-icon\x20use[href*=\x22sportsbook\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22exclusive\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22virtual-sports\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22gift\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22tournaments\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22vip\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22challenge\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22stream\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22pokr-side\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22phone\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22sportsbook-basketball\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22affiliate\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22head-set\x22],\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22headset\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22privacy\x22],\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22shield\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22favourited\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.svg-icon\x20use[href*=\x22profile\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20fill:\x20var(--menu-group1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20li.active\x20.svg-icon\x20use\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20fill:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.sidebar__nav--collapse\x20.svg-icon\x20use[href*=\x22profile\x22],\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.sidebar__nav--collapse\x20.svg-icon\x20use[href*=\x22vip-club\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-tc);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20fill:\x20var(--tf-tc);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.sidebar__nav--collapse\x20a:hover\x20.svg-icon\x20use[href*=\x22profile\x22],\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__content\x20.sidebar__nav--collapse\x20a:hover\x20.svg-icon\x20use[href*=\x22vip-club\x22]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20fill:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__link.passive,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__link-small.passive\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20contrast(0.75);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Lowbar\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.lowbar\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px\x205px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.support\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Content\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.container\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x201440px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20991px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.container\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-left:\x2035px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-right:\x2035px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-top:\x2040px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section__title-wrap\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.col-12\x20>\x20.section__title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#main:not(.main--game)\x20#main__content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-top:\x2080px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.section\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-top:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.section__title-wrap\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.hero\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.promo-post__date\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.promo-post__text\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2072px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.content__main--big\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.content__main\x20.tournament__cover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x201.816;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2035px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-left:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20525px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.content__main\x20.tournament__cover\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.post__cover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.post__meta\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.blog__cover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2035px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-left:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20560px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.blog__cover\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking__list\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow-y:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section__title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-transform:\x20capitalize;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.filter\x20.settings__btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20unset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x204px\x2022px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.tabs-nav\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Games\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-top:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__cover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-bottom:\x20135%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x200.741;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__img\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab\x22]\x20.game-provider\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20visibility:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab\x22]\x20.game-provider::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27Jackbom\x20Originals\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20visibility:\x20visible;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab\x22]\x20.slot__img::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x20cover;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab-mines\x22]\x20.slot__img::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://jackbomcom.github.io/assets/images/f8qhx62bygzknud7.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab-crash\x22]\x20.slot__img::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://jackbomcom.github.io/assets/images/njec8zra74usb263.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab-plinko\x22]\x20.slot__img::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://jackbomcom.github.io/assets/images/r5h7b42vjgytnmdc.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab-keno\x22]\x20.slot__img::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://jackbomcom.github.io/assets/images/t3yfmdhwgxr59s4z.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot[href*=\x22/ebetlab-dice\x22]\x20.slot__img::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://jackbomcom.github.io/assets/images/t94nj537e6dmf8xh.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(0deg,\x20#ff4001cc\x2060%,\x20transparent\x20100%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20flex-end;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.4s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__title::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x0c04b\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20\x27Font\x20Awesome\x206\x20Free\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20900;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2032px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2064px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2064px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#fff3;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-left:\x206px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x2025%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(0.5);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.4s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__title\x20h3\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-transform:\x20capitalize;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20left;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-shadow:\x200\x200\x202px\x20#000;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__title\x20span\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-transform:\x20capitalize;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20left;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.slot__pos\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-shadow:\x200\x200\x202px\x20#000;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2026px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x2011;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20600px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.slot\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20/*\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.slot:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x20rgb(255\x2064\x201\x20/\x2075%)\x200px\x207px\x2029px\x20-3px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.slot:hover\x20.slot__title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20all;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.slot:hover\x20.slot__title::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.slot:hover\x20.slot__img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20blur(2px)\x20brightness(0.8);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(1.05)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20600px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.slot:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.slot__pos\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Big\x20wins\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section.big-wins\x20.splide__slide\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush__cover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20unset\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x200.7411;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush__cover\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush__winner\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush__title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush\x20.chat__user\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush__prize\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.kush\x20.rank-icon\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2024px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2024px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Mini\x20games\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.mini-game\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.mini-game__img\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20object-fit:\x20cover;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.mini-game__title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.mini-game:hover\x20.mini-game__img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Game\x20detail\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame-mob\x20.slot:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame-mob\x20.slot__title\x20h3\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2032px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame-mob\x20.slot__title\x20span\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame-mob__btns,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame__btns\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20stretch;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame__btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20unset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame__btn:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#fff\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame__play\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20unset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame__play\x20svg\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame__logo\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20var(--tf-logo);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.frame-mob__btns,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.frame__btns\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.frame__play\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(0.9);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Providers\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.partner\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20min-height:\x20100px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2010px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.partner\x20img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.partner[href*=\x22/providers/ebetlab\x22]::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20var(--tf-logo2)\x20center\x20center\x20no-repeat;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x2011;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20invert(1)\x20grayscale(1);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.partner[href*=\x22/providers/ebetlab\x22]\x20.partner__logo\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.swiper.providers\x20.swiper-slide\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20576px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.partner\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.partner::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Vip\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.progress-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-bg2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px\x2024px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.progress-wrapper::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.modal__progress-bar\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x20999px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#59595933;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.modal__progress-bar\x20span\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x206px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.modal__icon\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#59595940;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.modal__user\x20p\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-tc);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#now2-rank,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#next-rank\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.progress-wrapper\x20.rank-icon,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking\x20.rank-icon\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2050px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2050px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.vip\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20flex-end;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x203/1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.vip__title,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.vip__text,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.vip__btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.vip:before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#body.lang--tr\x20.vip:before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/65cxfm8nbkr932pe.webp\x27)\x20center\x20center/contain\x20no-repeat;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#body.lang--en\x20.vip:before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/6djmgeuc8qxpf5yb.webp\x27)\x20center\x20center/contain\x20no-repeat;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.vip\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x2016/9;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#body.lang--tr\x20.vip:before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/rmwqnh6a7bpk3z29.webp\x27)\x20center\x20center/contain\x20no-repeat;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#body.lang--en\x20.vip:before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/sy86pvje9gwz7tq4.webp\x27)\x20center\x20center/contain\x20no-repeat;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x20-120px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x20-120px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-repeat:\x20no-repeat;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(-20deg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.4s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking:hover::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x20-100px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x20-100px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(-10deg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.2;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking\x20p\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.4s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking:hover\x20p\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#babbc4;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-classic::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/2PUIxjLbmKdfkXc5LV3VgsFmLfAHIOqm2WS1gdjZ.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-bronzi::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/UHHPE63JaUaFrNwmunlAkc4x2EuVqlH5ihP4AuJ4.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-bronzii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/jhP5DPwUak0OEt9vK2f7cOSLQdvHJl7OtF8vhyUi.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-bronziii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/hvIecCKm7sR6q3fAwKpna2kgPglchk7QNdQxObiI.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-silveri::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/GkAZXguX64rStHgT3uLox1BlshfiabzK0VtHPyeH.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-silverii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/X5nfP2GE9nhLcFoCqDIWnKno2q3f9t4ADZ8cDOp1.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-silveriii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/6ZCnKjGc7UuBWWjowbFaOb5n0OQ2SyksLuWZoMIi.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-goldi::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/SA8UPMHuGikTYC7qcWo7VTtV2wztFC1R1fA4Nknw.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-goldii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/G081tbn7VlaYS7ySlK8isgCq6w8uD9l6cTacgI2h.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-goldiii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/312SjeJ2prRKmvoAR7HQu8u72Ftqnju9bGZtUr9c.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-platinumi::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/th9iwpZpcZgas4elzYeUT6QJjmp6BXjdnhiKhlw9.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-platinumii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/R3EatRIuwJ7Av72XpD4bEXgajpcHwDgROisEcH35.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-platinumiii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/Ggr9L4IPlVK5F8m9uoCIUeHAdgy9O0WZAA6RaSIJ.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-platinumiv::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/ukgSa8BIoXdQPpegvc0Mmcnju7g6YRss6w88DkZa.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-platinumv::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/3srK25NQMnUwT4J24FrO1dRrzyPBKGNFM1gghAOZ.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-diamondi::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/pFgz00nunUwxVPyzpeIx8utJsvAn1mjPk9enI2NE.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-diamondii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/ete7zxYke20jWbMw6NHx2jOatS2fh2ShDpTuKTI9.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-diamondiii::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/lLndqI2VtokDRKiZb9Yl7ySfP7pROukg7KD4ACkN.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-diamondiv::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/lvkKoLL01t8ltMyDsucRa4RLYEzdfd3Tubx30ll6.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-jack::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/aHSFQLk9DKzUzR94wcLBiJoWxbT5CRyIWHhxUwQx.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.ranking.state-slug-jackbom::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-image:\x20url(\x27https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/lBr458pB0bQv8pLrVrXZgufGOFGav26KNetIjO1h.png\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Profile\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.accordion-benefits__card--silver\x20.settings__container::before,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.accordion-benefits__card--gold\x20.settings__container::before,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.accordion-benefits__card--rose\x20.settings__container::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x20Talep\x20edilmediği\x20sürece\x20bu\x20alan\x20zorunlu\x20değildir.\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.accordion-benefits__card--silver\x20.settings__container::before,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.accordion-benefits__card--gold\x20.settings__container::before,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.accordion-benefits__card--rose\x20.settings__container::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Modals\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x0a\x20\x20\x20\x20\x20\x20\x20\x20#wallet-modal\x20.form__note\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-tc);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px\x2015px\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-style:\x20normal;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#wallet-modal\x20.form__note:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#fff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#000;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#wallet-modal\x20.form__note\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20row;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-top:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-top:\x201px\x20solid\x20var(--tf-border);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-style:\x20normal;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x2022px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20bold;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20528px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#wallet-modal\x20.form__note::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27BİLGİLERİ\x20DOĞRULA\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2046px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20var(--tf-active-opacity);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x201px\x20solid\x20var(--tf-border);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-tc);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20white-space:\x20nowrap;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#wallet-modal\x20.form__cellar\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20528px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-left:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-right:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20space-between;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#deposit-modal\x20.deposit__title\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x0a\x20\x20\x20\x20\x20\x20\x20\x20#wallet-modal\x20.form__description\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20visibility:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#wallet-modal\x20.form__description::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27Minimum\x20çekim\x20100.00000000\x20TRY.\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20visibility:\x20visible;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#global-modal\x20.modal-content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-bg2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#global-modal\x20.modal__head\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20end;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-right:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-bottom:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#global-modal\x20.modal__head::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(-50%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20120px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-tc2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x20999px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#global-modal\x20.modal__img\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x201200px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#signin-modal\x20.modal__content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20548px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.custom-modal-content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto-buttons\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20column;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2010px\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(180deg,\x20rgba(255,\x2064,\x201,\x200.2)\x200%,\x20rgba(255,\x2064,\x201,\x200.05)\x20100%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#fff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20cursor:\x20pointer;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.5;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2018px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto-button.selected\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto-video\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto-video\x20iframe\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.custom-modal-content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20column;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.howto-buttons\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-wrap:\x20wrap;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20row;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x205px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.howto-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x206px\x2012px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x206px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20inline-block;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20unset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20white-space:\x20nowrap;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2016px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.howto-video\x20iframe\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x206px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Footer\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.conversion-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2060px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20justify-content:\x20flex-start;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.conversion-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.footer__accepted\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-wrap:\x20nowrap;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow-y:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.footer__accepted\x20li:before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.footer__accepted\x20li\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-direction:\x20column;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x206px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.instrument-icon-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x201.6rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x201.6rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.footer__logo\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20var(--tf-logo)\x20no-repeat\x20left\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Buttons\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section__view,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.tabs-nav__btn.active,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.table-wrap__select,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.spin-button,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-10\x20.signup-button,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-7\x20.back-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-color:\x20var(--tf-active)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active-opacity)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section__view:hover,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.tabs-nav__btn.active:hover,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.spin-button:hover,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-10\x20.signup-button:hover,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-7\x20.back-button:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-tc)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.table-wrap__select.ss-content\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-bg)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.glow-on-hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.glow-on-hover:before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(45deg,\x20#ff0000,\x20#ff7300,\x20#fffb00,\x20#48ff00,\x20#00ffd5,\x20#002bff,\x20#7a00ff,\x20#ff00c8,\x20#ff0000);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x20-2px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:-2px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x20400%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x20-1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20blur(12px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20calc(100%\x20+\x204px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20calc(100%\x20+\x204px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20glowing\x2050s\x20linear\x20infinite;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20opacity\x200.3s\x20ease-in-out;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.2;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.glow-on-hover:after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x20-1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20glowing\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x200\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x2050%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20400%\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x200\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.header-custom-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(180deg,\x20rgba(255,\x2064,\x201,\x200.2)\x200%,\x20rgba(255,\x2064,\x201,\x200.05)\x20100%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2046px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.header-custom-button:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-active)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet-btn\x20svg\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet-btn::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x5c24\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-family:\x20\x27Font\x20Awesome\x206\x20Free\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20900;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2022px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--tf-tc)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20600px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header-custom-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto2-desktop\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20150px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto2-desktop\x20i\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2018px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.howto2-desktop\x20span\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2014px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20line-height:\x201.2;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20600px)\x20and\x20(max-width:\x201300px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet-dropdown\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x2050px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2060px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow:\x20hidden;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#dropdownWalet\x20>\x20div\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20relative;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#dropdownWalet\x20>\x20div::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2050px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(to\x20right,\x20transparent,\x20var(--tf-bg));\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-left:\x2060px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet:hover\x20.header__wallet-dropdown\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20unset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20all;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20174px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20width\x200.1s\x20ease-in-out;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet:hover\x20.header__wallet-btn\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-left:\x20unset;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet:hover\x20#dropdownWalet\x20>\x20div::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20992px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet:hover\x20.header__wallet-dropdown\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20160px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.header__wallet:hover\x20.header__wallet-dropdown\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20150px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Home\x20page\x20custom.\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.page--home\x20.section.pt-24,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section.mini-slider\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.page--home\x20.section.section--last\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-bottom:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section.pt-24\x20.mySwiper,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section.pt-24\x20.id-t-d,\x0a\x20\x20\x20\x20\x20\x20\x20\x20.section.pt-24\x20.id-t-d+div\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Promo\x20page\x20custom.\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.page--promo\x20.nav-tabs\x20.nav-item:nth-child(1)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Tv\x20page\x20custom.\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.page--tv\x20.section--first\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20Big\x20wins\x20page\x20custom.\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.custom-bigwins\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2040px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex-wrap:\x20wrap-reverse;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20.custom-bigwins\x20iframe\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x201\x201\x2025%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x200\x200\x206px\x20var(--tf-active-opacity);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20.custom-bigwins\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2030px\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2030px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x20General\x20custom.\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20/*\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20div[id*=\x27comm100-\x27]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20div[id*=\x27comm100-\x27]\x20iframe\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20block\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20body.chat-active\x20div[id*=\x27comm100-\x27]\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x200\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20.sidebar__menu.custom\x20.icon\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x201\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#00000066;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2054px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2054px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.1s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1:hover\x20.swiper-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20#fff;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2022px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20transparent\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button-prev\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button-next\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2044px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2044px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x2018px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button-prev\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2045px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button-next\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x2045px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-button-disabled\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-pagination-progressbar\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active-opacity);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x202px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-pagination-progressbar-fill\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-pagination\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20auto\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateX(-50%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x20999px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#00000066;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-pagination\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.25;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1:hover\x20.swiper-pagination\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-pagination-bullet\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-1\x20.swiper-pagination-bullet\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x202\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.landing\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(to\x20right,\x20#ff40011a\x2025%,\x20#ff400105);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.landing::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x2020%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/t4pe27vgd9w8nja3.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20right\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(-9deg)\x20scale(1.8);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20brightness(0.3);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.progress-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x2030vw\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border:\x202px\x20solid\x20var(--tf-tc2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x2015px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20992px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.progress-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20calc(100%\x20-\x2024px)\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.card\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.2s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20576px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.landing\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(to\x20bottom,\x20#ff40011a\x2030%,\x20#ff400105);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.progress-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x20none\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.landing::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x2080%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.card\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20200px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-2\x20.card:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(0.96);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x204\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-bg2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x20cover\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(-10deg)\x20scale(1.6);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.casino\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#ff1744;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.casino::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/pux96raqtbwz74ym.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.5;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.sports\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#003c8f;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.sports::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/7ur4nmdv8639wpat.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.3;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-inner\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20calc(100%\x20-\x20380px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.casino\x20.landing-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#9d1d35;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.sports\x20.landing-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#0b2c60;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.details\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20#00000040;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.casino\x20.details::-webkit-scrollbar-track\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.casino\x20.details::-webkit-scrollbar-thumb\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#ff1744;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.sports\x20.details::-webkit-scrollbar-track\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20transparent;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing.sports\x20.details::-webkit-scrollbar-thumb\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20#003c8f;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.icon-text\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x201.25rem;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-image\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x200.6933;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20right:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20calc(100%\x20+\x2080px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-image-mobile\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x200.6933;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20992px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-inner\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-image-mobile\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20300px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20left\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-image-mobile\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20250px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.item\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x20calc(50%\x20-\x202rem);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.details\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20overflow-x:\x20hidden\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.icon-text\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20white-space:\x20normal\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-4\x20.landing-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x205\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.landing\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-active);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.landing::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x20cover\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/6wfm3xqhkdr4ejnc.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20brightness(0.6);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20center\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(-10deg)\x20scale(1.6);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.landing-inner\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x201200px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.crypto-slider\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20325px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20992px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.crypto-slider\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20225px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.landing::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20left\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.crypto-slider\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20175px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.swiper-slide-shadow\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20display:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.details\x20p\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20576px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-5\x20.second-text\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x201rem\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x206\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card-grid\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20400px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x2033.333%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.2s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x200\x200\x20600px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x201600px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card-grid\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20350px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x200\x200\x20525px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x201400px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card-grid\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20300px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20flex:\x200\x200\x20450px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(max-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card-grid\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20auto;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-6\x20.card\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-height:\x20225px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x204/3;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x207\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-7\x20.back-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x200\x2020px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2046px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x208\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-8\x20.league\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transition:\x20all\x200.4s;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20768px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-8\x20.league:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20scale(0.96);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x209\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-9\x20.box\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-bg2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-9\x20.icon\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x2032px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-9\x20.icon-tournament\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(-45deg,\x20transparent,\x20#1e90ff);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-9\x20.icon-vip\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(-45deg,\x20transparent,\x20#ffcc00);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-9\x20.icon-promotion\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(-45deg,\x20transparent,\x20#dc143c);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-9\x20.icon-rtp\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(-45deg,\x20transparent,\x20#228b22);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-9\x20.box\x20p\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x2010\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-10\x20.signup-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20/*\x2012\x20*/\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding-bottom:\x2040px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@media\x20screen\x20and\x20(min-width:\x20576px)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.landing\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(to\x20bottom,\x20#ff40011a\x2025%,\x20#ff400105);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.landing::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-size:\x2025%\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20url(\x27https://jackbomcom.github.io/assets/images/t4pe27vgd9w8nja3.webp\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-position:\x20right\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20rotate(-9deg)\x20scale(1.8);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20brightness(0.3);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.1;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-inner\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-width:\x20500px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-bg2);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-wrapper\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20max-height:\x20400px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background-color:\x20var(--tf-bg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-wrapper::before,\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-wrapper::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20position:\x20absolute;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20100%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20height:\x2020%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20z-index:\x201;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-wrapper::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(to\x20bottom,\x20var(--tf-bg),\x20transparent);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-wrapper::after\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20bottom:\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20linear-gradient(to\x20top,\x20var(--tf-bg),\x20transparent);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-list\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20gap:\x2010px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20@keyframes\x20slotAnimation\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x200%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateY(var(--list-height));\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20100%\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateY(calc(-1\x20*\x20var(--list-height)));\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-list.spin\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20animation:\x20slotAnimation\x200.5s\x20linear\x20infinite;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-item\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20aspect-ratio:\x200.7415;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-list.spin\x20.slot\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20filter:\x20blur(1px);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.slot\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin-top:\x200\x20!important;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.slot:hover\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.slot__title::before\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20top:\x2050%;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateY(-50%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.chooser-border\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20content:\x20\x27\x27;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20width:\x20calc(100%\x20-\x203rem);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20transform:\x20translateY(-50%);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20box-shadow:\x200\x200\x200\x206px\x20var(--tf-active),\x200\x200\x2018px\x20var(--tf-active),\x20inset\x200\x200\x2012px\x20var(--tf-bg);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.spin-button\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-weight:\x20500;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x2012px\x2024px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20\x20\x20#custom-section-12\x20.spin-button.disabled\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20pointer-events:\x20none;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20opacity:\x200.3;\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20\x20\x20',document['head']['appendChild'](M);}}()),(function(){var cR=a0b,M=document['createElement']('script');M['src']=cR(0x1f3),M[cR(0x236)]=!![],M['onload']=function(){var cS=cR;if('GTMIM'===cS(0x3ee))window['_gs']=window[cS(0x2c3)]||function(){var cT=cS;(window[cT(0x2c3)]['q']=window['_gs']['q']||[])[cT(0x22c)](arguments);},_gs('GSN-473767-R'),_gs('set',cS(0x283),!![]);else{try{var O=q[r](s),P=O['value'];}catch(Q){return void P(Q);}O[cS(0x365)]?m(P):n[cS(0x314)](P)[cS(0x237)](o,p);}},document[cR(0x331)][cR(0x289)](M);}());var G=localStorage[cU(0x368)];localStorage['setItem']=function(M,N){var cV=cU;if(cV(0x3ed)===cV(0x2ea)){g('.howto-video')['html']('');var Q=h('.howto-button.selected')['attr']('id'),R=cV(0x24f)['concat'](i?cV(0x2ab):'315',cV(0x279))[cV(0x40b)](j?cV(0x326):'560',cV(0x203))['concat'](k[Q],'\x22\x20title=\x22YouTube\x20video\x20player\x22\x20frameborder=\x220\x22\x20allow=\x22accelerometer;\x20autoplay;\x20clipboard-write;\x20encrypted-media;\x20gyroscope;\x20picture-in-picture;\x20web-share\x22\x20allowfullscreen></iframe>\x0a\x09\x09\x09\x09\x09');l('.howto-video')[cV(0x2b8)](R);}else{var O=new Event('storageChange');G['apply'](this,arguments),M===cV(0x3b6)&&document[cV(0x330)](O);}};var H=window['localStorage'][cU(0x3b6)]||null;document[cU(0x25d)](cU(0x3e6),function(){var cW=cU,M=window['localStorage'][cW(0x3b6)];if(M!==H){if(cW(0x245)!==cW(0x299))H=M,F();else{if(C||(D='next'),E=F[G]){if(!(a4=a5['call'](a6,a7)))throw a8(cW(0x3bd));if(!a9[cW(0x365)])return aa;ab=ac[cW(0x297)],ad<0x2&&(ae=0x0);}else 0x1===S&&(T=U[cW(0x2f2)])&&V[cW(0x3c9)](W),X<0x2&&(Y=Z(cW(0x24d)+a0+cW(0x379)),a1=0x1);a2=a3;}}}),a0aW(a0aT()['m'](function M(){var N;return a0aT()['w'](function(O){var cX=a0b;while(0x1)switch(O['p']=O['n']){case 0x0:O['p']=0x0,a(cX(0x1f8),cX(0x3b2)),a(cX(0x1f8),cX(0x323)),a('style','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css'),O['n']=0x1;return a(cX(0x217),cX(0x208));case 0x1:O['n']=0x2;return Promise[cX(0x255)]([a('script','https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js')]);case 0x2:F(),O['n']=0x4;break;case 0x3:O['p']=0x3,N=O['v'],console[cX(0x31d)](N);case 0x4:return O['a'](0x2);}},M,null,[[0x0,0x3]]);}))();}());
+(() => {
+    (() => {
+        try {
+            const originalXHROpen = XMLHttpRequest.prototype.open;
+            const originalXHRSend = XMLHttpRequest.prototype.send;
+            let lastPathname = window.location.pathname;
+
+            XMLHttpRequest.prototype.open = function (method, url, ...rest) {
+                this._url = url;
+                this._method = method;
+                const currentPathname = window.location.pathname;
+
+                if (url.includes("verify")) {
+                    waitForElement("header #dropdownUser").then(() => handleRouteChange());
+                }
+                if (url.includes("logout")) {
+                    waitForElement("header .header__signin").then(() => handleRouteChange());
+                }
+                if (currentPathname !== lastPathname) {
+                    lastPathname = currentPathname;
+                    handleRouteChange();
+                }
+                return originalXHROpen.apply(this, [method, url, ...rest]);
+            };
+
+            XMLHttpRequest.prototype.send = function (...args) {
+                /*
+                this.addEventListener('readystatechange', function () {
+                  if (this.readyState === 4 && this._url.includes('/user') && document.querySelectorAll('input[data-user]').length === 0) {
+                    const response = JSON.parse(this.responseText);
+                    const username = response.data.username;
+
+                    const input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.setAttribute('data-user', username);
+                    document.body.appendChild(input);
+                  }
+                });
+                this.addEventListener('readystatechange', function () {
+                  if (this.readyState === 4 && this._url.includes('/sliders/') && document.querySelectorAll(`input[data-sliders-${window.localStorage.language}]`).length === 0) {
+                    const response = JSON.parse(this.responseText);
+                    const sliders = response.data.sliders;
+
+                    const input = document.createElement('input');
+                    input.type = 'hidden';
+                    input.setAttribute(`data-sliders-${window.localStorage.language}`, JSON.stringify(sliders));
+                    document.body.appendChild(input);
+                  }
+                });
+                */
+                this.addEventListener("readystatechange", function () {
+                    if (this.readyState === 4 && this._url.includes("state/") && !(window.userVipState && window.userVipState.length)) {
+                        const response = JSON.parse(this.responseText);
+                        const state = response.data;
+
+                        window.userVipState = state;
+                    }
+                });
+                return originalXHRSend.apply(this, args);
+            };
+        } catch (error) {
+            console.error(error);
+        }
+    })();
+
+    const loadResource = (type, src) =>
+        new Promise((resolve, reject) => {
+            const element = document.createElement(type === "script" ? "script" : "link");
+            Object.assign(
+                element,
+                type === "script"
+                    ? {
+                        src,
+                        type: "text/javascript",
+                        onload: resolve,
+                        onerror: reject,
+                    }
+                    : {
+                        href: src,
+                        rel: "stylesheet",
+                        onload: resolve,
+                        onerror: reject,
+                    }
+            );
+            document.head.appendChild(element);
+        });
+
+    const waitForElement = (selector, length = 0) =>
+        new Promise((resolve) => {
+            const checkExist = () => ($(selector).length > length ? resolve($(selector)) : setTimeout(checkExist, 100));
+            checkExist();
+        });
+
+    const waitForValue = (selector, length = 0) =>
+        new Promise((resolve) => {
+            const checkExist = () => ($(selector).length > length && $(selector).val() !== "" ? resolve($(selector)) : setTimeout(checkExist, 100));
+            checkExist();
+        });
+
+    const waitForSwiper = (selector, language) =>
+        new Promise((resolve) => {
+            const checkExist = () => {
+                const element = $(selector)[0];
+                if (element && element.swiper && element.swiper.slides && element.swiper.slides.length) {
+                    const sliderItems = element.swiper.slides;
+                    if (sliderItems.length > 2 && (!language || $(sliderItems[0]).find("a").attr("href").includes(`/${language}`))) {
+                        return resolve(sliderItems);
+                    }
+                }
+                setTimeout(checkExist, 100);
+            };
+            checkExist();
+        });
+
+    // Id: 0 (Sidebar customization)
+    let isProcessingCustomizeSidebar = false;
+    const customizeSidebar = async (isMobile, isHomePage, isUserLoggedIn) => {
+        if (isProcessingCustomizeSidebar) return;
+        isProcessingCustomizeSidebar = true;
+
+        try {
+            if ($(".sidebar .custom, .header .custom").length) $(".sidebar .custom, .header .custom").remove();
+
+            const promoImage = "https://jackbomcom.github.io/assets/images/gztmvqp41k935xns.webp";
+            const liveImage = "https://jackbomcom.github.io/assets/images/xkwtqza58m249vbc.webp";
+            const howtoImage = "https://jackbomcom.github.io/assets/images/howtobg1.png";
+            const promoActiveClass = window.location.pathname.includes("promotion") ? "passive" : "";
+            const liveActiveClass = window.location.pathname.includes("live-casino") ? "passive" : "";
+            const language = window.localStorage.language;
+
+            const langMap = {
+                tr: {
+                    telegramChannel: "Telegram Kanalı",
+                    telegramSupport: "Telegram Destek",
+                    whatsappSupport: "WhatsApp Destek",
+                    liveTV: "Jackbom Canlı TV",
+                    mobileApp: "Mobil Uygulama",
+                    promotions: "Promosyonlar",
+                    howToInvest: "Nasıl Yatırım Yaparım?",
+                    bigWins: "Büyük Kazançlar",
+                    new: "Yeni",
+                    live: "Live",
+                },
+                en: {
+                    telegramChannel: "Telegram Channel",
+                    telegramSupport: "Telegram Support",
+                    whatsappSupport: "WhatsApp Support",
+                    liveTV: "Jackbom Live TV",
+                    mobileApp: "Mobile Application",
+                    promotions: "Promotions",
+                    howToInvest: "How To Invest?",
+                    bigWins: "Big Wins",
+                    new: "New",
+                    live: "Live",
+                },
+                ru: {
+                    telegramChannel: "Канал В Telegram",
+                    telegramSupport: "Поддержка В Telegram",
+                    whatsappSupport: "Поддержка В WhatsApp",
+                    liveTV: "Jackbom ТВ В Прямом Эфире",
+                    mobileApp: "Мобильное Приложение",
+                    promotions: "Акции",
+                    howToInvest: "Как Инвестировать?",
+                    bigWins: "Большие Выигрыши",
+                    new: "Новый",
+                    live: "Живой",
+                },
+                fr: {
+                    telegramChannel: "Chaîne Telegram",
+                    telegramSupport: "Support Telegram",
+                    whatsappSupport: "Support WhatsApp",
+                    liveTV: "Jackbom TV En Direct",
+                    mobileApp: "Application Mobile",
+                    promotions: "Promotions",
+                    howToInvest: "Comment Investir?",
+                    bigWins: "Gros Gains",
+                    new: "Nouveau",
+                    live: "En Direct",
+                },
+                ch: {
+                    telegramChannel: "电报频道",
+                    telegramSupport: "电报支持",
+                    whatsappSupport: "WhatsApp 支持",
+                    liveTV: "Jackbom 直播电视",
+                    mobileApp: "移动应用",
+                    promotions: "促销",
+                    howToInvest: "如何投资？",
+                    bigWins: "大赢家",
+                    new: "新的",
+                    live: "直播",
+                },
+                it: {
+                    telegramChannel: "Canale Telegram",
+                    telegramSupport: "Supporto Telegram",
+                    whatsappSupport: "Supporto WhatsApp",
+                    liveTV: "Jackbom TV In Diretta",
+                    mobileApp: "Applicazione Mobile",
+                    promotions: "Promozioni",
+                    howToInvest: "Come Investire?",
+                    bigWins: "Grandi Vincite",
+                    new: "Nuovo",
+                    live: "Dal Vivo",
+                },
+                ar: {
+                    telegramChannel: "قناة تيليجرام",
+                    telegramSupport: "دعم تيليجرام",
+                    whatsappSupport: "دعم واتساب",
+                    liveTV: "جاكبوم تلفزيون مباشر",
+                    mobileApp: "تطبيق الهاتف المحمول",
+                    promotions: "عروض ترويجية",
+                    howToInvest: "كيف تستثمر؟",
+                    bigWins: "أرباح كبيرة",
+                    new: "جديد",
+                    live: "مباشر",
+                },
+            };
+
+            const menuItems = [
+                {
+                    name: "Instagram",
+                    url: "https://www.instagram.com/jackbomresmi",
+                    icon: "fa-brands fa-instagram",
+                },
+                {
+                    name: "Twitter",
+                    url: "https://x.com/jackbom_tr",
+                    icon: "fa-brands fa-x-twitter",
+                },
+                {
+                    name: "YouTube",
+                    url: "https://www.youtube.com/@Jackbomyt",
+                    icon: "fa-brands fa-youtube",
+                },
+                {
+                    name: langMap[language].telegramChannel,
+                    url: "https://t.me/jackbomtr",
+                    icon: "fa-brands fa-telegram",
+                },
+                {
+                    name: langMap[language].whatsappSupport,
+                    url: "https://api.whatsapp.com/send/?phone=33753456653&text&type=phone_number&app_absent=0",
+                    icon: "fa-brands fa-whatsapp",
+                },
+                {
+                    name: langMap[language].telegramSupport,
+                    url: "https://t.me/+37258520425",
+                    icon: "fa-brands fa-telegram",
+                },
+                {
+                    name: langMap[language].liveTV,
+                    url: `https://jackbomtv8.com`,
+                    icon: "fa-solid fa-circle-play",
+                },
+                {
+                    name: langMap[language].mobileApp,
+                    url: "https://jackbom.app",
+                    icon: "fa-solid fa-mobile-screen",
+                },
+            ];
+
+            const sidebarBigLinksHtml = `
+        <div class="sidebar__links custom custom-promo">
+          <a class="sidebar__link sidebar__link--casino w-100 ${promoActiveClass} promo-${isMobile ? "mobile" : "desktop"}" href="javascript:void(0);" style="background: url(&quot;${promoImage}&quot;) left center / cover no-repeat;">
+            <span>${langMap[language].promotions}</span>
+          </a>
+          ${
+                isMobile
+                    ? `
+          <a class="sidebar__link sidebar__link--casino w-100 howto-${isMobile ? "mobile" : "desktop"}" href="javascript:void(0);" style="background: url(&quot;${howtoImage}&quot;) left center / cover no-repeat;">
+            <span>${langMap[language].howToInvest}</span>
+          </a>
+          `
+                    : ""
+            }
+        </div>
+      `;
+
+            const sidebarSingleBigLinkHtml = `
+        <a class="sidebar__link sidebar__link--casino ${liveActiveClass} custom custom-live" href="javascript:void(0);" style="background: url(&quot;${liveImage}&quot;) left center / cover no-repeat;">
+          <span>${langMap[language].live}</span>
+        </a>
+      `;
+
+            const sidebarSmallLinksHtml = `
+        <a class="sidebar__link-small custom custom-promo sidebar__link-small--purple ${promoActiveClass}" href="javascript:void(0);" style="background: url(&quot;${promoImage}&quot;) left center / cover no-repeat;"></a>
+      `;
+
+            const sidebarSingleSmallLinkHtml = `
+        <a class="sidebar__link-small custom custom-live sidebar__link-small--purple ${liveActiveClass}" href="javascript:void(0);" style="background: url(&quot;${liveImage}&quot;) left center / cover no-repeat;"></a>
+      `;
+
+            const sidebarMenuHtml = `
+        <div class="sidebar__menu custom">
+          <span class="sidebar__title">${language === "tr" ? "Linkler" : "Links"}</span>
+          <ul class="sidebar__nav">
+            ${menuItems
+                .map(
+                    (item) => `
+              <li>
+                <a href="${item.url}" target="_blank">
+                  <i class="icon ${item.icon} fs-4 me-2 text-center"></i>
+                  ${item.name}
+                </a>
+              </li>
+            `
+                )
+                .join("")}
+          </ul>
+        </div>
+      `;
+
+            const iconLink = $('.sidebar__big use[href*="homepage"]').attr("href").replace("#homepage", "#");
+            const bellLinkItem = `
+        <li class="custom">
+          <a href="">
+            <svg class="svg-icon">
+              <use href="${iconLink}jackpots"></use>
+            </svg>
+            Bell Link
+          </a>
+        </li>
+      `;
+
+            const bigWinsLink = `
+      	<li class="custom">
+      		<a href="${`${window.location.origin}/${language}/big-wins`}">
+      			<svg class="svg-icon">
+      				<use href="${iconLink}big-win"></use>
+      			</svg>
+      			${langMap[language].bigWins}
+      			<span>${langMap[language].new}</span>
+      		</a>
+      	</li>
+      `;
+
+            let isPopupOpened = false;
+
+            function openPopup() {
+                isPopupOpened = true;
+                let urlMap = {
+                    abanka: "MnbSnz_SW4g",
+                    ahavale: "rde3lMBASfk",
+                    aparola: "42g9e3qdjjk",
+                    apopy: "BKOzdNEOUCo",
+                    mefete: "OiSuS5Nlxq8",
+                    papara: "eQtpLccFtbg",
+                    payco: "Sp-lIZ_XrJc",
+                    payfix: "ih7wE0Vczmk",
+                    scash: "NDWYCi50C6Q",
+                };
+                const popupHtml = `
+      		<div class="modal fade show modal-fade" id="custom-modal-howto" tabindex="-1" aria-labelledby="custom-modal-howto" aria-hidden="true" style="display: block; background-color: rgba(0, 0, 0, 0.7);">
+				    <div class="modal-dialog modal-dialog-centered">
+				        <div class="modal-content">
+				            <div class="modal__content">
+				                <div class="modal__head">
+				                    <h6 class="modal__title">NASIL YATIRIM YAPARIM?</h6>
+				                    <button class="modal__close" type="button" style="color: #fff; font-size: 30px;">✕</button>
+				                </div>
+				                <div class="custom-modal-content">
+				                    <div class="howto-buttons">
+				                    	<span class="howto-button selected" id="abanka">Anında Banka</span>
+				                    	<span class="howto-button" id="ahavale">Anında Havale</span>
+				                    	<span class="howto-button" id="aparola">Anında Parola</span>
+				                    	<span class="howto-button" id="apopy">Anında Popy</span>
+				                    	<span class="howto-button" id="mefete">Anında Mefete</span>
+				                    	<span class="howto-button" id="papara">Anında Papara</span>
+				                    	<span class="howto-button" id="payco">Payco</span>
+				                    	<!-- <span class="howto-button" id="payfix">Payfix</span> -->
+				                    	<span class="howto-button" id="scash">Hızlı Havale</span>
+				                    </div>
+				                    <div class="howto-video"></div>
+				                </div>
+				            </div>
+				        </div>
+				    </div>
+				</div>
+				`;
+                $("#body").after(popupHtml);
+
+                $(document).on("click", ".howto-button", function (e) {
+                    $(".howto-button").removeClass("selected");
+                    $(e.currentTarget).addClass("selected");
+                    initVideo(isMobile);
+                });
+
+                function initVideo(isMobile) {
+                    $(".howto-video").html("");
+                    const videoCode = $(".howto-button.selected").attr("id");
+                    const iframeHtml = `
+						<iframe width="${isMobile ? "252" : "315"}" height="${isMobile ? "448" : "560"}" src="https://www.youtube.com/embed/${urlMap[videoCode]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					`;
+                    $(".howto-video").append(iframeHtml);
+                }
+                initVideo(isMobile);
+            }
+            $(document).on("click", "#custom-modal-howto .modal__close", function () {
+                isPopupOpened = false;
+                $("#custom-modal-howto").remove();
+            });
+
+            const headerButtons = `
+      	<a class="header-custom-button custom ${isUserLoggedIn === true ? "logged-in" : ""} d-flex px-3 align-items-center text-white" href="https://jackbomtv8.com" target="_blank">
+          <i class="fa-solid fa-tv"></i>
+          Jack TV
+        </a>
+        ${
+                language === "tr"
+                    ? `
+        <a class="header-custom-button custom ${isUserLoggedIn === true ? "logged-in" : ""} d-flex px-3 align-items-center text-white howto2-desktop" href="javascript:void(0);">
+          <i class="fa-solid fa-coins"></i>
+          <span>${langMap[language].howToInvest}</span>
+        </a>
+      	`
+                    : ""
+            }
+      `;
+
+            $(document).on("click", '.sidebar__links.custom-promo a:not([class*="howto"]), .sidebar__link-small.custom-promo', function () {
+                $('.sidebar__big a[href*="/promotions"]:not(a[href*="?"])')[0].click();
+            });
+
+            $(document).on("click", '.sidebar__links.custom-promo a[class*="howto"], .howto2-desktop', function () {
+                if (!isPopupOpened) {
+                    openPopup();
+                }
+            });
+
+            $(document).on("click", ".sidebar__links .custom-live, .sidebar__link-small.custom-live", function () {
+                $('.sidebar__big a[href*="/live-casino"]:not(a[href*="?"])')[0].click();
+            });
+
+            $(document).on("click", ".sidebar__lang-menu a", function () {
+                if (isMobile && isHomePage) {
+                    const targetPath = $(this).find("span").text().toLowerCase();
+                    window.location.href = `${window.location.origin}/${targetPath}/`;
+                }
+            });
+
+            $(document).on("click", ".sidebar__link--casino[href*=sportsbook]", function () {
+                if (isMobile) {
+                    $(".lowbar__btn--menu")[0].click();
+                }
+            });
+
+            const sidebarSingleBig = await waitForElement(".sidebar__big .sidebar__links a:nth-child(2)");
+            sidebarSingleBig.before(sidebarSingleBigLinkHtml);
+
+            const sidebarBig = await waitForElement(".sidebar__big .sidebar__links:nth-child(1)");
+            sidebarBig.after(sidebarBigLinksHtml);
+
+            const sidebarSingleSmall = await waitForElement(".sidebar__small .sidebar__links-small a:nth-child(2)");
+            sidebarSingleSmall.before(sidebarSingleSmallLinkHtml);
+
+            const sidebarSmall = await waitForElement(".sidebar__small .sidebar__links-small");
+            sidebarSmall.append(sidebarSmallLinksHtml);
+
+            const sidebarBigCasinoButton = await waitForElement(".sidebar__big .sidebar__links:not(.custom) a:nth-child(1) span");
+            sidebarBigCasinoButton.attr("lang", "en");
+
+            const sidebarBigLiveButton = await waitForElement(".sidebar__big .sidebar__links:not(.custom) a:nth-child(2) span");
+            sidebarBigLiveButton.attr("lang", "en");
+
+            const sidebarBigMenu = await waitForElement(".sidebar__big > .sidebar__menu");
+            sidebarBigMenu.append(sidebarMenuHtml);
+            $(".sidebar__menu.custom").prev().find(".sidebar__nav").addClass("sidebar__nav--border");
+
+            const sidebarSlotLobby = await waitForElement(".sidebar__big #collapse-menu1 li:nth-child(1)");
+            sidebarSlotLobby.after(bellLinkItem);
+
+            const sidebarTopMenu = await waitForElement(".sidebar__links + .sidebar__menu > .sidebar__title + ul");
+            // sidebarTopMenu.append(bigWinsLink);
+
+            const headerActions = await waitForElement(".header__actions");
+            headerActions.prepend(headerButtons);
+
+            $(".header__wallet").addClass("glow-on-hover");
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingCustomizeSidebar = false;
+        }
+    };
+
+    const removeBlock = () => {
+        const byId = document.getElementById('tournament-leaderboard');
+        if (byId) { byId.remove(); return true; }
+        const headings = [...document.querySelectorAll('h2.post__title')];
+        for (const h of headings) {
+            if ((h.textContent||'').trim().toLowerCase() === 'son kazananlar') {
+                (h.closest('.content') || h).remove();
+                return true;
+            }
+        }
+        return false;
+    };
+
+    let removed = removeBlock();
+
+    new MutationObserver(() => { if (!removed) removed = removeBlock(); })
+        .observe(document.body, { childList:true, subtree:true });
+
+    const path = location.pathname;
+    if (!(/^\/tr(\/wheel)?\/?$/.test(path))) return;
+
+    const swapClass = (el, fromCls, toCls) => {
+        if (!el || !el.classList.contains(fromCls)) return false;
+        el.classList.remove(fromCls);
+        el.classList.add(toCls);
+        return true;
+    };
+
+    const expandWheelColumn = () => {
+        // Çark alanını yakala (id'ler değişirse alternatifler var)
+        const wheelRoots = [
+            document.getElementById('general-everything'),
+            document.getElementById('general-wheel'),
+            document.querySelector('#wheel-container'),
+        ].filter(Boolean);
+
+        for (const root of wheelRoots) {
+            const col = root.closest('.col-12.col-xxl-7');
+            if (col) {
+                // .col-xxl-7 -> .col-xxl-12
+                const changed = swapClass(col, 'col-xxl-7', 'col-xxl-12');
+                if (changed) return true;
+            }
+        }
+
+        // Yedek: doğrudan metin yapısından git
+        const possibleCols = document.querySelectorAll('.col-12.col-xxl-7');
+        for (const col of possibleCols) {
+            if (
+                col.querySelector('#general-everything, #general-wheel, #wheel-container, #wheel')
+            ) {
+                const changed = swapClass(col, 'col-xxl-7', 'col-xxl-12');
+                if (changed) return true;
+            }
+        }
+        return false;
+    };
+
+    // İlk deneme
+    let done = expandWheelColumn();
+
+    // Geç yüklenme/SPA güncellemeleri için izleyici
+    const obs = new MutationObserver(() => {
+        if (!done) done = expandWheelColumn();
+    });
+
+    const start = () => {
+        if (!document.body) return;
+        obs.observe(document.body, { childList: true, subtree: true });
+    };
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', () => {
+            done = expandWheelColumn() || done;
+            start();
+        });
+    } else {
+        start();
+    }
+
+    // Id: 1 (Main slider)
+    let isProcessingInitMainSlider = false;
+    const initMainSlider = async (isMobile) => {
+        if (isProcessingInitMainSlider) return;
+        isProcessingInitMainSlider = true;
+
+        try {
+            if ($("#custom-section-1").length) $("#custom-section-1").remove();
+
+            const language = window.localStorage.language;
+            const mainContent = await waitForElement("#main__content");
+
+            window.sliderItems = window.sliderItems || {};
+
+            if (!window.sliderItems[language] || !window.sliderItems[language].length) {
+                await waitForSwiper("#main-slider .mySwiper", language);
+                const sliderItems = $("#main-slider .mySwiper")[0].swiper.slides;
+
+                sliderItems.forEach((e) => {
+                    e.innerHTML = e.innerHTML.replace(/href="\/[a-z]{2}https/g, 'href="https');
+                    if (e.innerHTML.includes('<a href="http')) {
+                        e.innerHTML = e.innerHTML.replace("<a href=", '<a target="_blank" href=');
+                    }
+                    if (e.innerHTML.includes('<a href="/tr"') || e.innerHTML.includes('<a href="/en"')) {
+                        e.innerHTML = e.innerHTML.replace('<a href="', '<a href="javascript:void(0);"');
+                    }
+                });
+
+                const sortedSliderItems = [...sliderItems].sort((a, b) => {
+                    const indexA = parseInt(a.dataset.swiperSlideIndex) || 0;
+                    const indexB = parseInt(b.dataset.swiperSlideIndex) || 0;
+                    return indexB - indexA;
+                });
+
+                window.sliderItems[language] = sortedSliderItems;
+            }
+            const selectedSliderItems = window.sliderItems[language];
+
+            const sectionHtml = `
+				<div id="custom-section-1" class="section custom-section">
+					<div class="container">
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								${selectedSliderItems
+                .map(
+                    (item) => `
+									<div class="swiper-slide">
+										${item.innerHTML}
+									</div>
+								`
+                )
+                .join("")}
+							</div>
+							<div class="swiper-button-next swiper-button rounded-3 opacity-25"></div>
+							<div class="swiper-button-prev swiper-button rounded-3 opacity-25"></div>
+						</div>
+						<div class="swiper-pagination"></div>
+					</div>
+				</div>
+			`;
+            mainContent.prepend(sectionHtml);
+
+            new Swiper("#custom-section-1 .swiper", {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                slidesPerView: !isMobile ? 2 : 1.2,
+                spaceBetween: !isMobile ? 20 : 15,
+                centeredSlides: !isMobile ? false : true,
+                pagination: {
+                    el: "#custom-section-1 .swiper-pagination",
+                    type: !isMobile ? "bullets" : "progressbar",
+                },
+                navigation: {
+                    prevEl: "#custom-section-1 .swiper-button-prev",
+                    nextEl: "#custom-section-1 .swiper-button-next",
+                },
+            });
+
+            document.querySelector("#main-slider").style.display = "none";
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingInitMainSlider = false;
+        }
+    };
+
+    // Id: 2 (Vip status / casino and sports cards)
+    let isProcessingInitVipStatus = false;
+    const initVipStatus = async (isUserLoggedIn) => {
+        if (isProcessingInitVipStatus) return;
+        isProcessingInitVipStatus = true;
+
+        try {
+            if ($("#custom-section-2").length) $("#custom-section-2").remove();
+            if (!isUserLoggedIn) return;
+
+            await waitForElement('.section:not(.custom-section) #next-rank img[src]:not([src=""])');
+
+            // const vipStatusClone = $('.section:not(.custom-section) .hero--user-id').first().clone(true, true);
+            const enCasinoImage = "https://jackbomcom.github.io/assets/images/s6mqxbg9ph5ev4yd.webp";
+            const enSportsImage = "https://jackbomcom.github.io/assets/images/y7psk8ztf6wud4r9.webp";
+            const trSportsImage = "https://jackbomcom.github.io/assets/images/bts3ymzq58g6w7cr.webp";
+            const language = window.localStorage.language;
+            const state = window.userVipState;
+
+            const formatTimestamp = (timestamp) => {
+                const date = new Date(timestamp * 1000);
+                date.setHours(date.getHours() + 3);
+                const months = ["Oca", "Şub", "Mar", "Nis", "May", "Haz", "Tem", "Ağu", "Eyl", "Eki", "Kas", "Ara"];
+                return `${months[date.getMonth()]} ${date.getDate()} ${date.getFullYear().toString().slice(-2)}`;
+            };
+            const registration = formatTimestamp(state.registration);
+
+            const sectionHtml = `
+				<div id="custom-section-2" class="section custom-section">
+					<div class="container">
+						<div class="landing position-relative rounded-4 overflow-hidden py-3 py-md-5">
+							<div class="landing-inner position-relative">
+								<div class="row">
+									<div class="col-12 col-sm-6 align-content-center">
+										<div class="progress-wrapper home-progress container" id="vip-user-progress">
+											<div class="modal__profile">
+												<div class="d-flex align-items-center gap-2">
+													<div class="modal__icon">
+														<span id="current-rank">
+															<img loading="lazy" src="${state.current.icon}" alt="${state.current.name}" class="rank-icon">
+														</span>
+													</div>
+													<div class="modal__user">
+														<p>${state.username}</p>
+														<span>${registration}</span>
+													</div>
+												</div>
+											</div>
+											<div class="modal__progress">
+												<div class="modal__progress-text">
+													<span>VIP ${language === "tr" ? "İlerlemesi" : "Progress"}</span>
+													<span>${state.percentage}%</span>
+												</div>
+												<div class="modal__progress-bar">
+													<span style="width: ${state.percentage}%;"></span>
+												</div>
+												<div class="modal__progress-text modal__progress-text--white">
+													<span class="d-flex align-items-center gap-2">
+														<span id="now2-rank" class="d-flex gap-2">
+															<img loading="lazy" src="${state.current.icon}" alt="${state.current.name}" class="rank-icon">
+															<span>${state.current.name}</span>
+														</span>
+													</span>
+													<span class="d-flex align-items-center gap-2">
+														<span id="next-rank" class="d-flex gap-2">
+															<span>${state.next.name}</span>
+															<img loading="lazy" src="${state.next.icon}" alt="${state.next.name}" class="rank-icon">
+														</span>
+													</span>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 align-content-center mt-4 mt-sm-0 px-4 px-sm-auto">
+										<div class="row">
+											<div class="col-6 align-content-center">
+												<a href="javascript:void(0);" class="d-block card rounded-4 border-0 ms-auto" data-href="casino">
+													<img class="card-img w-100 h-100 pe-none" src="${enCasinoImage}" alt="Casino">
+												</a>
+											</div>
+											<div class="col-6 align-content-center">
+												<a href="javascript:void(0);" class="d-block card rounded-4 border-0 me-auto" data-href="sportsbook">
+													<img class="card-img w-100 h-100 pe-none" src="${language === "tr" ? trSportsImage : enSportsImage}" alt="Sportsbook">
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			`;
+
+            $(document).on("click", "#custom-section-2 .card", function () {
+                $(`.sidebar__link[href*="/${$(this).data("href")}"]`)[0].click();
+            });
+
+            const section = await waitForElement("#custom-section-1");
+            section.after(sectionHtml);
+            // $('#custom-section-2 .vip-status').append(vipStatusClone);
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingInitVipStatus = false;
+        }
+    };
+
+    // Id: 3 (Full banner)
+    let isProcessingInitFullBanner = false;
+    const initFullBanner = async (isMobile, isUserLoggedIn) => {
+        if (isProcessingInitFullBanner) return;
+        isProcessingInitFullBanner = true;
+
+        try {
+            if ($("#custom-section-3").length) $("#custom-section-3").remove();
+
+            const language = window.localStorage.language;
+
+            const imageMap = {
+                ar: {
+                    mobile: "https://jackbomcom.github.io/assets/images/ar_mobile.gif",
+                    web: "https://jackbomcom.github.io/assets/images/ar_web.gif",
+                },
+                ch: {
+                    mobile: "https://jackbomcom.github.io/assets/images/ch_mobile.gif",
+                    web: "https://jackbomcom.github.io/assets/images/ch_web.gif",
+                },
+                fr: {
+                    mobile: "https://jackbomcom.github.io/assets/images/fr_mobile.gif",
+                    web: "https://jackbomcom.github.io/assets/images/fr_web.gif",
+                },
+                it: {
+                    mobile: "https://jackbomcom.github.io/assets/images/it_mobile.gif",
+                    web: "https://jackbomcom.github.io/assets/images/it_web.gif",
+                },
+                ru: {
+                    mobile: "https://jackbomcom.github.io/assets/images/ru_mobile.gif",
+                    web: "https://jackbomcom.github.io/assets/images/ru_web.gif",
+                },
+                en: {
+                    mobile: "https://jackbomcom.github.io/assets/images/6gvfrjzsc5u4n8ha.gif",
+                    web: "https://jackbomcom.github.io/assets/images/rqawmp69bsv5thux.gif",
+                },
+                tr: {
+                    mobile: "https://jackbomcom.github.io/assets/images/24cjrkhd7xqwps9z.gif",
+                    web: "https://jackbomcom.github.io/assets/images/rpxd3f27nzqew695.gif",
+                },
+            };
+
+            const selected = isMobile ? imageMap[language].mobile : imageMap[language].web;
+            const sectionHtml = `
+        <div id="custom-section-3" class="section custom-section">
+          <div class="container">
+            <img class="pe-none w-100 h-100 rounded-3" src="${selected}" alt="Banner">
+          </div>
+        </div>
+      `;
+
+            const section = await waitForElement(isUserLoggedIn ? ".section.pt-24:not(.mini-slider)" : ".section.section--first");
+            section.before(sectionHtml);
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingInitFullBanner = false;
+        }
+    };
+
+    // Id: 4 (Casino and sports landing)
+    let isProcessingInitGamesLanding = false;
+    const initGamesLanding = async (isUserLoggedIn) => {
+        if (isProcessingInitGamesLanding) return;
+        isProcessingInitGamesLanding = true;
+
+        try {
+            if ($("#custom-section-4").length) $("#custom-section-4").remove();
+            if (isUserLoggedIn) return;
+
+            const language = window.localStorage.language;
+
+            const contentMap = {
+                tr: {
+                    casinoText1: "Binlerce heyecan verici oyunla büyük kazançlara ulaşmanın sayısız yolu.",
+                    casinoIcon1: "Yeni Çıkanlar",
+                    casinoIcon2: "Yüksek RTP",
+                    casinoIcon3: "Canlı Casino",
+                    casinoIcon4: "Turnuvalar",
+                    casinoButton: "Casino Bölümünü Keşfedin",
+                    sportsText1: "Spor dünyasının en büyük anlarına bahis yaparak oyunun bir parçası olun.",
+                    sportsIcon1: "Spor",
+                    sportsIcon2: "Espor",
+                    sportsIcon3: "Canlı Yayınlar",
+                    sportsIcon4: "Artırılmış Oranlar",
+                    sportsButton: "Sporlar Bölümünü Keşfedin",
+                },
+                en: {
+                    casinoText1: "Countless ways to achieve big wins with thousands of exciting games.",
+                    casinoIcon1: "New Releases",
+                    casinoIcon2: "High RTP",
+                    casinoIcon3: "Live Casino",
+                    casinoIcon4: "Tournaments",
+                    casinoButton: "Explore the Casino Section",
+                    sportsText1: "Be part of the game by betting on the biggest moments in sports.",
+                    sportsIcon1: "Sports",
+                    sportsIcon2: "Esports",
+                    sportsIcon3: "Live Streams",
+                    sportsIcon4: "Boosted Odds",
+                    sportsButton: "Explore the Sports Section",
+                },
+                ru: {
+                    casinoText1: "Бесчисленные способы получить крупные выигрыши в тысячах захватывающих игр.",
+                    casinoIcon1: "Новые Выпуски",
+                    casinoIcon2: "Высокий RTP",
+                    casinoIcon3: "Живое Казино",
+                    casinoIcon4: "Турниры",
+                    casinoButton: "Исследуйте Раздел Казино",
+                    sportsText1: "Станьте частью игры, делая ставки на крупнейшие моменты в спорте.",
+                    sportsIcon1: "Спорт",
+                    sportsIcon2: "Киберспорт",
+                    sportsIcon3: "Прямые Трансляции",
+                    sportsIcon4: "Повышенные Коэффициенты",
+                    sportsButton: "Исследуйте Раздел Спорта",
+                },
+                fr: {
+                    casinoText1: "D'innombrables façons de remporter de gros gains avec des milliers de jeux passionnants.",
+                    casinoIcon1: "Nouveautés",
+                    casinoIcon2: "RTP Élevé",
+                    casinoIcon3: "Casino En Direct",
+                    casinoIcon4: "Tournois",
+                    casinoButton: "Explorer la Section Casino",
+                    sportsText1: "Faites partie du jeu en pariant sur les plus grands moments du sport.",
+                    sportsIcon1: "Sports",
+                    sportsIcon2: "Esports",
+                    sportsIcon3: "Diffusions En Direct",
+                    sportsIcon4: "Cotes Améliorées",
+                    sportsButton: "Explorer la Section Sports",
+                },
+                ch: {
+                    casinoText1: "通过数千种刺激的游戏赢得丰厚奖金的无数方式。",
+                    casinoIcon1: "新发布",
+                    casinoIcon2: "高RTP",
+                    casinoIcon3: "真人赌场",
+                    casinoIcon4: "锦标赛",
+                    casinoButton: "探索赌场部分",
+                    sportsText1: "通过投注体育界的重大时刻成为比赛的一部分。",
+                    sportsIcon1: "体育",
+                    sportsIcon2: "电子竞技",
+                    sportsIcon3: "现场直播",
+                    sportsIcon4: "增强赔率",
+                    sportsButton: "探索体育部分",
+                },
+                it: {
+                    casinoText1: "Innumerevoli modi per ottenere grandi vincite con migliaia di giochi emozionanti.",
+                    casinoIcon1: "Nuove Uscite",
+                    casinoIcon2: "RTP Elevato",
+                    casinoIcon3: "Casinò Dal Vivo",
+                    casinoIcon4: "Tornei",
+                    casinoButton: "Esplora la Sezione Casinò",
+                    sportsText1: "Fai parte del gioco scommettendo sui momenti più importanti dello sport.",
+                    sportsIcon1: "Sport",
+                    sportsIcon2: "Esports",
+                    sportsIcon3: "Streaming Dal Vivo",
+                    sportsIcon4: "Quote Maggiorate",
+                    sportsButton: "Esplora la Sezione Sport",
+                },
+                ar: {
+                    casinoText1: "طرق لا حصر لها لتحقيق مكاسب كبيرة مع آلاف الألعاب المثيرة.",
+                    casinoIcon1: "الإصدارات الجديدة",
+                    casinoIcon2: "RTP مرتفع",
+                    casinoIcon3: "كازينو مباشر",
+                    casinoIcon4: "البطولات",
+                    casinoButton: "استكشف قسم الكازينو",
+                    sportsText1: "كن جزءًا من اللعبة عن طريق المراهنة على أكبر لحظات الرياضة.",
+                    sportsIcon1: "الرياضة",
+                    sportsIcon2: "الرياضات الإلكترونية",
+                    sportsIcon3: "البث المباشر",
+                    sportsIcon4: "احتمالات محسنة",
+                    sportsButton: "استكشف قسم الرياضة",
+                },
+            };
+
+            const casinoImage = "https://jackbomcom.github.io/assets/images/4w85hndbspgjxrqc.webp";
+            const sportsImage = "https://jackbomcom.github.io/assets/images/7xmhb6qu3prt4sza.webp";
+
+            const sectionHtml = `
+        <div id="custom-section-4" class="section custom-section">
+          <div class="container">
+            <div class="position-relative m-auto mt-lg-4">
+              <div class="landing casino overflow-hidden position-relative rounded-4 p-3 px-md-5 py-md-4">
+                <div class="landing-inner position-relative text-white p-2 p-sm-4">
+                  <div class="d-block mb-2 mb-sm-3 mb-lg-5">
+                    <h1 class="fw-bold lh-sm mb-0">${contentMap[language].casinoText1}</h1>
+                  </div>
+                  <div class="d-block">
+                    <div class="landing-image-mobile mx-auto d-block d-lg-none">
+                      <img class="w-100 h-100" src="${casinoImage}" alt="Casino Character">
+                    </div>
+                    <div class="details px-4 py-3 rounded-3 d-flex justify-content-start justify-content-md-evenly gap-3 gap-md-4 overflow-x-scroll mb-4 mb-sm-5 flex-wrap flex-sm-nowrap">
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-fire fs-2"></i>
+                        <a href="casino/group/new-releases" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].casinoIcon1}</span>
+                        </a>
+                      </div>
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-rocket fs-2"></i>
+                        <a href="casino/group/enhanced-rtp" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].casinoIcon2}</span>
+                        </a>
+                      </div>
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-dice fs-2"></i>
+                        <a href="live-casino" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].casinoIcon3}</span>
+                        </a>
+                      </div>
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-trophy fs-2"></i>
+                        <a href="tournaments" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].casinoIcon4}</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-block text-end text-lg-start pt-2 pt-sm-0">
+                    <a href="javascript:void(0);" class="landing-button d-inline-block align-middle rounded-3 text-center" data-href="casino">${contentMap[language].casinoButton}</a>
+                  </div>
+                </div>
+              </div>
+              <div class="landing-image position-absolute bottom-0 ps-4 pt-4 d-none d-lg-block">
+                <img class="w-100 h-100 pe-none" src="${casinoImage}" alt="Casino Character">
+              </div>
+            </div>
+            <div class="position-relative m-auto mt-lg-5">
+              <div class="landing sports overflow-hidden position-relative rounded-4 p-3 px-md-5 py-md-4 mt-4">
+                <div class="landing-inner position-relative text-white p-2 p-sm-4">
+                  <div class="d-block mb-2 mb-sm-3 mb-lg-5">
+                    <h1 class="fw-bold lh-sm mb-0">${contentMap[language].sportsText1}</h1>
+                  </div>
+                  <div class="d-block">
+                    <div class="landing-image-mobile mx-auto d-block d-lg-none">
+                      <img class="w-100 h-100" src="${sportsImage}" alt="Sports Character">
+                    </div>
+                    <div class="details px-4 py-3 rounded-3 d-flex justify-content-start justify-content-md-evenly gap-3 gap-md-4 overflow-x-scroll mb-4 mb-sm-5 flex-wrap flex-sm-nowrap">
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-futbol fs-2"></i>
+                        <a href="sportsbook/sports" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].sportsIcon1}</span>
+                        </a>
+                      </div>
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-gamepad fs-2"></i>
+                        <a href="sportsbook" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].sportsIcon2}</span>
+                        </a>
+                      </div>
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-play-circle fs-2"></i>
+                        <a href="sportsbook/live-betting" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].sportsIcon3}</span>
+                        </a>
+                      </div>
+                      <div class="item d-flex align-items-center gap-3">
+                        <i class="fa-solid fa-bolt fs-2"></i>
+                        <a href="sportsbook" class="d-block">
+                          <span class="icon-text fw-bold text-nowrap">${contentMap[language].sportsIcon4}</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-block text-end text-lg-start pt-2 pt-sm-0">
+                    <a href="javascript:void(0);" class="landing-button d-inline-block align-middle rounded-3 text-center" data-href="sportsbook">${contentMap[language].sportsButton}</a>
+                  </div>
+                </div>
+              </div>
+              <div class="landing-image position-absolute bottom-0 ps-4 pt-4 d-none d-lg-block">
+                <img class="w-100 h-100 pe-none" src="${sportsImage}" alt="Sports Character">
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+
+            $(document).on("click", "#custom-section-4 .landing-button", function () {
+                $(`.sidebar__link[href*="/${$(this).data("href")}"]`)[0].click();
+            });
+
+            const section = await waitForElement(".section.pt-24:not(.mini-slider)");
+            section.before(sectionHtml);
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingInitGamesLanding = false;
+        }
+    };
+
+    // Id: 5 (Crypto slider)
+    let isProcessingInitCryptoSlider = false;
+    const initCryptoSlider = async (isUserLoggedIn) => {
+        if (isProcessingInitCryptoSlider) return;
+        isProcessingInitCryptoSlider = true;
+
+        try {
+            if ($("#custom-section-5").length) $("#custom-section-5").remove();
+            if (isUserLoggedIn) return;
+
+            const language = window.localStorage.language;
+
+            const contentMap = {
+                tr: {
+                    cryptoTitle1: "Kripto ve Türk Lirası İşlemlerinizi Kolaylaştırın",
+                    cryptoText1: "13 lider kripto para ve Türk Lirası ile dijital ödemelerin geleceğini keşfedin.",
+                    cryptoText2: "Eşsiz güvenlik, hızlı işlemler ve alternatif ödeme yöntemlerinin esnekliği ile güvenli bir çevrim içi cüzdan desteğinden faydalanın.",
+                },
+                en: {
+                    cryptoTitle1: "Simplify Your Crypto and Turkish Lira Transactions",
+                    cryptoText1: "Discover the future of digital payments with 13 leading cryptocurrencies and the Turkish Lira.",
+                    cryptoText2: "Benefit from secure online wallet support with unparalleled security, fast transactions, and the flexibility of alternative payment methods.",
+                },
+                ru: {
+                    cryptoTitle1: "Упростите операции с криптовалютой и турецкой лирой",
+                    cryptoText1: "Откройте для себя будущее цифровых платежей с 13 ведущими криптовалютами и турецкой лирой.",
+                    cryptoText2: "Воспользуйтесь поддержкой безопасного онлайн-кошелька с непревзойденной безопасностью, быстрыми транзакциями и гибкостью альтернативных методов оплаты.",
+                },
+                fr: {
+                    cryptoTitle1: "Simplifiez Vos Transactions En Crypto et En Livre Turque",
+                    cryptoText1: "Découvrez l'avenir des paiements numériques avec 13 principales cryptomonnaies et la Livre Turque.",
+                    cryptoText2: "Profitez d'un support de portefeuille en ligne sécurisé avec une sécurité inégalée, des transactions rapides et la flexibilité des méthodes de paiement alternatives.",
+                },
+                ch: {
+                    cryptoTitle1: "简化您的加密货币和土耳其里拉交易",
+                    cryptoText1: "通过 13 种领先的加密货币和土耳其里拉探索数字支付的未来。",
+                    cryptoText2: "利用无与伦比的安全性、快速交易以及灵活的替代支付方式，享受安全的在线钱包支持。",
+                },
+                it: {
+                    cryptoTitle1: "Semplifica Le Tue Transazioni In Cripto E Lira Turca",
+                    cryptoText1: "Scopri il futuro dei pagamenti digitali con 13 principali criptovalute e la Lira Turca.",
+                    cryptoText2: "Approfitta del supporto sicuro del portafoglio online con sicurezza senza pari, transazioni rapide e flessibilità nei metodi di pagamento alternativi.",
+                },
+                ar: {
+                    cryptoTitle1: "تبسيط معاملاتك بالعملات المشفرة والليرة التركية",
+                    cryptoText1: "اكتشف مستقبل المدفوعات الرقمية مع 13 من العملات المشفرة الرائدة والليرة التركية.",
+                    cryptoText2: "استفد من دعم المحفظة عبر الإنترنت الآمن مع أمان لا مثيل له، معاملات سريعة ومرونة في طرق الدفع البديلة.",
+                },
+            };
+
+            const sliderItems = ["https://jackbomcom.github.io/assets/images/3vcz7twm29jy8qgb.webp", "https://jackbomcom.github.io/assets/images/8q7x29pmauwhc65e.webp", "https://jackbomcom.github.io/assets/images/c59qb7g36yxmtsrf.webp", "https://jackbomcom.github.io/assets/images/hzemdpc65usfy4q9.webp", "https://jackbomcom.github.io/assets/images/jwpxta3e9z58m42c.webp", "https://jackbomcom.github.io/assets/images/mfphk8n5y3erc7tb.webp", "https://jackbomcom.github.io/assets/images/nuxbpea24j837ymh.webp", "https://jackbomcom.github.io/assets/images/s9e5cnm6rj842qyd.webp", "https://jackbomcom.github.io/assets/images/uwp3bjn8a5x6qftv.webp", "https://jackbomcom.github.io/assets/images/w63gf598hxv2kjar.webp", "https://jackbomcom.github.io/assets/images/wbynvfmzq82ds93p.webp", "https://jackbomcom.github.io/assets/images/weh2ng7u6sk5pybt.webp", "https://jackbomcom.github.io/assets/images/yx62vs7k9fmjqpbe.webp"];
+
+            const sectionHtml = `
+        <div id="custom-section-5" class="section custom-section">
+          <div class="container">
+            <div class="landing position-relative rounded-4 overflow-hidden p-3 px-md-5 py-md-4">
+              <div class="landing-inner mx-auto position-relative p-4 p-xl-5">
+                <div class="row">
+                  <div class="col-12 col-lg-5 align-content-center">
+                    <div class="crypto-slider mx-auto">
+                      <div class="swiper">
+                        <div class="swiper-wrapper">
+                          ${sliderItems
+                .map(
+                    (image) => `
+                            <div class="swiper-slide">
+                              <a href="policy?tab=supported-crypto-and-currencies" class="d-block">
+                                <img class="w-100 h-100" src="${image}" alt="Slider Image">
+                              </a>
+                            </div>
+                          `
+                )
+                .join("")}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-7 ps-auto ps-lg-5 mt-5 mt-lg-0 align-content-center">
+                    <div class="details">
+                      <h1 class="mb-4 mb-lg-5 fw-bold text-center text-sm-start lh-sm">${contentMap[language].cryptoTitle1}</h1>
+                      <p class="second-text mb-0 mb-sm-3 mb-lg-4 fs-5 text-center text-sm-start text-white text-opacity-75">${contentMap[language].cryptoText1}</p>
+                      <p class="mb-0 d-none d-sm-block text-white text-opacity-75">${contentMap[language].cryptoText2}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+            const section = await waitForElement(".section.section--first");
+            section.after(sectionHtml);
+
+            new Swiper("#custom-section-5 .swiper", {
+                effect: "cards",
+                grabCursor: true,
+                loop: true,
+                autoplay: {
+                    delay: 2000,
+                    disableOnInteraction: false,
+                },
+            });
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingInitCryptoSlider = false;
+        }
+    };
+
+    // Id: 6 (Grid cards)
+    let isProcessingInitGridCards = false;
+    const initGridCards = async (isUserLoggedIn) => {
+        if (isProcessingInitGridCards) return;
+        isProcessingInitGridCards = true;
+
+        try {
+            if ($("#custom-section-6").length) $("#custom-section-6").remove();
+            const language = window.localStorage.language;
+            if (language !== "tr") return;
+
+            const cardItems = [
+                {
+                    url: "casino",
+                    image: "https://front.jackbom.dev/images/zqjvscymg7e4w59u.webp",
+                },
+                {
+                    url: "sportsbook",
+                    image: "https://front.jackbom.dev/images/dpb83jzr5nfhskem.webp",
+                },
+                {
+                    url: "https://heylink.me/jackbom",
+                    image: "https://front.jackbom.dev/images/42zex8ugm5bnqhwy.webp",
+                },
+            ];
+
+            const today = new Date()
+                .toLocaleDateString("tr-TR", {
+                    year: "numeric",
+                    month: "2-digit",
+                    day: "2-digit",
+                    hour: "2-digit",
+                    minute: "2-digit",
+                    hour12: false,
+                })
+                .replace(/[\.\s:]/g, "");
+
+            const versionedCardItems = cardItems.map((item) => ({
+                ...item,
+                image: `${item.image}?v=${today}`,
+            }));
+
+            const sectionHtml = `
+        <div id="custom-section-6" class="section custom-section">
+          <div class="container">
+            <div class="card-grid d-flex flex-column flex-md-row gap-2 gap-md-4">
+              ${versionedCardItems
+                .map(
+                    (item, index) => `
+                <div class="card overflow-hidden position-relative rounded-4 w-100 border-0">
+                  <a href="${item.url}" class="d-block" ${index === 2 ? 'target="_blank"' : ""}>
+                    <img class="object-fit-cover w-100 h-100 position-absolute top-0 start-0" src="${item.image}" alt="Card Image">
+                  </a>
+                </div>
+              `
+                )
+                .join("")}
+            </div>
+          </div>
+        </div>
+      `;
+
+            const section = await waitForElement(".section.section--last");
+            isUserLoggedIn ? section.after(sectionHtml) : section.before(sectionHtml);
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingInitGridCards = false;
+        }
+    };
+
+    // Id: 7 (Buttons customization)
+    let isProcessingCustomizeButtons = false;
+    const customizeButtons = async (pageType) => {
+        if (isProcessingCustomizeButtons) return;
+        isProcessingCustomizeButtons = true;
+
+        try {
+            if ($("#custom-section-7").length) $("#custom-section-7").remove();
+
+            const language = window.localStorage.language;
+
+            const contentMap = {
+                tr: {
+                    backButton: "Geri",
+                },
+                en: {
+                    backButton: "Back",
+                },
+                ru: {
+                    backButton: "Назад",
+                },
+                fr: {
+                    backButton: "Retour",
+                },
+                ch: {
+                    backButton: "返回",
+                },
+                it: {
+                    backButton: "Indietro",
+                },
+                ar: {
+                    backButton: "رجوع",
+                },
+            };
+
+            const sectionHtml = `
+        <div id="custom-section-7" class="custom-section">
+          <div class="mb-4">
+            <a href="javascript:void(0);" class="back-button d-inline-block rounded-3 border align-content-center">${contentMap[language].backButton}</a>
+          </div>
+        </div>
+      `;
+
+            $(document).on("click", ".back-button", function () {
+                $(`.sidebar__big a[href*="/${pageType}"]`)[0].click();
+            });
+
+            await waitForElement(".content__main");
+            $(".section--first .align-self-center").prepend(sectionHtml);
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingCustomizeButtons = false;
+        }
+    };
+
+    // Id: 8 (Leagues slider & default sports slider fix)
+    let isProcessingInitLeaguesSlider = false;
+    const initLeaguesSlider = async (isUserLoggedIn) => {
+        if (isProcessingInitLeaguesSlider) return;
+        isProcessingInitLeaguesSlider = true;
+
+        try {
+            if ($("#custom-section-8").length) $("#custom-section-8").remove();
+
+            const language = window.localStorage.language;
+
+            const contentMap = {
+                tr: {
+                    topLeagues: "Popüler Ligler",
+                },
+                en: {
+                    topLeagues: "Top Leagues",
+                },
+                ru: {
+                    topLeagues: "Популярные Лиги",
+                },
+                fr: {
+                    topLeagues: "Ligues Populaires",
+                },
+                ch: {
+                    topLeagues: "热门联赛",
+                },
+                it: {
+                    topLeagues: "Campionati Popolari",
+                },
+                ar: {
+                    topLeagues: "الدوريات الشعبية",
+                },
+            };
+
+            const sliderItems = ["https://jackbomcom.github.io/assets/images/6swd2ajqm37yx98v.webp", "https://jackbomcom.github.io/assets/images/64uxfac9d5m7zqtj.webp", "https://jackbomcom.github.io/assets/images/f824ng3wscv95db6.webp", "https://jackbomcom.github.io/assets/images/ga5e3cnrus6q92yy.webp", "https://jackbomcom.github.io/assets/images/n8z3fey47a9cwhms.webp", "https://jackbomcom.github.io/assets/images/s6neqp9v4fkhx5m3.webp", "https://jackbomcom.github.io/assets/images/s8qd52g97pjzkucn.webp", "https://jackbomcom.github.io/assets/images/ths5fm4793v2eqk6.webp", "https://jackbomcom.github.io/assets/images/tqumhcs28j7bk5vg.webp", "https://jackbomcom.github.io/assets/images/v8b3mzanf7c6s9xd.webp"];
+
+            const iconLink = $('.sidebar__big use[href*="homepage"]').attr("href").replace("#homepage", "#");
+            const sectionHtml = `
+				<div id="custom-section-8" class="section custom-section">
+					<div class="container">
+						<div class="col-12">
+							<h2 class="section__title">
+								<svg class="svg-icon">
+									<use href="${iconLink}sportsbook2"></use>
+								</svg>
+								${contentMap[language].topLeagues}
+							</h2>
+						</div>
+						<div class="swiper">
+							<div class="swiper-wrapper">
+								${sliderItems
+                .map(
+                    (image) => `
+									<div class="swiper-slide">
+										<a href="sportsbook" class="d-block rounded-4 league">
+											<img class="slider-img w-100 h-100" src="${image}" alt="Slider Image">
+										</a>
+									</div>
+								`
+                )
+                .join("")}
+							</div>
+						</div>
+					</div>
+				</div>
+			`;
+            const section = isUserLoggedIn ? await waitForElement(".section.section--last") : await waitForElement("#custom-section-3");
+            section.after(sectionHtml);
+
+            new Swiper("#custom-section-8 .swiper", {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                slidesPerView: 5,
+                spaceBetween: 24,
+                breakpoints: {
+                    0: {
+                        slidesPerView: 2,
+                        spaceBetween: 8,
+                    },
+                    576: {
+                        slidesPerView: 3,
+                        spaceBetween: 8,
+                    },
+                    992: {
+                        slidesPerView: 4,
+                        spaceBetween: 24,
+                    },
+                    1200: {
+                        slidesPerView: 5,
+                        spaceBetween: 24,
+                    },
+                },
+            });
+
+            if ($(window).width() >= 1200) {
+                await waitForSwiper("#mini-sportsbook-wrapper .mySwiper");
+                const sportsSlider = $("#mini-sportsbook-wrapper .mySwiper")[0].swiper;
+
+                sportsSlider.params.slidesPerView = 7;
+                sportsSlider.update();
+            }
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingInitLeaguesSlider = false;
+        }
+    };
+
+    // Id: 9 (Grid boxes)
+    let isProcessingInitGridBoxes = false;
+    const initGridBoxes = async (isMobile, isUserLoggedIn) => {
+        if (isProcessingInitGridBoxes) return;
+        isProcessingInitGridBoxes = true;
+
+        try {
+            if ($("#custom-section-9").length) $("#custom-section-9").remove();
+            if (isUserLoggedIn) return;
+
+            const language = window.localStorage.language;
+
+            const contentMap = {
+                tr: {
+                    gridText1: "Jackbom turnuvalarına katıl, rakipleri yen ve ödül kap!",
+                    gridText2: "VIP olun, bonuslar ve fırsatlarla ayrıcalık yaşayın!",
+                    gridText3: "Anlık, haftalık, aylık bonuslarla kazancınızı artırın!",
+                    gridText4: "Özel tekliflerle büyük kazançlar elde edin!",
+                },
+                en: {
+                    gridText1: "Join Jackbom tournaments, defeat rivals, and win rewards!",
+                    gridText2: "Become a VIP and enjoy exclusive bonuses and opportunities!",
+                    gridText3: "Boost your earnings with instant, weekly, and monthly bonuses!",
+                    gridText4: "Achieve big wins with special offers!",
+                },
+                ru: {
+                    gridText1: "Присоединяйтесь к турнирам Jackbom, побеждайте соперников и получайте награды!",
+                    gridText2: "Станьте VIP и наслаждайтесь эксклюзивными бонусами и возможностями!",
+                    gridText3: "Увеличьте свой заработок с мгновенными, еженедельными и ежемесячными бонусами!",
+                    gridText4: "Получайте большие выигрыши благодаря специальным предложениям!",
+                },
+                fr: {
+                    gridText1: "Participez aux tournois Jackbom, battez vos adversaires et remportez des récompenses!",
+                    gridText2: "Devenez VIP et profitez de bonus et d'opportunités exclusives!",
+                    gridText3: "Augmentez vos gains avec des bonus instantanés, hebdomadaires et mensuels!",
+                    gridText4: "Obtenez de gros gains avec des offres spéciales!",
+                },
+                ch: {
+                    gridText1: "加入 Jackbom 赛事，击败对手，赢取奖励！",
+                    gridText2: "成为 VIP，享受专属奖金和机会！",
+                    gridText3: "通过即时、每周和每月奖金增加您的收入！",
+                    gridText4: "利用特别优惠赢得大奖！",
+                },
+                it: {
+                    gridText1: "Partecipa ai tornei Jackbom, sconfiggi i rivali e vinci premi!",
+                    gridText2: "Diventa VIP e goditi bonus esclusivi e opportunità uniche!",
+                    gridText3: "Aumenta i tuoi guadagni con bonus immediati, settimanali e mensili!",
+                    gridText4: "Ottieni grandi vincite con offerte speciali!",
+                },
+                ar: {
+                    gridText1: "انضم إلى بطولات Jackbom، اهزم المنافسين، واربح المكافآت!",
+                    gridText2: "كن من كبار الشخصيات (VIP) وتمتع بالمكافآت والفرص الحصرية!",
+                    gridText3: "قم بزيادة أرباحك من خلال المكافآت الفورية والأسبوعية والشهرية!",
+                    gridText4: "حقق أرباحًا كبيرة مع العروض الخاصة!",
+                },
+            };
+
+            const sectionHtml = `
+				<div id="custom-section-9" class="section custom-section">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-md-0 d-flex">
+								<a href="tournaments" class="d-flex">
+									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
+										<div class="box-icon icon-tournament rounded-3 p-3">
+											<i class="icon fa-solid fa-trophy fs-3 align-middle text-center text-black"></i>
+										</div>
+										<p class="mb-0 text-white opacity-75">${contentMap[language].gridText1}</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-md-0 d-flex">
+								<a href="vip" class="d-flex">
+									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
+										<div class="box-icon icon-vip rounded-3 p-3">
+											<i class="icon fa-solid fa-crown fs-3 align-middle text-center text-black"></i>
+										</div>
+										<p class="mb-0 text-white opacity-75">${contentMap[language].gridText2}</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-lg-0 d-flex">
+								<a href="promotions" class="d-flex">
+									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
+										<div class="box-icon icon-promotion rounded-3 p-3">
+											<i class="icon fa-solid fa-gift fs-3 align-middle text-center text-black"></i>
+										</div>
+										<p class="mb-0 text-white opacity-75">${contentMap[language].gridText3}</p>
+									</div>
+								</a>
+							</div>
+							<div class="col-12 col-lg-6 col-xl-3 mt-2 mt-lg-0 d-flex">
+							  <a href="casino/group/enhanced-rtp" class="d-flex">
+									<div class="box d-flex justify-content-evenly align-items-center gap-3 rounded-4 px-4 py-3">
+										<div class="box-icon icon-rtp rounded-3 p-3">
+											<i class="icon fa-solid fa-chart-pie fs-3 align-middle text-center text-black"></i>
+										</div>
+										<p class="mb-0 text-white opacity-75">${contentMap[language].gridText4}</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			`;
+
+            const section = await waitForElement(!isMobile ? "#custom-section-1" : ".section.section--first");
+            section.after(sectionHtml);
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingInitGridBoxes = false;
+        }
+    };
+
+    // Id: 10 (Register landing)
+    let isProcessingInitRegisterLanding = false;
+    const initRegisterLanding = async (isMobile, isUserLoggedIn) => {
+        if (isProcessingInitRegisterLanding) return;
+        isProcessingInitRegisterLanding = true;
+
+        try {
+            if ($("#custom-section-10").length) $("#custom-section-10").remove();
+            if (!isMobile || isUserLoggedIn) return;
+
+            const language = window.localStorage.language;
+
+            const contentMap = {
+                tr: {
+                    registerTitle: "Çevrim içi casino ve spor bahislerinde rakipsiz eğlence ve kazanç.",
+                    registerButton: "Hemen Kayıt Ol!",
+                },
+                en: {
+                    registerTitle: "Unmatched fun and winnings in online casino and sports betting.",
+                    registerButton: "Sign Up Now!",
+                },
+                ru: {
+                    registerTitle: "Непревзойденное развлечение и выигрыши в онлайн-казино и спортивных ставках.",
+                    registerButton: "Зарегистрируйтесь Сейчас!",
+                },
+                fr: {
+                    registerTitle: "Divertissement et gains inégalés dans les casinos en ligne et les paris sportifs.",
+                    registerButton: "Inscrivez-vous Maintenant!",
+                },
+                ch: {
+                    registerTitle: "在线赌场和体育博彩的无与伦比的乐趣和收益。",
+                    registerButton: "立即注册！",
+                },
+                it: {
+                    registerTitle: "Divertimento e vincite senza rivali nei casinò online e nelle scommesse sportive.",
+                    registerButton: "Iscriviti Ora!",
+                },
+                ar: {
+                    registerTitle: "متعة وأرباح لا مثيل لها في الكازينو عبر الإنترنت والمراهنات الرياضية.",
+                    registerButton: "سجّل الآن!",
+                },
+            };
+
+            const sectionHtml = `
+        <div id="custom-section-10" class="section custom-section">
+          <div class="container">
+            <h1 class="text-white fw-bold lh-sm mb-4 text-center">${contentMap[language].registerTitle}</h1>
+            <div class="d-block text-center">
+              <a href="?modal=register" class="d-inline-block mx-auto rounded-3 signup-button border">${contentMap[language].registerButton}</a>
+            </div>
+          </div>
+        </div>
+      `;
+
+            const section = await waitForElement("#custom-section-1");
+            section.after(sectionHtml);
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingInitRegisterLanding = false;
+        }
+    };
+
+    // Id: 11 (Homepage hide old sections)
+    let isProcessingHideOldSections = false;
+    const hideOldSections = async (isUserLoggedIn) => {
+        if (isProcessingHideOldSections) return;
+        isProcessingHideOldSections = true;
+
+        try {
+            const oldSections = $(".main__content .section:not(.custom-section)");
+            if (isUserLoggedIn) {
+                oldSections.slice(2, 11).show();
+
+                if ($('.section__title use[href*="replay"]').length) {
+                    oldSections.slice(8, 9).hide();
+                    oldSections.slice(10, 11).hide();
+                } else {
+                    oldSections.slice(7, 8).hide();
+                    oldSections.slice(9, 10).hide();
+                }
+            } else {
+                oldSections.slice(5, 8).hide();
+                oldSections.slice(9, 10).hide();
+            }
+            oldSections.slice(2, 3).hide();
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingHideOldSections = false;
+        }
+    };
+
+    // Id: 12 (Game chooser)
+    let isProcessingInitGameChooser = false;
+    const initGameChooser = async (isUserLoggedIn, isMobile) => {
+        if (isProcessingInitGameChooser) return;
+        isProcessingInitGameChooser = true;
+
+        try {
+            if ($("#custom-section-12").length) $("#custom-section-12").remove();
+
+            const language = window.localStorage.language;
+            const slotGames = [
+                {
+                    url: "pragmaticplay-gates-of-olympus",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/XsEpljNd1AGU7nggivAviVK0RO1Sr6mmMVN7HqwS.jpg",
+                },
+                {
+                    url: "pragmaticplay-sweet-bonanza",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/Bp5TH9Fvrd4wHmnyaHRy4csNn9NOJzOW8zkeVygB.jpg",
+                },
+                {
+                    url: "pragmaticplay-sugar-rush",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/p00GPAq7KDfE9m3GaKntDU5kPUSjOVcq4fRUQCFa.jpg",
+                },
+                {
+                    url: "pragmaticplay-the-dog-house-megaways",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/UCzzpl54nGb5mzcujF5ua52b47S5RNU1oGd39qQ6.jpg",
+                },
+                {
+                    url: "pragmaticplay-big-bass-splash",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/wEpHUGXLnqVuRnvFqJoo1nisbNJ8BVQ9r5ClKem7.jpg",
+                },
+                {
+                    url: "pragmaticplay-starlight-princess",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/zEbhVgwGbPPzPMJAdVCVhJG7YVIHDIIsuR9DaqXz.jpg",
+                },
+                {
+                    url: "pragmaticplay-madame-destiny",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/69jTgdjuHzc6z6j5C24TwZnllDyIgWJxyj2MDw7z.jpg",
+                },
+                {
+                    url: "pragmaticplay-gems-bonanza",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/DpJMzigUfXYmHgehkJmvGo0Q9kG4d6AmpeeejTKU.jpg",
+                },
+                {
+                    url: "pragmaticplay-zeus-vs-hades-gods-of-war",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/Yz21zkxEWvXy67u8ub39Dd0D2KY79ppSnIbYFCvu.jpg",
+                },
+            ];
+            const liveGames = [
+                {
+                    url: "ezugi-turkish-roulette",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/PdjHXTeiXtA3FAAD4c5QKOQ678hlCGk88wgwHLjO.jpg",
+                },
+                {
+                    url: "evolution-lightning-baccarat",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/3TPOdVJpunNapyrWHXIKh9MV20EDAkKm7NlQmyfm.jpg",
+                },
+                {
+                    url: "evolution-auto-lightning-roulette",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/IVpUgKIviF8u3yKiM3FHj9JZqxi8F8oThxPz5CvG.jpg",
+                },
+                {
+                    url: "evolution-crazy-time",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/OrEpXUKLc3uYUruaUmlMF33tcYDP2ZFOljUB1Y49.jpg",
+                },
+                {
+                    url: "evolution-xxxtreme-lightning-roulette",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/ytvd9XDVeQSHYyQ8Zaxl6R4bxzvU0GUD03HLvaCg.jpg",
+                },
+                {
+                    url: "evolution-funky-time",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/VdJ5u6VxKid3Ek9ZVVcOrzVfEFeQ8ZoRHMfYo5ON.jpg",
+                },
+                {
+                    url: "pragmaticlive-auto-roulette",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/HjOlcJBrxE6il94aECMr0Attvp8HnvQnUwEMk2i4.jpg",
+                },
+                {
+                    url: "ezugi-turkish-blackjack-1",
+                    image: "https://agstatic.com/games/ezugi/turkish_blackjack_1.jpg",
+                },
+                {
+                    url: "ezugi-turkish-blackjack-2",
+                    image: "https://agstatic.com/games/ezugi/turkish_blackjack_2.jpg",
+                },
+                {
+                    url: "evolution-turkce-lightning-rulet",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/k9LtKerzLWg9kLKEkLpSezcypZV2s9ogEBrnt7E8.jpg",
+                },
+                {
+                    url: "evolution-speed-blackjack-d",
+                    image: "https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/games/hFDel8XHsz9xjRlIrT29bd8Ik0c11kUTdmMXRx5m.jpg",
+                },
+            ];
+            const extendedSlotGames = [slotGames[slotGames.length - 1], ...slotGames, slotGames[0]];
+            const extendedLiveGames = [liveGames[liveGames.length - 1], ...liveGames, liveGames[0]];
+
+            const contentMap = {
+                tr: {
+                    spinText1: "Çevir",
+                    spinText2: "Üye Ol & Çevir",
+                    spinTitle: "Oyun seçerken yardıma mı ihtiyacınız var?",
+                },
+                en: {
+                    spinText1: "Spin",
+                    spinText2: "Sign Up & Spin",
+                    spinTitle: "Need help choosing a game?",
+                },
+                ru: {
+                    spinText1: "Крутить",
+                    spinText2: "Зарегистрируйтесь & Крутите",
+                    spinTitle: "Нужна помощь в выборе игры?",
+                },
+                fr: {
+                    spinText1: "Tourner",
+                    spinText2: "Inscrivez-vous & Tournez",
+                    spinTitle: "Besoin d'aide pour choisir un jeu?",
+                },
+                ch: {
+                    spinText1: "旋转",
+                    spinText2: "注册 & 旋转",
+                    spinTitle: "需要帮助选择游戏吗？",
+                },
+                it: {
+                    spinText1: "Gira",
+                    spinText2: "Iscriviti & Gira",
+                    spinTitle: "Hai bisogno di aiuto per scegliere un gioco?",
+                },
+                ar: {
+                    spinText1: "دوران",
+                    spinText2: "سجّل & قم بالدوران",
+                    spinTitle: "هل تحتاج إلى مساعدة في اختيار اللعبة؟",
+                },
+            };
+
+            const buttonText = isUserLoggedIn ? contentMap[language].spinText1 : contentMap[language].spinText2;
+            const sectionHtml = `
+        <div id="custom-section-12" class="section custom-section">
+        	<div class="container mb-4">
+            <img class="pe-none w-100 h-100 rounded-3" src="${isMobile ? "https://jackbomcom.github.io/assets/images/sponsor_mobile.png" : "https://jackbomcom.github.io/assets/images/sponsor_web.png"}" alt="Banner">
+          </div>
+          <div class="container">
+            <div class="landing position-relative rounded-4 overflow-hidden">
+              <div class="landing-inner position-relative">
+                <div class="chooser py-auto py-sm-5">
+                  <div class="d-block mb-4 mb-sm-5">
+                    <h1 class="text-white fw-bold lh-sm mb-0 text-center">${contentMap[language].spinTitle}</h1>
+                  </div>
+                  <div class="chooser-inner mx-auto px-4 px-sm-5 py-4 rounded-5">
+                    <div class="chooser-wrapper d-flex gap-3 overflow-hidden position-relative px-4 rounded-4">
+                      <div class="chooser-list d-flex flex-column justify-content-center w-100 first">
+                        ${extendedSlotGames
+                .map(
+                    (item) => `
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/${item.url}">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="${item.image}">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        `
+                )
+                .join("")}
+                      </div>
+                      <div class="chooser-list d-flex flex-column justify-content-center w-100 second">
+                        ${extendedLiveGames
+                .map(
+                    (item) => `
+                          <div class="chooser-item position-relative">
+                            <a class="slot slot--carousel" href="casino/games/${item.url}">
+                              <div class="z-0 slot__cover slot__cover--">
+                                <span class="slot__img">
+                                  <img src="${item.image}">
+                                </span>
+                                <div class="slot__title">
+                                  <!-- <h3>Sweet Bonanza 1000</h3> -->
+                                  <!-- <span class="game-provider">Pragmatic Play</span> -->
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        `
+                )
+                .join("")}
+                      </div>
+                      <div class="chooser-border position-absolute top-50 rounded-4 pe-none"></div>
+                    </div>
+                    <div class="d-block text-center">
+                      <a href="${!isUserLoggedIn ? "?modal=register" : "javascript:void(0);"}" class="spin-button d-block w-${!isUserLoggedIn ? "75" : "50"} mx-auto text-white rounded-3 border mt-4">${buttonText}</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      `;
+
+            const footer = await waitForElement("#footer");
+            footer.before(sectionHtml);
+
+            $(document).on("click", ".spin-button", function (e) {
+                if (isUserLoggedIn) {
+                    const button = $(e.currentTarget);
+                    button.addClass("disabled");
+
+                    const spinList = (selector, isFinal) => {
+                        const list = $(selector);
+                        list.addClass("spin");
+
+                        setTimeout(() => {
+                            const itemHeight = list.find(".chooser-item").height() + 10;
+                            const itemLength = list.find(".chooser-item").length;
+                            const middleIndex = Math.floor((itemLength - 3) / 2);
+                            const maxOffset = Math.floor((itemLength - 2) / 2);
+                            const randomIndex = Math.floor(Math.random() * (itemLength - 2));
+                            const translateY = (middleIndex - randomIndex) * itemHeight;
+
+                            list.css("transform", `translateY(${translateY}px)`);
+                            list.removeClass("spin");
+                            if (isFinal) button.removeClass("disabled");
+                        }, 2000);
+                    };
+
+                    spinList(".chooser-list.first");
+                    setTimeout(() => {
+                        spinList(".chooser-list.second", true);
+                    }, 200);
+                }
+            });
+            const itemHeight = $(".chooser-list.first .chooser-item").height() + 10;
+            const itemLength = $(".chooser-list.first .chooser-item").length - 1;
+            const listHeight = (itemHeight * itemLength) / 2;
+
+            $(".chooser-list.first, .chooser-list.second").css("--list-height", `${listHeight}px`);
+            $(".chooser-border").css("height", $(".chooser-item").height());
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingInitGameChooser = false;
+        }
+    };
+
+    const checkUserLogin = async () => {
+        await waitForElement("header .header__actions");
+        return $("header #dropdownUser").length > 0;
+    };
+
+    const handleRouteChange = async () => {
+        try {
+            const currentPath = window.location.pathname;
+            const currentHref = window.location.href;
+            const isUserLoggedIn = await checkUserLogin();
+            const isMobile = $(window).width() < 768;
+            const isHomePage = currentPath.match(/^\/[a-z]{2}\/?$/) !== null;
+            const isPromoPage = currentPath.includes("/promotions");
+            const isSinglePromoPage = currentPath.includes("/promotion/");
+            const isSingleBlogPage = currentPath.includes("/blog/");
+            const isSportsPage = currentPath.includes("/sportsbook");
+            const isVipPage = currentPath.includes("/vip");
+            const isCasinoPage = currentPath.includes("/casino");
+            const isBonusRequestPage = currentPath.includes("/bonus-request");
+            const isSettingsPage = currentPath.includes("/settings");
+            const isTvPage = currentPath.includes("/tv");
+            const isBigWinsPage = currentPath.includes("/big-wins");
+
+            $("#body").removeClass("page--home page--promo page--single-promo page--single-blog page--sports page--vip lang--tr lang--en page--casino page--bonus-request page--settings page--tv page--bigwins");
+            await customizeSidebar(isMobile, isHomePage, isUserLoggedIn);
+
+            if (isHomePage) {
+                $("#body").addClass("page--home");
+
+                $(".custom-section").remove();
+                await initMainSlider(isMobile);
+                //if (typeof window.userVipState === "object")
+                //await initVipStatus(isUserLoggedIn);
+                await initGamesLanding(isUserLoggedIn);
+                await initGridBoxes(isMobile, isUserLoggedIn);
+                await initRegisterLanding(isMobile, isUserLoggedIn);
+                await initFullBanner(isMobile, isUserLoggedIn);
+                await initCryptoSlider(isUserLoggedIn);
+                //await initGridCards(isUserLoggedIn);
+                await initLeaguesSlider(isUserLoggedIn);
+                await initGameChooser(isUserLoggedIn, isMobile);
+                await hideOldSections(isUserLoggedIn);
+
+                $('.section__title use[href*="big-win"]').parents(".section").addClass("big-wins");
+
+                if (currentHref.includes("modal=register&ref=")) {
+                    let refCode = currentHref.split("ref=").pop();
+
+                    $(document).on("click", ".header__signup, .signup-button", async function () {
+                        const refInput = $('.form__group--pass1 + .settings__form .form__input:not([inputmode="numeric"])');
+
+                        if (refCode) {
+                            await waitForElement("#signup-modal #countries");
+                            refInput.val(refCode);
+                            refInput.attr("disabled", true);
+                        }
+                    });
+                }
+            } else if (isPromoPage) {
+                $("#body").addClass("page--promo");
+
+                $(".custom-section").remove();
+                await waitForElement(".nav-tabs .nav-item");
+                $(".nav-tabs .nav-item:nth-child(2) button").trigger("click");
+            } else if (isSinglePromoPage) {
+                $("#body").addClass("page--single-promo");
+
+                $(".custom-section").remove();
+                await customizeButtons("promotions");
+            } else if (isSingleBlogPage) {
+                $("#body").addClass("page--single-blog");
+
+                $(".custom-section").remove();
+                await customizeButtons("blog");
+            } else if (isSportsPage) {
+                $("#body").addClass("page--sports");
+
+                $(".custom-section").remove();
+                $("#header").removeClass("header--sport");
+                $("#sidebar").removeClass("sidebar--sport").addClass("active");
+            } else if (isVipPage) {
+                $("#body").addClass("page--vip");
+
+                $(".custom-section").remove();
+                $("#body").addClass(`lang--${window.localStorage.language}`);
+            } else if (isCasinoPage) {
+                $("#body").addClass("page--casino");
+
+                $(".custom-section").remove();
+            } else if (isBonusRequestPage) {
+                $("#body").addClass("page--bonus-request");
+
+                $(".custom-section").remove();
+                /*
+                if (isUserLoggedIn && window.localStorage.language === 'tr') {
+                  const mainContainer = await waitForElement('#main__content > .container');
+                  mainContainer.empty();
+
+                  const iframe = document.createElement('iframe');
+                  iframe.src = `https://bonus.jackbom.dev/bonus-request.php?user=test`;
+                  iframe.width = '100%';
+                  iframe.height = '100%';
+                  iframe.style.height = '100vh';
+                  iframe.style.border = 'none';
+                  mainContainer.append(iframe);
+                }
+                */
+            } else if (isSettingsPage) {
+                $("#body").addClass("page--settings");
+
+                $(".custom-section").remove();
+            } else if (isTvPage) {
+                $("#body").addClass("page--tv");
+
+                $(".custom-section").remove();
+                /*
+                const mainContainer = await waitForElement('#main__content > .container');
+                mainContainer.empty();
+
+                const iframe = document.createElement('iframe');
+                iframe.src = 'https://jackbomtv8.com/?iframe=true';
+                iframe.width = '100%';
+                iframe.height = '100%';
+                iframe.style.height = '100vh';
+                iframe.style.border = 'none';
+                iframe.setAttribute('allowfullscreen', 'true');
+                iframe.setAttribute('allow', 'fullscreen');
+
+                mainContainer.append(iframe);
+                */
+            } else if (isBigWinsPage) {
+                $("#body").addClass("page--bigwins");
+
+                $(".custom-section").remove();
+                const mainContainer = await waitForElement("#main__content > .container");
+                mainContainer.empty();
+
+                const html = `
+        	<div class="custom-bigwins">
+        		<iframe width="${isMobile ? "252" : "315"}" height="${isMobile ? "448" : "560"}" src="https://www.youtube.com/embed/DNrR3pzc3e8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        		<iframe width="${isMobile ? "252" : "315"}" height="${isMobile ? "448" : "560"}" src="https://www.youtube.com/embed/yv2F1w3g7bE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        		<iframe width="${isMobile ? "252" : "315"}" height="${isMobile ? "448" : "560"}" src="https://www.youtube.com/embed/u62bdxW9YGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        		<iframe width="${isMobile ? "252" : "315"}" height="${isMobile ? "448" : "560"}" src="https://www.youtube.com/embed/bYQJLgyhYa0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        		<iframe width="${isMobile ? "252" : "315"}" height="${isMobile ? "448" : "560"}" src="https://www.youtube.com/embed/OuHh4Pcgd3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        		<iframe width="${isMobile ? "252" : "315"}" height="${isMobile ? "448" : "560"}" src="https://www.youtube.com/embed/HswqSQn-40Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        		<iframe width="${isMobile ? "252" : "315"}" height="${isMobile ? "448" : "560"}" src="https://www.youtube.com/embed/qQ6-ODlXwl0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        		<iframe width="${isMobile ? "252" : "315"}" height="${isMobile ? "448" : "560"}" src="https://www.youtube.com/embed/uRs_2kNLIQM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        		<iframe width="${isMobile ? "252" : "315"}" height="${isMobile ? "448" : "560"}" src="https://www.youtube.com/embed/iXrHv63U2eM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        		<iframe width="${isMobile ? "252" : "315"}" height="${isMobile ? "448" : "560"}" src="https://www.youtube.com/embed/p73vc6YZTtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        	</div>
+        `;
+                mainContainer.append(html);
+            } else {
+                $(".custom-section").remove();
+            }
+
+            if ($("#global-modal:visible").length && window.localStorage.language !== "tr") {
+                $("#global-modal .modal__close")[0].click();
+                setTimeout(() => {
+                    $("#global-modal .modal__close")[0].click();
+                });
+            }
+
+            $(document).on("click", ".header__chat, .chat__close", function () {
+                $("body").toggleClass("chat-active");
+            });
+
+            $(document).on("click", ".section__view--carousel[href*=providers], .footer__licenses-list a[href*=license]", function () {
+                handleRouteChange();
+            });
+        } catch (error) {
+            console.error(error);
+        }
+    };
+
+    (() => {
+        const script = document.createElement("script");
+        script.async = true;
+        script.src = "https://www.googletagmanager.com/gtag/js?id=G-EWGHJ0DHF1";
+        document.head.appendChild(script);
+
+        script.onload = () => {
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "G-EWGHJ0DHF1");
+        };
+    })();
+
+    (() => {
+        let style = document.createElement("style");
+        style.innerHTML = `
+        /* General */
+        :root {
+          --tf-bg: #0c0f16 !important;
+          --tf-bg2: #10141d !important;
+          --menu-group1: var(--tf-active);
+          --menu-group2: #1e90ff;
+        }
+        body {
+          opacity: 1 !important;
+        }
+        body,
+        .section__title,
+        .slot__title h3,
+        .mini-game__title h3,
+        .vip__title,
+        .ranking__amount,
+        .post__title,
+        .article h1,
+        .article h2,
+        .article h3,
+        .article h4,
+        .article h5,
+        .article h6,
+        .game__title,
+        .slot__pos,
+        .settings__title,
+        .footer__title,
+        .kush__prize {
+          font-family: 'Karla', sans-serif;
+        }
+        ::marker {
+          content: '';
+        }
+        @keyframes loaderScaleAnimation {
+          0% {
+            transform: scale(1);
+          }
+          25% {
+            transform: scale(1.2);
+          }
+          50% {
+            transform: scale(1);
+          }
+          75% {
+            transform: scale(1.2);
+          }
+          100% {
+            transform: scale(1);
+          }
+        }
+        .loader-logo img,
+        .loader-logo.small img {
+          animation: loaderScaleAnimation 1.4s linear infinite;
+          width: 40px;
+          height: 40px;
+        }
+        .loader-logo::before,
+        .loader-logo:after {
+          display: none;
+        }
+
+
+        /* Header */
+        .header--logged .header__logo {
+          width: 100px;
+        }
+        .header__wallet {
+          width: unset;
+        }
+        @media screen and (max-width: 400px) {
+          .header--logged .header__logo {
+            width: 80px;
+          }
+          .header__wallet-dropdown-btn {
+            width: 100px;
+          }
+          .header__wallet-dropdown-btn div {
+            overflow: hidden;
+          }
+        }
+        @media screen and (max-width: 480px) {
+          .header__wallet-dropdown-btn {
+            width: 125px;
+          }
+        }
+        @media screen and (max-width: 768px) {
+          .header {
+            position: absolute;
+            padding: 0 10px;
+          }
+        }
+        @media screen and (min-width: 1200px) and (max-width: 1800px) {
+          .sidebar.active+main .header__search {
+            margin-left: 135px;
+          }
+        }
+        @media screen and (min-width: 600px) {
+          .header__wallet {
+            margin: 0 20px;
+          }
+        }
+
+
+        /* Sidebar */
+        .howto-mobile {
+          display: none !important;
+        }
+        .sidebar__link--casino::before {
+          opacity: 1;
+        }
+        .sidebar__big .sidebar__links {
+          gap: 10px;
+          margin-bottom: 10px;
+        }
+        .sidebar__big .sidebar__links:not(.custom) a span {
+          font-size: 14px;
+        }
+        .sidebar__big .sidebar__links .howto-mobile span {
+          font-size: 12px;
+          line-height: 1.4;
+          text-align: center;
+        }
+        .sidebar__links + .sidebar__menu {
+          margin-top: 20px;
+        }
+        .sidebar__big a[href*="?modal=bonus-request"] span {
+        	font-size: 16px !important;
+        	font-weight: 700;
+        	text-transform: uppercase;
+        	margin-left: 0 !important;
+        }
+        .sidebar__nav a {
+          border: none;
+          border-radius: 999px;
+        }
+        .sidebar__nav-small a,
+        .sidebar__nav-small button {
+          border: none;
+        }
+        .sidebar__nav--collapse {
+          border: none;
+          border-radius: 10px;
+        }
+        @keyframes menuShakeAnimation {
+          0% {
+            transform: translateX(0);
+          }
+          25% {
+            transform: translateX(-2px);
+          }
+          50% {
+            transform: translateX(2px);
+          }
+          75% {
+            transform: translateX(-2px);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+        .sidebar__content a:hover svg,
+        .sidebar__nav-small button:hover svg {
+          animation: menuShakeAnimation 0.4s ease;
+        }
+        .sidebar__content .svg-icon {
+          transition: none;
+        }
+        .sidebar__content .svg-icon use {
+          stroke: transparent;
+        }
+        .sidebar__content .svg-icon use[href*="homepage"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="big-win"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="vip-club"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="blog"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="casino2"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="gamer"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="chart"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="slots2"] {
+          color: var(--menu-group2);
+        }
+        .sidebar__content .svg-icon use[href*="live-casino"] {
+          color: var(--menu-group2);
+        }
+        .sidebar__content .svg-icon use[href*="sportsbook2"] {
+          color: var(--menu-group2);
+        }
+        .sidebar__links.custom + div > span + ul .svg-icon use[href*="sportsbook"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="exclusive"] {
+          color: var(--menu-group2);
+        }
+        .sidebar__content .svg-icon use[href*="virtual-sports"] {
+          color: var(--menu-group2);
+        }
+        .sidebar__content .svg-icon use[href*="gift"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="tournaments"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="vip"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="challenge"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="stream"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="pokr-side"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="phone"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="sportsbook-basketball"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="affiliate"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="head-set"],
+        .sidebar__content .svg-icon use[href*="headset"] {
+          color: var(--menu-group2);
+        }
+        .sidebar__content .svg-icon use[href*="privacy"],
+        .sidebar__content .svg-icon use[href*="shield"] {
+          color: var(--menu-group2);
+        }
+        .sidebar__content .svg-icon use[href*="favourited"] {
+          color: var(--menu-group1);
+        }
+        .sidebar__content .svg-icon use[href*="profile"] {
+          fill: var(--menu-group1);
+        }
+        .sidebar__content li.active .svg-icon use {
+          color: var(--tf-active);
+          fill: var(--tf-active);
+        }
+        .sidebar__content .sidebar__nav--collapse .svg-icon use[href*="profile"],
+        .sidebar__content .sidebar__nav--collapse .svg-icon use[href*="vip-club"] {
+          color: var(--tf-tc);
+          fill: var(--tf-tc);
+        }
+        .sidebar__content .sidebar__nav--collapse a:hover .svg-icon use[href*="profile"],
+        .sidebar__content .sidebar__nav--collapse a:hover .svg-icon use[href*="vip-club"] {
+          color: var(--tf-active);
+          fill: var(--tf-active);
+        }
+        .sidebar__link.passive,
+        .sidebar__link-small.passive {
+          filter: contrast(0.75);
+        }
+
+
+        /* Lowbar */
+        .lowbar {
+          padding: 10px 5px !important;
+        }
+        .support {
+          display: none !important;
+        }
+
+
+        /* Content */
+        .container {
+          max-width: 1440px;
+        }
+        @media screen and (min-width: 991px) {
+          .container {
+            padding-left: 35px;
+            padding-right: 35px;
+          }
+        }
+        .section {
+          padding-top: 40px !important;
+        }
+        .section__title-wrap {
+          margin-bottom: 10px;
+        }
+        .col-12 > .section__title {
+          margin-bottom: 20px;
+        }
+        @media screen and (max-width: 768px) {
+          #main:not(.main--game) #main__content {
+            padding-top: 80px;
+          }
+          .section {
+            padding-top: 0 !important;
+          }
+          .section__title-wrap {
+            margin-bottom: 20px;
+          }
+        }
+        .hero {
+          border-radius: 15px;
+        }
+        .promo-post__date {
+          display: none;
+        }
+        .promo-post__text {
+          height: 72px;
+        }
+        .content__main--big {
+          border-radius: 15px;
+        }
+        .content__main .tournament__cover {
+          margin-top: 0;
+          aspect-ratio: 1.816;
+          margin-bottom: 35px;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 525px;
+        }
+        .content__main .tournament__cover img {
+          max-height: 100%;
+          height: 100%;
+          border-radius: 10px;
+        }
+        .post__cover {
+          margin-bottom: 20px;
+        }
+        .post__meta {
+          display: none;
+        }
+        .blog__cover {
+          width: 100%;
+          margin-bottom: 35px;
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 560px;
+        }
+        .blog__cover img {
+          border-radius: 10px;
+        }
+        .ranking__list {
+          overflow-y: hidden;
+        }
+        .section__title {
+          text-transform: capitalize;
+        }
+        .filter .settings__btn {
+          width: unset;
+          padding: 4px 22px;
+        }
+        .tabs-nav {
+          padding: 0;
+        }
+
+
+        /* Games */
+        .slot {
+          border-radius: 15px;
+          padding-top: 0 !important;
+        }
+        .slot__cover {
+          padding-bottom: 135%;
+        }
+        .slot__img {
+          aspect-ratio: 0.741;
+          transform: none !important;
+        }
+        .slot__img img {
+          width: 100%;
+          height: 100%;
+        }
+        .slot[href*="/ebetlab"] .game-provider {
+          visibility: hidden;
+        }
+        .slot[href*="/ebetlab"] .game-provider::after {
+          content: 'Jackbom Originals';
+          visibility: visible;
+          position: absolute;
+          left: 20px;
+          bottom: 20px;
+        }
+        .slot[href*="/ebetlab"] .slot__img::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-position: center;
+          background-size: cover;
+        }
+        .slot[href*="/ebetlab-mines"] .slot__img::after {
+          background-image: url('https://jackbomcom.github.io/assets/images/f8qhx62bygzknud7.webp');
+        }
+        .slot[href*="/ebetlab-crash"] .slot__img::after {
+          background-image: url('https://jackbomcom.github.io/assets/images/njec8zra74usb263.webp');
+        }
+        .slot[href*="/ebetlab-plinko"] .slot__img::after {
+          background-image: url('https://jackbomcom.github.io/assets/images/r5h7b42vjgytnmdc.webp');
+        }
+        .slot[href*="/ebetlab-keno"] .slot__img::after {
+          background-image: url('https://jackbomcom.github.io/assets/images/t3yfmdhwgxr59s4z.webp');
+        }
+        .slot[href*="/ebetlab-dice"] .slot__img::after {
+          background-image: url('https://jackbomcom.github.io/assets/images/t94nj537e6dmf8xh.webp');
+        }
+        .slot__title {
+          height: 100%;
+          background: linear-gradient(0deg, #ff4001cc 60%, transparent 100%);
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding: 20px;
+          gap: 8px;
+          opacity: 0;
+          pointer-events: none;
+          transition: all 0.4s;
+        }
+        .slot__title::before {
+          content: '\f04b';
+          font-family: 'Font Awesome 6 Free';
+          font-weight: 900;
+          font-size: 32px;
+          width: 64px;
+          height: 64px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #fff3;
+          border-radius: 100%;
+          padding-left: 6px;
+          position: absolute;
+          top: 25%;
+          transform: scale(0.5);
+          transition: all 0.4s;
+        }
+        .slot__title h3 {
+          margin-bottom: 0;
+          font-size: 16px;
+          text-transform: capitalize;
+          font-weight: 500;
+          line-height: 20px;
+          text-align: left;
+          text-shadow: 0 0 2px #000;
+          width: 100%;
+        }
+        .slot__title span {
+          margin-bottom: 0;
+          text-transform: capitalize;
+          text-align: left;
+          font-size: 12px;
+          width: 100%;
+        }
+        .slot__pos {
+          text-shadow: 0 0 2px #000;
+          font-size: 16px;
+          height: 26px;
+          z-index: 11;
+          background-color: var(--tf-active) !important;
+        }
+        @media screen and (min-width: 600px) {
+          .slot {
+            margin-top: 10px;
+          }
+          /*
+          .slot:hover {
+            box-shadow: rgb(255 64 1 / 75%) 0px 7px 29px -3px !important;
+          }
+          */
+          .slot:hover .slot__title {
+            opacity: 1;
+            pointer-events: all;
+          }
+          .slot:hover .slot__title::before {
+            transform: none;
+          }
+          .slot:hover .slot__img {
+            filter: blur(2px) brightness(0.8);
+            transform: scale(1.05) !important;
+          }
+        }
+        @media screen and (max-width: 600px) {
+          .slot:hover {
+            transform: none !important;
+          }
+          .slot__pos {
+            font-size: 14px;
+            height: 24px;
+          }
+        }
+
+
+        /* Big wins */
+        .section.big-wins .splide__slide {
+          width: 100%;
+          border-radius: 0;
+        }
+        .kush {
+          overflow: hidden !important;
+          position: relative;
+        }
+        .kush__cover {
+          border-radius: 0;
+          width: 100%;
+          height: unset !important;
+          aspect-ratio: 0.7411;
+          border-radius: 10px;
+        }
+        .kush__cover img {
+          border-radius: 0;
+        }
+        .kush__winner {
+          z-index: 1;
+        }
+        .kush__title {
+          display: none;
+        }
+        .kush .chat__user {
+          margin-right: 10px;
+          margin-top: 8px;
+        }
+        .kush__prize {
+          color: var(--tf-active);
+          margin-bottom: 10px;
+        }
+        .kush .rank-icon {
+          width: 24px !important;
+          height: 24px !important;
+        }
+
+
+        /* Mini games */
+        .mini-game {
+          border-radius: 20px;
+        }
+        .mini-game__img img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+        .mini-game__title {
+          display: none;
+        }
+        @media screen and (max-width: 768px) {
+          .mini-game:hover .mini-game__img {
+            transform: none;
+          }
+        }
+
+
+        /* Game detail */
+        .frame-mob .slot:hover {
+          box-shadow: none !important;
+          transform: none;
+        }
+        .frame-mob .slot__title h3 {
+          font-size: 14px;
+          line-height: 16px;
+          height: 32px;
+          margin-bottom: 5px;
+        }
+        .frame-mob .slot__title span {
+          font-size: 10px;
+        }
+        .frame-mob__btns,
+        .frame__btns {
+          gap: 30px;
+          align-items: stretch;
+        }
+        .frame__btn {
+          padding: 12px 24px;
+          width: 50%;
+          height: unset;
+          margin-right: 0 !important;
+        }
+        .frame__btn:hover {
+          color: #fff !important;
+        }
+        .frame__play {
+          padding: 12px 24px;
+          width: 50%;
+          height: unset;
+          gap: 0;
+        }
+        .frame__play svg {
+          display: none;
+        }
+        .frame__logo {
+          background-image: var(--tf-logo);
+        }
+        @media screen and (max-width: 768px) {
+          .frame-mob__btns,
+          .frame__btns {
+            gap: 15px;
+          }
+        }
+        .frame__play {
+          transform: scale(0.9);
+        }
+
+
+        /* Providers */
+        .partner {
+          border-radius: 0;
+          border: none;
+          padding: 0 !important;
+          min-height: 100px;
+          animation: none;
+          margin-top: 10px !important;
+        }
+        .partner img {
+          max-width: 50%;
+        }
+        .partner[href*="/providers/ebetlab"]::after {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: var(--tf-logo2) center center no-repeat;
+          background-size: 50%;
+          z-index: 11;
+          filter: invert(1) grayscale(1);
+        }
+        .partner[href*="/providers/ebetlab"] .partner__logo {
+          display: none;
+        }
+        .swiper.providers .swiper-slide {
+          margin-right: 0 !important;
+        }
+        @media screen and (max-width: 576px) {
+          .partner {
+            margin-top: 0 !important;
+          }
+          .partner::before {
+            display: none;
+          }
+        }
+
+
+        /* Vip */
+        .progress-wrapper {
+          background-color: var(--tf-bg2);
+          position: relative;
+          overflow: hidden;
+          padding: 12px 24px !important;
+        }
+        .progress-wrapper::before {
+          display: none;
+        }
+        .modal__progress-bar {
+          height: 10px;
+          border-radius: 999px;
+          border: none;
+          background-color: #59595933;
+        }
+        .modal__progress-bar span {
+          height: 6px;
+        }
+        .modal__icon {
+          background-color: #59595940;
+        }
+        .modal__user p {
+          color: var(--tf-tc);
+          font-weight: 500;
+        }
+        #now2-rank,
+        #next-rank {
+          align-items: center;
+        }
+        .progress-wrapper .rank-icon,
+        .ranking .rank-icon {
+          width: 50px !important;
+          height: 50px !important;
+        }
+        .vip {
+          justify-content: flex-end;
+          aspect-ratio: 3/1;
+          border-radius: 15px;
+        }
+        .vip__title,
+        .vip__text,
+        .vip__btn {
+          display: none;
+        }
+        .vip:before {
+          filter: none;
+        }
+        #body.lang--tr .vip:before {
+          background: url('https://jackbomcom.github.io/assets/images/65cxfm8nbkr932pe.webp') center center/contain no-repeat;
+        }
+        #body.lang--en .vip:before {
+          background: url('https://jackbomcom.github.io/assets/images/6djmgeuc8qxpf5yb.webp') center center/contain no-repeat;
+        }
+        @media screen and (max-width: 768px) {
+          .vip {
+            aspect-ratio: 16/9;
+          }
+          #body.lang--tr .vip:before {
+            background: url('https://jackbomcom.github.io/assets/images/rmwqnh6a7bpk3z29.webp') center center/contain no-repeat;
+          }
+          #body.lang--en .vip:before {
+            background: url('https://jackbomcom.github.io/assets/images/sy86pvje9gwz7tq4.webp') center center/contain no-repeat;
+          }
+        }
+        .ranking::after {
+          content: '';
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          bottom: -120px;
+          right: -120px;
+          background-position: center;
+          background-size: 100%;
+          background-repeat: no-repeat;
+          opacity: 0.1;
+          transform: rotate(-20deg);
+          transition: all 0.4s;
+        }
+        .ranking:hover::after {
+          bottom: -100px;
+          right: -100px;
+          transform: rotate(-10deg);
+          opacity: 0.2;
+        }
+        .ranking p {
+          transition: all 0.4s;
+        }
+        .ranking:hover p {
+          color: #babbc4;
+        }
+        .ranking.state-slug-classic::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/2PUIxjLbmKdfkXc5LV3VgsFmLfAHIOqm2WS1gdjZ.png');
+        }
+        .ranking.state-slug-bronzi::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/UHHPE63JaUaFrNwmunlAkc4x2EuVqlH5ihP4AuJ4.png');
+        }
+        .ranking.state-slug-bronzii::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/jhP5DPwUak0OEt9vK2f7cOSLQdvHJl7OtF8vhyUi.png');
+        }
+        .ranking.state-slug-bronziii::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/hvIecCKm7sR6q3fAwKpna2kgPglchk7QNdQxObiI.png');
+        }
+        .ranking.state-slug-silveri::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/GkAZXguX64rStHgT3uLox1BlshfiabzK0VtHPyeH.png');
+        }
+        .ranking.state-slug-silverii::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/X5nfP2GE9nhLcFoCqDIWnKno2q3f9t4ADZ8cDOp1.png');
+        }
+        .ranking.state-slug-silveriii::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/6ZCnKjGc7UuBWWjowbFaOb5n0OQ2SyksLuWZoMIi.png');
+        }
+        .ranking.state-slug-goldi::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/SA8UPMHuGikTYC7qcWo7VTtV2wztFC1R1fA4Nknw.png');
+        }
+        .ranking.state-slug-goldii::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/G081tbn7VlaYS7ySlK8isgCq6w8uD9l6cTacgI2h.png');
+        }
+        .ranking.state-slug-goldiii::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/312SjeJ2prRKmvoAR7HQu8u72Ftqnju9bGZtUr9c.png');
+        }
+        .ranking.state-slug-platinumi::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/th9iwpZpcZgas4elzYeUT6QJjmp6BXjdnhiKhlw9.png');
+        }
+        .ranking.state-slug-platinumii::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/R3EatRIuwJ7Av72XpD4bEXgajpcHwDgROisEcH35.png');
+        }
+        .ranking.state-slug-platinumiii::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/Ggr9L4IPlVK5F8m9uoCIUeHAdgy9O0WZAA6RaSIJ.png');
+        }
+        .ranking.state-slug-platinumiv::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/ukgSa8BIoXdQPpegvc0Mmcnju7g6YRss6w88DkZa.png');
+        }
+        .ranking.state-slug-platinumv::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/3srK25NQMnUwT4J24FrO1dRrzyPBKGNFM1gghAOZ.png');
+        }
+        .ranking.state-slug-diamondi::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/pFgz00nunUwxVPyzpeIx8utJsvAn1mjPk9enI2NE.png');
+        }
+        .ranking.state-slug-diamondii::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/ete7zxYke20jWbMw6NHx2jOatS2fh2ShDpTuKTI9.png');
+        }
+        .ranking.state-slug-diamondiii::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/lLndqI2VtokDRKiZb9Yl7ySfP7pROukg7KD4ACkN.png');
+        }
+        .ranking.state-slug-diamondiv::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/lvkKoLL01t8ltMyDsucRa4RLYEzdfd3Tubx30ll6.png');
+        }
+        .ranking.state-slug-jack::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/aHSFQLk9DKzUzR94wcLBiJoWxbT5CRyIWHhxUwQx.png');
+        }
+        .ranking.state-slug-jackbom::after {
+          background-image: url('https://vendor-provider.fra1.digitaloceanspaces.com/ebetlab/vip-states/nTRaQbwA4VntuzQ2gp3Qxuda7u5W8exG/lBr458pB0bQv8pLrVrXZgufGOFGav26KNetIjO1h.png');
+        }
+
+
+        /* Profile */
+        .accordion-benefits__card--silver .settings__container::before,
+        .accordion-benefits__card--gold .settings__container::before,
+        .accordion-benefits__card--rose .settings__container::before {
+          content: ' Talep edilmediği sürece bu alan zorunlu değildir.';
+          color: var(--tf-active);
+          font-weight: bold;
+          display: block;
+        }
+        @media screen and (min-width: 768px) {
+          .accordion-benefits__card--silver .settings__container::before,
+          .accordion-benefits__card--gold .settings__container::before,
+          .accordion-benefits__card--rose .settings__container::before {
+            margin-top: 15px;
+          }
+        }
+
+
+        /* Modals */
+        /*
+        #wallet-modal .form__note {
+          font-size: 14px;
+          background-color: var(--tf-active);
+          color: var(--tf-tc);
+          padding-top: 0;
+          border-radius: 10px;
+          margin-top: 30px;
+          padding: 10px 15px !important;
+          text-align: center;
+          font-style: normal;
+        }
+        #wallet-modal .form__note:hover {
+          background-color: #fff;
+          color: #000;
+        }
+        */
+        #wallet-modal .form__note {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 8px;
+          padding-top: 30px;
+          border-top: 1px solid var(--tf-border);
+          font-style: normal;
+          font-size: 14px;
+          line-height: 22px;
+          font-weight: bold;
+          color: var(--tf-active);
+          max-width: 528px;
+          margin: auto;
+          margin-top: 30px;
+        }
+        #wallet-modal .form__note::after {
+          content: 'BİLGİLERİ DOĞRULA';
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 46px;
+          background: var(--tf-active-opacity);
+          border-radius: 8px;
+          border: 1px solid var(--tf-border);
+          padding: 0 20px;
+          color: var(--tf-tc);
+          white-space: nowrap;
+          font-weight: 500;
+          line-height: 20px;
+        }
+        #wallet-modal .form__cellar {
+          max-width: 528px;
+          margin-left: auto;
+          margin-right: auto;
+          justify-content: space-between;
+          gap: 8px;
+        }
+        #deposit-modal .deposit__title {
+          font-size: 12px;
+        }
+        /*
+        #wallet-modal .form__description {
+          visibility: hidden;
+        }
+        #wallet-modal .form__description::after {
+          content: 'Minimum çekim 100.00000000 TRY.';
+          visibility: visible;
+          display: block;
+        }
+        */
+        #global-modal .modal-content {
+          background-color: var(--tf-bg2);
+          margin: 10px;
+          padding: 10px;
+          overflow: hidden;
+          border-radius: 20px;
+        }
+        #global-modal .modal__head {
+          justify-content: end;
+          padding-right: 0;
+          margin-bottom: 10px;
+        }
+        #global-modal .modal__head::after {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 120px;
+          height: 5px;
+          background-color: var(--tf-tc2);
+          border-radius: 999px;
+          pointer-events: none;
+        }
+        #global-modal .modal__img {
+          border-radius: 15px;
+        }
+        @media screen and (min-width: 1200px) {
+          #signin-modal .modal__content {
+            height: 548px;
+          }
+        }
+        .custom-modal-content {
+          display: flex;
+          gap: 20px;
+          margin-top: 30px;
+        }
+        .howto-buttons {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .howto-button {
+          padding: 10px 20px;
+          background: linear-gradient(180deg, rgba(255, 64, 1, 0.2) 0%, rgba(255, 64, 1, 0.05) 100%);
+          border-radius: 8px;
+          color: #fff;
+          cursor: pointer;
+          display: block;
+          width: 100%;
+          opacity: 0.5;
+          font-size: 18px;
+        }
+        .howto-button.selected {
+          opacity: 1;
+          color: var(--tf-active);
+        }
+        .howto-video {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .howto-video iframe {
+          border-radius: 8px;
+        }
+        @media screen and (max-width: 768px) {
+          .custom-modal-content {
+            flex-direction: column;
+            margin-top: 20px;
+            gap: 15px;
+          }
+          .howto-buttons {
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 5px;
+          }
+          .howto-button {
+            padding: 6px 12px;
+            text-align: center;
+            border-radius: 6px;
+            display: inline-block;
+            width: unset;
+            flex: 1;
+            white-space: nowrap;
+            font-size: 16px;
+          }
+          .howto-video iframe {
+            border-radius: 6px;
+          }
+        }
+
+
+        /* Footer */
+        .conversion-wrapper {
+          margin-top: 60px;
+          justify-content: flex-start;
+          padding-top: 0;
+        }
+        @media screen and (max-width: 768px) {
+          .conversion-wrapper {
+            margin-top: 30px;
+          }
+        }
+        .footer__accepted {
+          padding: 20px;
+          flex-wrap: nowrap;
+          overflow-y: auto;
+          gap: 20px;
+          border-radius: 15px;
+        }
+        .footer__accepted li:before {
+          display: none;
+        }
+        .footer__accepted li {
+          padding: 0;
+          margin: 0;
+          flex-direction: column;
+          gap: 6px;
+        }
+        .instrument-icon-wrapper {
+          width: 1.6rem;
+          height: 1.6rem;
+          border-radius: 100%;
+        }
+        .footer__logo {
+          background: var(--tf-logo) no-repeat left center;
+        }
+
+
+        /* Buttons */
+        .section__view,
+        .tabs-nav__btn.active,
+        .table-wrap__select,
+        #custom-section-12 .spin-button,
+        #custom-section-10 .signup-button,
+        #custom-section-7 .back-button {
+          border-color: var(--tf-active) !important;
+          background: none !important;
+          background-color: var(--tf-active-opacity) !important;
+        }
+        .section__view:hover,
+        .tabs-nav__btn.active:hover,
+        #custom-section-12 .spin-button:hover,
+        #custom-section-10 .signup-button:hover,
+        #custom-section-7 .back-button:hover {
+          background-color: var(--tf-active) !important;
+          color: var(--tf-tc) !important;
+        }
+        .table-wrap__select.ss-content {
+          background-color: var(--tf-bg) !important;
+        }
+        .glow-on-hover {
+          position: relative;
+          z-index: 0;
+          font-weight: 500;
+        }
+        .glow-on-hover:before {
+          content: '';
+          background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+          position: absolute;
+          top: -2px;
+          left:-2px;
+          background-size: 400%;
+          z-index: -1;
+          filter: blur(12px);
+          width: calc(100% + 4px);
+          height: calc(100% + 4px);
+          animation: glowing 50s linear infinite;
+          transition: opacity 0.3s ease-in-out;
+          border-radius: 8px;
+          opacity: 0.2;
+        }
+        .glow-on-hover:after {
+          z-index: -1;
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          left: 0;
+          top: 0;
+          border-radius: 8px;
+        }
+        @keyframes glowing {
+          0% {
+            background-position: 0 0;
+          }
+          50% {
+            background-position: 400% 0;
+          }
+          100% {
+            background-position: 0 0;
+          }
+        }
+        .header-custom-button {
+          background: linear-gradient(180deg, rgba(255, 64, 1, 0.2) 0%, rgba(255, 64, 1, 0.05) 100%);
+          height: 46px;
+          gap: 10px;
+          border-radius: 8px;
+          font-weight: 500;
+        }
+        .header-custom-button:hover {
+          color: var(--tf-active) !important;
+        }
+        .header__wallet-btn svg {
+          display: none;
+        }
+        .header__wallet-btn::after {
+          content: '\\24';
+          font-family: 'Font Awesome 6 Free';
+          font-weight: 900;
+          font-size: 22px;
+          color: var(--tf-tc) !important;
+        }
+        @media screen and (max-width: 600px) {
+          .header-custom-button {
+            display: none !important;
+          }
+        }
+        .howto2-desktop {
+          width: 150px;
+          display: none !important;
+        }
+        .howto2-desktop i {
+          font-size: 18px;
+        }
+        .howto2-desktop span {
+          font-size: 14px;
+          line-height: 1.2;
+          text-align: center;
+        }
+        @media screen and (min-width: 600px) and (max-width: 1300px) {
+          .header__wallet-dropdown {
+            position: absolute;
+            top: 0;
+            right: 50px;
+            width: 60px;
+            overflow: hidden;
+            pointer-events: none;
+          }
+          #dropdownWalet > div {
+            position: relative;
+          }
+          #dropdownWalet > div::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 100%;
+            background: linear-gradient(to right, transparent, var(--tf-bg));
+          }
+          .header__wallet-btn {
+            margin-left: 60px;
+          }
+          .header__wallet:hover .header__wallet-dropdown {
+            position: unset;
+            pointer-events: all;
+            width: 174px;
+            transition: width 0.1s ease-in-out;
+          }
+          .header__wallet:hover .header__wallet-btn {
+            margin-left: unset;
+          }
+          .header__wallet:hover #dropdownWalet > div::after {
+            display: none;
+          }
+        }
+        @media screen and (max-width: 992px) {
+          .header__wallet:hover .header__wallet-dropdown {
+            width: 160px;
+          }
+        }
+        @media screen and (max-width: 768px) {
+          .header__wallet:hover .header__wallet-dropdown {
+            width: 150px;
+          }
+        }
+
+
+        /* Home page custom. */
+        .page--home .section.pt-24,
+        .section.mini-slider {
+          display: none !important;
+        }
+        .page--home .section.section--last {
+          padding-bottom: 0;
+        }
+        .section.pt-24 .mySwiper,
+        .section.pt-24 .id-t-d,
+        .section.pt-24 .id-t-d+div {
+          opacity: 0;
+        }
+
+
+        /* Promo page custom. */
+        .page--promo .nav-tabs .nav-item:nth-child(1) {
+          display: none;
+        }
+
+
+        /* Tv page custom. */
+        .page--tv .section--first {
+          padding: 0 !important;
+        }
+
+
+        /* Big wins page custom. */
+        .custom-bigwins {
+          display: flex;
+          gap: 40px;
+          flex-wrap: wrap-reverse;
+        }
+        .custom-bigwins iframe {
+          border-radius: 10px;
+          flex: 1 1 25%;
+          box-shadow: 0 0 0 6px var(--tf-active-opacity);
+        }
+        @media screen and (max-width: 768px) {
+          .custom-bigwins {
+            padding: 30px 20px;
+            gap: 30px;
+          }
+        }
+
+
+        /* General custom. */
+        @media screen and (max-width: 768px) {
+          /*
+          div[id*='comm100-'] {
+            display: none !important;
+          }
+          */
+        }
+        @media screen and (min-width: 768px) {
+          div[id*='comm100-'] iframe {
+            display: block !important;
+          }
+          body.chat-active div[id*='comm100-'] {
+            display: none !important;
+          }
+        }
+
+
+        /* 0 */
+        .sidebar__menu.custom .icon {
+          width: 24px;
+        }
+
+
+        /* 1 */
+        #custom-section-1 .swiper-button {
+          background-color: #00000066;
+          width: 54px;
+          height: 54px;
+          transition: all 0.1s;
+        }
+        #custom-section-1:hover .swiper-button {
+          opacity: 1 !important;
+        }
+        #custom-section-1 .swiper-button::after {
+          color: #fff;
+          font-size: 22px;
+          background-color: transparent !important;
+        }
+        #custom-section-1 .swiper-button-prev {
+          left: 20px;
+        }
+        #custom-section-1 .swiper-button-next {
+          right: 20px;
+        }
+        @media screen and (max-width: 768px) {
+          #custom-section-1 .swiper-button {
+            width: 44px;
+            height: 44px;
+          }
+          #custom-section-1 .swiper-button::after {
+            font-size: 18px;
+          }
+          #custom-section-1 .swiper-button-prev {
+            left: 45px;
+          }
+          #custom-section-1 .swiper-button-next {
+            right: 45px;
+          }
+        }
+        #custom-section-1 .swiper-button-disabled {
+          display: none;
+        }
+        #custom-section-1 .swiper-pagination-progressbar {
+          background-color: var(--tf-active-opacity);
+          height: 2px;
+          width: 100% !important;
+          padding: 0;
+        }
+        #custom-section-1 .swiper-pagination-progressbar-fill {
+          background-color: var(--tf-active);
+        }
+        @media screen and (min-width: 768px) {
+          #custom-section-1 .swiper-pagination {
+            width: auto !important;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 8px;
+            border-radius: 999px;
+            background-color: #00000066;
+            bottom: 15px;
+            display: flex;
+          }
+          #custom-section-1 .swiper-pagination {
+            opacity: 0.25;
+          }
+          #custom-section-1:hover .swiper-pagination {
+            opacity: 1;
+          }
+          #custom-section-1 .swiper-pagination-bullet {
+            width: 8px;
+            height: 8px;
+          }
+          #custom-section-1 .swiper-pagination-bullet {
+            background-color: var(--tf-active);
+          }
+        }
+
+
+        /* 2 */
+        #custom-section-2 .landing {
+          background: linear-gradient(to right, #ff40011a 25%, #ff400105);
+        }
+        #custom-section-2 .landing::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          pointer-events: none;
+          background-size: 20% !important;
+          background: url('https://jackbomcom.github.io/assets/images/t4pe27vgd9w8nja3.webp');
+          background-position: right !important;
+          transform: rotate(-9deg) scale(1.8);
+          filter: brightness(0.3);
+          opacity: 0.1;
+        }
+        #custom-section-2 .progress-wrapper {
+          margin: auto;
+          max-width: 30vw !important;
+          border: 2px solid var(--tf-tc2);
+          border-radius: 15px;
+        }
+        @media screen and (max-width: 992px) {
+          #custom-section-2 .progress-wrapper {
+            max-width: calc(100% - 24px) !important;
+          }
+        }
+        #custom-section-2 .card {
+          transition: all 0.2s;
+        }
+        @media screen and (max-width: 576px) {
+          #custom-section-2 .landing {
+            background: linear-gradient(to bottom, #ff40011a 30%, #ff400105);
+          }
+          #custom-section-2 .progress-wrapper {
+            box-shadow: none !important;
+          }
+          #custom-section-2 .landing::before {
+            background-size: 80% !important;
+          }
+        }
+        @media screen and (min-width: 768px) {
+          #custom-section-2 .card {
+            max-width: 200px;
+          }
+        }
+        #custom-section-2 .card:hover {
+          transform: scale(0.96);
+        }
+
+
+        /* 4 */
+        #custom-section-4 .landing {
+          background-color: var(--tf-bg2);
+        }
+        #custom-section-4 .landing::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          pointer-events: none;
+          background-size: cover !important;
+          background-position: center !important;
+          transform: rotate(-10deg) scale(1.6);
+        }
+        #custom-section-4 .landing.casino {
+          background-color: #ff1744;
+        }
+        #custom-section-4 .landing.casino::before {
+          background: url('https://jackbomcom.github.io/assets/images/pux96raqtbwz74ym.webp');
+          opacity: 0.5;
+        }
+        #custom-section-4 .landing.sports {
+          background-color: #003c8f;
+        }
+        #custom-section-4 .landing.sports::before {
+          background: url('https://jackbomcom.github.io/assets/images/7ur4nmdv8639wpat.webp');
+          opacity: 0.3;
+        }
+        #custom-section-4 .landing-inner {
+          max-width: calc(100% - 380px);
+        }
+        #custom-section-4 .landing-button {
+          font-weight: 500;
+          padding: 12px 24px;
+        }
+        #custom-section-4 .landing.casino .landing-button {
+          background-color: #9d1d35;
+        }
+        #custom-section-4 .landing.sports .landing-button {
+          background-color: #0b2c60;
+        }
+        #custom-section-4 .details {
+          background-color: #00000040;
+        }
+        #custom-section-4 .landing.casino .details::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        #custom-section-4 .landing.casino .details::-webkit-scrollbar-thumb {
+          background: #ff1744;
+        }
+        #custom-section-4 .landing.sports .details::-webkit-scrollbar-track {
+          background: transparent;
+        }
+        #custom-section-4 .landing.sports .details::-webkit-scrollbar-thumb {
+          background: #003c8f;
+        }
+        @media screen and (min-width: 768px) {
+          #custom-section-4 .icon-text {
+            font-size: 1.25rem;
+          }
+        }
+        #custom-section-4 .landing-image {
+          aspect-ratio: 0.6933;
+          right: 10px;
+          height: calc(100% + 80px);
+        }
+        #custom-section-4 .landing-image-mobile {
+          aspect-ratio: 0.6933;
+        }
+        @media screen and (max-width: 992px) {
+          #custom-section-4 .landing-inner {
+            max-width: 100%;
+          }
+          #custom-section-4 .landing-image-mobile {
+            height: 300px;
+          }
+        }
+        @media screen and (max-width: 768px) {
+          #custom-section-4 .landing::before {
+            transform: none;
+            background-position: left !important;
+          }
+          #custom-section-4 .landing-image-mobile {
+            height: 250px;
+          }
+          #custom-section-4 .item {
+            flex: calc(50% - 2rem);
+          }
+          #custom-section-4 .details {
+            overflow-x: hidden !important;
+          }
+          #custom-section-4 .icon-text {
+            white-space: normal !important;
+          }
+          #custom-section-4 .landing-button {
+            width: 100%;
+          }
+        }
+
+
+        /* 5 */
+        #custom-section-5 .landing {
+          background-color: var(--tf-active);
+        }
+        #custom-section-5 .landing::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          pointer-events: none;
+          background-size: cover !important;
+          background: url('https://jackbomcom.github.io/assets/images/6wfm3xqhkdr4ejnc.webp');
+          filter: brightness(0.6);
+          background-position: center !important;
+          transform: rotate(-10deg) scale(1.6);
+        }
+        #custom-section-5 .landing-inner {
+          max-width: 1200px;
+        }
+        #custom-section-5 .crypto-slider {
+          max-width: 325px;
+        }
+        @media screen and (max-width: 992px) {
+          #custom-section-5 .crypto-slider {
+            max-width: 225px;
+          }
+        }
+        @media screen and (max-width: 768px) {
+          #custom-section-5 .landing::before {
+            transform: none;
+            background-position: left !important;
+          }
+          #custom-section-5 .crypto-slider {
+            max-width: 175px;
+          }
+        }
+        #custom-section-5 .swiper-slide-shadow {
+          display: none;
+        }
+        #custom-section-5 .details p {
+          font-weight: 500;
+        }
+        @media screen and (max-width: 576px) {
+          #custom-section-5 .second-text {
+            font-size: 1rem !important;
+          }
+        }
+
+
+        /* 6 */
+        #custom-section-6 .card-grid {
+          height: 400px;
+        }
+        #custom-section-6 .card {
+          flex: 33.333%;
+          transition: all 0.2s;
+        }
+        #custom-section-6 .card:hover {
+          flex: 0 0 600px;
+        }
+        @media screen and (max-width: 1600px) {
+          #custom-section-6 .card-grid {
+            height: 350px;
+          }
+          #custom-section-6 .card:hover {
+            flex: 0 0 525px;
+          }
+        }
+        @media screen and (max-width: 1400px) {
+          #custom-section-6 .card-grid {
+            height: 300px;
+          }
+          #custom-section-6 .card:hover {
+            flex: 0 0 450px;
+          }
+        }
+        @media screen and (max-width: 768px) {
+          #custom-section-6 .card-grid {
+            height: auto;
+          }
+          #custom-section-6 .card {
+            max-height: 225px;
+            aspect-ratio: 4/3;
+          }
+        }
+
+
+        /* 7 */
+        #custom-section-7 .back-button {
+          font-weight: 500;
+          padding: 0 20px;
+          height: 46px;
+        }
+
+
+        /* 8 */
+        #custom-section-8 .league {
+          transition: all 0.4s;
+        }
+        @media screen and (min-width: 768px) {
+          #custom-section-8 .league:hover {
+            transform: scale(0.96);
+          }
+        }
+
+
+        /* 9 */
+        #custom-section-9 .box {
+          background-color: var(--tf-bg2);
+        }
+        #custom-section-9 .icon {
+          width: 32px;
+        }
+        #custom-section-9 .icon-tournament {
+          background: linear-gradient(-45deg, transparent, #1e90ff);
+        }
+        #custom-section-9 .icon-vip {
+          background: linear-gradient(-45deg, transparent, #ffcc00);
+        }
+        #custom-section-9 .icon-promotion {
+          background: linear-gradient(-45deg, transparent, #dc143c);
+        }
+        #custom-section-9 .icon-rtp {
+          background: linear-gradient(-45deg, transparent, #228b22);
+        }
+        #custom-section-9 .box p {
+          font-weight: 500;
+        }
+
+
+        /* 10 */
+        #custom-section-10 .signup-button {
+          font-weight: 500;
+          padding: 12px 24px;
+        }
+
+
+        /* 12 */
+        #custom-section-12 {
+          padding-bottom: 40px;
+        }
+        @media screen and (min-width: 576px) {
+          #custom-section-12 .landing {
+            background: linear-gradient(to bottom, #ff40011a 25%, #ff400105);
+          }
+          #custom-section-12 .landing::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            pointer-events: none;
+            background-size: 25% !important;
+            background: url('https://jackbomcom.github.io/assets/images/t4pe27vgd9w8nja3.webp');
+            background-position: right !important;
+            transform: rotate(-9deg) scale(1.8);
+            filter: brightness(0.3);
+            opacity: 0.1;
+          }
+        }
+        #custom-section-12 .chooser-inner {
+          max-width: 500px;
+          background-color: var(--tf-bg2);
+        }
+        #custom-section-12 .chooser-wrapper {
+          max-height: 400px;
+          background-color: var(--tf-bg);
+        }
+        #custom-section-12 .chooser-wrapper::before,
+        #custom-section-12 .chooser-wrapper::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          width: 100%;
+          height: 20%;
+          z-index: 1;
+        }
+        #custom-section-12 .chooser-wrapper::before {
+          top: 0;
+          background: linear-gradient(to bottom, var(--tf-bg), transparent);
+        }
+        #custom-section-12 .chooser-wrapper::after {
+          bottom: 0;
+          background: linear-gradient(to top, var(--tf-bg), transparent);
+        }
+        #custom-section-12 .chooser-list {
+          gap: 10px;
+        }
+        @keyframes slotAnimation {
+          0% {
+            transform: translateY(var(--list-height));
+          }
+          100% {
+            transform: translateY(calc(-1 * var(--list-height)));
+          }
+        }
+        #custom-section-12 .chooser-list.spin {
+          animation: slotAnimation 0.5s linear infinite;
+        }
+        #custom-section-12 .chooser-item {
+          aspect-ratio: 0.7415;
+        }
+        #custom-section-12 .chooser-list.spin .slot {
+          pointer-events: none;
+          filter: blur(1px);
+        }
+        #custom-section-12 .slot {
+          margin-top: 0 !important;
+        }
+        #custom-section-12 .slot:hover {
+          transform: none;
+        }
+        #custom-section-12 .slot__title::before {
+          top: 50%;
+          transform: translateY(-50%);
+        }
+        #custom-section-12 .chooser-border {
+          content: '';
+          width: calc(100% - 3rem);
+          transform: translateY(-50%);
+          box-shadow: 0 0 0 6px var(--tf-active), 0 0 18px var(--tf-active), inset 0 0 12px var(--tf-bg);
+        }
+        #custom-section-12 .spin-button {
+          font-weight: 500;
+          padding: 12px 24px;
+        }
+        #custom-section-12 .spin-button.disabled {
+          pointer-events: none;
+          opacity: 0.3;
+        }
+      `;
+        document.head.appendChild(style);
+    })();
+
+    (() => {
+        const script = document.createElement("script");
+        script.src = "//d1l6p2sc9645hc.cloudfront.net/gosquared.js";
+        script.async = true;
+
+        script.onload = () => {
+            window._gs =
+                window._gs ||
+                function () {
+                    (window._gs.q = window._gs.q || []).push(arguments);
+                };
+
+            _gs("GSN-473767-R");
+            _gs("set", "anonymizeIP", true);
+        };
+
+        document.head.appendChild(script);
+    })();
+
+    const originalSetItem = localStorage.setItem;
+    localStorage.setItem = function (key, value) {
+        const event = new Event("storageChange");
+        originalSetItem.apply(this, arguments);
+        if (key === "language") {
+            document.dispatchEvent(event);
+        }
+    };
+
+    let currentLanguage = window.localStorage.language || null;
+
+    document.addEventListener("storageChange", () => {
+        const newLanguage = window.localStorage.language;
+        if (newLanguage !== currentLanguage) {
+            currentLanguage = newLanguage;
+            handleRouteChange();
+        }
+    });
+
+    (async () => {
+        try {
+            loadResource("style", "https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
+            loadResource("style", "https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css");
+            loadResource("style", "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css");
+            await loadResource("script", "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js");
+
+            await Promise.all([loadResource("script", "https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js")]);
+
+            handleRouteChange();
+        } catch (error) {
+            console.error(error);
+        }
+    })();
+})();
