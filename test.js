@@ -627,10 +627,9 @@
             new Swiper("#custom-section-1 .swiper", {
                 loop: true,
                 autoplay: {
-                    delay: 1500, // 3 saniyeden 1.5 saniyeye düşürüldü
+                    delay: 1000,
                     disableOnInteraction: false,
                 },
-                speed: 400, // geçiş animasyon süresi hızlandırıldı
                 slidesPerView: !isMobile ? 2 : 1.2,
                 spaceBetween: !isMobile ? 20 : 15,
                 centeredSlides: !isMobile ? false : true,
