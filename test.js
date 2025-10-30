@@ -730,7 +730,7 @@
                         prevEl: "#custom-section-4 .swiper-button-prev",
                         nextEl: "#custom-section-4 .swiper-button-next",
                     },
-                    speed: 800, // normal geçiş hızı
+                    speed: 300, // normal geçiş hızı
                 });
 
                 // 🚀 Butonlara basınca hızlı kaydırma (Games Landing)
