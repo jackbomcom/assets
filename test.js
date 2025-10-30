@@ -562,7 +562,46 @@
         start();
     }
 
-    // Id: 1 (Main slider)
+    // === BEGIN: Mobile swipe performance helpers (injected) ===
+    const injectSwiperPerfCSS = () => {
+        if (document.getElementById('swiper-perf-style')) return;
+        const style = document.createElement('style');
+        style.id = 'swiper-perf-style';
+        style.textContent = `
+    #custom-section-1 .swiper,
+    #custom-section-5 .swiper,
+    #custom-section-8 .swiper {
+      will-change: transform;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+    }
+    #custom-section-1 .swiper-slide,
+    #custom-section-5 .swiper-slide,
+    #custom-section-8 .swiper-slide {
+      will-change: transform;
+      backface-visibility: hidden;
+      transform: translateZ(0);
+    }
+  `;
+        document.head.appendChild(style);
+    };
+
+    const mobileSwipeTuning = {
+        threshold: 6,
+        resistanceRatio: 0.65,
+        touchRatio: 1.2,
+        followFinger: true,
+        simulateTouch: true,
+        speed: 320,
+        touchStartPreventDefault: false,
+        passiveListeners: true,
+        observer: true,
+        observeParents: true,
+        updateOnWindowResize: true,
+    };
+// === END: Mobile swipe performance helpers (injected) ===
+
+// Id: 1 (Main slider)
     let isProcessingInitMainSlider = false;
     const initMainSlider = async (isMobile) => {
         if (isProcessingInitMainSlider) return;
@@ -600,6 +639,17 @@
             }
             const selectedSliderItems = window.sliderItems[language];
 
+
+// Inject lazy/async to images for smoother first swipe
+            try {
+                selectedSliderItems.forEach(node => {
+                    node.querySelectorAll('img').forEach(img => {
+                        img.setAttribute('loading', 'lazy');
+                        img.setAttribute('decoding', 'async');
+                    });
+                });
+            } catch (e) { /* no-op */ }
+
             const sectionHtml = `
 				<div id="custom-section-1" class="section custom-section">
 					<div class="container">
@@ -624,10 +674,12 @@
 			`;
             mainContent.prepend(sectionHtml);
 
-            new Swiper("#custom-section-1 .swiper", {
+            injectSwiperPerfCSS();
+
+            const opt = {
                 loop: true,
                 autoplay: {
-                    delay: 1000,
+                    delay: 1800,
                     disableOnInteraction: false,
                 },
                 slidesPerView: !isMobile ? 2 : 1.2,
@@ -641,15 +693,17 @@
                     prevEl: "#custom-section-1 .swiper-button-prev",
                     nextEl: "#custom-section-1 .swiper-button-next",
                 },
-            });
+            };
 
-            document.querySelectorAll('#custom-section-1 .swiper-button').forEach(btn => {
-                btn.addEventListener('click', () => {
-                    const swiper = document.querySelector('#custom-section-1 .swiper').swiper;
-                    swiper.params.speed = 250; // butonla geçişte daha da hızlı
+            const mainSlider = new Swiper("#custom-section-1 .swiper", isMobile ? { ...opt, ...mobileSwipeTuning } : opt);
+
+            if (isMobile) {
+                document.querySelectorAll('#custom-section-1 .swiper-button').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        mainSlider.params.speed = 250;
+                    }, { passive: true });
                 });
-            });
-
+            }
             document.querySelector("#main-slider").style.display = "none";
         } catch (error) {
             console.error(error);
@@ -1147,15 +1201,21 @@
             const section = await waitForElement(".section.section--first");
             section.after(sectionHtml);
 
-            new Swiper("#custom-section-5 .swiper", {
-                effect: "cards",
-                grabCursor: true,
+            injectSwiperPerfCSS();
+
+            const cryptoOpts = {
                 loop: true,
                 autoplay: {
                     delay: 2000,
                     disableOnInteraction: false,
                 },
-            });
+            };
+
+            new Swiper("#custom-section-5 .swiper",
+                isMobile
+                    ? { effect: "slide", ...cryptoOpts, ...mobileSwipeTuning }
+                    : { effect: "cards", grabCursor: true, ...cryptoOpts, speed: 500 }
+            );
         } catch (error) {
             console.error(error);
         } finally {
@@ -1360,34 +1420,25 @@
             const section = isUserLoggedIn ? await waitForElement(".section.section--last") : await waitForElement("#custom-section-3");
             section.after(sectionHtml);
 
-            new Swiper("#custom-section-8 .swiper", {
+            injectSwiperPerfCSS();
+
+            const leaguesBase = {
                 loop: true,
                 autoplay: {
-                    delay: 3000,
+                    delay: 2400,
                     disableOnInteraction: false,
                 },
                 slidesPerView: 5,
                 spaceBetween: 24,
                 breakpoints: {
-                    0: {
-                        slidesPerView: 2,
-                        spaceBetween: 8,
-                    },
-                    576: {
-                        slidesPerView: 3,
-                        spaceBetween: 8,
-                    },
-                    992: {
-                        slidesPerView: 4,
-                        spaceBetween: 24,
-                    },
-                    1200: {
-                        slidesPerView: 5,
-                        spaceBetween: 24,
-                    },
+                    0:   { slidesPerView: 2, spaceBetween: 8  },
+                    576: { slidesPerView: 3, spaceBetween: 8  },
+                    992: { slidesPerView: 4, spaceBetween: 24 },
+                    1200:{ slidesPerView: 5, spaceBetween: 24 },
                 },
-            });
+            };
 
+            new Swiper("#custom-section-8 .swiper", isMobile ? { ...leaguesBase, ...mobileSwipeTuning } : leaguesBase);
             if ($(window).width() >= 1200) {
                 await waitForSwiper("#mini-sportsbook-wrapper .mySwiper");
                 const sportsSlider = $("#mini-sportsbook-wrapper .mySwiper")[0].swiper;
