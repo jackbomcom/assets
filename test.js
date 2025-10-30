@@ -1,12 +1,15 @@
 (() => {
     // -------------------------------------------------------------
-    // Helpers
+    // Minimal helpers (no jQuery dependency)
     // -------------------------------------------------------------
-    const waitForElement = (selector, length = 0) =>
+    const qs = (sel, root = document) => root.querySelector(sel);
+    const qsa = (sel, root = document) => Array.from(root.querySelectorAll(sel));
+
+    const waitForElement = (selector, minCount = 0) =>
         new Promise((resolve) => {
             const check = () => {
-                const $ = window.jQuery;
-                if ($ && $(selector).length > length) return resolve($(selector));
+                const nodes = qsa(selector);
+                if (nodes.length > minCount) return resolve(nodes);
                 setTimeout(check, 100);
             };
             check();
@@ -15,14 +18,12 @@
     const waitForSwiper = (selector, language) =>
         new Promise((resolve) => {
             const check = () => {
-                const $ = window.jQuery;
-                if (!$) return setTimeout(check, 100);
-                const el = $(selector)[0];
+                const el = qs(selector);
                 if (el && el.swiper && el.swiper.slides && el.swiper.slides.length) {
                     const slides = el.swiper.slides;
                     const okLang =
                         !language ||
-                        (((slides[0] && $(slides[0]).find("a").attr("href")) || "").includes(`/${language}`));
+                        ((((slides[0] && slides[0].querySelector("a")) || {}).getAttribute?.("href") || "").includes(`/${language}`));
                     if (slides.length > 2 && okLang) return resolve(slides);
                 }
                 setTimeout(check, 100);
@@ -31,13 +32,13 @@
         });
 
     // -------------------------------------------------------------
-    // 🔧 Hız sabitleri
+    // 🔧 Speed / autoplay config
     // -------------------------------------------------------------
-    const SWIPER_SPEED_MS = 700;   // slide geçiş süresi (ms)
-    const AUTOPLAY_DELAY_MS = 3000; // otomatik geçiş aralığı (ms)
+    const SWIPER_SPEED_MS = 700;
+    const AUTOPLAY_DELAY_MS = 3000;
 
     // -------------------------------------------------------------
-    // Id: 1 (Main slider)
+    // Main slider (no jQuery, no $)
     // -------------------------------------------------------------
     let isProcessingInitMainSlider = false;
     const initMainSlider = async (isMobile) => {
@@ -45,53 +46,38 @@
         isProcessingInitMainSlider = true;
 
         try {
-            const $ = window.jQuery;
-            if (!_) throw new Error("jQuery gerekli (window.jQuery).");
-        } catch (err) {
-            console.error(err);
-            isProcessingInitMainSlider = false;
-            return;
-        }
+            // remove previous custom section if exists
+            const old = qs('#custom-section-1');
+            if (old) old.remove();
 
-        try {
-            const $ = window.jQuery;
+            const language = (window.localStorage && window.localStorage.language) || 'tr';
+            const [mainContent] = await waitForElement('#main__content');
 
-            // Önce varsa eski custom section'ı kaldır
-            if ($("#custom-section-1").length) {
-                $("#custom-section-1").remove();
-            }
-
-            const language = (window.localStorage && window.localStorage.language) || "tr";
-            const mainContent = await waitForElement("#main__content");
-
-            // 1) Orijinal #main-slider .mySwiper hız/autoplay Güncelle
+            // 1) Update existing #main-slider .mySwiper if initialized
             try {
-                const origEl = $("#main-slider .mySwiper")[0];
+                const origEl = qs('#main-slider .mySwiper');
                 if (origEl && origEl.swiper) {
                     const sw = origEl.swiper;
-                    // hız
                     sw.params.speed = SWIPER_SPEED_MS;
-                    // autoplay varsa güncelle
                     if (sw.params && sw.params.autoplay) {
                         sw.params.autoplay.delay = AUTOPLAY_DELAY_MS;
-                        if (sw.autoplay && typeof sw.autoplay.start === "function") {
+                        if (sw.autoplay && typeof sw.autoplay.start === 'function') {
                             sw.autoplay.start();
                         }
                     }
                     sw.update();
                 }
             } catch (e) {
-                console.warn("mySwiper hız ayarı yapılamadı:", e);
+                console.warn('mySwiper hız ayarı yapılamadı:', e);
             }
 
-            // 2) Slider içeriklerini hazırla (cache'le)
+            // 2) Prepare slides cache
             if (!window.sliderItems) window.sliderItems = {};
 
             if (!window.sliderItems[language] || !window.sliderItems[language].length) {
-                await waitForSwiper("#main-slider .mySwiper", language);
-                const baseSlides = $("#main-slider .mySwiper")[0].swiper.slides;
+                await waitForSwiper('#main-slider .mySwiper', language);
+                const baseSlides = qs('#main-slider .mySwiper').swiper.slides;
 
-                // href düzeltmeleri
                 baseSlides.forEach((el) => {
                     try {
                         el.innerHTML = el.innerHTML.replace(/href="\/[a-z]{2}https/g, 'href="https');
@@ -99,8 +85,8 @@
                 });
 
                 const sorted = Array.from(baseSlides).sort((a, b) => {
-                    const ia = parseInt((a && a.dataset && a.dataset.swiperSlideIndex) || "0", 10);
-                    const ib = parseInt((b && b.dataset && b.dataset.swiperSlideIndex) || "0", 10);
+                    const ia = parseInt((a && a.dataset && a.dataset.swiperSlideIndex) || '0', 10);
+                    const ib = parseInt((b && b.dataset && b.dataset.swiperSlideIndex) || '0', 10);
                     return ib - ia;
                 });
 
@@ -109,10 +95,9 @@
 
             const selected = window.sliderItems[language] || [];
             const slidesHTML = selected
-                .map((item) => '<div class="swiper-slide">' + (item?.innerHTML || "") + "</div>")
-                .join("");
+                .map((item) => '<div class="swiper-slide">' + (item?.innerHTML || '') + '</div>')
+                .join('');
 
-            // 3) Custom slider section'ını ekle
             const sectionHtml = [
                 '<section id="custom-section-1" class="section custom-section mini-slider">',
                 '  <div class="container">',
@@ -125,14 +110,14 @@
                 '      <div class="swiper-pagination"></div>',
                 '    </div>',
                 '  </div>',
-                '</section>',
-            ].join("");
+                '</section>'
+            ].join('');
 
-            mainContent.prepend(sectionHtml);
+            mainContent.insertAdjacentHTML('afterbegin', sectionHtml);
 
-            // 4) Yeni Swiper oluştur (hız + autoplay entegre)
-            if (typeof Swiper !== "undefined") {
-                new Swiper("#custom-section-1 .swiper", {
+            // 3) Init new Swiper instance
+            if (typeof Swiper !== 'undefined') {
+                new Swiper('#custom-section-1 .swiper', {
                     loop: true,
                     speed: SWIPER_SPEED_MS,
                     autoplay: {
@@ -143,37 +128,36 @@
                     spaceBetween: !isMobile ? 20 : 15,
                     centeredSlides: !!isMobile,
                     pagination: {
-                        el: "#custom-section-1 .swiper-pagination",
-                        type: !isMobile ? "bullets" : "progressbar",
+                        el: '#custom-section-1 .swiper-pagination',
+                        type: !isMobile ? 'bullets' : 'progressbar',
                     },
                     navigation: {
-                        prevEl: "#custom-section-1 .swiper-button-prev",
-                        nextEl: "#custom-section-1 .swiper-button-next",
+                        prevEl: '#custom-section-1 .swiper-button-prev',
+                        nextEl: '#custom-section-1 .swiper-button-next',
                     },
                 });
             }
 
-            // 5) Orijinal main-slider'ı gizle
-            const mainSliderEl = document.querySelector("#main-slider");
-            if (mainSliderEl) mainSliderEl.style.display = "none";
+            // 4) Hide original main slider
+            const mainSliderEl = qs('#main-slider');
+            if (mainSliderEl) mainSliderEl.style.display = 'none';
         } catch (error) {
-            console.error("initMainSlider hata:", error);
+            console.error('initMainSlider hata:', error);
         } finally {
             isProcessingInitMainSlider = false;
         }
     };
 
     // -------------------------------------------------------------
-    // İlk yükleme
+    // Boot
     // -------------------------------------------------------------
     const boot = async () => {
         const isMobile = (window.innerWidth || 0) < 768;
         await initMainSlider(isMobile);
     };
 
-    // DOM hazırsa çalıştır
-    if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", boot);
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', boot);
     } else {
         boot();
     }
