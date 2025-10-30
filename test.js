@@ -644,6 +644,13 @@
                 },
             });
 
+            document.querySelectorAll('#custom-section-1 .swiper-button').forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const swiper = document.querySelector('#custom-section-1 .swiper').swiper;
+                    swiper.params.speed = 250; // butonla geçişte daha da hızlı
+                });
+            });
+
             document.querySelector("#main-slider").style.display = "none";
         } catch (error) {
             console.error(error);
