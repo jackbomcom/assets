@@ -563,6 +563,7 @@
             if ($("#custom-section-4").length) $("#custom-section-4").remove();
             if (isUserLoggedIn) return;
 
+            const isMobile = window.matchMedia && window.matchMedia("(max-width: 1023px)").matches;
             const language = window.localStorage.language || "tr";
             const contentMap = {
                 tr: {
@@ -668,7 +669,97 @@
             const casinoImage = "https://jackbomcom.github.io/assets/images/4w85hndbspgjxrqc.webp";
             const sportsImage = "https://jackbomcom.github.io/assets/images/7xmhb6qu3prt4sza.webp";
 
+            // Swiper'lı games landing (prev/next + hızlı kaydırma)
             const sectionHtml = `
+        <section id="custom-section-4" class="section custom-section landing">
+          <div class="container">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="landing__col">
+                    <img src="${casinoImage}" alt="casino"/>
+                    <h2>${contentMap[language].casinoText1}</h2>
+                    <div class="icons">
+                      <span>${contentMap[language].casinoIcon1}</span>
+                      <span>${contentMap[language].casinoIcon2}</span>
+                      <span>${contentMap[language].casinoIcon3}</span>
+                      <span>${contentMap[language].casinoIcon4}</span>
+                    </div>
+                    <button class="landing-button" data-href="casino">${contentMap[language].casinoButton}</button>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="landing__col">
+                    <img src="${sportsImage}" alt="sports"/>
+                    <h2>${contentMap[language].sportsText1}</h2>
+                    <div class="icons">
+                      <span>${contentMap[language].sportsIcon1}</span>
+                      <span>${contentMap[language].sportsIcon2}</span>
+                      <span>${contentMap[language].sportsIcon3}</span>
+                      <span>${contentMap[language].sportsIcon4}</span>
+                    </div>
+                    <button class="landing-button" data-href="sportsbook">${contentMap[language].sportsButton}</button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </section>`;
+
+            const section = await waitForElement(".section.pt-24:not(.mini-slider)");
+            section.before(sectionHtml);
+
+            $(document).on("click", "#custom-section-4 .landing-button", function () {
+                const href = $(this).data("href");
+                const btn = document.querySelector(`.sidebar__link[href*="/${href}"]`);
+                if (btn) btn.click();
+            });
+
+            if (window.Swiper) {
+                const landingSwiper = new window.Swiper("#custom-section-4 .swiper", {
+                    loop: true,
+                    autoplay: { delay: 3500, disableOnInteraction: false },
+                    slidesPerView: isMobile ? 1 : 2,
+                    spaceBetween: isMobile ? 12 : 20,
+                    centeredSlides: !!isMobile,
+                    pagination: { el: "#custom-section-4 .swiper-pagination", type: "bullets" },
+                    navigation: {
+                        prevEl: "#custom-section-4 .swiper-button-prev",
+                        nextEl: "#custom-section-4 .swiper-button-next",
+                    },
+                    speed: 800, // normal geçiş hızı
+                });
+
+                // 🚀 Butonlara basınca hızlı kaydırma (Games Landing)
+                const fastSlideGL = (dir) => {
+                    const prevSpeed = landingSwiper.params.speed;
+                    landingSwiper.params.speed = 200; // hızlı (200 ms)
+                    if (dir === "next") landingSwiper.slideNext();
+                    else landingSwiper.slidePrev();
+                    setTimeout(() => { landingSwiper.params.speed = prevSpeed; }, 300);
+                };
+
+                document
+                    .querySelector("#custom-section-4 .swiper-button-prev")
+                    ?.addEventListener("click", (e) => { e.preventDefault(); fastSlideGL("prev"); });
+                document
+                    .querySelector("#custom-section-4 .swiper-button-next")
+                    ?.addEventListener("click", (e) => { e.preventDefault(); fastSlideGL("next"); });
+            }
+        } catch (error) {
+            console.error(error);
+        } finally {
+            isProcessingInitGamesLanding = false;
+        }
+    };
+
+    const casinoImage = "https://jackbomcom.github.io/assets/images/4w85hndbspgjxrqc.webp";
+    const sportsImage = "https://jackbomcom.github.io/assets/images/7xmhb6qu3prt4sza.webp";
+
+    const sectionHtml = `
         <section id="custom-section-4" class="section custom-section landing">
           <div class="container">
             <div class="landing__row">
@@ -698,91 +789,91 @@
           </div>
         </section>`;
 
-            const section = await waitForElement(".section.pt-24:not(.mini-slider)");
-            section.before(sectionHtml);
+    const section = await waitForElement(".section.pt-24:not(.mini-slider)");
+    section.before(sectionHtml);
 
-            $(document).on("click", "#custom-section-4 .landing-button", function () {
-                const href = $(this).data("href");
-                const btn = document.querySelector(`.sidebar__link[href*="/${href}"]`);
-                if (btn) btn.click();
-            });
-        } catch (error) {
-            console.error(error);
-        } finally {
-            isProcessingInitGamesLanding = false;
-        }
-    };
+    $(document).on("click", "#custom-section-4 .landing-button", function () {
+        const href = $(this).data("href");
+        const btn = document.querySelector(`.sidebar__link[href*="/${href}"]`);
+        if (btn) btn.click();
+    });
+} catch (error) {
+    console.error(error);
+} finally {
+    isProcessingInitGamesLanding = false;
+}
+};
 
-    // ------------------------------
-    // Section 5 — Crypto slider (only when logged out)
-    // ------------------------------
-    const initCryptoSlider = async (isUserLoggedIn) => {
-        if (isProcessingInitCryptoSlider) return;
-        isProcessingInitCryptoSlider = true;
+// ------------------------------
+// Section 5 — Crypto slider (only when logged out)
+// ------------------------------
+const initCryptoSlider = async (isUserLoggedIn) => {
+    if (isProcessingInitCryptoSlider) return;
+    isProcessingInitCryptoSlider = true;
 
-        const $ = get$();
-        if (!$) { isProcessingInitCryptoSlider = false; return; }
+    const $ = get$();
+    if (!$) { isProcessingInitCryptoSlider = false; return; }
 
-        try {
-            if ($("#custom-section-5").length) $("#custom-section-5").remove();
-            if (isUserLoggedIn) return;
+    try {
+        if ($("#custom-section-5").length) $("#custom-section-5").remove();
+        if (isUserLoggedIn) return;
 
-            const language = window.localStorage.language || "tr";
-            const contentMap = {
-                tr: {
-                    cryptoTitle1: "Kripto ve Türk Lirası İşlemlerinizi Kolaylaştırın",
-                    cryptoText1: "13 lider kripto para ve Türk Lirası ile dijital ödemelerin geleceğini keşfedin.",
-                    cryptoText2: "Eşsiz güvenlik, hızlı işlemler ve alternatif ödeme yöntemlerinin esnekliği ile güvenli bir çevrim içi cüzdan desteğinden faydalanın.",
-                },
-                en: {
-                    cryptoTitle1: "Simplify Your Crypto and Turkish Lira Transactions",
-                    cryptoText1: "Discover the future of digital payments with 13 leading cryptocurrencies and the Turkish Lira.",
-                    cryptoText2: "Benefit from secure online wallet support with unparalleled security, fast transactions, and the flexibility of alternative payment methods.",
-                },
-                ru: {
-                    cryptoTitle1: "Упростите операции с криптовалютой и турецкой лирой",
-                    cryptoText1: "Откройте для себя будущее цифровых платежей с 13 ведущими криптовалютами и турецкой лирой.",
-                    cryptoText2: "Воспользуйтесь поддержкой безопасного онлайн-кошелька с непревзойденной безопасностью, быстрыми транзакциями и гибкостью альтернативных методов оплаты.",
-                },
-                fr: {
-                    cryptoTitle1: "Simplifiez Vos Transactions En Crypto et En Livre Turque",
-                    cryptoText1: "Découvrez l'avenir des paiements numériques avec 13 principales cryptomonnaies et la Livre Turque.",
-                    cryptoText2: "Profitez d'un support de portefeuille en ligne sécurisé avec une sécurité inégalée, des transactions rapides et la flexibilité des méthodes de paiement alternatives.",
-                },
-                ch: {
-                    cryptoTitle1: "简化您的加密货币和土耳其里拉交易",
-                    cryptoText1: "通过 13 种领先的加密货币和土耳其里拉探索数字支付的未来。",
-                    cryptoText2: "利用无与伦比的安全性、快速交易以及灵活的替代支付方式，享受安全的在线钱包支持。",
-                },
-                it: {
-                    cryptoTitle1: "Semplifica Le Tue Transazioni In Cripto E Lira Turca",
-                    cryptoText1: "Scopri il futuro dei pagamenti digitali con 13 principali criptovalute e la Lira Turca.",
-                    cryptoText2: "Approfitta del supporto sicuro del portafoglio online con sicurezza senza pari, transazioni rapide e flessibilità nei metodi di pagamento alternativi.",
-                },
-                ar: {
-                    cryptoTitle1: "تبسيط معاملاتك بالعملات المشفرة والليرة التركية",
-                    cryptoText1: "اكتشف مستقبل المدفوعات الرقمية مع 13 من العملات المشفرة الرائدة والليرة التركية.",
-                    cryptoText2: "استفد من دعم المحفظة عبر الإنترنت الآمن مع أمان لا مثيل له، معاملات سريعة ومرونة في طرق الدفع البديلة.",
-                },
-            };
+        const language = window.localStorage.language || "tr";
+        const contentMap = {
+            tr: {
+                cryptoTitle1: "Kripto ve Türk Lirası İşlemlerinizi Kolaylaştırın",
+                cryptoText1: "13 lider kripto para ve Türk Lirası ile dijital ödemelerin geleceğini keşfedin.",
+                cryptoText2: "Eşsiz güvenlik, hızlı işlemler ve alternatif ödeme yöntemlerinin esnekliği ile güvenli bir çevrim içi cüzdan desteğinden faydalanın.",
+            },
+            en: {
+                cryptoTitle1: "Simplify Your Crypto and Turkish Lira Transactions",
+                cryptoText1: "Discover the future of digital payments with 13 leading cryptocurrencies and the Turkish Lira.",
+                cryptoText2: "Benefit from secure online wallet support with unparalleled security, fast transactions, and the flexibility of alternative payment methods.",
+            },
+            ru: {
+                cryptoTitle1: "Упростите операции с криптовалютой и турецкой лирой",
+                cryptoText1: "Откройте для себя будущее цифровых платежей с 13 ведущими криптовалютами и турецкой лирой.",
+                cryptoText2: "Воспользуйтесь поддержкой безопасного онлайн-кошелька с непревзойденной безопасностью, быстрыми транзакциями и гибкостью альтернативных методов оплаты.",
+            },
+            fr: {
+                cryptoTitle1: "Simplifiez Vos Transactions En Crypto et En Livre Turque",
+                cryptoText1: "Découvrez l'avenir des paiements numériques avec 13 principales cryptomonnaies et la Livre Turque.",
+                cryptoText2: "Profitez d'un support de portefeuille en ligne sécurisé avec une sécurité inégalée, des transactions rapides et la flexibilité des méthodes de paiement alternatives.",
+            },
+            ch: {
+                cryptoTitle1: "简化您的加密货币和土耳其里拉交易",
+                cryptoText1: "通过 13 种领先的加密货币和土耳其里拉探索数字支付的未来。",
+                cryptoText2: "利用无与伦比的安全性、快速交易以及灵活的替代支付方式，享受安全的在线钱包支持。",
+            },
+            it: {
+                cryptoTitle1: "Semplifica Le Tue Transazioni In Cripto E Lira Turca",
+                cryptoText1: "Scopri il futuro dei pagamenti digitali con 13 principali criptovalute e la Lira Turca.",
+                cryptoText2: "Approfitta del supporto sicuro del portafoglio online con sicurezza senza pari, transazioni rapide e flessibilità nei metodi di pagamento alternativi.",
+            },
+            ar: {
+                cryptoTitle1: "تبسيط معاملاتك بالعملات المشفرة والليرة التركية",
+                cryptoText1: "اكتشف مستقبل المدفوعات الرقمية مع 13 من العملات المشفرة الرائدة والليرة التركية.",
+                cryptoText2: "استفد من دعم المحفظة عبر الإنترنت الآمن مع أمان لا مثيل له، معاملات سريعة ومرونة في طرق الدفع البديلة.",
+            },
+        };
 
-            const sliderItems = [
-                "https://jackbomcom.github.io/assets/images/3vcz7twm29jy8qgb.webp",
-                "https://jackbomcom.github.io/assets/images/8q7x29pmauwhc65e.webp",
-                "https://jackbomcom.github.io/assets/images/c59qb7g36yxmtsrf.webp",
-                "https://jackbomcom.github.io/assets/images/hzemdpc65usfy4q9.webp",
-                "https://jackbomcom.github.io/assets/images/jwpxta3e9z58m42c.webp",
-                "https://jackbomcom.github.io/assets/images/mfphk8n5y3erc7tb.webp",
-                "https://jackbomcom.github.io/assets/images/nuxbpea24j837ymh.webp",
-                "https://jackbomcom.github.io/assets/images/s9e5cnm6rj842qyd.webp",
-                "https://jackbomcom.github.io/assets/images/uwp3bjn8a5x6qftv.webp",
-                "https://jackbomcom.github.io/assets/images/w63gf598hxv2kjar.webp",
-                "https://jackbomcom.github.io/assets/images/wbynvfmzq82ds93p.webp",
-                "https://jackbomcom.github.io/assets/images/weh2ng7u6sk5pybt.webp",
-                "https://jackbomcom.github.io/assets/images/yx62vs7k9fmjqpbe.webp",
-            ];
+        const sliderItems = [
+            "https://jackbomcom.github.io/assets/images/3vcz7twm29jy8qgb.webp",
+            "https://jackbomcom.github.io/assets/images/8q7x29pmauwhc65e.webp",
+            "https://jackbomcom.github.io/assets/images/c59qb7g36yxmtsrf.webp",
+            "https://jackbomcom.github.io/assets/images/hzemdpc65usfy4q9.webp",
+            "https://jackbomcom.github.io/assets/images/jwpxta3e9z58m42c.webp",
+            "https://jackbomcom.github.io/assets/images/mfphk8n5y3erc7tb.webp",
+            "https://jackbomcom.github.io/assets/images/nuxbpea24j837ymh.webp",
+            "https://jackbomcom.github.io/assets/images/s9e5cnm6rj842qyd.webp",
+            "https://jackbomcom.github.io/assets/images/uwp3bjn8a5x6qftv.webp",
+            "https://jackbomcom.github.io/assets/images/w63gf598hxv2kjar.webp",
+            "https://jackbomcom.github.io/assets/images/wbynvfmzq82ds93p.webp",
+            "https://jackbomcom.github.io/assets/images/weh2ng7u6sk5pybt.webp",
+            "https://jackbomcom.github.io/assets/images/yx62vs7k9fmjqpbe.webp",
+        ];
 
-            const sectionHtml = `
+        const sectionHtml = `
         <section id="custom-section-5" class="section custom-section crypto">
           <div class="container">
             <div class="swiper">
@@ -799,37 +890,37 @@
           </div>
         </section>`;
 
-            const section = await waitForElement(".section.pt-24:not(.mini-slider)");
-            section.after(sectionHtml);
+        const section = await waitForElement(".section.pt-24:not(.mini-slider)");
+        section.after(sectionHtml);
 
-            if (window.Swiper) {
-                new window.Swiper("#custom-section-5 .swiper", {
-                    loop: true,
-                    autoplay: { delay: 2500, disableOnInteraction: false },
-                    slidesPerView: 3,
-                    spaceBetween: 10,
-                    breakpoints: {
-                        0: { slidesPerView: 2 },
-                        768: { slidesPerView: 3 },
-                        1200: { slidesPerView: 5 },
-                    },
-                    pagination: { el: "#custom-section-5 .swiper-pagination", type: "bullets" },
-                });
-            }
-        } catch (error) {
-            console.error(error);
-        } finally {
-            isProcessingInitCryptoSlider = false;
+        if (window.Swiper) {
+            new window.Swiper("#custom-section-5 .swiper", {
+                loop: true,
+                autoplay: { delay: 2500, disableOnInteraction: false },
+                slidesPerView: 3,
+                spaceBetween: 10,
+                breakpoints: {
+                    0: { slidesPerView: 2 },
+                    768: { slidesPerView: 3 },
+                    1200: { slidesPerView: 5 },
+                },
+                pagination: { el: "#custom-section-5 .swiper-pagination", type: "bullets" },
+            });
         }
-    };
+    } catch (error) {
+        console.error(error);
+    } finally {
+        isProcessingInitCryptoSlider = false;
+    }
+};
 
-    // ------------------------------
-    // How-to popup (used by sidebar)
-    // ------------------------------
-    function openPopup(isMobile) {
-        if (document.getElementById("custom-modal-howto")) return;
+// ------------------------------
+// How-to popup (used by sidebar)
+// ------------------------------
+function openPopup(isMobile) {
+    if (document.getElementById("custom-modal-howto")) return;
 
-        const popupHtml = `
+    const popupHtml = `
       <div id="custom-modal-howto" class="modal" style="display:block">
         <div class="modal__overlay"></div>
         <div class="modal__content">
@@ -849,73 +940,73 @@
         </div>
       </div>`;
 
-        document.body.insertAdjacentHTML("beforeend", popupHtml);
+    document.body.insertAdjacentHTML("beforeend", popupHtml);
 
-        const urlMap = {
-            abanka: "MnbSnz_SW4g",
-            ahavale: "rde3lMBASfk",
-            aparola: "42g9e3qdjjk",
-            apopy: "BKOzdNEOUCo",
-            mefete: "OiSuS5Nlxq8",
-            papara: "eQtpLccFtbg",
-            payco: "Sp-lIZ_XrJc",
-            payfix: "ih7wE0Vczmk",
-            scash: "NDWYCi50C6Q",
-        };
+    const urlMap = {
+        abanka: "MnbSnz_SW4g",
+        ahavale: "rde3lMBASfk",
+        aparola: "42g9e3qdjjk",
+        apopy: "BKOzdNEOUCo",
+        mefete: "OiSuS5Nlxq8",
+        papara: "eQtpLccFtbg",
+        payco: "Sp-lIZ_XrJc",
+        payfix: "ih7wE0Vczmk",
+        scash: "NDWYCi50C6Q",
+    };
 
-        const initVideo = () => {
-            const selected = document.querySelector(".howto-button.selected");
-            const code = selected ? selected.id : "abanka";
-            const html = `
+    const initVideo = () => {
+        const selected = document.querySelector(".howto-button.selected");
+        const code = selected ? selected.id : "abanka";
+        const html = `
         <div class="ratio" style="position:relative;padding-bottom:56.25%">
           <iframe src="https://www.youtube.com/embed/${code}" allowfullscreen style="position:absolute;inset:0;border:0;width:100%;height:100%"></iframe>
         </div>`;
-            const holder = document.querySelector(".howto-video");
-            if (holder) holder.innerHTML = html;
-        };
-
-        document.addEventListener("click", (e) => {
-            const btn = e.target.closest(".howto-button");
-            if (btn) {
-                document.querySelectorAll(".howto-button").forEach((b) => b.classList.remove("selected"));
-                btn.classList.add("selected");
-                initVideo();
-            }
-            if (e.target.closest("#custom-modal-howto .modal__close") || e.target.classList.contains("modal__overlay")) {
-                const modal = document.getElementById("custom-modal-howto");
-                if (modal) modal.remove();
-            }
-        }, { passive: true });
-
-        initVideo();
-    }
-
-    // ------------------------------
-    // Route handling (SPA friendly)
-    // ------------------------------
-    handleRouteChange = () => {
-        const isMobile = window.matchMedia && window.matchMedia("(max-width: 1023px)").matches;
-        const isHomePage = /^\/(tr|en|ru|fr|ch|it|ar)\/?$/.test(window.location.pathname) || window.location.pathname === "/";
-        const isUserLoggedIn = !!(document.querySelector("header #dropdownUser") || document.querySelector(".header__wallet"));
-
-        customizeSidebar(isMobile, isHomePage, isUserLoggedIn);
-        initMainSlider(isMobile);
-        initVipStatus(isUserLoggedIn);
-        initFullBanner(isMobile, isUserLoggedIn);
-        initGamesLanding(isUserLoggedIn);
-        initCryptoSlider(isUserLoggedIn);
+        const holder = document.querySelector(".howto-video");
+        if (holder) holder.innerHTML = html;
     };
 
-    // Kick once DOM is ready and jQuery likely present
-    const boot = () => handleRouteChange();
+    document.addEventListener("click", (e) => {
+        const btn = e.target.closest(".howto-button");
+        if (btn) {
+            document.querySelectorAll(".howto-button").forEach((b) => b.classList.remove("selected"));
+            btn.classList.add("selected");
+            initVideo();
+        }
+        if (e.target.closest("#custom-modal-howto .modal__close") || e.target.classList.contains("modal__overlay")) {
+            const modal = document.getElementById("custom-modal-howto");
+            if (modal) modal.remove();
+        }
+    }, { passive: true });
 
-    if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", boot);
-    } else {
-        boot();
-    }
+    initVideo();
+}
 
-    // Also listen to SPA-ish changes
-    window.addEventListener("popstate", handleRouteChange);
-    window.addEventListener("hashchange", handleRouteChange);
+// ------------------------------
+// Route handling (SPA friendly)
+// ------------------------------
+handleRouteChange = () => {
+    const isMobile = window.matchMedia && window.matchMedia("(max-width: 1023px)").matches;
+    const isHomePage = /^\/(tr|en|ru|fr|ch|it|ar)\/?$/.test(window.location.pathname) || window.location.pathname === "/";
+    const isUserLoggedIn = !!(document.querySelector("header #dropdownUser") || document.querySelector(".header__wallet"));
+
+    customizeSidebar(isMobile, isHomePage, isUserLoggedIn);
+    initMainSlider(isMobile);
+    initVipStatus(isUserLoggedIn);
+    initFullBanner(isMobile, isUserLoggedIn);
+    initGamesLanding(isUserLoggedIn);
+    initCryptoSlider(isUserLoggedIn);
+};
+
+// Kick once DOM is ready and jQuery likely present
+const boot = () => handleRouteChange();
+
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+} else {
+    boot();
+}
+
+// Also listen to SPA-ish changes
+window.addEventListener("popstate", handleRouteChange);
+window.addEventListener("hashchange", handleRouteChange);
 })();
