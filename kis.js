@@ -1,7 +1,6 @@
 
 <script>
     (() => {
-    // ===== Ayarlar =====
     const CFG = {
     snowflakeCount: 120,        // aynı anda ekranda
     spawnPerSecond: 35,         // saniyede kaç yeni kar tanesi
@@ -220,3 +219,4 @@
     requestAnimationFrame(tick);
 })();
 </script>
+
