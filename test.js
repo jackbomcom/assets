@@ -1,168 +1,125 @@
 <script>
-    (function () {
-    function startSnow() {
-        const prefersReduced =
-            window.matchMedia &&
-            window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-        if (prefersReduced) return;
+    (() => {
 
-        const CFG = {
-            snowflakeCount: 120,
-            spawnPerSecond: 35,
-            minSize: 2,
-            maxSize: 6,
-            minSpeed: 35,
-            maxSpeed: 120,
-            wind: 20,
-            sway: 18,
-            accumulate: true,
-            maxPileHeight: 120,
-            meltPerSecond: 1.2,
-            pileSoftness: 28
-        };
+    var CFG = {
+    flakes: 70,             // ekrandaki toplam tanecik
+    minSize: 6,
+    maxSize: 16,
+    minDur: 6,              // saniye
+    maxDur: 14,             // saniye
+    wind: 30,               // px (sağa sola kayma)
+    zIndex: 999999,
+    pileMax: 120,           // px
+    pileGrowPerHit: 0.6,    // her tanecik düştüğünde kaç px artsın (yaklaşık)
+    meltPerSecond: 0.25     // 0 yaparsan erimez
 
-        if (!document.getElementById("snowStyle")) {
-            const style = document.createElement("style");
-            style.id = "snowStyle";
-            style.textContent =
-                "#snowCanvas{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:999999}";
-            document.head.appendChild(style);
-        }
+    };
 
-        let canvas = document.getElementById("snowCanvas");
-        if (!canvas) {
-            canvas = document.createElement("canvas");
-            canvas.id = "snowCanvas";
-            document.body.appendChild(canvas);
-        }
-        const ctx = canvas.getContext("2d", { alpha: true });
+    // reduced motion
+    try {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+} catch (e) {}
 
-        let W = 0, H = 0;
-        const dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
-
-        function resize() {
-            W = Math.floor(window.innerWidth);
-            H = Math.floor(window.innerHeight);
-            canvas.width = Math.floor(W * dpr);
-            canvas.height = Math.floor(H * dpr);
-            canvas.style.width = W + "px";
-            canvas.style.height = H + "px";
-            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-        }
-        window.addEventListener("resize", resize, { passive: true });
-        resize();
-
-        const rnd = (a, b) => a + Math.random() * (b - a);
-        const clamp = (v, a, b) => Math.max(a, Math.min(b, v));
-
-        const flakes = [];
-        function makeFlake(x = rnd(0, W), y = rnd(-H, 0)) {
-            const r = rnd(CFG.minSize, CFG.maxSize);
-            return {
-                x, y, r,
-                vy: rnd(CFG.minSpeed, CFG.maxSpeed),
-                vx: rnd(-CFG.wind, CFG.wind),
-                phase: rnd(0, Math.PI * 2),
-                sway: rnd(0.6, 1.4),
-                opacity: rnd(0.45, 0.95)
-            };
-        }
-        for (let i = 0; i < CFG.snowflakeCount; i++) flakes.push(makeFlake());
-
-        let pile = 0;
-
-        function drawPile(now) {
-            if (!CFG.accumulate) return;
-            if (pile <= 0.5) return;
-
-            const yBase = H;
-            const yTop = H - pile;
-
-            const g = ctx.createLinearGradient(0, yTop, 0, yBase);
-            g.addColorStop(0, "rgba(255,255,255,0.95)");
-            g.addColorStop(1, "rgba(220,235,255,0.90)");
-
-            ctx.save();
-            ctx.globalAlpha = 0.95;
-            ctx.fillStyle = g;
-
-            ctx.beginPath();
-            ctx.moveTo(0, yBase);
-
-            const steps = 16;
-            for (let i = 0; i <= steps; i++) {
-                const t = i / steps;
-                const x = t * W;
-                const wiggle = Math.sin((t * Math.PI * 2) + (now * 0.0006)) * (CFG.pileSoftness * 0.25);
-                const wiggle2 = Math.sin((t * Math.PI * 6) + (now * 0.0009)) * (CFG.pileSoftness * 0.12);
-                ctx.lineTo(x, yTop + wiggle + wiggle2);
-            }
-
-            ctx.lineTo(W, yBase);
-            ctx.closePath();
-            ctx.fill();
-            ctx.restore();
-        }
-
-        let last = performance.now();
-        let spawnCarry = 0;
-
-        function tick(now) {
-            const dt = Math.min(0.033, (now - last) / 1000);
-            last = now;
-
-            ctx.clearRect(0, 0, W, H);
-
-            if (CFG.accumulate && CFG.meltPerSecond > 0) {
-                pile = clamp(pile - CFG.meltPerSecond * dt, 0, CFG.maxPileHeight);
-            }
-
-            spawnCarry += CFG.spawnPerSecond * dt;
-            const spawnN = Math.floor(spawnCarry);
-            spawnCarry -= spawnN;
-
-            for (let i = 0; i < spawnN; i++) {
-                if (flakes.length < CFG.snowflakeCount * 2) flakes.push(makeFlake(rnd(0, W), rnd(-80, -10)));
-            }
-
-            for (let i = flakes.length - 1; i >= 0; i--) {
-                const f = flakes[i];
-                const swayX = Math.sin((now * 0.001) * (1.2 * f.sway) + f.phase) * CFG.sway;
-
-                f.y += f.vy * dt;
-                f.x += (f.vx + swayX) * dt;
-
-                if (f.x < -20) f.x = W + 20;
-                if (f.x > W + 20) f.x = -20;
-
-                const groundY = H - (CFG.accumulate ? pile : 0);
-
-                if (f.y >= groundY - f.r) {
-                    if (CFG.accumulate) pile = clamp(pile + (0.06 + f.r * 0.02), 0, CFG.maxPileHeight);
-                    flakes[i] = makeFlake(rnd(0, W), rnd(-120, -10));
-                    continue;
-                }
-
-                ctx.save();
-                ctx.globalAlpha = f.opacity;
-                ctx.fillStyle = "rgba(255,255,255,1)";
-                ctx.beginPath();
-                ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
-                ctx.fill();
-                ctx.restore();
-            }
-
-            drawPile(now);
-            requestAnimationFrame(tick);
-        }
-
-        requestAnimationFrame(tick);
-    }
-
-    if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", startSnow, { once: true });
-} else {
-    startSnow();
+    // --- Stil (tek sefer) ---
+    if (!document.getElementById("simpleSnowStyle")) {
+    var st = document.createElement("style");
+    st.id = "simpleSnowStyle";
+    st.textContent = `
+#snow-wrap{position:fixed;inset:0;pointer-events:none;z-index:${CFG.zIndex};overflow:hidden}
+.snowflake{position:absolute;top:-20px;border-radius:50%;background:rgba(255,255,255,.92);
+  filter: drop-shadow(0 0 6px rgba(255,255,255,.25));
+  animation-name:snow-fall; animation-timing-function:linear; animation-iteration-count:infinite;
 }
+@keyframes snow-fall{
+  from { transform: translate3d(0,0,0); }
+  to   { transform: translate3d(var(--drift), 110vh, 0); }
+}
+#snow-pile{
+  position:fixed;left:0;right:0;bottom:0;height:0px;
+  z-index:${CFG.zIndex};
+  pointer-events:none;
+  background: linear-gradient(to top, rgba(255,255,255,.95), rgba(220,235,255,.88));
+  border-top-left-radius: 28px;
+  border-top-right-radius: 28px;
+  box-shadow: 0 -10px 35px rgba(255,255,255,.12) inset;
+  transform: translateZ(0);
+}
+`;
+    document.head.appendChild(st);
+}
+
+    // --- DOM (tek sefer) ---
+    var wrap = document.getElementById("snow-wrap");
+    if (!wrap) {
+    wrap = document.createElement("div");
+    wrap.id = "snow-wrap";
+    document.body.appendChild(wrap);
+}
+
+    var pileEl = document.getElementById("snow-pile");
+    if (!pileEl) {
+    pileEl = document.createElement("div");
+    pileEl.id = "snow-pile";
+    document.body.appendChild(pileEl);
+}
+
+    // --- Birikme ---
+    var pile = 0;
+    function setPile(h) {
+    pile = Math.max(0, Math.min(CFG.pileMax, h));
+    pileEl.style.height = pile.toFixed(1) + "px";
+}
+
+    // Erime döngüsü
+    var last = performance.now();
+    function melt(now) {
+    var dt = (now - last) / 1000;
+    last = now;
+    if (CFG.meltPerSecond > 0) {
+    setPile(pile - CFG.meltPerSecond * dt);
+}
+    requestAnimationFrame(melt);
+}
+    requestAnimationFrame(melt);
+
+    // --- Kar taneleri oluştur ---
+    function rnd(a, b) { return a + Math.random() * (b - a); }
+
+    // önce temizle (aynı id ile tekrar eklenmişse)
+    wrap.innerHTML = "";
+
+    var W = window.innerWidth || 1200;
+
+    for (var i = 0; i < CFG.flakes; i++) {
+    var f = document.createElement("div");
+    f.className = "snowflake";
+
+    var size = rnd(CFG.minSize, CFG.maxSize);
+    var left = rnd(0, 100); // vw
+    var dur = rnd(CFG.minDur, CFG.maxDur);
+    var delay = rnd(-CFG.maxDur, 0); // hemen başlasın
+    var drift = rnd(-CFG.wind, CFG.wind);
+
+    f.style.width = size + "px";
+    f.style.height = size + "px";
+    f.style.left = left + "vw";
+    f.style.opacity = rnd(0.35, 0.95).toFixed(2);
+    f.style.animationDuration = dur.toFixed(2) + "s";
+    f.style.animationDelay = delay.toFixed(2) + "s";
+    f.style.setProperty("--drift", drift.toFixed(1) + "px");
+
+    // Her döngü bittiğinde (tanecik yere ulaştı sayalım) birikmeyi artır
+    f.addEventListener("animationiteration", function () {
+    setPile(pile + CFG.pileGrowPerHit);
+});
+
+    wrap.appendChild(f);
+}
+
+    // resize’da yeniden hizala
+    window.addEventListener("resize", function () {
+    W = window.innerWidth || W;
+}, { passive: true });
+
 })();
 </script>
