@@ -238,7 +238,7 @@
                 },
                 {
                     name: langMap[language].whatsappSupport,
-                    url: "https://api.whatsapp.com/send/?phone=33753456653&text&type=phone_number&app_absent=0",
+                    url: "https://api.whatsapp.com/send/?phone=529513197527&text&type=phone_number&app_absent=0",
                     icon: "fa-brands fa-whatsapp",
                 },
                 {
