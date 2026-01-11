@@ -253,7 +253,7 @@
                 },
                 {
                     name: langMap[language].mobileApp,
-                    url: "https://jackbom.app",
+                    url: "https://jackbom.biz",
                     icon: "fa-solid fa-mobile-screen",
                 },
             ];
