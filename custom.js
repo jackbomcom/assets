@@ -238,12 +238,12 @@
                 },
                 {
                     name: langMap[language].whatsappSupport,
-                    url: "https://api.whatsapp.com/send/?phone=529513197527&text&type=phone_number&app_absent=0",
+                    url: "https://api.whatsapp.com/send/?phone=447346717973&text&type=phone_number&app_absent=0",
                     icon: "fa-brands fa-whatsapp",
                 },
                 {
                     name: langMap[language].telegramSupport,
-                    url: "https://t.me/+447346717973",
+                    url: "https://t.me/+37258520425",
                     icon: "fa-brands fa-telegram",
                 },
                 {
