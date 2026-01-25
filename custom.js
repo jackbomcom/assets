@@ -243,12 +243,12 @@
                 },
                 {
                     name: langMap[language].telegramSupport,
-                    url: "https://t.me/+37258520425",
+                    url: "https://t.me/+447346717973",
                     icon: "fa-brands fa-telegram",
                 },
                 {
                     name: langMap[language].liveTV,
-                    url: `https://jackbomtv8.com`,
+                    url: `https://jackbomtv10.com/`,
                     icon: "fa-solid fa-circle-play",
                 },
                 {
@@ -400,7 +400,7 @@
             });
 
             const headerButtons = `
-      	<a class="header-custom-button custom ${isUserLoggedIn === true ? "logged-in" : ""} d-flex px-3 align-items-center text-white" href="https://jackbomtv8.com" target="_blank">
+      	<a class="header-custom-button custom ${isUserLoggedIn === true ? "logged-in" : ""} d-flex px-3 align-items-center text-white" href="https://jackbomtv10.com/" target="_blank">
           <i class="fa-solid fa-tv"></i>
           Jack TV
         </a>
@@ -1973,7 +1973,7 @@
                 mainContainer.empty();
 
                 const iframe = document.createElement('iframe');
-                iframe.src = 'https://jackbomtv8.com/?iframe=true';
+                iframe.src = 'https://jackbomtv10.com/?iframe=true';
                 iframe.width = '100%';
                 iframe.height = '100%';
                 iframe.style.height = '100vh';
