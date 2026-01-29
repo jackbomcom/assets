@@ -248,7 +248,7 @@
                 },
                 {
                     name: langMap[language].liveTV,
-                    url: `https://jackbomtv10.com/`,
+                    url: `https://jackbomtv11.com/`,
                     icon: "fa-solid fa-circle-play",
                 },
                 {
