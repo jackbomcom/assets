@@ -400,7 +400,7 @@
             });
 
             const headerButtons = `
-      	<a class="header-custom-button custom ${isUserLoggedIn === true ? "logged-in" : ""} d-flex px-3 align-items-center text-white" href="https://jackbomtv10.com/" target="_blank">
+      	<a class="header-custom-button custom ${isUserLoggedIn === true ? "logged-in" : ""} d-flex px-3 align-items-center text-white" href="https://jackbomtv12.com/" target="_blank">
           <i class="fa-solid fa-tv"></i>
           Jack TV
         </a>
