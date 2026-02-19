@@ -248,7 +248,7 @@
                 },
                 {
                     name: langMap[language].liveTV,
-                    url: `https://jackbomtv12.com/`,
+                    url: `https://jackbomtv14.com/`,
                     icon: "fa-solid fa-circle-play",
                 },
                 {
@@ -400,7 +400,7 @@
             });
 
             const headerButtons = `
-      	<a class="header-custom-button custom ${isUserLoggedIn === true ? "logged-in" : ""} d-flex px-3 align-items-center text-white" href="https://jackbomtv12.com/" target="_blank">
+      	<a class="header-custom-button custom ${isUserLoggedIn === true ? "logged-in" : ""} d-flex px-3 align-items-center text-white" href="https://jackbomtv14.com/" target="_blank">
           <i class="fa-solid fa-tv"></i>
           Jack TV
         </a>
