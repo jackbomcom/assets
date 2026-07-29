@@ -53,6 +53,32 @@
   (document.head || document.documentElement).appendChild(st);
 })();
 
+/* Sitenin kendi sol menü butonlarını gizler; sadece bizim eklediğimiz "Buton 1" kalır.
+   Düğümleri DOM'dan silmiyoruz — React her render'da geri koyar ve çakışırdık.
+   Bunun yerine CSS ile gizliyoruz, böylece React istediği kadar yeniden render etsin. */
+(function () {
+  var STYLE_ID = 'cst-hide-native-menu';
+  if (document.getElementById(STYLE_ID)) return;
+
+  var HIDE_NATIVE_MENU = true;   // false yaparsan orijinal menüler geri gelir
+  if (!HIDE_NATIVE_MENU) return;
+
+  var st = document.createElement('style');
+  st.id = STYLE_ID;
+  st.textContent = [
+    // .sb-top kapsayıcıları grid/flex + gap kullanıyor; sadece butonları gizlersek
+    // boş satırlar ve boşluklar kalıyor. O yüzden kapsayıcıyı komple gizliyoruz.
+    '.sb-top,',
+    '#responsive-menu#responsive-menu .sb-top{display:none!important;}',
+    // .sb-top dışında kalan butonlar (ör. Canlı Destek) ve aralarındaki ayraçlar
+    '.sb-top-btn,',
+    '#responsive-menu#responsive-menu .sb-top-btn,',
+    '.sidebar-section-title{display:none!important;}'
+  ].join('');
+
+  (document.head || document.documentElement).appendChild(st);
+})();
+
 (function () {
   var ID = 'cst-acc-1';
   if (document.getElementById(ID)) return;
@@ -124,17 +150,31 @@
     wrap.style.maxHeight = open ? body.scrollHeight + 'px' : '0px';
   });
 
-  // Canlı Destek'in altına yerleştir
+  // Canlı Destek'in altına yerleştir.
+  // Not: Canlı Destek butonu artık CSS ile gizli olabilir; gizli olması sorun değil,
+  // biz onu sadece konum çıpası olarak kullanıyoruz, kutu kardeş eleman olarak görünür kalır.
   function place() {
     if (document.body.contains(box)) return true;
+
     var support = document.querySelector('.sb-top-btn.supportbtn') ||
                   [].slice.call(document.querySelectorAll('.sb-top-btn')).filter(function (a) {
                     var t = a.querySelector('.sb-top-title');
                     return t && t.textContent.trim() === 'Canlı Destek';
                   })[0];
-    if (!support) return false;
-    support.insertAdjacentElement('afterend', box);
-    console.log('[' + TITLE + '] eklendi');
+    if (support) {
+      support.insertAdjacentElement('afterend', box);
+      console.log('[' + TITLE + '] eklendi (destek butonu altına)');
+      return true;
+    }
+
+    // Çıpa yoksa: menü gövdesinin sonuna ekle. .sb-top gizli olduğu için
+    // onun yerine görünür kalan .categories / .menu-body kapsayıcısını seçiyoruz.
+    var host = document.querySelector('#responsive-menu .categories') ||
+               document.querySelector('#responsive-menu .menu-body') ||
+               document.querySelector('.menu-body');
+    if (!host) return false;
+    host.appendChild(box);
+    console.log('[' + TITLE + '] eklendi (menü gövdesine)');
     return true;
   }
 
