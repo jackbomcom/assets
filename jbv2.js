@@ -70,10 +70,14 @@
     // boş satırlar ve boşluklar kalıyor. O yüzden kapsayıcıyı komple gizliyoruz.
     '.sb-top,',
     '#responsive-menu#responsive-menu .sb-top{display:none!important;}',
-    // .sb-top dışında kalan butonlar (ör. Canlı Destek) ve aralarındaki ayraçlar
+    // .sb-top dışında kalan butonlar (ör. Canlı Destek) ve
+    // aralarındaki mavi ayraç çizgileri (.sidebar-section-title)
     '.sb-top-btn,',
     '#responsive-menu#responsive-menu .sb-top-btn,',
-    '.sidebar-section-title{display:none!important;}'
+    '.sidebar-section-title,',
+    '#responsive-menu#responsive-menu .sidebar-section-title{display:none!important;}',
+    // kendi kutumuz bu kuralların kapsamına girmesin
+    '#cst-acc-1{display:block!important;}'
   ].join('');
 
   (document.head || document.documentElement).appendChild(st);
@@ -178,11 +182,28 @@
     return true;
   }
 
-  if (!place()) {
+  // İzleyiciyi her koşulda kur: place() ilk seferde başarılı olsa bile React
+  // sol menüyü yeniden render edip kutuyu DOM'dan düşürebiliyor. place() zaten
+  // "kutu duruyor mu" diye baktığı için tekrar çağrılması ucuz.
+  // document.body henüz yokken observe(null) hata fırlatıp scripti öldürüyordu.
+  function watch() {
+    var root = document.body || document.documentElement;
+    if (!root) return;
     var t;
     new MutationObserver(function () {
       clearTimeout(t);
       t = setTimeout(place, 100);
-    }).observe(document.body, { childList: true, subtree: true });
+    }).observe(root, { childList: true, subtree: true });
+  }
+
+  function boot() {
+    place();
+    watch();
+  }
+
+  if (document.body) {
+    boot();
+  } else {
+    document.addEventListener('DOMContentLoaded', boot);
   }
 })();
