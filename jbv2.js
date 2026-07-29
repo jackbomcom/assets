@@ -1,68 +1,56 @@
-/* Sol menüde aktif olan .sb-top-btn için turuncu arka plan */
+/* Sol menüde aktif olan .sb-top-btn için turuncu arka plan.
+   Not: 'active' sınıfını React kendisi veriyor, biz sadece rengini değiştiriyoruz.
+   Sitenin kendi kuralları #responsive-menu (id) + !important ile geldiği için
+   burada hem CSS değişkenini ezip hem de id'yi tekrarlayarak özgüllüğü yükseltiyoruz. */
 (function () {
   var STYLE_ID = 'cst-active-nav-style';
   if (document.getElementById(STYLE_ID)) return;
 
-  var ACCENT = '#f97316';       // turuncu
-  var ACCENT_SOFT = 'rgba(249,115,22,.18)';
-  var ACCENT_SOFT2 = 'rgba(249,115,22,.06)';
+  // ——— Turuncu tonu buradan değiştir ———
+  var ACCENT = '#f97316';
+  var ACCENT_RGB = '249,115,22';
+  // ———————————————————————————
+
+  // Sitenin aktif buton stilleri tamamen --accent-rgb üzerinden üretiliyor
+  // (--sidebar-top-btn-active-bg, --sidebar-active-glow, border, :before çubuğu vb.).
+  // Değişkeni .sb-top üzerinde ezince tüm bu stiller otomatik turunculaşıyor;
+  // :root mavi kaldığı için sitenin geri kalanı etkilenmiyor.
+  var VARS = '--accent:' + ACCENT + ';--accent-rgb:' + ACCENT_RGB + ';';
+
+  // Sabit renk yazan (değişken kullanmayan) kuralları ezmek için:
+  // #responsive-menu#responsive-menu -> 2 id, sitenin 1 id + 4 class kuralını geçer.
+  var ACTIVE_SEL = [
+    '.sb-top .sb-top-btn.active',
+    '#responsive-menu#responsive-menu .sb-top-btn.active',
+    '#responsive-menu#responsive-menu.active-menu .sb-top-btn.active',
+    '#responsive-menu#responsive-menu:not(.active-menu) .sb-top-btn.active'
+  ].join(',');
 
   var st = document.createElement('style');
   st.id = STYLE_ID;
   st.textContent = [
-    // aktif buton
-    '.sb-top .sb-top-btn.active{',
-      'background:linear-gradient(90deg,' + ACCENT_SOFT + ',' + ACCENT_SOFT2 + ')!important;',
-      'box-shadow:inset 3px 0 0 0 ' + ACCENT + '!important;',
+    '.sb-top,.sb-top *{' + VARS + '}',
+
+    ACTIVE_SEL + '{',
+      'background:linear-gradient(95deg,rgba(' + ACCENT_RGB + ',.34),rgba(' + ACCENT_RGB + ',.20))!important;',
+      'border-color:rgba(' + ACCENT_RGB + ',.55)!important;',
       'color:#fff!important;',
-      'border-radius:10px;',
-      'transition:background .2s ease,box-shadow .2s ease;',
     '}',
-    // aktif butonun ikonu + yazısı
-    '.sb-top .sb-top-btn.active .icon,',
-    '.sb-top .sb-top-btn.active .icon svg,',
-    '.sb-top .sb-top-btn.active .sb-top-arrow{color:' + ACCENT + '!important;opacity:1;}',
-    '.sb-top .sb-top-btn.active .sb-top-title{color:#fff!important;font-weight:700;}',
+
+    // sol taraftaki ince aktiflik çubuğu ve ok/ikon rengi
+    '#responsive-menu#responsive-menu .sb-top-btn.active:before,',
+    '.sb-top .sb-top-btn.active:before{background:' + ACCENT + '!important;}',
+    '#responsive-menu#responsive-menu .sb-top-btn.active .sb-top-arrow,',
+    '.sb-top .sb-top-btn.active .sb-top-arrow{color:' + ACCENT + '!important;opacity:1!important;}',
+    '.sb-top .sb-top-btn.active .sb-top-title{color:#fff!important;}',
+
     // aktif olmayanların hover'ı (hafif turuncu)
     '.sb-top .sb-top-btn:not(.active):hover{',
-      'background:rgba(249,115,22,.10)!important;border-radius:10px;',
+      'border-color:rgba(' + ACCENT_RGB + ',.30)!important;',
     '}'
   ].join('');
+
   (document.head || document.documentElement).appendChild(st);
-
-  // SPA gezinmelerinde site .active sınıfını geç güncellerse yedek olarak biz de işaretleyelim
-  function syncActive() {
-    var btns = document.querySelectorAll('.sb-top .sb-top-btn');
-    if (!btns.length) return;
-    var path = location.pathname.replace(/\/+$/, '') || '/';
-    var best = null, bestLen = -1;
-    [].forEach.call(btns, function (a) {
-      var href = (a.getAttribute('href') || '').replace(/\/+$/, '');
-      if (!href) return;
-      if (path === href || path.indexOf(href + '/') === 0) {
-        if (href.length > bestLen) { bestLen = href.length; best = a; }
-      }
-    });
-    if (!best) return;
-    [].forEach.call(btns, function (a) { a.classList.toggle('active', a === best); });
-  }
-
-  syncActive();
-  ['pushState', 'replaceState'].forEach(function (m) {
-    var orig = history[m];
-    history[m] = function () {
-      var r = orig.apply(this, arguments);
-      setTimeout(syncActive, 50);
-      return r;
-    };
-  });
-  window.addEventListener('popstate', function () { setTimeout(syncActive, 50); });
-
-  var t;
-  new MutationObserver(function () {
-    clearTimeout(t);
-    t = setTimeout(syncActive, 150);
-  }).observe(document.documentElement, { childList: true, subtree: true });
 })();
 
 (function () {
