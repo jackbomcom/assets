@@ -1,3 +1,70 @@
+/* Sol menüde aktif olan .sb-top-btn için turuncu arka plan */
+(function () {
+  var STYLE_ID = 'cst-active-nav-style';
+  if (document.getElementById(STYLE_ID)) return;
+
+  var ACCENT = '#f97316';       // turuncu
+  var ACCENT_SOFT = 'rgba(249,115,22,.18)';
+  var ACCENT_SOFT2 = 'rgba(249,115,22,.06)';
+
+  var st = document.createElement('style');
+  st.id = STYLE_ID;
+  st.textContent = [
+    // aktif buton
+    '.sb-top .sb-top-btn.active{',
+      'background:linear-gradient(90deg,' + ACCENT_SOFT + ',' + ACCENT_SOFT2 + ')!important;',
+      'box-shadow:inset 3px 0 0 0 ' + ACCENT + '!important;',
+      'color:#fff!important;',
+      'border-radius:10px;',
+      'transition:background .2s ease,box-shadow .2s ease;',
+    '}',
+    // aktif butonun ikonu + yazısı
+    '.sb-top .sb-top-btn.active .icon,',
+    '.sb-top .sb-top-btn.active .icon svg,',
+    '.sb-top .sb-top-btn.active .sb-top-arrow{color:' + ACCENT + '!important;opacity:1;}',
+    '.sb-top .sb-top-btn.active .sb-top-title{color:#fff!important;font-weight:700;}',
+    // aktif olmayanların hover'ı (hafif turuncu)
+    '.sb-top .sb-top-btn:not(.active):hover{',
+      'background:rgba(249,115,22,.10)!important;border-radius:10px;',
+    '}'
+  ].join('');
+  (document.head || document.documentElement).appendChild(st);
+
+  // SPA gezinmelerinde site .active sınıfını geç güncellerse yedek olarak biz de işaretleyelim
+  function syncActive() {
+    var btns = document.querySelectorAll('.sb-top .sb-top-btn');
+    if (!btns.length) return;
+    var path = location.pathname.replace(/\/+$/, '') || '/';
+    var best = null, bestLen = -1;
+    [].forEach.call(btns, function (a) {
+      var href = (a.getAttribute('href') || '').replace(/\/+$/, '');
+      if (!href) return;
+      if (path === href || path.indexOf(href + '/') === 0) {
+        if (href.length > bestLen) { bestLen = href.length; best = a; }
+      }
+    });
+    if (!best) return;
+    [].forEach.call(btns, function (a) { a.classList.toggle('active', a === best); });
+  }
+
+  syncActive();
+  ['pushState', 'replaceState'].forEach(function (m) {
+    var orig = history[m];
+    history[m] = function () {
+      var r = orig.apply(this, arguments);
+      setTimeout(syncActive, 50);
+      return r;
+    };
+  });
+  window.addEventListener('popstate', function () { setTimeout(syncActive, 50); });
+
+  var t;
+  new MutationObserver(function () {
+    clearTimeout(t);
+    t = setTimeout(syncActive, 150);
+  }).observe(document.documentElement, { childList: true, subtree: true });
+})();
+
 (function () {
   var ID = 'cst-acc-1';
   if (document.getElementById(ID)) return;
