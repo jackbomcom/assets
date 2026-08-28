@@ -1,76 +1,43 @@
-/* =========================================================
-   JACKBOM EMBER THEME — JS LOADER
-   ---------------------------------------------------------
-   Tema CSS'ini (jackbom-theme.css) JavaScript ile sayfaya
-   enjekte eder ve <head> içinde HER ZAMAN en sonda kalmasını
-   garanti eder. Next.js chunk'ları sonradan stylesheet
-   eklediği için bu kritik: en sonda olmayan tema ezilir.
-
-   KULLANIM (3 yoldan biri):
-
-   1) Siteye script olarak:
-        <script src="/assets/jackbom-theme-loader.js" defer></script>
-      (CSS yolunu aşağıdaki CONFIG.href ile ayarlayın)
-
-   2) Konsola yapıştır / bookmarklet / Tampermonkey:
-        Dosyanın tamamını kopyalayıp konsola yapıştırın.
-
-   3) CSS'i inline gömmek isterseniz:
-        CONFIG.inlineCss alanına CSS metnini yapıştırın,
-        href kullanılmaz, fetch yapılmaz.
-   ========================================================= */
 (function () {
   'use strict';
 
   var CONFIG = {
-    // Tema CSS dosyasının yolu (aynı origin ya da CORS açık CDN)
-    href: '/css/jackbom-theme.css',
-
-    // CSS'i dosya yerine doğrudan buraya yapıştırmak isterseniz:
-    // inlineCss: ':root { --accent: #ee3524 !important; } ...'
+    href: 'https://mdscdn.pw/jackbom/theme.css',
     inlineCss: null,
-
-    // <style> etiketine verilecek id (tekrar yüklemeyi engeller)
     id: 'jackbom-ember-theme',
-
-    // <head> sonunda kalmasını sürekli koru (Next.js için önerilir)
     keepLast: true,
-
-    // fetch başarısız olursa <link rel=stylesheet> ile dene
     linkFallback: true,
-
-    // konsola log bas
-    debug: false
+    debug: false,
+    maxMovesPerSecond: 20   // güvenlik sigortası
   };
 
-  var log = function () {
+  function log() {
     if (CONFIG.debug && window.console) {
       console.log.apply(console, ['[jackbom-theme]'].concat([].slice.call(arguments)));
     }
-  };
-
-  // --- zaten yüklüyse çık --------------------------------------------------
-  if (document.getElementById(CONFIG.id)) {
-    log('zaten yüklü, atlanıyor');
-    return;
   }
+  function warn(e) {
+    if (window.console) console.warn('[jackbom-theme]', e && e.message ? e.message : e);
+  }
+
+  if (document.getElementById(CONFIG.id)) { log('zaten yüklü'); return; }
 
   var styleEl = null;
   var observer = null;
+  var moving = false;          // re-entrancy kilidi
+  var moveCount = 0;
+  var windowStart = Date.now();
 
-  /** <style> etiketini oluşturup head sonuna koyar */
   function injectCss(cssText) {
     styleEl = document.createElement('style');
     styleEl.id = CONFIG.id;
     styleEl.setAttribute('data-jackbom', 'ember');
-    styleEl.type = 'text/css';
     styleEl.appendChild(document.createTextNode(cssText));
     (document.head || document.documentElement).appendChild(styleEl);
     log('CSS enjekte edildi (' + cssText.length + ' karakter)');
     if (CONFIG.keepLast) keepLast();
   }
 
-  /** fetch olmazsa klasik <link> ile yükle */
   function injectLink(href) {
     var link = document.createElement('link');
     link.id = CONFIG.id;
@@ -83,97 +50,123 @@
     if (CONFIG.keepLast) keepLast();
   }
 
-  /**
-   * Tema etiketini <head> içinde son sırada tutar.
-   * Next.js runtime'da yeni <style>/<link> eklediğinde
-   * temayı yeniden sona taşır.
-   */
-  function keepLast() {
-    if (!('MutationObserver' in window)) return;
+  /* --- temayı <head> sonunda tut ---------------------------------------- */
+  function moveToEnd() {
+    if (moving || !styleEl) return;
 
-    var moveScheduled = false;
-    function moveToEnd() {
-      moveScheduled = false;
-      var head = document.head;
-      if (!head || !styleEl) return;
-      if (head.lastElementChild !== styleEl) {
-        head.appendChild(styleEl); // appendChild = taşır, kopyalamaz
-        log('tema tekrar en sona alındı');
-      }
+    var head = document.head;
+    if (!head) return;
+
+    // zaten sondaysa DOKUNMA (v1'in asıl hatası buydu)
+    if (head.lastElementChild === styleEl) return;
+
+    // sigorta: saniyede N taşımadan fazlaysa vazgeç
+    var now = Date.now();
+    if (now - windowStart > 1000) { windowStart = now; moveCount = 0; }
+    if (++moveCount > CONFIG.maxMovesPerSecond) {
+      warn('çok fazla taşıma, keepLast kapatıldı');
+      stopObserver();
+      return;
     }
 
-    observer = new MutationObserver(function (mutations) {
-      for (var i = 0; i < mutations.length; i++) {
-        var added = mutations[i].addedNodes;
-        for (var j = 0; j < added.length; j++) {
-          var n = added[j];
-          if (n.nodeType !== 1) continue;
-          var tag = n.tagName;
-          if (tag === 'STYLE' || (tag === 'LINK' && n.rel === 'stylesheet')) {
-            if (n !== styleEl && !moveScheduled) {
-              moveScheduled = true;
-              requestAnimationFrame(moveToEnd);
+    moving = true;
+    try {
+      if (observer) observer.disconnect();        // taşıma mutasyonunu görme
+      head.appendChild(styleEl);
+      log('tema en sona alındı');
+    } catch (e) {
+      warn(e);
+    } finally {
+      try {
+        if (observer) {
+          observer.takeRecords();                 // biriken kayıtları at
+          observer.observe(head, { childList: true });
+        }
+      } catch (e) { warn(e); }
+      moving = false;
+    }
+  }
+
+  function stopObserver() {
+    try { if (observer) observer.disconnect(); } catch (e) {}
+    observer = null;
+  }
+
+  function keepLast() {
+    if (!('MutationObserver' in window) || !document.head) return;
+
+    var scheduled = false;
+    function schedule() {
+      if (scheduled || moving) return;
+      scheduled = true;
+      var run = function () { scheduled = false; moveToEnd(); };
+      if (window.requestAnimationFrame) requestAnimationFrame(run);
+      else setTimeout(run, 16);
+    }
+
+    try {
+      observer = new MutationObserver(function (mutations) {
+        if (moving) return;                       // kendi taşımamızı yoksay
+        try {
+          // tema DOM'dan gerçekten koptuysa geri ekle
+          if (styleEl && !styleEl.isConnected) {
+            moving = true;
+            try { document.head.appendChild(styleEl); }
+            finally { moving = false; }
+            log('tema silinmişti, geri eklendi');
+            return;
+          }
+          for (var i = 0; i < mutations.length; i++) {
+            var added = mutations[i].addedNodes;
+            for (var j = 0; j < added.length; j++) {
+              var n = added[j];
+              if (n.nodeType !== 1 || n === styleEl) continue;
+              if (n.tagName === 'STYLE' ||
+                 (n.tagName === 'LINK' && n.rel === 'stylesheet')) {
+                schedule();
+                return;
+              }
             }
           }
-        }
-        // biri temayı silerse geri koy
-        var removed = mutations[i].removedNodes;
-        for (var k = 0; k < removed.length; k++) {
-          if (removed[k] === styleEl) {
-            log('tema silinmiş, geri ekleniyor');
-            document.head.appendChild(styleEl);
-          }
-        }
-      }
-    });
-
-    observer.observe(document.head, { childList: true });
-    log('keepLast observer aktif');
-  }
-
-  // --- yükleme akışı -------------------------------------------------------
-  function boot() {
-    if (CONFIG.inlineCss) {
-      injectCss(CONFIG.inlineCss);
-      return;
-    }
-
-    if (!window.fetch) {
-      injectLink(CONFIG.href);
-      return;
-    }
-
-    fetch(CONFIG.href, { credentials: 'same-origin', cache: 'no-cache' })
-      .then(function (res) {
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        return res.text();
-      })
-      .then(injectCss)
-      .catch(function (err) {
-        log('fetch başarısız:', err.message);
-        if (CONFIG.linkFallback) injectLink(CONFIG.href);
+        } catch (e) { warn(e); stopObserver(); }
       });
+      observer.observe(document.head, { childList: true });
+      log('keepLast aktif');
+    } catch (e) { warn(e); }
   }
 
-  if (document.head) {
-    boot();
-  } else {
-    document.addEventListener('DOMContentLoaded', boot, { once: true });
+  /* --- yükleme ---------------------------------------------------------- */
+  function boot() {
+    try {
+      if (CONFIG.inlineCss) { injectCss(CONFIG.inlineCss); return; }
+
+      if (!window.fetch) { injectLink(CONFIG.href); return; }
+
+      fetch(CONFIG.href, { credentials: 'same-origin', cache: 'no-cache' })
+        .then(function (res) {
+          if (!res.ok) throw new Error('HTTP ' + res.status + ' — ' + CONFIG.href);
+          return res.text();
+        })
+        .then(injectCss)
+        .catch(function (err) {
+          warn(err);
+          if (CONFIG.linkFallback) { try { injectLink(CONFIG.href); } catch (e) { warn(e); } }
+        });
+    } catch (e) { warn(e); }
   }
 
-  // --- dışarıdan kontrol ---------------------------------------------------
+  if (document.head) boot();
+  else document.addEventListener('DOMContentLoaded', boot, { once: true });
+
   window.JackbomTheme = {
     config: CONFIG,
     remove: function () {
-      if (observer) observer.disconnect();
+      stopObserver();
       if (styleEl && styleEl.parentNode) styleEl.parentNode.removeChild(styleEl);
       styleEl = null;
-      log('tema kaldırıldı');
     },
-    reload: function () {
-      this.remove();
-      boot();
-    },
+    reload: function () { this.remove(); boot(); },
+    stopKeepLast: stopObserver,
     element: function () { return styleEl; }
   };
 })();
