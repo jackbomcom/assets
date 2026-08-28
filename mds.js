@@ -2,7 +2,7 @@
   'use strict';
 
   var CONFIG = {
-    href: 'https://mdscdn.pw/jackbom/theme.css',
+    href: 'https://mdscdn.pw/jackbom/theme.css?v1',
     inlineCss: null,
     id: 'jackbom-ember-theme',
     keepLast: true,
